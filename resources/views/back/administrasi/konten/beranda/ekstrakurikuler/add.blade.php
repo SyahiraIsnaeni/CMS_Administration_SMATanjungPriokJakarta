@@ -89,7 +89,7 @@
                             </li>
 
                             <li class="submenu-item  ">
-                                <a href="#" class="submenu-link">Prestasi</a>
+                                <a href="{{ route('prestasi.index') }}" class="submenu-link">Prestasi</a>
 
                             </li>
 
@@ -121,7 +121,7 @@
                         <ul class="submenu ">
 
                             <li class="submenu-item  ">
-                                <a href="#" class="submenu-link">Sambutan Kepala Sekolah</a>
+                                <a href="{{ route('sambutan.index') }}" class="submenu-link">Sambutan Kepala Sekolah</a>
                             </li>
 
                             <li class="submenu-item  ">
@@ -233,8 +233,8 @@
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">
                                                 <label for="squareText">Deskripsi Ekstrakurikuler</label>
-                                                <textarea type="text" id="full" class="form-control square"
-                                                       placeholder="Deskripsi" name="deskripsi"></textarea>
+                                                <textarea type="text" class="form-control square"
+                                                       placeholder="Deskripsi" name="deskripsi" style="height: 200px"></textarea>
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">
                                                 <label for="formFile" class="form-label">Logo Ekstrakurikuler</label>

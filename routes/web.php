@@ -31,6 +31,8 @@ Route::middleware('auth')->group(function () {
     Route::resource('ekstrakurikuler', \App\Http\Controllers\EkstrakurikulerController::class);
     Route::resource('prestasi', \App\Http\Controllers\PrestasiController::class);
     Route::resource('fasilitas', \App\Http\Controllers\FasilitasController::class);
+    Route::resource('sambutan', \App\Http\Controllers\SambutanController::class);
+    Route::resource('sejarah', \App\Http\Controllers\SejarahController::class);
 });
 
 require __DIR__.'/auth.php';

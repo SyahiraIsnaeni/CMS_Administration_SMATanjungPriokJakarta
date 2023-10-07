@@ -121,7 +121,7 @@
                         <ul class="submenu ">
 
                             <li class="submenu-item  ">
-                                <a href="#" class="submenu-link">Sambutan Kepala Sekolah</a>
+                                <a href="{{ route('sambutan.index') }}" class="submenu-link">Sambutan Kepala Sekolah</a>
                             </li>
 
                             <li class="submenu-item  ">
@@ -234,7 +234,7 @@
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">
                                                 <label for="squareText">Deskripsi Ekstrakurikuler</label>
-                                                <textarea name="deskripsi" class="form-control" id="task-textarea">{{ $ekstrakurikuler->deskripsi}}</textarea>
+                                                <textarea name="deskripsi" class="form-control" id="task-textarea" style="height: 200px">{{ $ekstrakurikuler->deskripsi}}</textarea>
                                             </div>
                                             <div class="form-group">
                                                 <label for="formFile" class="form-label">Logo Ekstrakurikuler</label>

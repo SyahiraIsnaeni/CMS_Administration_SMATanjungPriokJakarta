@@ -51,7 +51,7 @@
                                                     <table class="table table-bordered mb-3" id="table1">
                                                         <thead>
                                                         <tr>
-                                                            <th>Foto</th>
+                                                            <th>Foto Fasilitas</th>
                                                             <th>Aksi</th>
                                                         </tr>
                                                         </thead>

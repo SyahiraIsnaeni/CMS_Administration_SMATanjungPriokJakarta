@@ -101,16 +101,16 @@
 
                     <ul class="submenu ">
 
-                        <li class="submenu-item  ">
+                        <li class="submenu-item active ">
                             <a href="{{ route('sambutan.index') }}" class="submenu-link">Sambutan Kepala Sekolah</a>
                         </li>
 
-                        <li class="submenu-item  ">
+                        <li class="submenu-item">
                             <a href="#" class="submenu-link">Sejarah</a>
 
                         </li>
 
-                        <li class="submenu-item active ">
+                        <li class="submenu-item">
                             <a href="{{ route('fasilitas.index') }}" class="submenu-link">Fasilitas</a>
 
                         </li>

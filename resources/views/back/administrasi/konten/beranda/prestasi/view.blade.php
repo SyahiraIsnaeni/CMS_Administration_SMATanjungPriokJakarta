@@ -91,19 +91,6 @@
                     </div>
                 </div>
             </section>
-
-            <!-- Basic Tables start -->
-            <section class="section" style="margin-top: 30px">
-                <div class="row" id="basic-table">
-                    <div class="col-lg-12 col-md-6">
-                        <div class="card">
-                            <div class="card-content">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <!-- Basic Tables end -->
         </div>
 

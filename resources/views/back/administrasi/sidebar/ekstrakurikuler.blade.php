@@ -102,7 +102,7 @@
                     <ul class="submenu ">
 
                         <li class="submenu-item  ">
-                            <a href="#" class="submenu-link">Sambutan Kepala Sekolah</a>
+                            <a href="{{ route('sambutan.index') }}" class="submenu-link">Sambutan Kepala Sekolah</a>
                         </li>
 
                         <li class="submenu-item  ">

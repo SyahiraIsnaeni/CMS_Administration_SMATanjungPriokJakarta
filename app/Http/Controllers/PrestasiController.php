@@ -77,7 +77,6 @@ class PrestasiController extends Controller
         }
 
     }
-
     public function destroy($id)
     {
         $prestasi = Prestasi::find($id);

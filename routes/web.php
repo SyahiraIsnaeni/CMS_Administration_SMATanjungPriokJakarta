@@ -30,6 +30,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('hari', HariNasionalController::class);
     Route::resource('ekstrakurikuler', \App\Http\Controllers\EkstrakurikulerController::class);
     Route::resource('prestasi', \App\Http\Controllers\PrestasiController::class);
+    Route::resource('fasilitas', \App\Http\Controllers\FasilitasController::class);
 });
 
 require __DIR__.'/auth.php';

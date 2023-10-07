@@ -65,7 +65,7 @@
                         </li>
 
                         <li class="submenu-item  ">
-                            <a href="#" class="submenu-link">Ekstrakurikuler</a>
+                            <a href="{{ route('ekstrakurikuler.index') }}" class="submenu-link">Ekstrakurikuler</a>
 
                         </li>
 

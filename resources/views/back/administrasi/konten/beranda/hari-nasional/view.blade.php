@@ -33,7 +33,7 @@
             </div>
 
             <!-- Bordered table start -->
-            <section class="section">
+            <section class="section" style="margin-top: 30px">
                 <div class="row" id="table-bordered">
                     <div class="col-12">
                         <div class="card">
@@ -103,14 +103,13 @@
             <!-- Basic Tables end -->
         </div>
 
-        @include('back.administrasi.footer.footer')
     </div>
+    @include('back.administrasi.footer.footer')
 </div>
 <script src="assets/static/js/components/dark.js"></script>
 <script src="assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 
 @include('sweetalert::alert', ['cdn'=>"https://cdn.jsdelivr.net/npm/sweetalert2@9"])
-
 <script src="assets/compiled/js/app.js"></script>
 
 

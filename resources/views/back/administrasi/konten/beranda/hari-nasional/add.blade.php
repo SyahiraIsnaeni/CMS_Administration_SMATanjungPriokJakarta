@@ -82,7 +82,7 @@
                             </li>
 
                             <li class="submenu-item  ">
-                                <a href="#" class="submenu-link">Ekstrakurikuler</a>
+                                <a href="{{ route('ekstrakurikuler.index') }}" class="submenu-link">Ekstrakurikuler</a>
 
                             </li>
 
@@ -229,16 +229,16 @@
                                                 <input type="text" id="squareText" class="form-control square"
                                                        placeholder="Hari Nasional" name="nama_hari">
                                             </div>
-                                            <div class="form-group">
+                                            <div class="form-group" style="margin-top: 10px">
                                                 <label for="squareText">Deskripsi Postingan</label>
                                                 <input type="text" id="squareText" class="form-control square"
                                                        placeholder="Deskripsi" name="deskripsi">
                                             </div>
-                                            <div class="form-group">
+                                            <div class="form-group" style="margin-top: 10px">
                                                 <label for="formFile" class="form-label">Gambar Postingan</label>
                                                 <input class="form-control" type="file" id="formFile" name="gambar">
                                             </div>
-                                            <div class="form-group">
+                                            <div class="form-group" style="margin-top: 10px">
                                                 <button class="btn btn-info btn-sm" type="submit"> Simpan </button>
                                                 <button class="btn btn-danger btn-sm" type="reset"> Reset </button>
                                             </div>
@@ -253,7 +253,6 @@
             <!-- Input Style end -->
         </div>
 
-        @include('back.administrasi.footer.footer')
     </div>
 </div>
 <script src="../assets/static/js/components/dark.js"></script>
@@ -263,7 +262,7 @@
 
 <script src="../assets/compiled/js/app.js"></script>
 
-
+@include('back.administrasi.footer.footer')
 </body>
 
 </html>

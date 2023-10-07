@@ -60,11 +60,11 @@
                     </a>
 
                     <ul class="submenu ">
-                        <li class="submenu-item  ">
+                        <li class="submenu-item">
                             <a href="{{ route('hari.index') }}" class="submenu-link">Hari Nasional</a>
                         </li>
 
-                        <li class="submenu-item  ">
+                        <li class="submenu-item active ">
                             <a href="{{ route('ekstrakurikuler.index') }}" class="submenu-link">Ekstrakurikuler</a>
 
                         </li>

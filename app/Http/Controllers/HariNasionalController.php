@@ -65,11 +65,6 @@ class HariNasionalController extends Controller
     {
         $hari = HariNasional::find($id);
 
-        $this->validate($request, [
-            'nama_hari' => 'required|min:3',
-            'gambar' => 'required|image|mimes:jpeg,jpg,png',
-        ]);
-
         if(empty($request->file('gambar'))) {
             $hari->update([
                 'nama_hari' => $request->nama_hari,

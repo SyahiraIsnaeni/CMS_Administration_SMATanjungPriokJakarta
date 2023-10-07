@@ -82,7 +82,7 @@
                             </li>
 
                             <li class="submenu-item  ">
-                                <a href="#" class="submenu-link">Ekstrakurikuler</a>
+                                <a href="{{ route('ekstrakurikuler.index') }}" class="submenu-link">Ekstrakurikuler</a>
 
                             </li>
 
@@ -257,7 +257,7 @@
             <!-- Input Style end -->
         </div>
 
-        @include('back.administrasi.footer.footer')
+
     </div>
 </div>
 <script src="../../assets/static/js/components/dark.js"></script>
@@ -267,7 +267,7 @@
 
 <script src="../../assets/compiled/js/app.js"></script>
 
-
+@include('back.administrasi.footer.footer')
 </body>
 
 </html>

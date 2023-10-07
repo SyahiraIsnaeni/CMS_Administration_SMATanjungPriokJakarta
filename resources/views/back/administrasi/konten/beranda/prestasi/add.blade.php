@@ -4,25 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Data Ekstrakurikuler</title>
+    <title>Tambah Data Prestasi</title>
+
+    <link rel="shortcut icon" href="../assets/image/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/extensions/quill/quill.snow.css">
     <link rel="stylesheet" href="../assets/extensions/quill/quill.bubble.css">
 
-    <link rel="shortcut icon" href="../../assets/image/logo.png" type="image/x-icon">
-
-    <link rel="stylesheet" href="../../assets/compiled/css/app.css">
-    <link rel="stylesheet" href="../../assets/compiled/css/app-dark.css">
+    <link rel="stylesheet" href="../assets/compiled/css/app.css">
+    <link rel="stylesheet" href="../assets/compiled/css/app-dark.css">
 </head>
 
 <body>
-<script src="../../assets/static/js/initTheme.js"></script>
+<script src="../assets/static/js/initTheme.js"></script>
 <div id="app">
     <div id="sidebar">
         <div class="sidebar-wrapper active">
             <div class="sidebar-header position-relative">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="logo" style="display: flex; align-items: center;">
-                        <img src="../../assets/image/logo.png" style="width: 50px; height: 50px">
+                        <img src="../assets/image/logo.png" style="width: 50px; height: 50px">
                         <a href="#"><p style="font-size: 21px;margin-top: 25px">Admin</p></a>
                     </div>
                     <div class="theme-toggle d-flex gap-2  align-items-center mt-2">
@@ -72,24 +72,24 @@
                     <li class="sidebar-title">Konten</li>
 
                     <li
-                        class="sidebar-item  has-sub  active">
+                        class="sidebar-item  has-sub  active ">
                         <a href="#" class='sidebar-link'>
                             <i class="bi bi-stack"></i>
                             <span>Beranda</span>
                         </a>
 
                         <ul class="submenu ">
-                            <li class="submenu-item ">
+                            <li class="submenu-item">
                                 <a href="{{ route('hari.index') }}" class="submenu-link">Hari Nasional</a>
                             </li>
 
-                            <li class="submenu-item active ">
+                            <li class="submenu-item ">
                                 <a href="{{ route('ekstrakurikuler.index') }}" class="submenu-link">Ekstrakurikuler</a>
 
                             </li>
 
-                            <li class="submenu-item  ">
-                                <a href="#" class="submenu-link">Prestasi</a>
+                            <li class="submenu-item active ">
+                                <a href="{{ route('prestasi.index') }}" class="submenu-link">Prestasi</a>
 
                             </li>
 
@@ -207,7 +207,7 @@
             <div class="page-title">
                 <div class="row">
                     <div class="col-12 col-md-6 order-md-1 order-last">
-                        <h3>Edit Data Ekstrakurikuler</h3>
+                        <h3>Tambah Data Prestasi</h3>
                     </div>
                 </div>
             </div>
@@ -218,32 +218,24 @@
                         <div class="card">
                             <div class="card-header">
                                 <div class="card-head-row">
-                                    <a href="{{route('ekstrakurikuler.index')}}" class="btn btn-warning btn-sm ml-auto"> <i class="bi bi-arrow-left-circle"></i></i> Kembali </a>
+                                    <a href="{{route('prestasi.index')}}" class="btn btn-warning btn-sm ml-auto"> <i class="bi bi-arrow-left-circle"></i> Kembali </a>
                                 </div>
                             </div>
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <form method="post" action="{{ route('ekstrakurikuler.update', $ekstrakurikuler->id)}}" enctype="multipart/form-data">
+                                        <form method="post" action="{{ route('prestasi.store')}}" enctype="multipart/form-data">
                                             @csrf
-                                            @method('PUT')
                                             <div class="form-group">
-                                                <label for="squareText">Nama Ekstrakurikuler</label>
+                                                <label for="squareText">Nama Prestasi</label>
                                                 <input type="text" id="squareText" class="form-control square"
-                                                       placeholder="Ekstrakurikuler" name="nama" value="{{$ekstrakurikuler->nama}}">
+                                                       placeholder="Prestasi" name="nama">
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">
-                                                <label for="squareText">Deskripsi Ekstrakurikuler</label>
-                                                <textarea name="deskripsi" class="form-control" id="task-textarea">{{ $ekstrakurikuler->deskripsi}}</textarea>
+                                                <label for="formFile" class="form-label">Foto Prestasi</label>
+                                                <input class="form-control" type="file" id="formFile" name="foto">
                                             </div>
-                                            <div class="form-group">
-                                                <label for="formFile" class="form-label">Logo Ekstrakurikuler</label>
-                                                <input class="form-control" type="file" id="formFile" name="logo">
-                                                <br>
-                                                <label for="formFile" class="form-label">Gambar saat ini</label><br>
-                                                <img src="{{asset('uploads/'.$ekstrakurikuler->logo) }}" width="100">
-                                            </div>
-                                            <div class="form-group">
+                                            <div class="form-group" style="margin-top: 20px">
                                                 <button class="btn btn-info btn-sm" type="submit"> Simpan </button>
                                                 <button class="btn btn-danger btn-sm" type="reset"> Reset </button>
                                             </div>
@@ -257,18 +249,17 @@
             </section>
             <!-- Input Style end -->
         </div>
-
     </div>
 </div>
-<script src="../../assets/static/js/components/dark.js"></script>
-<script src="../../assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script src="../assets/static/js/components/dark.js"></script>
+<script src="../assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 
 @include('sweetalert::alert', ['cdn'=>"https://cdn.jsdelivr.net/npm/sweetalert2@9"])
+@include('back.administrasi.footer.footer')
+<script src="../assets/compiled/js/app.js"></script>
+
 <script src="../assets/extensions/quill/quill.min.js"></script>
 <script src="../assets/static/js/pages/quill.js"></script>
-
-@include('back.administrasi.footer.footer')
-<script src="../../assets/compiled/js/app.js"></script>
 
 
 </body>

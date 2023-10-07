@@ -43,7 +43,7 @@
             <ul class="menu">
 
                 <li
-                    class="sidebar-item active ">
+                    class="sidebar-item">
                     <a href="/dashboard" class='sidebar-link'>
                         <i class="bi bi-grid-fill"></i>
                         <span>Dashboard</span>
@@ -53,23 +53,23 @@
                 <li class="sidebar-title">Konten</li>
 
                 <li
-                    class="sidebar-item  has-sub">
+                    class="sidebar-item  has-sub active ">
                     <a href="#" class='sidebar-link'>
                         <i class="bi bi-stack"></i>
                         <span>Beranda</span>
                     </a>
 
                     <ul class="submenu ">
-                        <li class="submenu-item  ">
+                        <li class="submenu-item">
                             <a href="{{ route('hari.index') }}" class="submenu-link">Hari Nasional</a>
                         </li>
 
-                        <li class="submenu-item  ">
+                        <li class="submenu-item ">
                             <a href="{{ route('ekstrakurikuler.index') }}" class="submenu-link">Ekstrakurikuler</a>
 
                         </li>
 
-                        <li class="submenu-item  ">
+                        <li class="submenu-item active ">
                             <a href="{{ route('prestasi.index') }}" class="submenu-link">Prestasi</a>
 
                         </li>

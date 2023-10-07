@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Data Ekstrakurikuler</title>
+    <title>Edit Data Prestasi</title>
     <link rel="stylesheet" href="../assets/extensions/quill/quill.snow.css">
     <link rel="stylesheet" href="../assets/extensions/quill/quill.bubble.css">
 
@@ -83,13 +83,13 @@
                                 <a href="{{ route('hari.index') }}" class="submenu-link">Hari Nasional</a>
                             </li>
 
-                            <li class="submenu-item active ">
+                            <li class="submenu-item">
                                 <a href="{{ route('ekstrakurikuler.index') }}" class="submenu-link">Ekstrakurikuler</a>
 
                             </li>
 
-                            <li class="submenu-item  ">
-                                <a href="#" class="submenu-link">Prestasi</a>
+                            <li class="submenu-item active ">
+                                <a href="{{ route('prestasi.index') }}" class="submenu-link">Prestasi</a>
 
                             </li>
 
@@ -140,7 +140,6 @@
                             </li>
 
                         </ul>
-
 
                     </li>
 
@@ -207,7 +206,7 @@
             <div class="page-title">
                 <div class="row">
                     <div class="col-12 col-md-6 order-md-1 order-last">
-                        <h3>Edit Data Ekstrakurikuler</h3>
+                        <h3>Edit Data Prestasi</h3>
                     </div>
                 </div>
             </div>
@@ -218,30 +217,26 @@
                         <div class="card">
                             <div class="card-header">
                                 <div class="card-head-row">
-                                    <a href="{{route('ekstrakurikuler.index')}}" class="btn btn-warning btn-sm ml-auto"> <i class="bi bi-arrow-left-circle"></i></i> Kembali </a>
+                                    <a href="{{route('prestasi.index')}}" class="btn btn-warning btn-sm ml-auto"> <i class="bi bi-arrow-left-circle"></i></i> Kembali </a>
                                 </div>
                             </div>
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <form method="post" action="{{ route('ekstrakurikuler.update', $ekstrakurikuler->id)}}" enctype="multipart/form-data">
+                                        <form method="post" action="{{ route('prestasi.update', $prestasi->id)}}" enctype="multipart/form-data">
                                             @csrf
                                             @method('PUT')
                                             <div class="form-group">
-                                                <label for="squareText">Nama Ekstrakurikuler</label>
+                                                <label for="squareText">Nama Prestasi</label>
                                                 <input type="text" id="squareText" class="form-control square"
-                                                       placeholder="Ekstrakurikuler" name="nama" value="{{$ekstrakurikuler->nama}}">
-                                            </div>
-                                            <div class="form-group" style="margin-top: 20px">
-                                                <label for="squareText">Deskripsi Ekstrakurikuler</label>
-                                                <textarea name="deskripsi" class="form-control" id="task-textarea">{{ $ekstrakurikuler->deskripsi}}</textarea>
+                                                       placeholder="Prestasi" name="nama" value="{{$prestasi->nama}}">
                                             </div>
                                             <div class="form-group">
-                                                <label for="formFile" class="form-label">Logo Ekstrakurikuler</label>
-                                                <input class="form-control" type="file" id="formFile" name="logo">
+                                                <label for="formFile" class="form-label">Foto Prestasi</label>
+                                                <input class="form-control" type="file" id="formFile" name="foto">
                                                 <br>
                                                 <label for="formFile" class="form-label">Gambar saat ini</label><br>
-                                                <img src="{{asset('uploads/'.$ekstrakurikuler->logo) }}" width="100">
+                                                <img src="{{asset('uploads/'.$prestasi->foto) }}" width="100">
                                             </div>
                                             <div class="form-group">
                                                 <button class="btn btn-info btn-sm" type="submit"> Simpan </button>

@@ -29,6 +29,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::resource('hari', HariNasionalController::class);
     Route::resource('ekstrakurikuler', \App\Http\Controllers\EkstrakurikulerController::class);
+    Route::resource('prestasi', \App\Http\Controllers\PrestasiController::class);
 });
 
 require __DIR__.'/auth.php';

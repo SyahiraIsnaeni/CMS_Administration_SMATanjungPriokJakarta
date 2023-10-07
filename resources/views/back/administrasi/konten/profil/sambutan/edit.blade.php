@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Editor - Mazer Admin Dashboard</title>
+    <title>Edit Data Sambutan Kepala Sekolah</title>
 
 
 
@@ -129,7 +129,7 @@
                             </li>
 
                             <li class="submenu-item  ">
-                                <a href="#" class="submenu-link">Sejarah</a>
+                                <a href="{{ route('sejarah.index') }}" class="submenu-link">Sejarah</a>
 
                             </li>
 

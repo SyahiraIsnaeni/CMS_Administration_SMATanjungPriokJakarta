@@ -123,7 +123,7 @@
                             </li>
 
                             <li class="submenu-item  ">
-                                <a href="#" class="submenu-link">Sejarah</a>
+                                <a href="{{ route('sejarah.index') }}" class="submenu-link">Sejarah</a>
 
                             </li>
 

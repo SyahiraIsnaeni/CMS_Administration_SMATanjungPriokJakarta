@@ -135,7 +135,7 @@
                             </li>
 
                             <li class="submenu-item  ">
-                                <a href="#" class="submenu-link">Struktur Organisasi</a>
+                                <a href="{{ route('struktural.index') }}" class="submenu-link">Struktur Organisasi</a>
 
                             </li>
 

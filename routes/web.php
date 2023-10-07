@@ -33,6 +33,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('fasilitas', \App\Http\Controllers\FasilitasController::class);
     Route::resource('sambutan', \App\Http\Controllers\SambutanController::class);
     Route::resource('sejarah', \App\Http\Controllers\SejarahController::class);
+    Route::resource('struktural', \App\Http\Controllers\StrukturalController::class);
 });
 
 require __DIR__.'/auth.php';

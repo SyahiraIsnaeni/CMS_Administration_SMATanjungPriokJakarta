@@ -164,7 +164,7 @@
                 <li
                     class="sidebar-item  has-sub active">
                     <a href="#" class='sidebar-link'>
-                        <i class="bi bi-collection-fill"></i>
+                        <i class="bi bi-hourglass-split"></i>
                         <span>Riwayat Konten</span>
                     </a>
 

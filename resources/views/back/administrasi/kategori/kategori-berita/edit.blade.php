@@ -144,7 +144,7 @@
                     </li>
 
                     <li
-                        class="sidebar-item  has-sub  active ">
+                    <i class="bi bi-layers-half"></i>
                         <a href="#" class='sidebar-link'>
                             <i class="bi bi-collection-fill"></i>
                             <span>Kategori</span>

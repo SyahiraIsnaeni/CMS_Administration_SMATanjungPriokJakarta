@@ -40,6 +40,9 @@ Route::middleware('auth')->group(function () {
     Route::resource('berita', \App\Http\Controllers\BeritaController::class);
     Route::resource('blog', \App\Http\Controllers\BlogController::class);
     Route::resource('pengumuman', \App\Http\Controllers\PengumumanController::class);
+    Route::resource('riwayat-berita', \App\Http\Controllers\RiwayatBeritaController::class);
+    Route::resource('riwayat-blog', \App\Http\Controllers\RiwayatBlogController::class);
+    Route::resource('riwayat-pengumuman', \App\Http\Controllers\RiwayatPengumumanController::class);
 });
 
 require __DIR__.'/auth.php';

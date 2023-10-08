@@ -188,7 +188,7 @@
                         <ul class="submenu ">
 
                             <li class="submenu-item  ">
-                                <a href="#" class="submenu-link">Riwayat Berita</a>
+                                <a href="{{ route('riwayat-berita.index') }}" class="submenu-link">Riwayat Berita</a>
                             </li>
 
                             <li class="submenu-item  ">

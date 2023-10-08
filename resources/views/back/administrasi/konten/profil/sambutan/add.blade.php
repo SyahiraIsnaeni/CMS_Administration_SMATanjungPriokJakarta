@@ -101,7 +101,7 @@
                             </li>
 
                             <li class="submenu-item  ">
-                                <a href="#" class="submenu-link">Berita</a>
+                                <a href="{{ route('berita.index') }}" class="submenu-link">Berita</a>
 
                             </li>
 

@@ -94,12 +94,12 @@
                             </li>
 
                             <li class="submenu-item  ">
-                                <a href="{{ route('kategori-pengumuman.index') }}" class="submenu-link">Pengumuman</a>
+                                <a href="#" class="submenu-link">Pengumuman</a>
 
                             </li>
 
                             <li class="submenu-item  ">
-                                <a href="#" class="submenu-link">Berita</a>
+                                <a href="{{ route('berita.index') }}" class="submenu-link">Berita</a>
 
                             </li>
 

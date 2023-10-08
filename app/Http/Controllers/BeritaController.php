@@ -54,11 +54,6 @@ class BeritaController extends Controller
         return redirect()->route('berita.index');
     }
 
-    public function show($id)
-    {
-        //
-    }
-
     public function edit($id)
     {
         $berita = Berita::find($id);

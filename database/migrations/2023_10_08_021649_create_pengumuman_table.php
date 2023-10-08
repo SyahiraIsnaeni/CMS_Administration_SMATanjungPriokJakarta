@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('body');
             $table->integer('kategori_pengumuman_id');
             $table->string('gambar');
+            $table->string('dokumen')->nullable();
             $table->boolean('is_active');
             $table->string('delete')->default('N');
             $table->timestamps();

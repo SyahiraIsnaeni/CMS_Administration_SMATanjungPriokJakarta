@@ -53,7 +53,7 @@
                 <li class="sidebar-title">Konten</li>
 
                 <li
-                    class="sidebar-item  has-sub active ">
+                    class="sidebar-item  has-sub">
                     <a href="#" class='sidebar-link'>
                         <i class="bi bi-stack"></i>
                         <span>Beranda</span>
@@ -79,12 +79,12 @@
 
                         </li>
 
-                        <li class="submenu-item">
+                        <li class="submenu-item ">
                             <a href="{{ route('berita.index') }}" class="submenu-link">Berita</a>
 
                         </li>
 
-                        <li class="submenu-item  active  ">
+                        <li class="submenu-item   ">
                             <a href="{{ route('blog.index') }}" class="submenu-link">Blog</a>
 
                         </li>
@@ -162,7 +162,7 @@
                 </li>
 
                 <li
-                    class="sidebar-item  has-sub">
+                    class="sidebar-item  has-sub active">
                     <a href="#" class='sidebar-link'>
                         <i class="bi bi-collection-fill"></i>
                         <span>Riwayat Konten</span>
@@ -170,11 +170,11 @@
 
                     <ul class="submenu ">
 
-                        <li class="submenu-item  ">
+                        <li class="submenu-item">
                             <a href="{{ route('riwayat-berita.index') }}" class="submenu-link">Riwayat Berita</a>
                         </li>
 
-                        <li class="submenu-item  ">
+                        <li class="submenu-item  active  ">
                             <a href="{{ route('riwayat-pengumuman.index') }}" class="submenu-link">Riwayat Pengumuman</a>
 
                         </li>

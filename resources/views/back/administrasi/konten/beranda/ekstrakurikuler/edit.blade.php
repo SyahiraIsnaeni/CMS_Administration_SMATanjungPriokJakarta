@@ -194,7 +194,7 @@
                             </li>
 
                             <li class="submenu-item  ">
-                                <a href="#" class="submenu-link">Riwayat Pengumuman</a>
+                                <a href="{{ route('riwayat-pengumuman.index') }}" class="submenu-link">Riwayat Pengumuman</a>
 
                             </li>
 

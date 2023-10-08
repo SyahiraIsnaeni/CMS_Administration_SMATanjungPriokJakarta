@@ -18,9 +18,10 @@ class BeritaController extends Controller
 
     public function index()
     {
-        $berita = Berita::paginate(5)->sortByDesc('updated_at');
+        $berita = Berita::orderBy('updated_at', 'desc')->paginate(10);
         return view('back.administrasi.konten.beranda.berita.view', compact('berita'));
     }
+
 
     public function create()
     {

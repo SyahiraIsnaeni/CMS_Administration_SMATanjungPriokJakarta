@@ -90,7 +90,7 @@ class BlogController extends Controller
                 'gambar' => $request->file('gambar')->store('blog'),
             ]);
 
-            Alert::info('Diubah', 'Data Berhasil Terubah');
+            Alert::success('Diubah', 'Data Berhasil Terubah');
             return redirect()->route('blog.index');
         }
     }

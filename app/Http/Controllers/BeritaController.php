@@ -75,7 +75,7 @@ class BeritaController extends Controller
                 'is_active' => $request->is_active,
             ]);
 
-            Alert::info('Diubah', 'Data Berhasil Terubah');
+            Alert::success('Diubah', 'Data Berhasil Terubah');
             return redirect()->route('berita.index');
         } else {
             $berita = Berita::find($id);

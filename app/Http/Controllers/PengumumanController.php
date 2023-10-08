@@ -90,7 +90,7 @@ class PengumumanController extends Controller
                 'is_active' => $request->is_active,
             ]);
 
-            Alert::info('Diubah', 'Data Berhasil Terubah');
+            Alert::success('Diubah', 'Data Berhasil Terubah');
             return redirect()->route('pengumuman.index');
         } else {
             $pengumuman = Pengumuman::find($id);

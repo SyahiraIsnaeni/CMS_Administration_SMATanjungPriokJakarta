@@ -42,8 +42,8 @@
                                             </div>
                                         </div>
                                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
-                                            <h6 class="text-muted font-semibold">Profile Views</h6>
-                                            <h6 class="font-extrabold mb-0">112.000</h6>
+                                            <h6 class="text-muted font-semibold">Berita</h6>
+                                            <h6 class="font-extrabold mb-0">{{$berita->COUNT('id')}}</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -59,8 +59,8 @@
                                             </div>
                                         </div>
                                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
-                                            <h6 class="text-muted font-semibold">Followers</h6>
-                                            <h6 class="font-extrabold mb-0">183.000</h6>
+                                            <h6 class="text-muted font-semibold">Pengumuman</h6>
+                                            <h6 class="font-extrabold mb-0">{{$pengumuman->COUNT('id')}}</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -76,8 +76,8 @@
                                             </div>
                                         </div>
                                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
-                                            <h6 class="text-muted font-semibold">Following</h6>
-                                            <h6 class="font-extrabold mb-0">80.000</h6>
+                                            <h6 class="text-muted font-semibold">Blog</h6>
+                                            <h6 class="font-extrabold mb-0">{{$berita->COUNT('id')}}</h6>
                                         </div>
                                     </div>
                                 </div>

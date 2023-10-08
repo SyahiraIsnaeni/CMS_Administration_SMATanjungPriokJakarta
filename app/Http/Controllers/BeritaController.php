@@ -90,7 +90,7 @@ class BeritaController extends Controller
                 'gambar' => $request->file('gambar')->store('berita'),
             ]);
 
-            Alert::info('Diubah', 'Data Berhasil Terubah');
+            Alert::success('Diubah', 'Data Berhasil Terubah');
             return redirect()->route('berita.index');
         }
     }

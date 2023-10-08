@@ -84,7 +84,7 @@
 
                         </li>
 
-                        <li class="submenu-item  ">
+                        <li class="submenu-item   ">
                             <a href="{{ route('blog.index') }}" class="submenu-link">Blog</a>
 
                         </li>

@@ -85,7 +85,7 @@
                         </li>
 
                         <li class="submenu-item  ">
-                            <a href="{{ route('berita.index') }}" class="submenu-link">Blog</a>
+                            <a href="{{ route('blog.index') }}" class="submenu-link">Blog</a>
 
                         </li>
 

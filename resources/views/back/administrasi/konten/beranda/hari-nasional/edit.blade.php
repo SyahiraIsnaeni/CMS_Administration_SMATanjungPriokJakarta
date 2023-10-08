@@ -152,16 +152,16 @@
                         <ul class="submenu ">
 
                             <li class="submenu-item  ">
-                                <a href="#" class="submenu-link">Kategori Berita</a>
+                                <a href="{{ route('kategori-berita.index') }}" class="submenu-link">Kategori Berita</a>
                             </li>
 
                             <li class="submenu-item  ">
-                                <a href="#" class="submenu-link">Kategori Pengumuman</a>
+                                <a href="{{ route('kategori-pengumuman.index') }}" class="submenu-link">Kategori Pengumuman</a>
 
                             </li>
 
                             <li class="submenu-item ">
-                                <a href="#" class="submenu-link">Kategori Blog</a>
+                                <a href="{{ route('kategori-blog.index') }}" class="submenu-link">Kategori Blog</a>
 
                             </li>
 

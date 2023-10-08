@@ -60,16 +60,16 @@
                     </a>
 
                     <ul class="submenu ">
-                        <li class="submenu-item">
+                        <li class="submenu-item  ">
                             <a href="{{ route('hari.index') }}" class="submenu-link">Hari Nasional</a>
                         </li>
 
-                        <li class="submenu-item ">
+                        <li class="submenu-item  ">
                             <a href="{{ route('ekstrakurikuler.index') }}" class="submenu-link">Ekstrakurikuler</a>
 
                         </li>
 
-                        <li class="submenu-item">
+                        <li class="submenu-item  ">
                             <a href="{{ route('prestasi.index') }}" class="submenu-link">Prestasi</a>
 
                         </li>
@@ -93,7 +93,7 @@
                 </li>
 
                 <li
-                    class="sidebar-item  has-sub  active ">
+                    class="sidebar-item  has-sub">
                     <a href="#" class='sidebar-link'>
                         <i class="bi bi-collection-fill"></i>
                         <span>Profil</span>
@@ -101,21 +101,21 @@
 
                     <ul class="submenu ">
 
-                        <li class="submenu-item">
+                        <li class="submenu-item  ">
                             <a href="{{ route('sambutan.index') }}" class="submenu-link">Sambutan Kepala Sekolah</a>
                         </li>
 
-                        <li class="submenu-item">
+                        <li class="submenu-item  ">
                             <a href="{{ route('sejarah.index') }}" class="submenu-link">Sejarah</a>
 
                         </li>
 
-                        <li class="submenu-item">
+                        <li class="submenu-item ">
                             <a href="{{ route('fasilitas.index') }}" class="submenu-link">Fasilitas</a>
 
                         </li>
 
-                        <li class="submenu-item active ">
+                        <li class="submenu-item  ">
                             <a href="{{ route('struktural.index') }}" class="submenu-link">Struktur Organisasi</a>
 
                         </li>
@@ -126,7 +126,7 @@
                 </li>
 
                 <li
-                    class="sidebar-item  has-sub">
+                    class="sidebar-item  has-sub  active ">
                     <a href="#" class='sidebar-link'>
                         <i class="bi bi-collection-fill"></i>
                         <span>Kategori</span>
@@ -134,16 +134,16 @@
 
                     <ul class="submenu ">
 
-                        <li class="submenu-item  ">
+                        <li class="submenu-item ">
                             <a href="{{ route('kategori-berita.index') }}" class="submenu-link">Kategori Berita</a>
                         </li>
 
-                        <li class="submenu-item  ">
+                        <li class="submenu-item">
                             <a href="{{ route('kategori-pengumuman.index') }}" class="submenu-link">Kategori Pengumuman</a>
 
                         </li>
 
-                        <li class="submenu-item ">
+                        <li class="submenu-item active ">
                             <a href="{{ route('kategori-blog.index') }}" class="submenu-link">Kategori Blog</a>
 
                         </li>

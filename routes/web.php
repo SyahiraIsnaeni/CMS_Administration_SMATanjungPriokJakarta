@@ -34,6 +34,9 @@ Route::middleware('auth')->group(function () {
     Route::resource('sambutan', \App\Http\Controllers\SambutanController::class);
     Route::resource('sejarah', \App\Http\Controllers\SejarahController::class);
     Route::resource('struktural', \App\Http\Controllers\StrukturalController::class);
+    Route::resource('kategori-berita', \App\Http\Controllers\KategoriBeritaController::class);
+    Route::resource('kategori-pengumuman', \App\Http\Controllers\KategoriPengumumanController::class);
+    Route::resource('kategori-blog', \App\Http\Controllers\KategoriBlogController::class);
 });
 
 require __DIR__.'/auth.php';

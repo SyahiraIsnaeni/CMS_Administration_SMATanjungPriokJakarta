@@ -143,11 +143,67 @@
                     </li>
 
                     <li
+                        class="sidebar-item  has-sub">
+                        <a href="#" class='sidebar-link'>
+                            <i class="bi bi-collection-fill"></i>
+                            <span>Kategori</span>
+                        </a>
+
+                        <ul class="submenu ">
+
+                            <li class="submenu-item  ">
+                                <a href="#" class="submenu-link">Kategori Berita</a>
+                            </li>
+
+                            <li class="submenu-item  ">
+                                <a href="#" class="submenu-link">Kategori Pengumuman</a>
+
+                            </li>
+
+                            <li class="submenu-item ">
+                                <a href="#" class="submenu-link">Kategori Blog</a>
+
+                            </li>
+
+                        </ul>
+
+
+                    </li>
+
+                    <li
                         class="sidebar-item">
                         <a href="#" class='sidebar-link'>
                             <i class="bi bi-grid-1x2-fill"></i>
                             <span>Galeri</span>
                         </a>
+                    </li>
+
+                    <li
+                        class="sidebar-item  has-sub">
+                        <a href="#" class='sidebar-link'>
+                            <i class="bi bi-collection-fill"></i>
+                            <span>Riwayat Konten</span>
+                        </a>
+
+                        <ul class="submenu ">
+
+                            <li class="submenu-item  ">
+                                <a href="#" class="submenu-link">Riwayat Berita</a>
+                            </li>
+
+                            <li class="submenu-item  ">
+                                <a href="#" class="submenu-link">Riwayat Pengumuman</a>
+
+                            </li>
+
+                            <li class="submenu-item ">
+                                <a href="#" class="submenu-link">Riwayat Blog</a>
+
+                            </li>
+
+                        </ul>
+
+
                     </li>
 
                     <li class="sidebar-title">Data Sekolah</li>

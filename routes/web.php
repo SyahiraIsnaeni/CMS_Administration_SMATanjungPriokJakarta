@@ -44,3 +44,43 @@ Route::group(['middleware' => 'revalidate'], function(){
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('/beranda', function () {
+    return view('front.beranda');
+});
+Route::get('/berita', function () {
+    return view('front.berita');
+});
+Route::get('/blog', function () {
+    return view('front.blog');
+});
+Route::get('/daftar-berita', function () {
+    return view('front.daftar-berita');
+});
+Route::get('/daftar-blog', function () {
+    return view('front.daftar-blog');
+});
+Route::get('/daftar-pengumuman', function () {
+    return view('front.daftar-pengumuman');
+});
+Route::get('/detail-galeri', function () {
+    return view('front.detail-galeri');
+});
+Route::get('/ekstrakurikuler', function () {
+    return view('front.ekstrakurikuler');
+});
+Route::get('/galeri', function () {
+    return view('front.galeri');
+});
+Route::get('/guru-staf', function () {
+    return view('front.guru-staf');
+});
+Route::get('/pengumuman', function () {
+    return view('front.pengumuman');
+});
+Route::get('/prestasi', function () {
+    return view('front.prestasi');
+});
+Route::get('/profil', function () {
+    return view('front.profil');
+});

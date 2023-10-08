@@ -74,17 +74,17 @@
 
                         </li>
 
-                        <li class="submenu-item  ">
+                        <li class="submenu-item">
                             <a href="{{ route('pengumuman.index') }}" class="submenu-link">Pengumuman</a>
 
                         </li>
 
-                        <li class="submenu-item ">
+                        <li class="submenu-item">
                             <a href="{{ route('berita.index') }}" class="submenu-link">Berita</a>
 
                         </li>
 
-                        <li class="submenu-item   ">
+                        <li class="submenu-item  ">
                             <a href="{{ route('blog.index') }}" class="submenu-link">Blog</a>
 
                         </li>
@@ -170,7 +170,7 @@
 
                     <ul class="submenu ">
 
-                        <li class="submenu-item active ">
+                        <li class="submenu-item  ">
                             <a href="{{ route('riwayat-berita.index') }}" class="submenu-link">Riwayat Berita</a>
                         </li>
 
@@ -179,8 +179,8 @@
 
                         </li>
 
-                        <li class="submenu-item ">
-                            <a href="{{ route('kategori-blog.index') }}" class="submenu-link">Riwayat Blog</a>
+                        <li class="submenu-item active ">
+                            <a href="{{ route('riwayat-pengumuman.index') }}" class="submenu-link">Riwayat Blog</a>
 
                         </li>
 

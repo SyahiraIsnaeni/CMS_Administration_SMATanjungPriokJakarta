@@ -16,7 +16,7 @@ class RiwayatBlogController extends Controller
     public function index()
     {
         $blog = Blog::orderBy('updated_at', 'desc')->paginate(10);
-        return view('back.administrasi.konten.beranda.blog.view', compact('blog'));
+        return view('back.administrasi.riwayat.blog.view', compact('blog'));
     }
 
     public function destroy($id)

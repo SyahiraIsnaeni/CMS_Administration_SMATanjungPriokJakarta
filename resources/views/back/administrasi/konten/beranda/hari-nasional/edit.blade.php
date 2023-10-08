@@ -197,7 +197,7 @@
                             </li>
 
                             <li class="submenu-item ">
-                                <a href="{{ route('kategori-blog.index') }}" class="submenu-link">Riwayat Blog</a>
+                                <a href="{{ route('riwayat-blog.index') }}" class="submenu-link">Riwayat Blog</a>
 
                             </li>
 

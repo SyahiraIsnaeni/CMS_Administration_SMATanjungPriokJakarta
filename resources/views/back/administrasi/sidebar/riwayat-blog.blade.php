@@ -180,7 +180,7 @@
                         </li>
 
                         <li class="submenu-item active ">
-                            <a href="{{ route('riwayat-pengumuman.index') }}" class="submenu-link">Riwayat Blog</a>
+                            <a href="{{ route('riwayat-blog.index') }}" class="submenu-link">Riwayat Blog</a>
 
                         </li>
 

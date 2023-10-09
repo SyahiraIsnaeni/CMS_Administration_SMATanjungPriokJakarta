@@ -51,7 +51,7 @@ class StafController extends Controller
     {
         $staf = Staf::find($id);
 
-        return view('back.administrasi.konten.data.staf.edit', compact('staf'));
+        return view('back.administrasi.data.staf.edit', compact('staf'));
     }
 
     public function update(Request $request, $id)

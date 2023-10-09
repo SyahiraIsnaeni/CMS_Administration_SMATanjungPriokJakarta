@@ -7,8 +7,8 @@
   <script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
   <title>SMA Tanjung Priok Jakarta</title>
   <!-- add icon link -->
-  <link rel="icon" href="assets/logo.png" type="image/x-icon" />
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" href="{{asset('front/logo.png')}}" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="{{asset('front/css/style.css')}}" />
   <link rel="icon" href="2.jpeg" />
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -26,7 +26,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #136a71; justify-content: center">
     <div class="container" style="background-color: #136a71" style="align-items: center">
       <a class="navbar-brand" style="font-size: 15px; text-align: center; float: center" href="beranda.html">
-        <img src="assets/logo.png" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>     
+        <img src="{{asset('front/logo.png')}}" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>     
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -35,10 +35,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav " style="font-weight: bolder; letter-spacing: 0px">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="beranda.html">Beranda</a>
+              <a class="nav-link active" aria-current="page" href="/">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="profil.html">Profil</a>
+              <a class="nav-link" href="{{ 'profil' }}">Profil</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pendidik.html">Guru & Staf</a>

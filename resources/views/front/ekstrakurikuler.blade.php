@@ -7,7 +7,7 @@
     <title>SMA Tanjung Priok Jakarta</title>
     <!-- add icon link -->
     <link rel="icon" href="assets/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="ekstrakurikuler.css" />
+    <link rel="stylesheet" type="text/css" href="{{asset('front/css/ekstrakurikuler.css')}}" />
     <link rel="icon" href="2.jpeg" />
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -20,43 +20,43 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 
     <!-- NAVBAR -->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #136a71; justify-content: center">
-        <div class="container" style="background-color: #136a71" style="align-items: center">
-          <a class="navbar-brand" style="font-size: 15px; text-align: center; float: center" href="index.html">
-            <img src="assets/logo.png" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <nav>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav" style="font-weight: bolder; letter-spacing: 0px">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Beranda</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="profil.html">Profil</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pendidik.html">Guru & Staf</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Galeri.html">Galeri</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="E-Learning.html">E-Learning</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="gallery.html">Kontak</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <a class="cta" href="#" style="color: #136a71"><button style="border-radius: 6px; color: #136a71">Login</button></a>
-        </div>
-      </nav>
-    </header>
+    <section id="navigationbar">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #136a71">
+    <div class="container">
+      <a class="navbar-brand" style="font-size: 15px; text-align: center; float: center" href="{{ 'beranda' }}">
+        <img src="{{asset('front/logo.png')}}" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>     
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+              <a class="nav-link" href="{{ 'beranda' }}">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ 'front-profil' }}">Profil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ 'front-pendidik' }}">Guru & Staf</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ 'front-galeri' }}">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">E-Learning</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url('#kontak-kami') }}">Kontak</a>
+            </li>
+          <li class="nav-item">
+            <a class="cta" href="#" style="color: #136a71"><button style="border-radius: 6px; color: #136a71">Login</button></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </section>
 
     <!-- ekstrakurikuler -->
     <section id="ekskul" style="margin-top: 40px">
@@ -130,7 +130,7 @@
           </ul>
           <ul class="box">
             <li class="link_name">Quick Link</li>
-            <li><a href="beranda.html">Home</a></li>
+            <li><a href="{{ 'beranda' }}">Home</a></li>
             <li><a href="#kontak-kami">Sitemap</a></li>
           </ul>
           <ul class="box">

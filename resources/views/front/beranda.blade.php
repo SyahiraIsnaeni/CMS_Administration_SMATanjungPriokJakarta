@@ -346,26 +346,71 @@
         <div class="card-prestasi me-3">
           <a href="#" class="text-decoration-none">
             <img src="{{asset('front/prestasisiswa.png')}}" style="border-radius: 15px" width="525" height="370">
+            <div class="card-title rounded text-center"
+                 style="padding-left: 5px;padding-bottom: 2px;
+                  padding-top: 5px;padding-right: 5px; width: 480px; height: 97px;
+                  background-color: white;border-radius: 3px;
+                  margin-left: 35px;border: 1px solid #000;margin-top: -50px;position: relative">
+              <p style="color: black;font-size: 15px;font-weight: bold;">
+                Ketahui Kinerja Kepala Sekolah Dalam Rangka Mewujudkan Kemajuan Pendidikan (1)
+              </p>
+            </div>
           </a>
         </div>
         <div class="card-prestasi me-3">
           <a href="#" class="text-decoration-none">
             <img src="{{asset('front/prestasi2.png')}}" style="border-radius: 15px" width="525" height="370">
+            <div class="card-title rounded text-center"
+                 style="padding-left: 5px;padding-bottom: 2px;
+                  padding-top: 5px;padding-right: 5px; width: 480px; height: 97px;
+                  background-color: white;border-radius: 3px;
+                  margin-left: 35px;border: 1px solid #000;margin-top: -50px;position: relative">
+              <p style="color: black;font-size: 15px;font-weight: bold;">
+                Ketahui Kinerja Kepala Sekolah Dalam Rangka Mewujudkan Kemajuan Pendidikan (1)
+              </p>
+            </div>
           </a>
         </div>
         <div class="card-prestasi me-3">
           <a href="#" class="text-decoration-none">
             <img src="{{asset('front/prestasi3.png')}}" style="border-radius: 15px" width="525" height="370">
+            <div class="card-title rounded text-center"
+                 style="padding-left: 5px;padding-bottom: 2px;
+                  padding-top: 5px;padding-right: 5px; width: 480px; height: 97px;
+                  background-color: white;border-radius: 3px;
+                  margin-left: 35px;border: 1px solid #000;margin-top: -50px;position: relative">
+              <p style="color: black;font-size: 15px;font-weight: bold;">
+                Ketahui Kinerja Kepala Sekolah Dalam Rangka Mewujudkan Kemajuan Pendidikan (1)
+              </p>
+            </div>
           </a>
         </div>
         <div class="card-prestasi me-3">
           <a href="#" class="text-decoration-none">
             <img src="{{asset('front/prestasisiswa.png')}}" style="border-radius: 15px" width="525" height="370">
+            <div class="card-title rounded text-center"
+                 style="padding-left: 5px;padding-bottom: 2px;
+                  padding-top: 5px;padding-right: 5px; width: 480px; height: 97px;
+                  background-color: white;border-radius: 3px;
+                  margin-left: 35px;border: 1px solid #000;margin-top: -50px;position: relative">
+              <p style="color: black;font-size: 15px;font-weight: bold;">
+                Ketahui Kinerja Kepala Sekolah Dalam Rangka Mewujudkan Kemajuan Pendidikan (1)
+              </p>
+            </div>
           </a>
         </div>
         <div class="card-prestasi me-3">
           <a href="#" class="text-decoration-none">
             <img src="{{asset('front/prestasisiswa.png')}}" style="border-radius: 15px" width="525" height="370">
+            <div class="card-title rounded text-center"
+                 style="padding-left: 5px;padding-bottom: 2px;
+                  padding-top: 5px;padding-right: 5px; width: 480px; height: 97px;
+                  background-color: white;border-radius: 3px;
+                  margin-left: 35px;border: 1px solid #000;margin-top: -50px;position: relative">
+              <p style="color: black;font-size: 15px;font-weight: bold;">
+                Ketahui Kinerja Kepala Sekolah Dalam Rangka Mewujudkan Kemajuan Pendidikan (1)
+              </p>
+            </div>
           </a>
         </div>
       </div>

@@ -17,12 +17,12 @@ class GaleriController extends Controller
     public function index()
     {
         $galeri = Galeri::paginate(10);
-        return view('back.administrasi.galeri.view', compact('galeri'));
+        return view('back.administrasi.konten.galeri.view', compact('galeri'));
     }
 
     public function create()
     {
-        return view('back.administrasi.galeri.add');
+        return view('back.administrasi.konten.galeri.add');
     }
 
     public function store(Request $request)

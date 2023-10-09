@@ -26,7 +26,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #136a71; justify-content: center">
     <div class="container" style="background-color: #136a71" style="align-items: center">
       <a class="navbar-brand" style="font-size: 15px; text-align: center; float: center" href="beranda.html">
-        <img src="{{asset('front/logo.png')}}" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>     
+        <img src="{{asset('front/logo.png')}}" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -52,7 +52,7 @@
             <li class="nav-item">
               <a class="nav-link" href="{{ url('#kontak-kami') }}">Kontak</a>
             </li>
-           
+
           </ul>
           <a class="cta" href="#" style="color: #136a71"><button style="border-radius: 6px; color: #136a71">Login</button></a>
         </div>
@@ -186,7 +186,7 @@
     margin-top: 50px;"><b>Ekstrakurikuler</b></h2>
   <div class="container">
     <div class="row">
-      <div class="col-1 d-flex justify-content-start" style="margin-top: 95px;margin-left: 50px">
+      <div class="col-1 d-flex justify-content-start" style="margin-top: 95px;margin-left: 60px">
         <button id="arrow-left-ekskul" onclick="prevEkskul()" style="border-radius: 50px;
               background-color: #bce7eb; padding-left: 10px;padding-bottom: 10px;
                     padding-top: 12px;padding-right: 16px; width: 76px;height: 73px;margin-top: 90px;
@@ -198,99 +198,28 @@
         </button>
       </div>
       <div class="main-card col-4 d-flex justify-content-start" id="main-card-ekskul"
-           style="overflow-x: hidden;margin-top: 40px">
-        <div class="card-ekskul me-3">
-          <a href="{{ 'front-ekstrakurikuler' }}"class="text-decoration-none">
-            <img src="{{asset('front/bultang.png')}}" class="rounded" width="420" height="370">
-            <p style="color: black;font-size: 26px;font-weight: bold;margin-bottom: -10px;
-                         text-align: center">
-              Bulu Tangkis
-            </p>
-            <p style="color: black;font-size: 20px;text-align: center">
-              Bulu Tangkis SMA Tanjung Priok
-            </p>
-            <div>
-              <button href="{{ 'front-ekstrakurikuler' }}"style="width: 210px; height: 50px;background-color: white;font-size: 20px;border: 2px solid #000;
+           style="overflow-x: hidden;margin-top: 10px">
+          @forelse ($ekstrakurikuler as $row)
+              <div class="card-ekskul me-3">
+                  <img src="{{asset('uploads/'.$row->logo) }}" class="rounded" width="420" height="390" style="margin-left: 10px">
+                  <p style="color: black;font-size: 26px;font-weight: bold;margin-bottom: -10px;
+                         text-align: center;margin-top: -15px">
+                      {{$row->nama}}
+                  </p>
+                  <p style="color: black;font-size: 20px;text-align: center">
+                      {{$row->nama}} SMA Tanjung Priok Jakarta
+                  </p>
+                  <div style="margin-left: 5px">
+                      <button href="#"style="width: 210px; height: 50px;background-color: white;font-size: 20px;border: 2px solid #000;
                     border-radius: 8px; display: block;margin: auto;margin-top: 10px">
-                Selengkapnya
-              </button>
-            </div>
-          </a>
-        </div>
-        <div class="card-ekskul me-3">
-          <a href="{{ 'front-ekstrakurikuler' }}"class="text-decoration-none">
-            <img src="{{asset('front/basket.png')}}" class="rounded" width="420" height="370">
-            <p style="color: black;font-size: 26px;font-weight: bold;margin-bottom: -10px;
-                         text-align: center">
-              Basket
-            </p>
-            <p style="color: black;font-size: 20px;text-align: center">
-              Basket SMA Tanjung Priok
-            </p>
-            <div>
-              <button href="{{ 'front-ekstrakurikuler' }}"style="width: 210px; height: 50px;background-color: white;font-size: 20px;border: 2px solid #000;
-                    border-radius: 8px; display: block;margin: auto;margin-top: 10px">
-                Selengkapnya
-              </button>
-            </div>
-          </a>
-        </div>
-        <div class="card-ekskul me-3">
-          <a href="{{ 'front-ekstrakurikuler' }}"class="text-decoration-none">
-            <img src="{{asset('front/paskibra.png')}}"class="rounded" width="420" height="370">
-            <p style="color: black;font-size: 26px;font-weight: bold;margin-bottom: -10px;
-                         text-align: center">
-              Paskibra
-            </p>
-            <p style="color: black;font-size: 20px;text-align: center">
-              Paskibra SMA Tanjung Priok
-            </p>
-            <div>
-              <button href="{{ 'front-ekstrakurikuler' }}"style="width: 210px; height: 50px;background-color: white;font-size: 20px;border: 2px solid #000;
-                    border-radius: 8px; display: block;margin: auto;margin-top: 10px">
-                Selengkapnya
-              </button>
-            </div>
-          </a>
-        </div>
-        <div class="card-ekskul me-3">
-          <a href="{{ 'front-ekstrakurikuler' }}"class="text-decoration-none">
-            <img src="{{asset('front/logoekskul.png')}}" class="rounded" width="420" height="370">
-            <p style="color: black;font-size: 26px;font-weight: bold;margin-bottom: -10px;
-                         text-align: center">
-              Pramuka
-            </p>
-            <p style="color: black;font-size: 20px;text-align: center">
-              Pramuka SMA Tanjung Priok
-            </p>
-            <div>
-              <button href="{{ 'front-ekstrakurikuler' }}"style="width: 210px; height: 50px;background-color: white;font-size: 20px;border: 2px solid #000;
-                    border-radius: 8px; display: block;margin: auto;margin-top: 10px">
-                Selengkapnya
-              </button>
-            </div>
-          </a>
-        </div>
-        <div class="card-ekskul me-3">
-          <a href="{{ 'front-ekstrakurikuler' }}"class="text-decoration-none">
-            <img src="{{asset('front/drumband.png')}}" class="rounded" width="420" height="370">
-            <p style="color: black;font-size: 26px;font-weight: bold;margin-bottom: -10px;
-                         text-align: center">
-              Drumband
-            </p>
-            <p style="color: black;font-size: 20px;text-align: center">
-              Drumband SMA Tanjung Priok
-            </p>
-            <div>
-              <button href="{{ 'front-ekstrakurikuler' }}"style="width: 210px; height: 50px;background-color: white;font-size: 20px;border: 2px solid #000;
-                    border-radius: 8px; display: block;margin: auto;margin-top: 10px">
-                Selengkapnya
-              </button>
-            </div>
-          </a>
-        </div>
+                          Selengkapnya
+                      </button>
+                  </div>
+              </div>
+          @empty
+          @endforelse
       </div>
-      <div class="col-1 d-flex justify-content-start" style="margin-top: 95px">
+      <div class="col-1 d-flex justify-content-start" style="margin-top: 92px; margin-left:8px">
         <div>
           <button id="arrow-right-ekskul" onclick="nextEkskul()" style="border-radius: 50px;
               background-color: #bce7eb; padding-left: 15px;padding-bottom: 10px;
@@ -343,76 +272,23 @@
       </div>
       <div class="main-card col-5 d-flex justify-content-start" id="main-card-prestasi"
            style="overflow-x: hidden;margin-top: 60px">
-        <div class="card-prestasi me-3">
-          <a href="#" class="text-decoration-none">
-            <img src="{{asset('front/prestasisiswa.png')}}" style="border-radius: 15px" width="525" height="370">
-            <div class="card-title rounded text-center"
-                 style="padding-left: 5px;padding-bottom: 2px;
-                  padding-top: 5px;padding-right: 5px; width: 480px; height: 97px;
-                  background-color: white;border-radius: 3px;
-                  margin-left: 35px;border: 1px solid #000;margin-top: -50px;position: relative">
-              <p style="color: black;font-size: 15px;font-weight: bold;">
-                Ketahui Kinerja Kepala Sekolah Dalam Rangka Mewujudkan Kemajuan Pendidikan (1)
-              </p>
+          @forelse ($prestasi as $row)
+            <div class="card-prestasi me-3">
+              <a href="#" class="text-decoration-none">
+                <img src="{{asset('uploads/'.$row->foto) }}" style="border-radius: 15px" width="525" height="370">
+                <div class="card-title d-flex justify-content-center rounded text-center"
+                     style="padding-left: 5px;padding-bottom: 2px;
+                      padding-top: 5px;padding-right: 7px; width: 480px; height: 97px;
+                      background-color: white;border-radius: 3px;
+                      margin-left: 23px;border: 1px solid #000;margin-top: -50px;position: relative">
+                  <p style="color: black;font-size: 21px;font-weight: bold;margin-top: 3px">
+                      {{$row->nama}}
+                  </p>
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
-        <div class="card-prestasi me-3">
-          <a href="#" class="text-decoration-none">
-            <img src="{{asset('front/prestasi2.png')}}" style="border-radius: 15px" width="525" height="370">
-            <div class="card-title rounded text-center"
-                 style="padding-left: 5px;padding-bottom: 2px;
-                  padding-top: 5px;padding-right: 5px; width: 480px; height: 97px;
-                  background-color: white;border-radius: 3px;
-                  margin-left: 35px;border: 1px solid #000;margin-top: -50px;position: relative">
-              <p style="color: black;font-size: 15px;font-weight: bold;">
-                Ketahui Kinerja Kepala Sekolah Dalam Rangka Mewujudkan Kemajuan Pendidikan (1)
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="card-prestasi me-3">
-          <a href="#" class="text-decoration-none">
-            <img src="{{asset('front/prestasi3.png')}}" style="border-radius: 15px" width="525" height="370">
-            <div class="card-title rounded text-center"
-                 style="padding-left: 5px;padding-bottom: 2px;
-                  padding-top: 5px;padding-right: 5px; width: 480px; height: 97px;
-                  background-color: white;border-radius: 3px;
-                  margin-left: 35px;border: 1px solid #000;margin-top: -50px;position: relative">
-              <p style="color: black;font-size: 15px;font-weight: bold;">
-                Ketahui Kinerja Kepala Sekolah Dalam Rangka Mewujudkan Kemajuan Pendidikan (1)
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="card-prestasi me-3">
-          <a href="#" class="text-decoration-none">
-            <img src="{{asset('front/prestasisiswa.png')}}" style="border-radius: 15px" width="525" height="370">
-            <div class="card-title rounded text-center"
-                 style="padding-left: 5px;padding-bottom: 2px;
-                  padding-top: 5px;padding-right: 5px; width: 480px; height: 97px;
-                  background-color: white;border-radius: 3px;
-                  margin-left: 35px;border: 1px solid #000;margin-top: -50px;position: relative">
-              <p style="color: black;font-size: 15px;font-weight: bold;">
-                Ketahui Kinerja Kepala Sekolah Dalam Rangka Mewujudkan Kemajuan Pendidikan (1)
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="card-prestasi me-3">
-          <a href="#" class="text-decoration-none">
-            <img src="{{asset('front/prestasisiswa.png')}}" style="border-radius: 15px" width="525" height="370">
-            <div class="card-title rounded text-center"
-                 style="padding-left: 5px;padding-bottom: 2px;
-                  padding-top: 5px;padding-right: 5px; width: 480px; height: 97px;
-                  background-color: white;border-radius: 3px;
-                  margin-left: 35px;border: 1px solid #000;margin-top: -50px;position: relative">
-              <p style="color: black;font-size: 15px;font-weight: bold;">
-                Ketahui Kinerja Kepala Sekolah Dalam Rangka Mewujudkan Kemajuan Pendidikan (1)
-              </p>
-            </div>
-          </a>
-        </div>
+          @empty
+          @endforelse
       </div>
       <div class="col-1 d-flex justify-content-start" style="margin-top: 120px;margin-left: -5px">
         <div>
@@ -427,7 +303,7 @@
             <i class="fa-solid fa-chevron-right fa-2xl"></i>
           </button>
           <script>
-            
+
           </script>
         </div>
       </div>
@@ -449,158 +325,149 @@
 
 <!--Berita dan Pengumuman-->
 <section id="pengumuman">
-  <div class="background-1">  
+  <div class="background-1">
     <div class="container mt-5">
       <div class="row">
         <div class="col-lg-5 offset-lg-1 col-md-12 col-sm-12">
           <!-- Menambahkan opening <div> yang hilang di atas elemen <h3> -->
-          <h3 class="judul1">PENGUMUMAN</h3>
-          <ul class="square">
-            <li class="baris1">
-              <a href="{{ 'front-pengumuman' }}">
-                <div class="kotak3">Tanggal</div> 
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
-              </a>
-            </li>
-            <li class="baris2">
-              <a href="{{ 'front-pengumuman' }}">
-                <div class="kotak4">Tanggal</div> 
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
-              </a>
-            </li>
-            <li class="baris3">
-              <a href="{{ 'front-pengumuman' }}">
-                <div class="kotak5">Tanggal</div> 
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
-              </a>
-            </li>
-            <li class="baris4">
-              <a href="{{ 'front-pengumuman' }}">
-                <div class="kotak6">Tanggal</div> 
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
-              </a>
-            </li>
-            <li class="baris5">
-              <a href="{{ 'front-pengumuman' }}">
-                <div class="kotak7">Tanggal</div> 
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
-              </a>
-            </li>
-          </ul>
+          <h2 class="judul1" style="margin-bottom: 30px;margin-left: -60px;margin-top: 50px">Pengumuman</h2>
+            @forelse ($pengumuman as $row)
+                <ul class="list-group list-group-flush" style="margin-left: -50px">
+                    <div class="row mb-3">
+                        <div class="col-3 text-center text-white" style="background-color: black; font-family: Poppins; border-radius: 10px 10px 10px 10px; width: 75px; height: 68px; padding: 5px;padding-top: 10px">
+                            @if (substr($row['created_at'], 5, 2) == '01')
+                                <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JAN</b></span>
+                            @elseif(substr($row['created_at'], 5, 2) == '02')
+                                <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>FEB</b></span>
+                            @elseif(substr($row['created_at'], 5, 2) == '03')
+                                <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>MAR</b></span>
+                            @elseif(substr($row['created_at'], 5, 2) == '04')
+                                <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>APR</b></span>
+                            @elseif(substr($row['created_at'], 5, 2) == '05')
+                                <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>MEI</b></span>
+                            @elseif(substr($row['created_at'], 5, 2) == '06')
+                                <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JUN</b></span>
+                            @elseif(substr($row['created_at'], 5, 2) == '07')
+                                <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JUL</b></span>
+                            @elseif(substr($row['created_at'], 5, 2) == '08')
+                                <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>AGU</b></span>
+                            @elseif(substr($row['created_at'], 5, 2) == '09')
+                                <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>SEP</b></span>
+                            @elseif(substr($row['created_at'], 5, 2) == '10')
+                                <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>OKT</b></span>
+                            @elseif(substr($row['created_at'], 5, 2) == '11')
+                                <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>NOV</b></span>
+                            @elseif(substr($row['created_at'], 5, 2) == '12')
+                                <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>DES</b></span>
+                            @endif
+                        </div>
+                        <div class="col">
+                            <a  href="#" style="color: black" >
+                                <h6 style="margin-top: 10px;text-align:justify;font-size: 17px " class="card-title text-black" >{{$row['judul']}}</h6>
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            @empty
+            @endforelse
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center">
-          <img src="{{asset('front/sekolah1.jpg')}}" class="rounded d-flex" alt="logo" height="370" width="600" />
+            @forelse ($pengumumanPrioritas as $row)
+          <img src="{{asset('uploads/'.$row->gambar) }}" style="margin-top: 130px" class="rounded d-flex" alt="logo" height="370" width="600" />
+            @empty
+            @endforelse
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
 <section id="berita">
-  <div class="background-2">  
+  <div class="background-2">
   <div class="container mt-5">
-    <div class="row">
-      <div class="col-lg-5 col-md-12 col-sm-12 d-flex justify-content-center">
-        <img src="{{asset('front/sekolah1.jpg')}}" class="rounded d-flex" alt="logo" height="370" width="600" />
+      <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center">
+              @forelse ($beritaPrioritas as $row)
+                  <img src="{{asset('uploads/'.$row->gambar) }}" style="margin-top: 60px" class="rounded d-flex" alt="logo" height="400" width="630" />
+              @empty
+              @endforelse
+          </div>
+          <div class="col-lg-5 offset-lg-1 col-md-12 col-sm-12">
+              <!-- Menambahkan opening <div> yang hilang di atas elemen <h3> -->
+              <h2 class="judul1" style="margin-bottom: 30px;margin-left: -60px;margin-top: 50px">Berita Terkini</h2>
+              @forelse ($berita as $row)
+                  <ul class="list-group list-group-flush" style="margin-left: -50px">
+                      <div class="row mb-3">
+                          <div class="col-3 text-center text-white" style="background-color: black; font-family: Poppins; border-radius: 10px 10px 10px 10px; width: 75px; height: 68px; padding: 5px;padding-top: 10px">
+                              @if (substr($row['created_at'], 5, 2) == '01')
+                                  <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JAN</b></span>
+                              @elseif(substr($row['created_at'], 5, 2) == '02')
+                                  <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>FEB</b></span>
+                              @elseif(substr($row['created_at'], 5, 2) == '03')
+                                  <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>MAR</b></span>
+                              @elseif(substr($row['created_at'], 5, 2) == '04')
+                                  <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>APR</b></span>
+                              @elseif(substr($row['created_at'], 5, 2) == '05')
+                                  <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>MEI</b></span>
+                              @elseif(substr($row['created_at'], 5, 2) == '06')
+                                  <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JUN</b></span>
+                              @elseif(substr($row['created_at'], 5, 2) == '07')
+                                  <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>JUL</b></span>
+                              @elseif(substr($row['created_at'], 5, 2) == '08')
+                                  <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>AGU</b></span>
+                              @elseif(substr($row['created_at'], 5, 2) == '09')
+                                  <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>SEP</b></span>
+                              @elseif(substr($row['created_at'], 5, 2) == '10')
+                                  <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>OKT</b></span>
+                              @elseif(substr($row['created_at'], 5, 2) == '11')
+                                  <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>NOV</b></span>
+                              @elseif(substr($row['created_at'], 5, 2) == '12')
+                                  <span class='date'>{{substr($row['created_at'], 8, 2)}}</span><br><span class='month'><b>DES</b></span>
+                              @endif
+                          </div>
+                          <div class="col">
+                              <a  href="#" style="color: black" >
+                                  <h6 style="margin-top: 10px;text-align:justify;font-size: 17px " class="card-title text-black" >{{$row['judul']}}</h6>
+                              </a>
+                          </div>
+                      </div>
+                  </ul>
+              @empty
+              @endforelse
+          </div>
       </div>
-      <div class="col-lg-6 offset-lg-1 col-md-12 col-sm-12 " style="font-family: Poppins; padding-left: 40px">
-        <h3 class="judul2">BERITA TERKINI</h3>
-        <ul class="square">
-                    <li class="baris6"><a href="{{ 'front-berita' }}"><div class="kotak3">Tanggal</div> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</a></li>
-                    <li class="baris7"><a href="{{ 'front-berita' }}"><div class="kotak4">Tanggal</div> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</a></li>
-                    <li class="baris9"><a href="{{ 'front-berita' }}"><div class="kotak5">Tanggal</div> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</a></li>
-                    <li class="baris9"><a href="{{ 'front-berita' }}"><div class="kotak6">Tanggal</div> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</a></li>
-                    <li class="baris10"><a href="{{ 'front-berita' }}"><div class="kotak7">Tanggal</div> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</a></li>
-                </ul>
-      </div>
-    </div>
   </div>
 </div>
 </section>
 
 <!-- Blog Pendidik -->
-<section id="blog" class="overflow-hidden" style="margin-top: -100px">
-  <h2 style="text-align: center;margin-bottom: 30px;font-size: 37px"><b>Blog Pendidik</b></h2>
+<section id="blog" class="overflow-hidden" style="margin-top: -20px">
+  <h2 style="text-align: center;margin-bottom: 40px;font-size: 37px"><b>Blog Pendidik</b></h2>
   <div class="container">
     <div class="row">
-     
       <div class="col-1 d-flex justify-content-start">
         <button id="arrow-left" onclick="prev()" onmouseover="this.style.backgroundColor='#136A71';this.style.color= '#ffffff'" onmouseout="this.style.backgroundColor= '#ffffff';this.style.color= 'black'" style="background-color: rgb(255, 255, 255); color: black;">
           <i class="panah fa-solid fa-chevron-left fa-lg-2xl fa-md-xxl fa-sm-xl"></i>
         </button>
       </div>
-      <div class="main-card col-10 d-flex justify-content-start" id="main-card" style="overflow-x: hidden;">
-        <div class="card-blog me-3">
+        <div class="main-card col-10 d-flex justify-content-start" id="main-card" style="overflow-x: hidden; height: auto;">
+        @forelse ($blog as $row)
+          <div class="card-blog me-3">
           <a href="{{ 'front-blog' }}" class="text-decoration-none">
-            <img src="{{asset('front/blog1.jpg')}}"class="rounded" width="350" height="240">
+            <img src="{{asset('uploads/'.$row->gambar) }}"class="rounded" width="350" height="240">
             <div class="card-title rounded text-center"
                  style="padding-left: 5px;padding-bottom: 2px;
                   padding-top: 5px;padding-right: 5px; width: 280px; height: 97px;
                   background-color: white;border-radius: 3px;
                   margin-left: 35px;border: 1px solid #000;margin-top: -50px;position: relative">
               <p style="color: black;font-size: 15px;font-weight: bold;">
-                Ketahui Kinerja Kepala Sekolah Dalam Rangka Mewujudkan Kemajuan Pendidikan (1)
+                  {{$row['judul']}}
               </p>
             </div>
           </a>
-        </div>
-        <div class="card-blog me-3">
-          <a href="{{ 'front-blog' }}" class="text-decoration-none">
-            <img src="{{asset('front/blog2.jpg')}}" class="rounded" width="350" height="240">
-            <div class="card-title rounded text-center"
-                 style="padding-left: 5px;padding-bottom: 2px;
-                  padding-top: 5px;padding-right: 5px; width: 280px; height: 97px;
-                  background-color: white;border-radius: 3px;
-                  margin-left: 35px;border: 1px solid #000;margin-top: -50px;position: relative">
-              <p style="color: black;font-size: 15px;font-weight: bold;">
-                Ketahui Kinerja Kepala Sekolah Dalam Rangka Mewujudkan Kemajuan Pendidikan (2)
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="card-blog me-3">
-          <a href="{{ 'front-blog' }}" class="text-decoration-none">
-            <img src="{{asset('front/blog3.jpg')}}"class="rounded" width="350" height="240">
-            <div class="card-title rounded text-center"
-                 style="padding-left: 5px;padding-bottom: 2px;
-                  padding-top: 5px;padding-right: 5px; width: 280px; height: 97px;
-                  background-color: white;border-radius: 3px;
-                  margin-left: 35px;border: 1px solid #000;margin-top: -50px;position: relative">
-              <p style="color: black;font-size: 15px;font-weight: bold;">
-                Ketahui Kinerja Kepala Sekolah Dalam Rangka Mewujudkan Kemajuan Pendidikan (3)
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="card-blog me-3">
-          <a href="{{ 'front-blog' }}" class="text-decoration-none">
-            <img src="{{asset('front/blog1.jpg')}}"class="rounded" width="350" height="240">
-            <div class="card-title rounded text-center"
-                 style="padding-left: 5px;padding-bottom: 2px;
-                  padding-top: 5px;padding-right: 5px; width: 280px; height: 97px;
-                  background-color: white;border-radius: 3px;
-                  margin-left: 35px;border: 1px solid #000;margin-top: -50px;position: relative">
-              <p style="color: black;font-size: 15px;font-weight: bold;">
-                Ketahui Kinerja Kepala Sekolah Dalam Rangka Mewujudkan Kemajuan Pendidikan (4)
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="card-blog me-3">
-          <a href="{{ 'front-blog' }}" class="text-decoration-none">
-            <img src="{{asset('front/smp.png')}}"class="rounded" width="350" height="240">
-            <div class="card-title rounded text-center"
-                 style="padding-left: 5px;padding-bottom: 2px;
-                  padding-top: 5px;padding-right: 5px; width: 280px; height: 97px;
-                  background-color: white;border-radius: 3px;
-                  margin-left: 35px;border: 1px solid #000;margin-top: -50px;position: relative">
-              <p style="color: black;font-size: 15px;font-weight: bold;">
-                Ketahui Kinerja Kepala Sekolah Dalam Rangka Mewujudkan Kemajuan Pendidikan (5)
-              </p>
-            </div>
-          </a>
-        </div>
+          </div>
+          @empty
+          @endforelse
       </div>
       <div class="col-1 d-flex justify-content-start">
         <div>
@@ -650,7 +517,7 @@
           </ul>
         </div>
         <div class="col-6" style="width: 200px;height: 200px;margin-left: -25px">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.118510695867!2d106.90850987484097!3d-6.114744293871835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a201f9790436b%3A0xe7648e8e720cd1e!2sSenior%20High%20School%20of%20Tanjung%20Priok!5e0!3m2!1sen!2sid!4v1695373061574!5m2!1sen!2sid" 
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.118510695867!2d106.90850987484097!3d-6.114744293871835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a201f9790436b%3A0xe7648e8e720cd1e!2sSenior%20High%20School%20of%20Tanjung%20Priok!5e0!3m2!1sen!2sid!4v1695373061574!5m2!1sen!2sid"
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>

@@ -32,13 +32,19 @@ class PengumumanController extends Controller
 
     public function store(Request $request)
     {
-        $data = $request->all();
-
         $this->validate($request, [
             'gambar' => 'required|image|mimes:jpeg,jpg,png',
             'judul' => 'required|min:5',
             'dokumen' => 'mimes:pdf,doc,docx,xls,xlsx,ppt,pptx',
         ]);
+
+        if (!$request->hasFile('gambar')) {
+            // File gambar tidak diunggah
+            Alert::error('Gagal', 'File gambar wajib diunggah.');
+            return redirect()->route('pengumuman.create');
+        }
+
+        $data = $request->all();
 
         if (
             is_null($data['penulis']) ||
@@ -51,12 +57,16 @@ class PengumumanController extends Controller
         } else {
             $data['slug'] = Str::slug($request->judul);
 
-            // Mengambil nama asli dokumen
-            $nama_dokumen_asli = $request->file('dokumen')->getClientOriginalName();
-            $nama_gambar_asli = $request->file('gambar')->getClientOriginalName();
+            if ($request->hasFile('dokumen')) {
+                // Mengambil nama asli dokumen
+                $nama_dokumen_asli = $request->file('dokumen')->getClientOriginalName();
+                // Menyimpan file dokumen dengan nama asli
+                $data['dokumen'] = $request->file('dokumen')->storeAs('dokumen_pengumuman', $nama_dokumen_asli);
+            }
 
-            // Menyimpan file dengan nama asli
-            $data['dokumen'] = $request->file('dokumen')->storeAs('dokumen_pengumuman', $nama_dokumen_asli);
+            // Mengambil nama asli gambar
+            $nama_gambar_asli = $request->file('gambar')->getClientOriginalName();
+            // Menyimpan file gambar dengan nama asli
             $data['gambar'] = $request->file('gambar')->storeAs('pengumuman', $nama_gambar_asli);
 
             Pengumuman::create($data);
@@ -66,6 +76,7 @@ class PengumumanController extends Controller
 
         return redirect()->route('pengumuman.index');
     }
+
 
 
 

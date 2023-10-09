@@ -15,7 +15,7 @@ class FrontController extends Controller
     public function index()
     {
         $blog = Blog::where('is_active', '1')->limit(7)->orderByDesc('created_at')->get();
-        $berita = Berita::where('is_active', '1')->limit(5)->orderByDesc('created_at')->get();
+        $berita = Berita::where('is_active', '1')->limit(4)->orderByDesc('created_at')->get();
         $pengumuman = Pengumuman::where('is_active', '1')->limit(5)->orderByDesc('created_at')->get();
 
         $ekstrakurikuler = Ekstrakurikuler::orderByDesc('created_at')->get();

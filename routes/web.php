@@ -44,7 +44,9 @@ Route::group(['middleware' => 'revalidate'], function(){
 
 require __DIR__.'/auth.php';
 
-Route::get('/beranda', function () {
+Route::get('/', [\App\Http\Controllers\FrontController::class, 'index'])->name('beranda');
+
+Route::get('/front-beranda', function () {
     return view('front.beranda');
 });
 Route::get('/front-berita', function () {

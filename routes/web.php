@@ -49,6 +49,7 @@ Route::get('/', [\App\Http\Controllers\FrontController::class, 'index'])->name('
 Route::get('/profil', [\App\Http\Controllers\FrontController::class, 'profil'])->name('profil');
 Route::get('/guru-staf', [\App\Http\Controllers\FrontController::class, 'guru_staf'])->name('guru-staf');
 Route::get('/prestasi-sekolah', [\App\Http\Controllers\FrontController::class, 'prestasi'])->name('prestasi');
+Route::get('/galeri-sekolah', [\App\Http\Controllers\FrontController::class, 'galeri'])->name('galeri');
 Route::get('/detail-ekstrakurikuler/{id}', [\App\Http\Controllers\FrontController::class, 'ekstrakurikuler'])->name('detail-ekstrakurikuler');
 
 Route::get('/front-berita', function () {
@@ -68,10 +69,6 @@ Route::get('/front-daftar-pengumuman', function () {
 });
 Route::get('/front-detail-galeri', function () {
     return view('front.detail-galeri');
-});
-
-Route::get('/front-galeri', function () {
-    return view('front.galeri');
 });
 
 Route::get('/front-pengumuman', function () {

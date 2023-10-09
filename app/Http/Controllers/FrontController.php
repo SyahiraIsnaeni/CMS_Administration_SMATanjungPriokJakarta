@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Ekstrakurikuler;
 use App\Models\Fasilitas;
+use App\Models\Galeri;
 use App\Models\Guru;
 use App\Models\ImagesEkstrakurikuler;
+use App\Models\ImagesGaleri;
 use App\Models\Staf;
 use App\Models\HariNasional;
 use App\Models\Pengumuman;
@@ -48,8 +50,8 @@ class FrontController extends Controller
 
     public function guru_staf()
     {
-        $guru = Guru::all();
-        $staf = Staf::all();
+        $guru = Guru::orderByDesc('created_at')->get();
+        $staf = Staf::orderByDesc('created_at')->get();
 
         return view('front.guru-staf', compact('guru','staf'));
     }
@@ -70,5 +72,23 @@ class FrontController extends Controller
 
         return view('front.ekstrakurikuler', compact('ekstrakurikuler'));
     }
+
+    public function galeri()
+    {
+        $galeri = Galeri::orderByDesc('created_at')->get();
+
+        return view('front.galeri', compact('galeri'));
+    }
+
+    public function detailGaleri($id)
+    {
+        $ekstrakurikuler = Ekstrakurikuler::where('id', $id)->first();
+
+        // Mengambil data gambar terkait untuk Ekstrakurikuler
+        $ekstrakurikuler->image = ImagesEkstrakurikuler::where('ekstrakurikuler_id', $id)->get();
+
+        return view('front.ekstrakurikuler', compact('ekstrakurikuler'));
+    }
+
 
 }

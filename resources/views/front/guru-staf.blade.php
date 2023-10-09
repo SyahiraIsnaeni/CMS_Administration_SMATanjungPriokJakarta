@@ -105,13 +105,13 @@
         <h2 class="mt-5" style="text-align: center; margin-bottom: 30px; font-size: 37px;"><b>Staf SMA Tanjung Priok Jakarta</b></h2>
         <div class="row" style="margin-top: 30px">
             @forelse ($staf as $row)
-          <div class="foto col-lg-3 col-md-6 col-sm-12 d-flex justify-content-start mt-5">
-            <img src="{{asset('front/pendidik-fix.png')}}" class="rounded" width="270" height="350" />
-            <div class="card-title rounded text-center">
-              <p class="nama">{{$row->nama}}</p>
-              <p class="jabatan">{{$row->jabatan}}</p>
-            </div>
-          </div>
+              <div class="foto col-lg-3 col-md-6 col-sm-12 d-flex justify-content-start mt-5">
+                <img src="{{asset('front/pendidik-fix.png')}}" class="rounded" width="270" height="350" />
+                <div class="card-title rounded text-center">
+                  <p class="nama">{{$row->nama}}</p>
+                  <p class="jabatan">{{$row->jabatan}}</p>
+                </div>
+              </div>
             @empty
             @endforelse
         </div>

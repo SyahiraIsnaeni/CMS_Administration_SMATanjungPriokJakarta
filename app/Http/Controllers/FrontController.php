@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Ekstrakurikuler;
 use App\Models\Fasilitas;
 use App\Models\Guru;
+use App\Models\ImagesEkstrakurikuler;
 use App\Models\Staf;
 use App\Models\HariNasional;
 use App\Models\Pengumuman;
@@ -62,8 +63,12 @@ class FrontController extends Controller
 
     public function ekstrakurikuler($id)
     {
-        $ekstrakurikuler = Ekstrakurikuler::where('id', $id);
+        $ekstrakurikuler = Ekstrakurikuler::where('id', $id)->first();
+
+        // Mengambil data gambar terkait untuk Ekstrakurikuler
+        $ekstrakurikuler->image = ImagesEkstrakurikuler::where('ekstrakurikuler_id', $id)->get();
 
         return view('front.ekstrakurikuler', compact('ekstrakurikuler'));
     }
+
 }

@@ -53,6 +53,7 @@
                                                         <tr>
                                                             <th>Nama Ekstrakurikuler</th>
                                                             <th>Logo</th>
+                                                            <th>Foto Kegiatan</th>
                                                             <th>Deskripsi Ekstrakurikuler</th>
                                                             <th>Aksi</th>
                                                         </tr>
@@ -62,7 +63,12 @@
                                                             <tr>
                                                                 <td class="text-bold-500">{{ $row->nama}}</td>
                                                                 <td><img src="{{asset('uploads/'.$row->logo) }}" width="100" height="100" ></td>
-                                                                <td class="text-bold-500">{!! substr($row->deskripsi, 0, 200)!!}</td>
+                                                                <td>
+                                                                    @foreach($row->image as $images)
+                                                                        <img src="{{ asset('uploads/' . $images->image) }}" width="150" height="100">
+                                                                    @endforeach
+                                                                </td>
+                                                                <td class="text-bold-500">{!! substr($row->deskripsi, 0, 300)!!}...</td>
                                                                 <td class="text-bold-500"><a href="{{route('ekstrakurikuler.edit', $row->id) }}" class="btn icon btn-primary"><i class="bi bi-pencil"></i></a>
                                                                     <br>
                                                                     <form action="{{route('ekstrakurikuler.destroy', $row->id)}}" method="post"

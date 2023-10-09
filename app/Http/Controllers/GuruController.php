@@ -51,7 +51,7 @@ class GuruController extends Controller
     {
         $guru = Guru::find($id);
 
-        return view('back.administrasi.konten.data.guru.edit', compact('guru'));
+        return view('back.administrasi.data.guru.edit', compact('guru'));
     }
 
     public function update(Request $request, $id)

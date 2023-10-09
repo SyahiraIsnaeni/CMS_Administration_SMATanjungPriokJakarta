@@ -38,19 +38,19 @@
               <a class="nav-link active" aria-current="page" href="/">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ 'profil' }}">Profil</a>
+              <a class="nav-link" href="{{ 'front-profil' }}">Profil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pendidik.html">Guru & Staf</a>
+              <a class="nav-link" href="{{ 'front-pendidik' }}">Guru & Staf</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="galeri.html">Galeri</a>
+              <a class="nav-link" href="{{ 'front-galeri' }}">Galeri</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">E-Learning</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#kontak-kami">Kontak</a>
+              <a class="nav-link" href="{{ url('#kontak-kami') }}">Kontak</a>
             </li>
            
           </ul>
@@ -66,13 +66,13 @@
   <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="assets/smp.png" class="d-block w-100 carousel-image" data-bs-interval="1000">
+        <img src="{{asset('front/smp.png')}}" class="d-block w-100 carousel-image" data-bs-interval="1000">
       </div>
       <div class="carousel-item">
-        <img src="assets/profil-sekolah.png" class="d-block w-100 carousel-image" data-bs-interval="1000">
+        <img src="{{asset('front/profilsekolah.png')}}"class="d-block w-100 carousel-image" data-bs-interval="1000">
       </div>
       <div class="carousel-item">
-        <img src="assets/sma.jpg" class="d-block w-100 carousel-image" data-bs-interval="1000">
+        <img src="{{asset('front/sma.jpg')}}" class="d-block w-100 carousel-image" data-bs-interval="1000">
       </div>
     </div>
     <a class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -91,7 +91,7 @@
   <div class="container mt-5">
     <div class="row">
       <div class="col-lg-5 col-md-12 col-sm-12 d-flex justify-content-center">
-        <img src="assets/sma.jpg" class="rounded d-flex" alt="logo" height="370" width="600" />
+        <img src="{{asset('front/sma.jpg')}}" class="rounded d-flex" alt="logo" height="370" width="600" />
       </div>
       <div class="col-lg-6 offset-lg-1 col-md-12 col-sm-12 " style="font-family: Poppins; padding-left: 40px">
         <h2 class=" d-flex justify-content-start"><b>SMA Tanjung Priok Jakarta</b></h2>
@@ -107,21 +107,21 @@
 <!-- Floating -->
 <section id="floating" style="background-color: #bce7eb;margin-top: 100px;height: 550px">
   <div class="container" style="width: 100%; display: grid;">
-    <div ><img class="gambarF1" src="assets/bintangF.png" /></div>
+    <div ><img class="gambarF1" src="{{asset('front/bintangF.png')}}"/></div>
     <div>
-      <img class="gambarF2" src="assets/bintangF.png" />
+      <img class="gambarF2" src="{{asset('front/bintangF.png')}}"/>
     </div>
     <div>
-      <img class="gambarPostingan" src="assets/batikfix.png" />
+      <img class="gambarPostingan" src="{{asset('front/batikfix.png')}}" />
       <div id="tulisan">
         <p>
           Keluarga Besar SMA Tanjung Priok Jakarta Mengucapkan Selamat Hari Batik Nasional
         </p>
       </div>
     </div>
-    <div ><img class="gambarF3" src="assets/bintangF.png" /></div>
+    <div ><img class="gambarF3" src="{{asset('front/bintangF.png')}}"/></div>
     <div >
-      <img class="gambarF4" src="assets/bintangF.png" />
+      <img class="gambarF4" src="{{asset('front/bintangF.png')}}"/>
     </div>
   </div>
 </section>
@@ -136,7 +136,7 @@
         " onmouseover="this.style.backgroundColor='#bce7eb';"
              onmouseout="this.style.backgroundColor= '#ffffff';">
           <a href="prestasi.html" class="text-decoration-none">
-            <img src="assets/piala.png" width="240px" height="160px" style="text-align: center">
+            <img src="{{asset('front/piala.png')}}"width="240px" height="160px" style="text-align: center">
             <p style="color: black;font-size: 22px;font-weight: bold;margin-top: -35px;text-align: center">
               Prestasi
             </p>
@@ -147,7 +147,7 @@
              onmouseover="this.style.backgroundColor='#bce7eb';"
              onmouseout="this.style.backgroundColor= '#ffffff';">
           <a href="daftarppb.html" class="text-decoration-none">
-            <img src="assets/pengumuman.png" width="240px" height="160px" style="margin-left: 10px">
+            <img src="{{asset('front/pengumuman.png')}}" width="240px" height="160px" style="margin-left: 10px">
             <p style="color: black;font-size: 22px;font-weight: bold;margin-top: -35px;text-align: center">
               Pengumuman
             </p>
@@ -158,7 +158,7 @@
              onmouseover="this.style.backgroundColor='#bce7eb';"
              onmouseout="this.style.backgroundColor= '#ffffff';">
           <a href="daftarppb.html" class="text-decoration-none">
-            <img src="assets/news.png" width="310px" height="160px" style="margin-left: -35px">
+            <img src="{{asset('front/news.png')}}" width="310px" height="160px" style="margin-left: -35px">
             <p style="color: black;font-size: 22px;font-weight: bold;margin-top: -35px;text-align: center">
               Berita
             </p>
@@ -169,7 +169,7 @@
              onmouseover="this.style.backgroundColor='#bce7eb';"
              onmouseout="this.style.backgroundColor= '#ffffff';">
           <a href="daftarppb.html" class="text-decoration-none">
-            <img src="assets/blog.png" width="250px" height="160px" style="margin-left: -15px">
+            <img src="{{asset('front/blog.png')}}" width="250px" height="160px" style="margin-left: -15px">
             <p style="color: black;font-size: 22px;font-weight: bold;margin-top: -35px;text-align: center">
               Blog Pendidik
             </p>
@@ -194,14 +194,14 @@
                 onmouseover="this.style.boxShadow='1px 2px 2px 2px rgba(0, 0, 0, 0.3)';
                       this.style.backgroundColor='#ffffff'"
                 onmouseout="this.style.backgroundColor= '#bce7eb';this.style.boxShadow='0px 0px 0px 0px rgba(0, 0, 0, 0)'">
-          <img src="assets/panah-kiri.png" width="50" height="50">
+          <img src="{{asset('front/panah-kiri.png')}}" width="50" height="50">
         </button>
       </div>
       <div class="main-card col-4 d-flex justify-content-start" id="main-card-ekskul"
            style="overflow-x: hidden;margin-top: 40px">
         <div class="card-ekskul me-3">
-          <a href="detail_ekstrakurikuler.html" class="text-decoration-none">
-            <img src="assets/bultang.png" class="rounded" width="420" height="370">
+          <a href="{{ 'front-ekstrakurikuler' }}"class="text-decoration-none">
+            <img src="{{asset('front/bultang.png')}}" class="rounded" width="420" height="370">
             <p style="color: black;font-size: 26px;font-weight: bold;margin-bottom: -10px;
                          text-align: center">
               Bulu Tangkis
@@ -210,7 +210,7 @@
               Bulu Tangkis SMA Tanjung Priok
             </p>
             <div>
-              <button href="detail_ekstrakurikuler.html" style="width: 210px; height: 50px;background-color: white;font-size: 20px;border: 2px solid #000;
+              <button href="{{ 'front-ekstrakurikuler' }}"style="width: 210px; height: 50px;background-color: white;font-size: 20px;border: 2px solid #000;
                     border-radius: 8px; display: block;margin: auto;margin-top: 10px">
                 Selengkapnya
               </button>
@@ -218,8 +218,8 @@
           </a>
         </div>
         <div class="card-ekskul me-3">
-          <a href="detail_ekstrakurikuler.html" class="text-decoration-none">
-            <img src="assets/basket.png" class="rounded" width="420" height="370">
+          <a href="{{ 'front-ekstrakurikuler' }}"class="text-decoration-none">
+            <img src="{{asset('front/basket.png')}}" class="rounded" width="420" height="370">
             <p style="color: black;font-size: 26px;font-weight: bold;margin-bottom: -10px;
                          text-align: center">
               Basket
@@ -228,7 +228,7 @@
               Basket SMA Tanjung Priok
             </p>
             <div>
-              <button href="detail_ekstrakurikuler.html" style="width: 210px; height: 50px;background-color: white;font-size: 20px;border: 2px solid #000;
+              <button href="{{ 'front-ekstrakurikuler' }}"style="width: 210px; height: 50px;background-color: white;font-size: 20px;border: 2px solid #000;
                     border-radius: 8px; display: block;margin: auto;margin-top: 10px">
                 Selengkapnya
               </button>
@@ -236,8 +236,8 @@
           </a>
         </div>
         <div class="card-ekskul me-3">
-          <a href="detail_ekstrakurikuler.html" class="text-decoration-none">
-            <img src="assets/Paskibra.png" class="rounded" width="420" height="370">
+          <a href="{{ 'front-ekstrakurikuler' }}"class="text-decoration-none">
+            <img src="{{asset('front/paskibra.png')}}"class="rounded" width="420" height="370">
             <p style="color: black;font-size: 26px;font-weight: bold;margin-bottom: -10px;
                          text-align: center">
               Paskibra
@@ -246,7 +246,7 @@
               Paskibra SMA Tanjung Priok
             </p>
             <div>
-              <button href="detail_ekstrakurikuler.html" style="width: 210px; height: 50px;background-color: white;font-size: 20px;border: 2px solid #000;
+              <button href="{{ 'front-ekstrakurikuler' }}"style="width: 210px; height: 50px;background-color: white;font-size: 20px;border: 2px solid #000;
                     border-radius: 8px; display: block;margin: auto;margin-top: 10px">
                 Selengkapnya
               </button>
@@ -254,8 +254,8 @@
           </a>
         </div>
         <div class="card-ekskul me-3">
-          <a href="detail_ekstrakurikuler.html" class="text-decoration-none">
-            <img src="assets/Logoekskul.png" class="rounded" width="420" height="370">
+          <a href="{{ 'front-ekstrakurikuler' }}"class="text-decoration-none">
+            <img src="{{asset('front/logoekskul.png')}}" class="rounded" width="420" height="370">
             <p style="color: black;font-size: 26px;font-weight: bold;margin-bottom: -10px;
                          text-align: center">
               Pramuka
@@ -264,7 +264,7 @@
               Pramuka SMA Tanjung Priok
             </p>
             <div>
-              <button href="detail_ekstrakurikuler.html" style="width: 210px; height: 50px;background-color: white;font-size: 20px;border: 2px solid #000;
+              <button href="{{ 'front-ekstrakurikuler' }}"style="width: 210px; height: 50px;background-color: white;font-size: 20px;border: 2px solid #000;
                     border-radius: 8px; display: block;margin: auto;margin-top: 10px">
                 Selengkapnya
               </button>
@@ -272,8 +272,8 @@
           </a>
         </div>
         <div class="card-ekskul me-3">
-          <a href="detail_ekstrakurikuler.html" class="text-decoration-none">
-            <img src="assets/drumband.png" class="rounded" width="420" height="370">
+          <a href="{{ 'front-ekstrakurikuler' }}"class="text-decoration-none">
+            <img src="{{asset('front/drumband.png')}}" class="rounded" width="420" height="370">
             <p style="color: black;font-size: 26px;font-weight: bold;margin-bottom: -10px;
                          text-align: center">
               Drumband
@@ -282,7 +282,7 @@
               Drumband SMA Tanjung Priok
             </p>
             <div>
-              <button href="detail_ekstrakurikuler.html" style="width: 210px; height: 50px;background-color: white;font-size: 20px;border: 2px solid #000;
+              <button href="{{ 'front-ekstrakurikuler' }}"style="width: 210px; height: 50px;background-color: white;font-size: 20px;border: 2px solid #000;
                     border-radius: 8px; display: block;margin: auto;margin-top: 10px">
                 Selengkapnya
               </button>
@@ -299,12 +299,12 @@
                   onmouseover="this.style.boxShadow='1px 2px 2px 2px rgba(0, 0, 0, 0.3)';
                       this.style.backgroundColor='#ffffff'"
                   onmouseout="this.style.backgroundColor= '#bce7eb';this.style.boxShadow='0px 0px 0px 0px rgba(0, 0, 0, 0)'">
-            <img src="assets/panah-kanan.png" width="50" height="50">
+            <img src="{{asset('front/panah-kanan.png')}}"width="50" height="50">
           </button>
         </div>
       </div>
       <div class="col d-flex justify-content-start" style="margin-left: 60px;margin-top: 10px">
-        <img src="assets/ekstrakurikuler.png" alt="logo" height="500" width="450" />
+        <img src="{{asset('front/ekstrakurikuler.png')}}" alt="logo" height="500" width="450" />
       </div>
     </div>
   </div>
@@ -328,7 +328,7 @@
     <h2 style="text-align: center;margin-bottom: 30px;font-size: 37px"><b>Prestasi</b></h2>
     <div class="row">
       <div class="col-4 d-flex justify-content-start" style="margin-left: -150px;margin-top: 10px">
-        <img src="assets/prestasi.png" alt="logo" height="500" width="900" />
+        <img src="{{asset('front/prestasi.png')}}" alt="logo" height="500" width="900" />
       </div>
       <div class="col-1 d-flex justify-content-start" style="margin-top: 120px;margin-left: 250px">
         <button id="arrow-left-prestasi" onclick="prevPrestasi()" style="border-radius: 50px;
@@ -345,27 +345,27 @@
            style="overflow-x: hidden;margin-top: 60px">
         <div class="card-prestasi me-3">
           <a href="#" class="text-decoration-none">
-            <img src="assets/prestasisiswa.png" style="border-radius: 15px" width="525" height="370">
+            <img src="{{asset('front/prestasisiswa.png')}}" style="border-radius: 15px" width="525" height="370">
           </a>
         </div>
         <div class="card-prestasi me-3">
           <a href="#" class="text-decoration-none">
-            <img src="assets/prestasi2.jpg" style="border-radius: 15px" width="525" height="370">
+            <img src="{{asset('front/prestasi2.png')}}" style="border-radius: 15px" width="525" height="370">
           </a>
         </div>
         <div class="card-prestasi me-3">
           <a href="#" class="text-decoration-none">
-            <img src="assets/prestasi3.png" style="border-radius: 15px" width="525" height="370">
+            <img src="{{asset('front/prestasi3.png')}}" style="border-radius: 15px" width="525" height="370">
           </a>
         </div>
         <div class="card-prestasi me-3">
           <a href="#" class="text-decoration-none">
-            <img src="assets/prestasisiswa.png" style="border-radius: 15px" width="525" height="370">
+            <img src="{{asset('front/prestasisiswa.png')}}" style="border-radius: 15px" width="525" height="370">
           </a>
         </div>
         <div class="card-prestasi me-3">
           <a href="#" class="text-decoration-none">
-            <img src="assets/prestasisiswa.png" style="border-radius: 15px" width="525" height="370">
+            <img src="{{asset('front/prestasisiswa.png')}}" style="border-radius: 15px" width="525" height="370">
           </a>
         </div>
       </div>
@@ -412,31 +412,31 @@
           <h3 class="judul1">PENGUMUMAN</h3>
           <ul class="square">
             <li class="baris1">
-              <a href="detailppb.html">
+              <a href="{{ 'front-pengumuman' }}">
                 <div class="kotak3">Tanggal</div> 
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
               </a>
             </li>
             <li class="baris2">
-              <a href="detailppb.html">
+              <a href="{{ 'front-pengumuman' }}">
                 <div class="kotak4">Tanggal</div> 
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
               </a>
             </li>
             <li class="baris3">
-              <a href="detailppb.html">
+              <a href="{{ 'front-pengumuman' }}">
                 <div class="kotak5">Tanggal</div> 
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
               </a>
             </li>
             <li class="baris4">
-              <a href="detailppb.html">
+              <a href="{{ 'front-pengumuman' }}">
                 <div class="kotak6">Tanggal</div> 
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
               </a>
             </li>
             <li class="baris5">
-              <a href="detailppb.html">
+              <a href="{{ 'front-pengumuman' }}">
                 <div class="kotak7">Tanggal</div> 
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
               </a>
@@ -444,7 +444,7 @@
           </ul>
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center">
-          <img src="image/sekolah1.jpg" class="rounded d-flex" alt="logo" height="370" width="600" />
+          <img src="{{asset('front/sekolah1.jpg')}}" class="rounded d-flex" alt="logo" height="370" width="600" />
         </div>
       </div>
     </div>
@@ -457,16 +457,16 @@
   <div class="container mt-5">
     <div class="row">
       <div class="col-lg-5 col-md-12 col-sm-12 d-flex justify-content-center">
-        <img src="image/sekolah1.jpg" class="rounded d-flex" alt="logo" height="370" width="600" />
+        <img src="{{asset('front/sekolah1.jpg')}}" class="rounded d-flex" alt="logo" height="370" width="600" />
       </div>
       <div class="col-lg-6 offset-lg-1 col-md-12 col-sm-12 " style="font-family: Poppins; padding-left: 40px">
         <h3 class="judul2">BERITA TERKINI</h3>
         <ul class="square">
-                    <li class="baris6"><a href="detailppb.html"><div class="kotak3">Tanggal</div> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</a></li>
-                    <li class="baris7"><a href="detailppb.html"><div class="kotak4">Tanggal</div> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</a></li>
-                    <li class="baris9"><a href="detailppb.html"><div class="kotak5">Tanggal</div> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</a></li>
-                    <li class="baris9"><a href="detailppb.html"><div class="kotak6">Tanggal</div> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</a></li>
-                    <li class="baris10"><a href="detailppb.html"><div class="kotak7">Tanggal</div> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</a></li>
+                    <li class="baris6"><a href="{{ 'front-berita' }}"><div class="kotak3">Tanggal</div> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</a></li>
+                    <li class="baris7"><a href="{{ 'front-berita' }}"><div class="kotak4">Tanggal</div> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</a></li>
+                    <li class="baris9"><a href="{{ 'front-berita' }}"><div class="kotak5">Tanggal</div> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</a></li>
+                    <li class="baris9"><a href="{{ 'front-berita' }}"><div class="kotak6">Tanggal</div> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</a></li>
+                    <li class="baris10"><a href="{{ 'front-berita' }}"><div class="kotak7">Tanggal</div> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</a></li>
                 </ul>
       </div>
     </div>
@@ -487,8 +487,8 @@
       </div>
       <div class="main-card col-10 d-flex justify-content-start" id="main-card" style="overflow-x: hidden;">
         <div class="card-blog me-3">
-          <a href="detailppb.html" class="text-decoration-none">
-            <img src="assets/blog1.jpg" class="rounded" width="350" height="240">
+          <a href="{{ 'front-blog' }}" class="text-decoration-none">
+            <img src="{{asset('front/blog1.jpg')}}"class="rounded" width="350" height="240">
             <div class="card-title rounded text-center"
                  style="padding-left: 5px;padding-bottom: 2px;
                   padding-top: 5px;padding-right: 5px; width: 280px; height: 97px;
@@ -501,8 +501,8 @@
           </a>
         </div>
         <div class="card-blog me-3">
-          <a href="detailppb.html" class="text-decoration-none">
-            <img src="assets/blog2.jpg" class="rounded" width="350" height="240">
+          <a href="{{ 'front-blog' }}" class="text-decoration-none">
+            <img src="{{asset('front/blog2.jpg')}}" class="rounded" width="350" height="240">
             <div class="card-title rounded text-center"
                  style="padding-left: 5px;padding-bottom: 2px;
                   padding-top: 5px;padding-right: 5px; width: 280px; height: 97px;
@@ -515,8 +515,8 @@
           </a>
         </div>
         <div class="card-blog me-3">
-          <a href="detailppb.html" class="text-decoration-none">
-            <img src="assets/blog3.jpg" class="rounded" width="350" height="240">
+          <a href="{{ 'front-blog' }}" class="text-decoration-none">
+            <img src="{{asset('front/blog3.jpg')}}"class="rounded" width="350" height="240">
             <div class="card-title rounded text-center"
                  style="padding-left: 5px;padding-bottom: 2px;
                   padding-top: 5px;padding-right: 5px; width: 280px; height: 97px;
@@ -529,8 +529,8 @@
           </a>
         </div>
         <div class="card-blog me-3">
-          <a href="detailppb.html" class="text-decoration-none">
-            <img src="assets/blog1.jpg" class="rounded" width="350" height="240">
+          <a href="{{ 'front-blog' }}" class="text-decoration-none">
+            <img src="{{asset('front/blog1.jpg')}}"class="rounded" width="350" height="240">
             <div class="card-title rounded text-center"
                  style="padding-left: 5px;padding-bottom: 2px;
                   padding-top: 5px;padding-right: 5px; width: 280px; height: 97px;
@@ -543,8 +543,8 @@
           </a>
         </div>
         <div class="card-blog me-3">
-          <a href="detailppb.html" class="text-decoration-none">
-            <img src="assets/smp.png" class="rounded" width="350" height="240">
+          <a href="{{ 'front-blog' }}" class="text-decoration-none">
+            <img src="{{asset('front/smp.png')}}"class="rounded" width="350" height="240">
             <div class="card-title rounded text-center"
                  style="padding-left: 5px;padding-bottom: 2px;
                   padding-top: 5px;padding-right: 5px; width: 280px; height: 97px;
@@ -631,23 +631,23 @@
     <div class="link-boxes">
       <ul class="box">
         <li class="link_name">Content</li>
-        <li><a href="detailppb.html">Berita Sekolah</a></li>
-        <li><a href="detailppb.html">Pengumuman</a></li>
-        <li><a href="detailppb.html">Blog Pendidik</a></li>
+        <li><a href="{{ 'front-berita' }}">Berita Sekolah</a></li>
+        <li><a href="{{ 'front-pengumuman' }}" >Pengumuman</a></li>
+        <li><a href="{{ 'front-blog' }}">Blog Pendidik</a></li>
       </ul>
       <ul class="box">
         <li class="link_name">Information</li>
-        <li><a href="profil.html">Profil Sekolah</a></li>
-        <li><a href="pendidik.html">Guru dan Staf</a></li>
-        <li><a href="galeri.html">Galeri Sekolah</a></li>
+        <li><a href="{{ 'front-profi;' }}">Profil Sekolah</a></li>
+        <li><a href="{{ 'front-guru-staf' }}">Guru dan Staf</a></li>
+        <li><a href="{{ 'front-galeri' }}">Galeri Sekolah</a></li>
       </ul>
       <ul class="box">
         <li class="link_name">Quick Link</li>
-        <li><a href="beranda.html">Home</a></li>
-        <li><a href="#kontak-kami">Sitemap</a></li>
+        <li><a href="{{ 'beranda' }}">Home</a></li>
+        <li><a href="{{ url('#kontak-kami') }}">Sitemap</a></li>
       </ul>
       <ul class="box">
-        <li class="#kontak-kami">Contact Us</li>
+        <li class="{{ url('#kontak-kami') }}">Contact Us</li>
         <li><i class="fas fa-envelope mr-3" style="color: white"></i> smatanjngpriokjkt@gmail.com</li>
         <li><i class="fas fa-phone mr-3" style="color: white"></i> 0984084093580</li>
       </ul>

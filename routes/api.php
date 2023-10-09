@@ -17,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::get('/data-guru',
+    [\App\Http\Controllers\APIController::class, 'guru']);
+
+Route::get('/data-staf',
+    [\App\Http\Controllers\APIController::class, 'staf']);
+

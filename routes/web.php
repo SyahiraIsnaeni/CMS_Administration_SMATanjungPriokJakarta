@@ -48,6 +48,7 @@ require __DIR__.'/auth.php';
 Route::get('/', [\App\Http\Controllers\FrontController::class, 'index'])->name('beranda');
 Route::get('/profil', [\App\Http\Controllers\FrontController::class, 'profil'])->name('profil');
 Route::get('/guru-staf', [\App\Http\Controllers\FrontController::class, 'guru_staf'])->name('guru-staf');
+Route::get('/prestasi-sekolah', [\App\Http\Controllers\FrontController::class, 'prestasi'])->name('prestasi');
 
 Route::get('/front-berita', function () {
     return view('front.berita');
@@ -73,12 +74,7 @@ Route::get('/front-ekstrakurikuler', function () {
 Route::get('/front-galeri', function () {
     return view('front.galeri');
 });
-Route::get('/front-guru-staf', function () {
-    return view('front.guru-staf');
-});
+
 Route::get('/front-pengumuman', function () {
     return view('front.pengumuman');
-});
-Route::get('/front-prestasi', function () {
-    return view('front.prestasi');
 });

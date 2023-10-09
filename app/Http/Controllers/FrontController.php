@@ -52,4 +52,11 @@ class FrontController extends Controller
 
         return view('front.guru-staf', compact('guru','staf'));
     }
+
+    public function prestasi()
+    {
+        $prestasi = Prestasi::orderByDesc('created_at')->get();
+
+        return view('front.prestasi', compact('prestasi'));
+    }
 }

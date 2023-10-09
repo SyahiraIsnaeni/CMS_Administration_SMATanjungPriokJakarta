@@ -411,13 +411,6 @@ footer .bottom-details .bottom_text {
         height: 300px;
     }
 
-    #event h2 {
-        font-family: "poppins";
-    }
-
-    #eventdet h2 {
-        font-family: "poppins";
-    }
 }
 
 @media screen and (min-width: 300px) and (max-width: 394px) {
@@ -450,13 +443,6 @@ footer .bottom-details .bottom_text {
         height: 330px;
     }
 
-    #event h2 {
-        font-family: "poppins";
-    }
-
-    #eventdet h2 {
-        font-family: "poppins";
-    }
 }
 
 @media screen and (min-width: 395px) and (max-width: 420px) {
@@ -488,12 +474,7 @@ footer .bottom-details .bottom_text {
         width: 280px;
         height: 370px;
     }
-    #event h2 {
-        font-family: "poppins";
-    }
-    #eventdet h2 {
-        font-family: "poppins";
-    }
+
 }
 
 @media screen and (min-width: 501px) and (max-width: 700px) {
@@ -527,12 +508,6 @@ footer .bottom-details .bottom_text {
         height: 400px;
     }
 
-    #event h2 {
-        font-family: "poppins";
-    }
-    #eventdet h2 {
-        font-family: "poppins";
-    }
 }
 
 @media screen and (min-width: 421px) and (max-width: 500px) {
@@ -565,12 +540,6 @@ footer .bottom-details .bottom_text {
         height: 370px;
     }
 
-    #event h2 {
-        font-family: "poppins";
-    }
-    #eventdet h2 {
-        font-family: "poppins";
-    }
 }
 
 @media screen and (max-width: 1000px) and (min-width: 701px) {
@@ -604,12 +573,6 @@ footer .bottom-details .bottom_text {
         height: 450px;
     }
 
-    #event h2 {
-        font-family: "poppins";
-    }
-    #eventdet h2 {
-        font-family: "poppins";
-    }
 }
 
 @media screen and (max-width: 1300px) and (min-width: 1201px) {
@@ -638,12 +601,6 @@ footer .bottom-details .bottom_text {
         height: 450px;
     }
 
-    #event h2 {
-        font-family: "poppins";
-    }
-    #eventdet h2 {
-        font-family: "poppins";
-    }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 1001px) {
@@ -672,10 +629,4 @@ footer .bottom-details .bottom_text {
         height: 450px;
     }
 
-    #event h2 {
-        font-family: "poppins";
-    }
-    #eventdet h2 {
-        font-family: "poppins";
-    }
 }

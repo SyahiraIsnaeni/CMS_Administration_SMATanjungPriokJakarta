@@ -59,4 +59,11 @@ class FrontController extends Controller
 
         return view('front.prestasi', compact('prestasi'));
     }
+
+    public function ekstrakurikuler($id)
+    {
+        $ekstrakurikuler = Ekstrakurikuler::where('id', $id);
+
+        return view('front.ekstrakurikuler', compact('ekstrakurikuler'));
+    }
 }

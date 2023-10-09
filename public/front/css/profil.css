@@ -1,0 +1,1100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*STYLE*/
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: large;
+    /* margin-right: 40px;
+    text-align: justify; */
+    line-height: 2;
+}
+
+/* a {
+  font-family: "poppins";
+  font-size: small;
+  font-weight: bold;
+} */
+
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #136a71;
+} */
+
+li,
+a,
+button {
+    font-family: "poppins";
+    font-weight: 500;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.navbar-nav {
+    list-style: none;
+}
+.navbar-nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.navbar-nav li a {
+    transition: all 0.3s ease 0s;
+}
+.navbar-nav li a:hover {
+    color: #ffff;
+}
+button {
+    padding: 9px 25px;
+    border: #0000ff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover {
+    background-color: #bce7eb;
+}
+
+footer {
+    background: #136a71;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.gambar1 {
+    justify-self: end;
+}
+
+footer .line {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    margin-top: 90px;
+    background: black;
+}
+
+footer .content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 30px 40px 40px 40px;
+}
+
+footer .content .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.content .top .logo-details {
+    color: #fff;
+    font-size: 30px;
+}
+
+.content .top .media-icons {
+    display: flex;
+}
+
+.content .top .media-icons a {
+    height: 40px;
+    width: 40px;
+    background: red;
+    margin: 0 8px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.top .media-icons a:nth-child(1) {
+    background: black;
+}
+
+.top .media-icons a:nth-child(1):hover {
+    color: #426782;
+    background: white;
+}
+
+.top .media-icons a:nth-child(2) {
+    background: black;
+}
+
+.top .media-icons a:nth-child(2):hover {
+    color: #426782;
+    background: white;
+}
+
+.top .media-icons a:nth-child(3) {
+    background: black;
+}
+
+.top .media-icons a:nth-child(3):hover {
+    color: #426782;
+    background: white;
+}
+
+footer .content .link-boxes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .content .link-boxes .box {
+    width: calc(100% / 3 - 30px);
+    color: white;
+}
+
+.content .link-boxes .box .link_name {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.content .link-boxes .box .link_name::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 35px;
+    background: white;
+}
+
+.content .link-boxes .box li {
+    margin: 6px 0;
+    color: white;
+    font-size: 18px;
+    list-style: none;
+}
+
+.content .link-boxes .box a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    transition: all 0.4s ease;
+}
+
+.content .link-boxes .box a:hover {
+    text-decoration: underline;
+}
+
+footer .bottom-details {
+    width: 100%;
+    background: black;
+}
+
+footer .bottom-details .bottom_text {
+    color: white;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-image {
+    height: 100vh;
+}
+
+#sambutan p {
+    margin-top: 20px;
+    font-size: 19px;
+}
+
+#sambutan h2 {
+    margin-bottom: 10px;
+}
+
+#sambutan img {
+    margin-top: 10px;
+}
+
+#sejarah p {
+    margin-top: 10px;
+    font-size: 19px;
+    text-align: justify;
+}
+
+#sejarah {
+    background: #bce7eb;
+    margin-top: 100px;
+    height: 850px;
+    padding: 20px;
+}
+
+#sejarah h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 37px;
+    margin-top: 50px;
+}
+
+#visimisi ol {
+    margin-left: -15px;
+    font-size: 18px;
+}
+
+#visimisi p {
+    font-size: 18px;
+}
+
+#visimisi h2 {
+    font-size: 37px;
+}
+
+#visimisi img {
+    margin-top: 10px;
+}
+
+#fasilitas {
+    margin-top: 100px;
+    background-color: #bce7eb;
+    height: 450px;
+}
+
+#fasilitas h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 37px;
+    margin-top: 50px;
+}
+
+#fasilitas #arrow-left {
+    border-radius: 50px;
+    background-color: white;
+    padding-left: 14px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 16px;
+    width: 50px;
+    height: 50px;
+    margin-top: 95px;
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.3);
+    margin-left: 25px;
+}
+
+#fasilitas #arrow-right {
+    border-radius: 50px;
+    background-color: white;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    color: black;
+    padding-top: 12px;
+    padding-right: 16px;
+    width: 50px;
+    height: 50px;
+    margin-top: 95px;
+    margin-left: 8px;
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+#struktur h2 {
+    text-align: center;
+    font-size: 37px;
+}
+
+@media screen and (max-width: 299px) {
+    .carousel-image {
+        height: 30vh;
+        margin-bottom: 20px;
+    }
+
+    #sambutan p {
+        font-size: 15px;
+        margin-top: 290px;
+        margin-left: -25px;
+    }
+
+    #sambutan h2 {
+        margin-top: -320px;
+        margin-bottom: 10px;
+        font-size: 22px;
+        margin-left: -25px;
+    }
+
+    #sambutan img {
+        margin-top: 10px;
+        width: 200px;
+        height: 250px;
+    }
+
+    #sejarah {
+        background: #bce7eb;
+        margin-top: 100px;
+        height: 2800px;
+        padding: 20px;
+    }
+
+    #sejarah h2 {
+        font-size: 28px;
+    }
+
+    #sejarah p {
+        font-size: 15px;
+    }
+
+    #visimisi ol {
+        margin-left: -35px;
+        font-size: 15px;
+    }
+
+    #visimisi p {
+        font-size: 15px;
+        margin-left: -20px;
+    }
+
+    #visimisi h2 {
+        font-size: 28px;
+        margin-left: -20px;
+    }
+
+    #visimisi img {
+        margin-top: 10px;
+        width: 290px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    #fasilitas {
+        height: 330px;
+    }
+
+    #fasilitas h2 {
+        font-size: 28px;
+        margin-top: 50px;
+    }
+
+    #fasilitas .fasilitas {
+        width: 210px;
+        height: 150px;
+    }
+
+    #fasilitas #arrow-left {
+        border-radius: 50px;
+        padding-left: 9px;
+        padding-bottom: 10px;
+        padding-top: 4px;
+        padding-right: 16px;
+        width: 30px;
+        margin-left: -8px;
+        height: 30px;
+        margin-top: 58px;
+    }
+
+    #fasilitas #arrow-right {
+        border-radius: 50px;
+        width: 30px;
+        height: 30px;
+        margin-top: -90px;
+        margin-left: 237px;
+        position: absolute;
+        padding-left: 5px;
+        padding-bottom: 10px;
+        padding-top: 3px;
+        padding-right: 6px;
+    }
+
+    #struktur h2 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    #struktur img {
+        width: 280px;
+        height: 160px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 394px) {
+    .carousel-image {
+        height: 35vh;
+    }
+
+    #sambutan p {
+        font-size: 17px;
+        margin-top: 340px;
+        margin-left: -25px;
+    }
+
+    #sambutan h2 {
+        margin-top: -350px;
+        margin-bottom: 10px;
+        font-size: 25px;
+        margin-left: -25px;
+    }
+
+    #sambutan img {
+        width: 250px;
+        height: 300px;
+    }
+
+    #sejarah h2 {
+        font-size: 28px;
+    }
+
+    #sejarah p {
+        font-size: 17px;
+    }
+
+    #visimisi ol {
+        margin-left: -40px;
+        font-size: 17px;
+    }
+
+    #visimisi p {
+        font-size: 17px;
+        margin-left: -25px;
+    }
+
+    #visimisi h2 {
+        font-size: 28px;
+        margin-left: -25px;
+    }
+
+    #visimisi img {
+        margin-top: 10px;
+        width: 310px;
+        height: 320px;
+        margin-bottom: 20px;
+    }
+
+    #fasilitas #arrow-left {
+        border-radius: 50px;
+        padding-left: 9px;
+        padding-bottom: 10px;
+        padding-top: 4px;
+        padding-right: 16px;
+        width: 30px;
+        margin-left: -9px;
+        height: 30px;
+        margin-top: 88px;
+    }
+
+    #fasilitas #arrow-right {
+        border-radius: 50px;
+        width: 30px;
+        height: 30px;
+        margin-top: 92px;
+        margin-left: -15px;
+        position: absolute;
+        padding-left: 5px;
+        padding-bottom: 10px;
+        padding-top: 3px;
+        padding-right: 6px;
+    }
+
+    #struktur h2 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    #struktur img {
+        width: 350px;
+        height: 190px;
+    }
+}
+
+@media screen and (min-width: 395px) and (max-width: 500px) {
+    .carousel-image {
+        height: 35vh;
+    }
+
+    #sambutan p {
+        font-size: 18px;
+        margin-top: 380px;
+        margin-left: -20px;
+        width: 360px;
+    }
+
+    #sambutan h2 {
+        margin-top: -390px;
+        margin-bottom: 10px;
+        font-size: 26px;
+        margin-left: -20px;
+    }
+
+    #sambutan img {
+        width: 280px;
+        height: 340px;
+    }
+
+    #sejarah {
+        background: #bce7eb;
+        margin-top: 100px;
+        height: 2400px;
+        padding: 20px;
+    }
+
+    #sejarah h2 {
+        font-size: 29px;
+    }
+
+    #sejarah p {
+        font-size: 18px;
+    }
+
+    #visimisi ol {
+        margin-left: -40px;
+        font-size: 18px;
+    }
+
+    #visimisi p {
+        font-size: 18px;
+        margin-left: -25px;
+    }
+
+    #visimisi h2 {
+        font-size: 29px;
+        margin-left: -25px;
+    }
+
+    #visimisi img {
+        margin-top: 10px;
+        width: 340px;
+        height: 350px;
+        margin-bottom: 20px;
+    }
+
+    #fasilitas #arrow-left {
+        border-radius: 50px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-right: 16px;
+        width: 35px;
+        margin-left: -9px;
+        height: 35px;
+        margin-top: 110px;
+    }
+
+    #fasilitas #arrow-right {
+        border-radius: 50px;
+        width: 35px;
+        height: 35px;
+        margin-top: 112px;
+        margin-left: -15px;
+        position: absolute;
+        padding-left: 5px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-right: 6px;
+    }
+
+    #fasilitas {
+        height: 420px;
+    }
+
+    #fasilitas h2 {
+        font-size: 29px;
+        margin-top: 50px;
+    }
+
+    #fasilitas .fasilitas {
+        width: 330px;
+        height: 230px;
+        margin-left: -5px;
+        margin-top: 10px;
+    }
+
+    #struktur h2 {
+        text-align: center;
+        font-size: 29px;
+    }
+
+    #struktur img {
+        width: 390px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 700px) {
+    .carousel-image {
+        height: 50vh;
+        margin-bottom: 10px;
+    }
+
+    #sambutan p {
+        font-size: 19px;
+        margin-top: 380px;
+        margin-left: -20px;
+        width: 490px;
+    }
+
+    #sambutan h2 {
+        margin-top: -390px;
+        margin-bottom: 10px;
+        font-size: 27px;
+        margin-left: -20px;
+    }
+
+    #sambutan img {
+        width: 280px;
+        height: 340px;
+        margin-left: -30px;
+    }
+
+    #sejarah {
+        background: #bce7eb;
+        margin-top: 100px;
+        height: 2100px;
+        padding: 20px;
+    }
+
+    #sejarah h2 {
+        font-size: 30px;
+    }
+
+    #sejarah p {
+        font-size: 19px;
+    }
+
+    #visimisi ol {
+        margin-left: -40px;
+        font-size: 19px;
+    }
+
+    #visimisi p {
+        font-size: 19px;
+        margin-left: -50px;
+    }
+
+    #visimisi h2 {
+        font-size: 30px;
+        margin-left: -25px;
+    }
+
+    #visimisi img {
+        margin-top: 10px;
+        width: 470px;
+        height: 480px;
+        margin-bottom: 20px;
+    }
+
+    #fasilitas #arrow-left {
+        border-radius: 50px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-right: 16px;
+        width: 35px;
+        margin-left: -3px;
+        height: 35px;
+        margin-top: 110px;
+    }
+
+    #fasilitas #arrow-right {
+        border-radius: 50px;
+        width: 35px;
+        height: 35px;
+        margin-top: 112px;
+        margin-left: -7px;
+        position: absolute;
+        padding-left: 5px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-right: 6px;
+    }
+
+    #fasilitas {
+        height: 420px;
+    }
+
+    #fasilitas h2 {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    #fasilitas .fasilitas {
+        width: 350px;
+        height: 230px;
+        margin-left: -5px;
+        margin-top: 10px;
+    }
+
+    #struktur h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #struktur img {
+        width: 530px;
+        height: 270px;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 701px) {
+    .carousel-image {
+        height: 50vh;
+        margin-bottom: 30px;
+    }
+
+    #sambutan p {
+        font-size: 20px;
+        margin-top: 550px;
+        margin-left: -30px;
+        width: 710px;
+    }
+
+    #sambutan h2 {
+        margin-top: -560px;
+        margin-bottom: 10px;
+        font-size: 31px;
+        margin-left: -20px;
+    }
+
+    #sambutan img {
+        width: 380px;
+        height: 480px;
+        margin-left: -30px;
+    }
+
+    #sejarah {
+        background: #bce7eb;
+        margin-top: 100px;
+        height: 1600px;
+        padding: 20px;
+    }
+
+    #sejarah h2 {
+        font-size: 32px;
+    }
+
+    #sejarah p {
+        font-size: 20px;
+    }
+
+    #visimisi ol {
+        margin-left: -40px;
+        font-size: 20px;
+    }
+
+    #visimisi p {
+        font-size: 20px;
+        margin-left: -210px;
+        text-align: justify;
+    }
+
+    #visimisi h2 {
+        font-size: 30px;
+        margin-left: -25px;
+    }
+
+    #visimisi img {
+        margin-top: 10px;
+        width: 550px;
+        height: 550px;
+        margin-bottom: 20px;
+    }
+
+    #fasilitas #arrow-left {
+        border-radius: 50px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-right: 16px;
+        width: 35px;
+        margin-left: -9px;
+        height: 35px;
+        margin-top: 90px;
+    }
+
+    #fasilitas #arrow-right {
+        border-radius: 50px;
+        width: 35px;
+        height: 35px;
+        margin-top: 92px;
+        margin-left: 13px;
+        position: absolute;
+        padding-left: 5px;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-right: 6px;
+    }
+
+    #fasilitas {
+        height: 410px;
+    }
+
+    #fasilitas h2 {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    #fasilitas .fasilitas {
+        width: 290px;
+        height: 200px;
+        margin-left: -5px;
+        margin-top: 10px;
+    }
+
+    #struktur h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #struktur img {
+        width: 750px;
+        height: 430px;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1001px) {
+    #sambutan img {
+        margin-left: 40px;
+    }
+
+    #sejarah {
+        background: #bce7eb;
+        margin-top: 100px;
+        height: 1100px;
+        padding: 20px;
+    }
+
+    #fasilitas #arrow-left {
+        border-radius: 50px;
+        padding-left: 12px;
+        padding-bottom: 10px;
+        padding-top: 7px;
+        padding-right: 16px;
+        width: 45px;
+        margin-left: 10px;
+        height: 45px;
+        margin-top: 100px;
+    }
+
+    #fasilitas #arrow-right {
+        border-radius: 50px;
+        width: 45px;
+        height: 45px;
+        margin-top: 102px;
+        margin-left: 13px;
+        position: absolute;
+        padding-left: 5px;
+        padding-bottom: 10px;
+        padding-top: 7px;
+        padding-right: 6px;
+    }
+
+    #fasilitas {
+        height: 410px;
+    }
+
+    #fasilitas h2 {
+        font-size: 29px;
+        margin-top: 50px;
+    }
+
+    #struktur h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #struktur img {
+        width: 850px;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1201px) {
+    #sambutan img {
+        margin-left: 40px;
+    }
+
+    #sejarah {
+        background: #bce7eb;
+        margin-top: 100px;
+        height: 1000px;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 355px) {
+    #sejarah {
+        background: #bce7eb;
+        margin-top: 100px;
+        height: 3200px;
+        padding: 20px;
+    }
+
+    #fasilitas {
+        height: 380px;
+    }
+
+    #fasilitas h2 {
+        font-size: 28px;
+        margin-top: 50px;
+    }
+
+    #fasilitas .fasilitas {
+        width: 240px;
+        height: 180px;
+        margin-left: -5px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 356px) and (max-width: 394px) {
+    #sejarah {
+        background: #bce7eb;
+        margin-top: 100px;
+        height: 2550px;
+        padding: 20px;
+    }
+
+    #fasilitas {
+        height: 380px;
+    }
+
+    #fasilitas h2 {
+        font-size: 28px;
+        margin-top: 50px;
+    }
+
+    #fasilitas .fasilitas {
+        width: 300px;
+        height: 210px;
+        margin-left: -5px;
+    }
+}

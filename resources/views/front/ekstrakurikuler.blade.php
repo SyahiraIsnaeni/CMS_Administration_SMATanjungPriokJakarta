@@ -38,7 +38,7 @@
               <a class="nav-link" href="{{ 'front-profil' }}">Profil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ 'front-pendidik' }}">Guru & Staf</a>
+              <a class="nav-link" href="{{ 'front-guru-staf' }}">Guru & Staf</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ 'front-galeri' }}">Galeri</a>
@@ -65,7 +65,7 @@
           <h3>Nama Ekstrakurikuler</h3>
 
           <div class="col d-flex justify-content-center">
-            <img src="assets/Logoekskul.png" class="rounded d-flex" alt="logo" height="370" width="600" />
+            <img src="{{asset('front/logoekskul.png')}}"class="rounded d-flex" alt="logo" height="370" width="600" />
           </div>
         </div>
 
@@ -89,13 +89,13 @@
         </div>
         <div class="row d-flex justify-content-center" style="padding-left: 25px">
           <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <img src="assets/kegiatanpramuka.jpg" class="rounded" width="270" height="350" />
+            <img src="{{asset('front/kegiatanpramuka.jpg')}}" class="rounded" width="270" height="350" />
           </div>
           <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <img src="assets/kegiatanpramuka.jpg" class="rounded" width="270" height="350" />
+            <img src="{{asset('front/kegiatanpramuka.jpg')}}" class="rounded" width="270" height="350" />
           </div>
           <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <img src="assets/kegiatanpramuka.jpg" class="rounded" width="270" height="350" />
+            <img src="{{asset('front/kegiatanpramuka.jpg')}}" class="rounded" width="270" height="350" />
           </div>
         </div>
       </div>

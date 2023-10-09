@@ -40,15 +40,15 @@ Route::group(['middleware' => 'revalidate'], function(){
     Route::resource('guru', \App\Http\Controllers\GuruController::class);
     Route::resource('staf', \App\Http\Controllers\StafController::class);
     Route::resource('galeri', \App\Http\Controllers\GaleriController::class);
+    Route::resource('jumbotron', \App\Http\Controllers\JumbotronController::class);
 });
 
 require __DIR__.'/auth.php';
 
 Route::get('/', [\App\Http\Controllers\FrontController::class, 'index'])->name('beranda');
+Route::get('/profil', [\App\Http\Controllers\FrontController::class, 'profil'])->name('profil');
+Route::get('/guru-staf', [\App\Http\Controllers\FrontController::class, 'guru_staf'])->name('guru-staf');
 
-Route::get('/front-beranda', function () {
-    return view('front.beranda');
-});
 Route::get('/front-berita', function () {
     return view('front.berita');
 });
@@ -81,7 +81,4 @@ Route::get('/front-pengumuman', function () {
 });
 Route::get('/front-prestasi', function () {
     return view('front.prestasi');
-});
-Route::get('/front-profil', function () {
-    return view('front.profil');
 });

@@ -26,7 +26,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #136a71">
     <div class="container">
       <a class="navbar-brand" style="font-size: 15px; text-align: center; float: center" href="{{ 'beranda' }}">
-        <img src="{{asset('front/logo.png')}}" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>     
+        <img src="{{asset('front/logo.png')}}" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -86,98 +86,34 @@
 </section>
 
     <!-- Tenaga Pendidik -->
-    <section id="pendidik" class="overflow-hidden" style="margin-top: 30px">
-      <h2 style="text-align: center; margin-bottom: 30px; font-size: 37px"><b>Tenaga Pendidik</b></h2>
+    <section id="pendidik" class="overflow-hidden" style="margin-top: 80px">
+      <h2 style="text-align: center; margin-bottom: 30px; font-size: 37px"><b>Guru SMA Tanjung Priok Jakarta</b></h2>
       <div class="container mb-5">
-        <div class="row">
-          <div class="foto col-lg-3 col-md-6 col-sm-12 d-flex justify-content-start">
-            <img src="{{asset('front/pendidik-fix.png')}}" class="rounded" width="270" height="350" />
-            <div class="card-title rounded text-center">
-              <p class="nama">Syahira Isnaeni Dewi S.T</p>
-              <p class="jabatan">Guru Matematika</p>
-            </div>
-          </div>
-          <div class="foto col-lg-3 col-md-6 col-sm-12 d-flex justify-content-start">
-            <img src="{{asset('front/pendidik-fix.png')}}" class="rounded" width="270" height="350" />
-            <div class="card-title rounded text-center">
-              <p class="nama">Syahira Isnaeni Dewi S.T</p>
-              <p class="jabatan">Guru Matematika</p>
-            </div>
-          </div>
-          <div class="foto col-lg-3 col-md-6 col-sm-12 d-flex justify-content-start">
-            <img src="{{asset('front/pendidik-fix.png')}}" class="rounded" width="270" height="350" />
-            <div class="card-title rounded text-center">
-              <p class="nama">Syahira Isnaeni Dewi S.T</p>
-              <p class="jabatan">Guru Matematika</p>
-            </div>
-          </div>
-          <div class="foto col-lg-3 col-md-6 col-sm-12 d-flex justify-content-start">
-            <img src="{{asset('front/pendidik-fix.png')}}" class="rounded" width="270" height="350" />
-            <div class="card-title rounded text-center">
-              <p class="nama">Syahira Isnaeni Dewi S.T</p>
-              <p class="jabatan">Guru Matematika</p>
-            </div>
-          </div>
+        <div class="row mb-5">
+            @forelse ($guru as $row)
+              <div class="foto col-lg-3 col-md-6 col-sm-12 d-flex justify-content-start mt-5">
+                <img src="{{asset('front/pendidik-fix.png')}}" class="rounded" width="270" height="350" />
+                <div class="card-title rounded text-center">
+                  <p class="nama">{{$row->nama}}</p>
+                  <p class="jabatan">{{$row->jabatan}}</p>
+                </div>
+              </div>
+            @empty
+            @endforelse
         </div>
+          <div style="margin-top: 80px"></div>
+        <h2 class="mt-5" style="text-align: center; margin-bottom: 30px; font-size: 37px;"><b>Staf SMA Tanjung Priok Jakarta</b></h2>
         <div class="row" style="margin-top: 30px">
-          <div class="foto col-lg-3 col-md-6 col-sm-12 d-flex justify-content-start">
+            @forelse ($staf as $row)
+          <div class="foto col-lg-3 col-md-6 col-sm-12 d-flex justify-content-start mt-5">
             <img src="{{asset('front/pendidik-fix.png')}}" class="rounded" width="270" height="350" />
             <div class="card-title rounded text-center">
-              <p class="nama">Syahira Isnaeni Dewi S.T</p>
-              <p class="jabatan">Guru Matematika</p>
+              <p class="nama">{{$row->nama}}</p>
+              <p class="jabatan">{{$row->jabatan}}</p>
             </div>
           </div>
-          <div class="foto col-lg-3 col-md-6 col-sm-12 d-flex justify-content-start">
-            <img src="{{asset('front/pendidik-fix.png')}}" class="rounded" width="270" height="350" />
-            <div class="card-title rounded text-center">
-              <p class="nama">Syahira Isnaeni Dewi S.T</p>
-              <p class="jabatan">Guru Matematika</p>
-            </div>
-          </div>
-          <div class="foto col-lg-3 col-md-6 col-sm-12 d-flex justify-content-start">
-            <img src="{{asset('front/pendidik-fix.png')}}" class="rounded" width="270" height="350" />
-            <div class="card-title rounded text-center">
-              <p class="nama">Syahira Isnaeni Dewi S.T</p>
-              <p class="jabatan">Guru Matematika</p>
-            </div>
-          </div>
-          <div class="foto col-lg-3 col-md-6 col-sm-12 d-flex justify-content-start">
-            <img src="{{asset('front/pendidik-fix.png')}}" class="rounded" width="270" height="350" />
-            <div class="card-title rounded text-center">
-              <p class="nama">Syahira Isnaeni Dewi S.T</p>
-              <p class="jabatan">Guru Matematika</p>
-            </div>
-          </div>
-        </div>
-        <div class="row" style="margin-top: 30px">
-          <div class="foto col-lg-3 col-md-6 col-sm-12 d-flex justify-content-start">
-            <img src="{{asset('front/pendidik-fix.png')}}" class="rounded" width="270" height="350" />
-            <div class="card-title rounded text-center">
-              <p class="nama">Syahira Isnaeni Dewi S.T</p>
-              <p class="jabatan">Guru Matematika</p>
-            </div>
-          </div>
-          <div class="foto col-lg-3 col-md-6 col-sm-12 d-flex justify-content-start">
-            <img src="{{asset('front/pendidik-fix.png')}}" class="rounded" width="270" height="350" />
-            <div class="card-title rounded text-center">
-              <p class="nama">Syahira Isnaeni Dewi S.T</p>
-              <p class="jabatan">Guru Matematika</p>
-            </div>
-          </div>
-          <div class="foto col-lg-3 col-md-6 col-sm-12 d-flex justify-content-start">
-            <img src="{{asset('front/pendidik-fix.png')}}" class="rounded" width="270" height="350" />
-            <div class="card-title rounded text-center">
-              <p class="nama">Syahira Isnaeni Dewi S.T</p>
-              <p class="jabatan">Guru Matematika</p>
-            </div>
-          </div>
-          <div class="foto col-lg-3 col-md-6 col-sm-12 d-flex justify-content-start">
-            <img src="{{asset('front/pendidik-fix.png')}}" class="rounded" width="270" height="350" />
-            <div class="card-title rounded text-center">
-              <p class="nama">Syahira Isnaeni Dewi S.T</p>
-              <p class="jabatan">Guru Matematika</p>
-            </div>
-          </div>
+            @empty
+            @endforelse
         </div>
       </div>
     </section>

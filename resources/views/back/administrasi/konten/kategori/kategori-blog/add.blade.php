@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tambah Data Kategori Berita</title>
+    <title>Tambah Data Kategori Blog</title>
 
     <link rel="shortcut icon" href="../assets/image/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/extensions/quill/quill.snow.css">
@@ -145,6 +145,14 @@
                     </li>
 
                     <li
+                        class="sidebar-item">
+                        <a href="{{ route('jumbotron.index') }}" class='sidebar-link'>
+                            <i class="bi bi-card-image"></i>
+                            <span>Jumbotron</span>
+                        </a>
+                    </li>
+
+                    <li
                         class="sidebar-item  has-sub  active ">
                         <a href="#" class='sidebar-link'>
                             <i class="bi bi-layers-half"></i>
@@ -153,7 +161,7 @@
 
                         <ul class="submenu ">
 
-                            <li class="submenu-item active  ">
+                            <li class="submenu-item ">
                                 <a href="{{ route('kategori-berita.index') }}" class="submenu-link">Kategori Berita</a>
                             </li>
 
@@ -162,7 +170,7 @@
 
                             </li>
 
-                            <li class="submenu-item ">
+                            <li class="submenu-item active">
                                 <a href="{{ route('kategori-blog.index') }}" class="submenu-link">Kategori Blog</a>
 
                             </li>
@@ -265,7 +273,7 @@
             <div class="page-title">
                 <div class="row">
                     <div class="col-12 col-md-6 order-md-1 order-last">
-                        <h3>Tambah Data Kategori Berita</h3>
+                        <h3>Tambah Data Kategori Blog</h3>
                     </div>
                 </div>
             </div>
@@ -276,13 +284,13 @@
                         <div class="card">
                             <div class="card-header">
                                 <div class="card-head-row">
-                                    <a href="{{route('kategori-berita.index')}}" class="btn btn-warning btn-sm ml-auto"> <i class="bi bi-arrow-left-circle"></i> Kembali </a>
+                                    <a href="{{route('kategori-blog.index')}}" class="btn btn-warning btn-sm ml-auto"> <i class="bi bi-arrow-left-circle"></i> Kembali </a>
                                 </div>
                             </div>
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <form method="post" action="{{ route('kategori-berita.store')}}" enctype="multipart/form-data">
+                                        <form method="post" action="{{ route('kategori-blog.store')}}" enctype="multipart/form-data">
                                             @csrf
                                             <div class="form-group">
                                                 <label for="squareText">Nama Kategori</label>

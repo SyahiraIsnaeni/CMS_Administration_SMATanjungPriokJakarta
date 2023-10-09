@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Jumbotron extends Model
 {
     use HasFactory;
+
+    protected $table = 'jumbotron';
+
+    protected $fillable = [
+        'gambar'
+    ];
+
+    protected $hidden = [];
 }

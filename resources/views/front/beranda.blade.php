@@ -111,14 +111,17 @@
     <div>
       <img class="gambarF2" src="{{asset('front/bintangF.png')}}"/>
     </div>
+      @forelse ($hariNasional as $row)
     <div>
-      <img class="gambarPostingan" src="{{asset('front/batikfix.png')}}" />
+      <img class="gambarPostingan" src="{{asset('uploads/'.$row->gambar) }}" />
       <div id="tulisan">
         <p>
-          Keluarga Besar SMA Tanjung Priok Jakarta Mengucapkan Selamat Hari Batik Nasional
+          {{$row->deskripsi}}
         </p>
       </div>
     </div>
+      @empty
+      @endforelse
     <div ><img class="gambarF3" src="{{asset('front/bintangF.png')}}"/></div>
     <div >
       <img class="gambarF4" src="{{asset('front/bintangF.png')}}"/>

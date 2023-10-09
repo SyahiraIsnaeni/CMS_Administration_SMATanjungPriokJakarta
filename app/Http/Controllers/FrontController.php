@@ -3,9 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Models\Ekstrakurikuler;
+use App\Models\Fasilitas;
+use App\Models\Guru;
+use App\Models\Staf;
 use App\Models\HariNasional;
 use App\Models\Pengumuman;
 use App\Models\Prestasi;
+use App\Models\Sambutan;
+use App\Models\Sejarah;
+use App\Models\Struktural;
 use Illuminate\Http\Request;
 use App\Models\Blog;
 use App\Models\Berita;
@@ -26,5 +32,24 @@ class FrontController extends Controller
         $pengumumanPrioritas = Pengumuman::where('is_active', '1')->limit(1)->orderByDesc('created_at')->get();
         return view('front.beranda', compact('pengumuman','berita', 'blog',
             'ekstrakurikuler', 'prestasi', 'hariNasional', 'beritaPrioritas', 'pengumumanPrioritas'));
+    }
+
+    public function profil()
+    {
+        $sambutan = Sambutan::all();
+        $sejarah = Sejarah::all();
+        $fasilitas = Fasilitas::all();
+        $struktur = Struktural::all();
+
+        return view('front.profil', compact('sambutan','sejarah', 'fasilitas',
+            'struktur'));
+    }
+
+    public function guru_staf()
+    {
+        $guru = Guru::all();
+        $staf = Staf::all();
+
+        return view('front.guru-staf', compact('guru','staf'));
     }
 }

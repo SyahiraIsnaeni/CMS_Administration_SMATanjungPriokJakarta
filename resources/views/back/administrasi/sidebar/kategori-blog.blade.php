@@ -126,6 +126,14 @@
                 </li>
 
                 <li
+                    class="sidebar-item">
+                    <a href="{{ route('jumbotron.index') }}" class='sidebar-link'>
+                        <i class="bi bi-card-image"></i>
+                        <span>Jumbotron</span>
+                    </a>
+                </li>
+
+                <li
                     class="sidebar-item  has-sub  active ">
                     <a href="#" class='sidebar-link'>
                         <i class="bi bi-layers-half"></i>

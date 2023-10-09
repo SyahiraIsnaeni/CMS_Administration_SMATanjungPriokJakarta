@@ -23,7 +23,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #136a71">
     <div class="container">
       <a class="navbar-brand" style="font-size: 15px; text-align: center; float: center" href="{{ 'beranda'}}">
-        <img src="{{asset('front/logo.png')}}" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>     
+        <img src="{{asset('front/logo.png')}}" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -85,47 +85,39 @@
     <!-- Sambutan Kepala Sekolah -->
     <section id="sambutan" style="margin-top: 80px">
       <div class="container mt-5">
+        @forelse ($sambutan as $row)
         <div class="row">
           <div class="col-lg-5 col-md-12 col-sm-12 d-flex justify-content-center">
-            <img src="{{asset('front/sambutan.png')}}"class="rounded d-flex" alt="logo" height="700" width="600" />
+            <img src="{{asset('uploads/'. $row->foto)}}"class="rounded d-flex" alt="logo" height="700" width="600" />
           </div>
           <div class="col-lg-6 offset-lg-1 col-md-12 col-sm-12" style="font-family: Poppins; padding-left: 40px">
             <h2 class="d-flex justify-content-start"><b>Sambutan Kepala Sekolah</b></h2>
             <p align="justify" class="d-flex justify-content-center">
-              Puji syukur kami panjatkan kehadirat Allah SWT atas segala limpahan nikmat sehat, rahmat dan karunia-Nya, sehingga SMA Tanjung Priok Jakarta berhasil membangun website sekolah. Kehadiran Website SMA Negeri 92 Jakarta,
-              diharapkan dapat mempermudah penyampaian informasi secara terbuka kepada seluruh warga sekolah khususnya, alumni, instansi terkait, dan masyarakat pada umumnya. Semoga dengan kehadiran Website SMA Tanjung Priok Jakarta akan
-              terjalin komunikasi antar warga sekolah, alumni, dan anggota masyarakat pada umumnya. Sehubungan dengan perkembangan ilmu pengetahuan, teknologi, dan informasi saat ini, semua warga sekolah harus mau untuk belajar menggunakan
-              komputer dan internet baik dalam proses pembelajaran maupun kegiatan-kegiatan lainnya. Tujuannya untuk meningkatkan kemampuan dalam menguasai teknologi dan memperoleh informasi secara cepat dan akurat. Terima kasih kami
-              ucapkan kepada Tim Website SMA Negeri 92 Jakarta, Bapak/Ibu guru maupun karyawan serta pengurus Komite atas dukungan dan bantuannya dalam membangun website sekolah ini. Semoga Allah SWT membalas dengan rejeki yang cukup dan
-              berkah serta pahala yang berlipat ganda. Aamiin YRA. Selamat bekerja. Sekian, terima kasih.
+              {{$row->sambutan}}
             </p>
           </div>
         </div>
+          @empty
+          @endforelse
       </div>
     </section>
 
     <!-- Sejarah SMA -->
+    @forelse ($sejarah as $row)
     <section id="sejarah">
       <div class="container">
         <h2 class="mt-5"><b>Sejarah SMA Tanjung Priok Jakarta</b></h2>
         <div class="row">
           <div class="col-12">
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use
-              a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first
-              true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always
-              free from repetition, injected humour, or non-characteristic words etc. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised
-              words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the
-              Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate
-              Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. There are many variations of passages of Lorem Ipsum available. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
-              making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem
-              Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+              {{$row->sejarah}}
             </p>
           </div>
         </div>
       </div>
     </section>
+    @empty
+    @endforelse
 
     <!-- Visi dan Misi -->
     <section id="visimisi" style="margin-top: 100px">
@@ -163,23 +155,13 @@
             </button>
           </div>
           <div class="main-card col-10 d-flex justify-content-start" id="main-card" style="overflow-x: hidden">
+              @forelse ($fasilitas as $row)
             <div class="card-fasilitas me-3">
-              <img src="{{asset('front/blog1.jpg')}}"class="fasilitas rounded" width="350" height="240" />
+              <img src="{{asset('uploads/'. $row->foto)}}"class="fasilitas rounded" width="350" height="240" />
             </div>
-            <div class="card-fasilitas me-3">
-              <img src="{{asset('front/blog2.jpg')}}" class="fasilitas rounded" width="350" height="240" />
-            </div>
-            <div class="card-fasilitas me-3">
-              <img src="{{asset('front/blog3.jpg')}}" class="fasilitas rounded" width="350" height="240" />
-            </div>
-            <div class="card-fasilitas me-3">
-              <img src="{{asset('front/sma.jpg')}}"class="fasilitas rounded" width="350" height="240" />
-            </div>
-            <div class="card-fasilitas me-3">
-              <img src="{{asset('front/smp.jpg')}}"class="fasilitas rounded" width="350" height="240" />
-            </div>
+              @empty
+              @endforelse
           </div>
-
           <div class="col-1 d-flex justify-content-start">
             <div>
               <button id="arrow-right" onclick="next()" onmouseover="this.style.backgroundColor='#136A71';this.style.color= '#ffffff'" onmouseout="this.style.backgroundColor= '#ffffff';this.style.color= 'black'">
@@ -204,16 +186,20 @@
     </section>
 
     <!-- Struktural Sekolah -->
+    @forelse ($struktur as $row)
     <section id="struktur" style="margin-top: 100px">
       <div class="container mt-5">
         <h2><b>Struktural Sekolah</b></h2>
         <div class="row">
           <div class="col-12 d-flex justify-content-center align-items-center">
-            <img src="{{asset('front/struktur1.jpg')}}" class="rounded d-flex" alt="logo" height="600" width="1000" />
+            <img src="{{asset('uploads/'. $row->gambar)}}" class="rounded d-flex" alt="logo" height="600" width="1000" />
           </div>
         </div>
       </div>
     </section>
+    @empty
+    @endforelse
+
 
     <!-- Footer -->
     <footer class="" style="width: 100%">

@@ -16,7 +16,7 @@ class RiwayatBeritaController extends Controller
     public function index()
     {
         $berita = Berita::orderBy('updated_at', 'desc')->paginate(10);
-        return view('back.administrasi.riwayat.berita.view', compact('berita'));
+        return view('back.administrasi.konten.riwayat.berita.view', compact('berita'));
     }
 
     public function destroy($id)

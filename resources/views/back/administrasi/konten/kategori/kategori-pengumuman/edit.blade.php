@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Data Kategori Berita</title>
+    <title>Edit Data Kategori Pengumuman</title>
     <link rel="stylesheet" href="../assets/extensions/quill/quill.snow.css">
     <link rel="stylesheet" href="../assets/extensions/quill/quill.bubble.css">
 
@@ -143,20 +143,28 @@
 
                     </li>
 
-                    <li>
-                    <i class="bi bi-layers-half"></i>
+                    <li
+                        class="sidebar-item">
+                        <a href="{{ route('jumbotron.index') }}" class='sidebar-link'>
+                            <i class="bi bi-card-image"></i>
+                            <span>Jumbotron</span>
+                        </a>
+                    </li>
+
+                    <li
+                        class="sidebar-item  has-sub  active ">
                         <a href="#" class='sidebar-link'>
-                            <i class="bi bi-collection-fill"></i>
+                            <i class="bi bi-layers-half"></i>
                             <span>Kategori</span>
                         </a>
 
                         <ul class="submenu ">
 
-                            <li class="submenu-item active  ">
+                            <li class="submenu-item  ">
                                 <a href="{{ route('kategori-berita.index') }}" class="submenu-link">Kategori Berita</a>
                             </li>
 
-                            <li class="submenu-item  ">
+                            <li class="submenu-item active  ">
                                 <a href="{{ route('kategori-pengumuman.index') }}" class="submenu-link">Kategori Pengumuman</a>
 
                             </li>
@@ -235,6 +243,14 @@
                         </a>
                     </li>
 
+                    <li
+                        class="sidebar-item">
+                        <a href="#" class='sidebar-link'>
+                            <i class="bi bi-journal-check"></i>
+                            <span>Data Staf</span>
+                        </a>
+                    </li>
+
                     <li class="sidebar-title">
                         <a href="{{ route('logout') }}"
                            onclick="event.preventDefault();
@@ -264,7 +280,7 @@
             <div class="page-title">
                 <div class="row">
                     <div class="col-12 col-md-6 order-md-1 order-last">
-                        <h3>Edit Data Kategori Berita</h3>
+                        <h3>Edit Data Kategori Pengumuman</h3>
                     </div>
                 </div>
             </div>
@@ -275,19 +291,19 @@
                         <div class="card">
                             <div class="card-header">
                                 <div class="card-head-row">
-                                    <a href="{{route('kategori-berita.index')}}" class="btn btn-warning btn-sm ml-auto"> <i class="bi bi-arrow-left-circle"></i></i> Kembali </a>
+                                    <a href="{{route('kategori-pengumuman.index')}}" class="btn btn-warning btn-sm ml-auto"> <i class="bi bi-arrow-left-circle"></i></i> Kembali </a>
                                 </div>
                             </div>
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <form method="post" action="{{ route('kategori-berita.update', $kategori_berita->id)}}" enctype="multipart/form-data">
+                                        <form method="post" action="{{ route('kategori-pengumuman.update', $kategori_pengumuman->id)}}" enctype="multipart/form-data">
                                             @csrf
                                             @method('PUT')
                                             <div class="form-group">
                                                 <label for="squareText">Nama Kategori</label>
                                                 <input type="text" id="squareText" class="form-control square"
-                                                       placeholder="Kategori Berita" name="nama_kategori" value="{{$kategori_berita->nama_kategori}}">
+                                                       placeholder="Nama Kategori" name="nama_kategori" value="{{$kategori_pengumuman->nama_kategori}}">
                                             </div>
                                             <div class="form-group">
                                                 <button class="btn btn-info btn-sm" type="submit"> Simpan </button>

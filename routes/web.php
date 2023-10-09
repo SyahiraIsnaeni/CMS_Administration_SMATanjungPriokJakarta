@@ -46,39 +46,39 @@ require __DIR__.'/auth.php';
 Route::get('/beranda', function () {
     return view('front.beranda');
 });
-Route::get('/berita', function () {
+Route::get('/front-berita', function () {
     return view('front.berita');
 });
-Route::get('/blog', function () {
+Route::get('/front-blog', function () {
     return view('front.blog');
 });
-Route::get('/daftar-berita', function () {
+Route::get('/front-daftar-berita', function () {
     return view('front.daftar-berita');
 });
-Route::get('/daftar-blog', function () {
+Route::get('/front-daftar-blog', function () {
     return view('front.daftar-blog');
 });
-Route::get('/daftar-pengumuman', function () {
+Route::get('/front-daftar-pengumuman', function () {
     return view('front.daftar-pengumuman');
 });
-Route::get('/detail-galeri', function () {
+Route::get('/front-detail-galeri', function () {
     return view('front.detail-galeri');
 });
-Route::get('/ekstrakurikuler', function () {
+Route::get('/front-ekstrakurikuler', function () {
     return view('front.ekstrakurikuler');
 });
-Route::get('/galeri', function () {
+Route::get('/front-galeri', function () {
     return view('front.galeri');
 });
-Route::get('/guru-staf', function () {
+Route::get('/front-guru-staf', function () {
     return view('front.guru-staf');
 });
-Route::get('/pengumuman', function () {
+Route::get('/front-pengumuman', function () {
     return view('front.pengumuman');
 });
-Route::get('/prestasi', function () {
+Route::get('/front-prestasi', function () {
     return view('front.prestasi');
 });
-Route::get('/profil', function () {
+Route::get('/front-profil', function () {
     return view('front.profil');
 });

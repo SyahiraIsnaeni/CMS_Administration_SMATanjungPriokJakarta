@@ -25,7 +25,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #136a71">
     <div class="container">
       <a class="navbar-brand" style="font-size: 15px; text-align: center; float: center" href="{{ 'beranda' }}">
-        <img src="{{asset('front/logo.png')}}" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>     
+        <img src="{{asset('front/logo.png')}}" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -61,51 +61,14 @@
 
     <!-- galeri detail event -->
     <section id="eventdet" class="overflow-hidden">
-      <h2 style="text-align: center; margin-top: 30px; margin-bottom: 30px; font-size: 37px">Galeri Event 1</h2>
-      <div class="container mb-5">
-        <div class="row">
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <img src="{{asset('front/eventgambar.jpg')}}" class="rounded" width="400" height="250" />
-          </div>
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <img src="{{asset('front/eventgambar.jpg')}}" class="rounded" width="400" height="250" />
-          </div>
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <img src="{{asset('front/eventgambar.jpg')}}" class="rounded" width="400" height="250" />
-          </div>
-        </div>
-        <div class="row" style="margin-top: 30px">
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <img src="{{asset('front/eventgambar.jpg')}}" class="rounded" width="400" height="250" />
-          </div>
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <img src="{{asset('front/eventgambar.jpg')}}" class="rounded" width="400" height="250" />
-          </div>
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <img src="{{asset('front/eventgambar.jpg')}}" class="rounded" width="400" height="250" />
-          </div>
-        </div>
-        <div class="row" style="margin-top: 30px">
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <img src="{{asset('front/eventgambar.jpg')}}" class="rounded" width="400" height="250" />
-          </div>
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <img src="{{asset('front/eventgambar.jpg')}}" class="rounded" width="400" height="250" />
-          </div>
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <img src="{{asset('front/eventgambar.jpg')}}" class="rounded" width="400" height="250" />
-          </div>
-        </div>
-        <div class="row" style="margin-top: 30px">
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <img src="{{asset('front/eventgambar.jpg')}}" class="rounded" width="400" height="250" />
-          </div>
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <img src="{{asset('front/eventgambar.jpg')}}" class="rounded" width="400" height="250" />
-          </div>
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <img src="{{asset('front/eventgambar.jpg')}}" class="rounded" width="400" height="250" />
-          </div>
+      <h2 style="text-align: center; margin-top: 70px; margin-bottom: 30px; font-size: 37px;font-weight: bold">{{$galeri->judul}}</h2>
+      <div class="container mb-5 mt-5" >
+        <div class="row" style="margin-top: 50px">
+            @foreach($galeri->image as $images)
+                <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center mt-4">
+                    <img src="{{ asset('uploads/' . $images->image) }}" class="rounded" width="400" height="250" />
+                </div>
+            @endforeach
         </div>
       </div>
     </section>

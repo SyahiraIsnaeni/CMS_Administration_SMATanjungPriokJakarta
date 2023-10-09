@@ -50,6 +50,7 @@ Route::get('/profil', [\App\Http\Controllers\FrontController::class, 'profil'])-
 Route::get('/guru-staf', [\App\Http\Controllers\FrontController::class, 'guru_staf'])->name('guru-staf');
 Route::get('/prestasi-sekolah', [\App\Http\Controllers\FrontController::class, 'prestasi'])->name('prestasi');
 Route::get('/galeri-sekolah', [\App\Http\Controllers\FrontController::class, 'galeri'])->name('galeri');
+Route::get('/detail-galeri/{id}', [\App\Http\Controllers\FrontController::class, 'detailGaleri'])->name('detail-galeri');
 Route::get('/detail-ekstrakurikuler/{id}', [\App\Http\Controllers\FrontController::class, 'ekstrakurikuler'])->name('detail-ekstrakurikuler');
 
 Route::get('/front-berita', function () {

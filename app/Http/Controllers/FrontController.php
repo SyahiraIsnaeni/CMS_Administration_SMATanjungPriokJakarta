@@ -82,12 +82,12 @@ class FrontController extends Controller
 
     public function detailGaleri($id)
     {
-        $ekstrakurikuler = Ekstrakurikuler::where('id', $id)->first();
+        $galeri = Galeri::where('id', $id)->first();
 
         // Mengambil data gambar terkait untuk Ekstrakurikuler
-        $ekstrakurikuler->image = ImagesEkstrakurikuler::where('ekstrakurikuler_id', $id)->get();
+        $galeri->image = ImagesGaleri::where('galeri_id', $id)->get();
 
-        return view('front.ekstrakurikuler', compact('ekstrakurikuler'));
+        return view('front.detail-galeri', compact('galeri'));
     }
 
 

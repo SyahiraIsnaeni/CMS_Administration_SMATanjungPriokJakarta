@@ -91,11 +91,11 @@
       <div class="row" style="margin-bottom: 50px">
           @forelse ($galeri as $row)
           <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center mt-5 mb-5">
-            <a href="geleridetail.html" class="text-decoration-none">
+            <a href="{{ route('detail-galeri', $row->id) }}" class="text-decoration-none">
             <img src="{{asset('uploads/'. $row->cover)}}"
  class="rounded" width="400" height="250" />
             <div class="card-title rounded text-center">
-              <a href="geleridetail.html" class="text-decoration-none">
+              <a href="{{ route('detail-galeri', $row->id) }}" class="text-decoration-none">
                 <p class="nama">{{$row->judul}}</p>
               </a>
             </div>

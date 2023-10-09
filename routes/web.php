@@ -39,6 +39,7 @@ Route::group(['middleware' => 'revalidate'], function(){
     Route::resource('dashboard', \App\Http\Controllers\DashboardController::class);
     Route::resource('guru', \App\Http\Controllers\GuruController::class);
     Route::resource('staf', \App\Http\Controllers\StafController::class);
+    Route::resource('galeri', \App\Http\Controllers\GaleriController::class);
 });
 
 require __DIR__.'/auth.php';

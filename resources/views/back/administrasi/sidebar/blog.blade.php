@@ -94,7 +94,7 @@
 
                 <li
                     class="sidebar-item  has-sub">
-                    <a href="#" class='sidebar-link'>
+                    <a href="{{ route('galeri.index') }}" class='sidebar-link'>
                         <i class="bi bi-collection-fill"></i>
                         <span>Profil</span>
                     </a>

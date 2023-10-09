@@ -176,7 +176,7 @@
 
                     <li
                         class="sidebar-item">
-                        <a href="#" class='sidebar-link'>
+                        <a href="{{ route('galeri.index') }}" class='sidebar-link'>
                             <i class="bi bi-grid-1x2-fill"></i>
                             <span>Galeri</span>
                         </a>

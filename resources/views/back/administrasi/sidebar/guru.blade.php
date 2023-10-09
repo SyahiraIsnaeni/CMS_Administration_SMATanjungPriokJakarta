@@ -54,7 +54,7 @@
 
                 <li
                     class="sidebar-item  has-sub">
-                    <a href="#" class='sidebar-link'>
+                    <a href="{{ route('galeri.index') }}" class='sidebar-link'>
                         <i class="bi bi-stack"></i>
                         <span>Beranda</span>
                     </a>

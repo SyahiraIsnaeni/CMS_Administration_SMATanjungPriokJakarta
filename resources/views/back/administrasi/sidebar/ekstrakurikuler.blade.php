@@ -195,7 +195,7 @@
 
                 <li
                     class="sidebar-item">
-                    <a href="#" class='sidebar-link'>
+                    <a href="{{ route('galeri.index') }}" class='sidebar-link'>
                         <i class="bi bi-hexagon-fill"></i>
                         <span>Data Siswa</span>
                     </a>

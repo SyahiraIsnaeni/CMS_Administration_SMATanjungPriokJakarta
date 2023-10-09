@@ -208,6 +208,8 @@
 
                     </li>
 
+                    </li>
+
                     <li class="sidebar-title">Data Sekolah</li>
 
                     <li
@@ -220,9 +222,17 @@
 
                     <li
                         class="sidebar-item">
-                        <a href="form-layout.html" class='sidebar-link'>
+                        <a href="{{ route('guru.index') }}" class='sidebar-link'>
                             <i class="bi bi-file-earmark-medical-fill"></i>
                             <span>Data Guru</span>
+                        </a>
+                    </li>
+
+                    <li
+                        class="sidebar-item">
+                        <a href="{{ route('staf.index') }}" class='sidebar-link'>
+                            <i class="bi bi-journal-check"></i>
+                            <span>Data Staf</span>
                         </a>
                     </li>
 

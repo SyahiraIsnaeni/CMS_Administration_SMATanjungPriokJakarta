@@ -201,7 +201,7 @@
 
                 <li
                     class="sidebar-item">
-                    <a href="form-layout.html" class='sidebar-link'>
+                    <a href="{{ route('guru.index') }}" class='sidebar-link'>
                         <i class="bi bi-file-earmark-medical-fill"></i>
                         <span>Data Guru</span>
                     </a>
@@ -209,7 +209,7 @@
 
                 <li
                     class="sidebar-item">
-                    <a href="#" class='sidebar-link'>
+                    <a href="{{ route('staf.index') }}" class='sidebar-link'>
                         <i class="bi bi-journal-check"></i>
                         <span>Data Staf</span>
                     </a>

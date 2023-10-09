@@ -20,10 +20,6 @@ Route::get('/', function () {
 });
 
 Route::group(['middleware' => 'revalidate'], function(){
-
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::resource('hari', HariNasionalController::class);
     Route::resource('ekstrakurikuler', \App\Http\Controllers\EkstrakurikulerController::class);
     Route::resource('prestasi', \App\Http\Controllers\PrestasiController::class);
@@ -41,6 +37,8 @@ Route::group(['middleware' => 'revalidate'], function(){
     Route::resource('riwayat-blog', \App\Http\Controllers\RiwayatBlogController::class);
     Route::resource('riwayat-pengumuman', \App\Http\Controllers\RiwayatPengumumanController::class);
     Route::resource('dashboard', \App\Http\Controllers\DashboardController::class);
+    Route::resource('guru', \App\Http\Controllers\GuruController::class);
+    Route::resource('staf', \App\Http\Controllers\StafController::class);
 });
 
 require __DIR__.'/auth.php';

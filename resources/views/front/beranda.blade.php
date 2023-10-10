@@ -130,57 +130,60 @@
 </section>
 
 <!-- Button Postingan -->
-<section id="button-postingan" style="background-color: transparent; height: 250px; margin-top: 150px">
-  <div class="container-fluid">
-    <div class="container">
-      <div class="row">
-        <div class="card-button col-lg-3 col-md-6 col-sm-12 rounded mt-2" style="background-color: white;
-        width: 253px; height: 180px;margin-left: 80px;box-shadow: 1px 2px 3px 3px rgba(0.3, 0.3, 0.3, 0.3);
-        " onmouseover="this.style.backgroundColor='#bce7eb';"
+<section id="button-postingan" style="background-color: transparent; margin-top: 150px">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-3"> 
+        <div class="card-button rounded" style="background-color: white; box-shadow: 1px 2px 3px 3px rgba(0.3, 0.3, 0.3, 0.3);"
+             onmouseover="this.style.backgroundColor='#bce7eb';"
              onmouseout="this.style.backgroundColor= '#ffffff';">
           <a href="prestasi.html" class="text-decoration-none">
             <img src="{{asset('front/piala.png')}}"width="240px" height="160px" style="text-align: center">
-            <p style="color: black;font-size: 22px;font-weight: bold;margin-top: -35px;text-align: center">
+            <p style="color: black; font-size: 22px; font-weight: bold; margin-top: -10px; text-align: center;">
               Prestasi
             </p>
           </a>
         </div>
-        <div class="card-button col-lg-3 col-md-6 col-sm-12 rounded mt-2" style="background-color: white;
-        width: 253px; height: 180px;margin-left: 40px;box-shadow: 1px 2px 3px 3px rgba(0.3, 0.3, 0.3, 0.3)"
+      </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-3"> 
+        <div class="card-button rounded" style="background-color: white; box-shadow: 1px 2px 3px 3px rgba(0.3, 0.3, 0.3, 0.3);"
              onmouseover="this.style.backgroundColor='#bce7eb';"
              onmouseout="this.style.backgroundColor= '#ffffff';">
           <a href="daftarppb.html" class="text-decoration-none">
             <img src="{{asset('front/pengumuman.png')}}" width="240px" height="160px" style="margin-left: 10px">
-            <p style="color: black;font-size: 22px;font-weight: bold;margin-top: -35px;text-align: center">
+            <p style="color: black; font-size: 22px; font-weight: bold; margin-top: -10px; text-align: center;">
               Pengumuman
             </p>
           </a>
         </div>
-        <div class="card-button col-lg-3 col-md-6 col-sm-12 rounded mt-2" style="background-color: white;
-        width: 253px; height: 180px;margin-left: 40px;box-shadow: 1px 2px 3px 3px rgba(0.3, 0.3, 0.3, 0.3)"
+      </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-3"> 
+        <div class="card-button rounded" style="background-color: white; box-shadow: 1px 2px 3px 3px rgba(0.3, 0.3, 0.3, 0.3);"
              onmouseover="this.style.backgroundColor='#bce7eb';"
              onmouseout="this.style.backgroundColor= '#ffffff';">
           <a href="daftarppb.html" class="text-decoration-none">
-            <img src="{{asset('front/news.png')}}" width="310px" height="160px" style="margin-left: -35px">
-            <p style="color: black;font-size: 22px;font-weight: bold;margin-top: -35px;text-align: center">
+            <img src="{{asset('front/news.png')}}" width="310px" height="160px" style="margin-left: 5px">
+            <p style="color: black; font-size: 22px; font-weight: bold; margin-top: -10px; text-align: center;">
               Berita
             </p>
           </a>
         </div>
-        <div class="card-button col-lg-3 col-md-6 col-sm-12 rounded mt-2" style="background-color: white;
-        width: 253px; height: 180px;margin-left: 40px;box-shadow: 1px 2px 3px 3px rgba(0.3, 0.3, 0.3, 0.3)"
+      </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-3"> 
+
+        <div class="card-button rounded" style="background-color: white; box-shadow: 1px 2px 3px 3px rgba(0.3, 0.3, 0.3, 0.3);"
              onmouseover="this.style.backgroundColor='#bce7eb';"
              onmouseout="this.style.backgroundColor= '#ffffff';">
           <a href="daftarppb.html" class="text-decoration-none">
             <img src="{{asset('front/blog.png')}}" width="250px" height="160px" style="margin-left: -15px">
-            <p style="color: black;font-size: 22px;font-weight: bold;margin-top: -35px;text-align: center">
+            <p style="color: black; font-size: 22px; font-weight: bold; margin-top: -10px; text-align: center;">
               Blog Pendidik
             </p>
           </a>
         </div>
       </div>
     </div>
-  </div>
+  
 </section>
 
 <!-- Ekstrakurikuler -->
@@ -507,29 +510,36 @@
 </section>
 
 <!-- Kontak Kami -->
-<section id="kontak-kami" style="margin-top: 100px;height: 500px">
-  <div class="container-fluid">
-    <div class="container">
-      <div class="row">
-        <div class="col-6" style="margin-left: 30px">
-          <h3 style="font-weight: bold">
-            Kontak Kami
-          </h3>
-          <ul class="box" style="list-style-type: none;margin-left: -30px">
-            <li style="margin-bottom: 15px; font-size: 20px;margin-top: 30px"><i class="fa-solid fa-location-dot"></i></i> Jl. Mangga No. 40 14270 Jakarta Utara DKI Jakarta</li>
-            <li style="margin-bottom: 15px;font-size: 20px"><i class="fa-solid fa-clock"></i></i> Senin - Sabtu (07.00 - 15.00)</li>
-            <li style="margin-bottom: 15px;font-size: 20px"><i class="fa-solid fa-phone"></i></i> 081234567890</li>
-            <li style="margin-bottom: 15px;font-size: 20px"><i class="fas fa-envelope mr-3"></i> smatanjngpriokjkt@gmail.com</li>
-          </ul>
-        </div>
-        <div class="col-6" style="width: 200px;height: 200px;margin-left: -25px">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.118510695867!2d106.90850987484097!3d-6.114744293871835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a201f9790436b%3A0xe7648e8e720cd1e!2sSenior%20High%20School%20of%20Tanjung%20Priok!5e0!3m2!1sen!2sid!4v1695373061574!5m2!1sen!2sid"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<section id="kontak-kami" style="margin-top: 50px; margin-bottom: 100px" >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <h3 style="font-weight: bold">Kontak Kami</h3>
+            <ul class="list-unstyled">
+              <li style="margin-bottom: 15px; font-size: 20px; margin-top: 30px"><i class="fas fa-map-marker-alt"></i> Jl. Mangga No. 40 14270 Jakarta Utara DKI Jakarta</li>
+              <li style="margin-bottom: 15px; font-size: 20px"><i class="far fa-clock"></i> Senin - Sabtu (07.00 - 15.00)</li>
+              <li style="margin-bottom: 15px; font-size: 20px"><i class="fas fa-phone"></i> 081234567890</li>
+              <li style="margin-bottom: 15px; font-size: 20px"><i class="far fa-envelope"></i> smatanjngpriokjkt@gmail.com</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <div class="embed-responsive-item">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.118510695867!2d106.90850987484097!3d-6.114744293871835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a201f9790436b%3A0xe7648e8e720cd1e!2sSenior%20High%20School%20of%20Tanjung%20Priok!5e0!3m2!1sen!2sid!4v1695373061574!5m2!1sen!2sid"
+                  width="100%"
+                  height="300"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 <!-- Footer -->
 @include('front.footer')

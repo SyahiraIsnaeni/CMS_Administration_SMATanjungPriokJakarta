@@ -22,8 +22,8 @@
             <div class="sidebar-header position-relative">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="logo" style="display: flex; align-items: center;">
-                        <img src="../assets/image/logo.png" style="width: 50px; height: 50px">
-                        <a href="#"><p style="font-size: 21px;margin-top: 25px">Admin</p></a>
+                        <img src="../assets/image/logosma.png" style="width: 40px; height: 40px">
+                        <a href="#" style="margin-left: 10px"><p style="font-size: 21px;margin-top: 25px">Admin</p></a>
                     </div>
                     <div class="theme-toggle d-flex gap-2  align-items-center mt-2">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
@@ -294,7 +294,7 @@
                                         <form method="post" action="{{ route('staf.store')}}" enctype="multipart/form-data">
                                             @csrf
                                             <div class="form-group">
-                                                <label for="squareText">Nama Lengkap Staf</label>
+                                                <label for="squareText">Nama Lengkap Staf (maks 25 karakter)</label>
                                                 <input type="text" id="squareText" class="form-control square"
                                                        placeholder="Nama Staf" name="nama">
                                             </div>
@@ -304,12 +304,12 @@
                                                        placeholder="NIP Staf" name="nip">
                                             </div>
                                             <div class="form-group">
-                                                <label for="squareText">Jabatan Staf</label>
+                                                <label for="squareText">Jabatan Staf (maks 25 karakter)</label>
                                                 <input type="text" id="squareText" class="form-control square"
                                                        placeholder="Jabatan Staf" name="jabatan">
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">
-                                                <label for="formFile" class="form-label">Foto Staf</label>
+                                                <label for="formFile" class="form-label">Foto Staf (ukuran 3:4)</label>
                                                 <input class="form-control" type="file" id="formFile" name="foto">
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">

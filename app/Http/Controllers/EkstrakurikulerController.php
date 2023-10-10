@@ -17,7 +17,7 @@ class EkstrakurikulerController extends Controller
 
     public function index()
     {
-        $ekstrakurikuler = Ekstrakurikuler::paginate(5);
+        $ekstrakurikuler = Ekstrakurikuler::orderBy('updated_at', 'desc')->paginate(5);
 
         // Mengambil data gambar terkait untuk setiap Ekstrakurikuler
         foreach ($ekstrakurikuler as $ekstra) {

@@ -16,7 +16,7 @@ class GuruController extends Controller
 
     public function index()
     {
-        $guru = Guru::paginate(5);
+        $guru = Guru::orderBy('updated_at', 'desc')->paginate(5);
         return view('back.administrasi.data.guru.view', compact('guru'));
     }
 
@@ -28,7 +28,8 @@ class GuruController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'nama' => 'required|min:3',
+            'nama' => 'required|min:3|max:25',
+            'jabatan' => 'required|min:3|max:25',
             'foto' => 'mimes:jpeg,jpg,png',
         ]);
 

@@ -22,8 +22,8 @@
             <div class="sidebar-header position-relative">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="logo" style="display: flex; align-items: center;">
-                        <img src="../assets/image/logo.png" style="width: 50px; height: 50px">
-                        <a href="#"><p style="font-size: 21px;margin-top: 25px">Admin</p></a>
+                        <img src="../assets/image/logosma.png" style="width: 40px; height: 40px">
+                        <a href="#" style="margin-left: 10px"><p style="font-size: 21px;margin-top: 25px">Admin</p></a>
                     </div>
                     <div class="theme-toggle d-flex gap-2  align-items-center mt-2">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
@@ -293,16 +293,16 @@
                                         <form method="post" action="{{ route('galeri.store')}}" enctype="multipart/form-data">
                                             @csrf
                                             <div class="form-group">
-                                                <label for="squareText">Nama Kegiatan</label>
+                                                <label for="squareText">Nama Kegiatan (maks 55 karakter)</label>
                                                 <input type="text" id="squareText" class="form-control square"
                                                        placeholder="Nama Kegiatan" name="judul">
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">
-                                                <label for="formFile" class="form-label">Cover Kegiatan</label>
+                                                <label for="formFile" class="form-label">Cover Kegiatan (rasio 3:2 atau 4:3)</label>
                                                 <input class="form-control" type="file" id="formFile" name="cover">
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">
-                                                <label for="formFile" class="form-label">Foto-Foto Kegiatan</label>
+                                                <label for="formFile" class="form-label">Foto-Foto Kegiatan (rasio 3:2 atau 4:3)</label>
                                                 <input class="form-control" name="image[]" type="file" id="formFileMultiple" multiple>
                                             </div>
 

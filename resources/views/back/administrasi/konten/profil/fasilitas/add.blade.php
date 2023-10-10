@@ -22,8 +22,8 @@
             <div class="sidebar-header position-relative">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="logo" style="display: flex; align-items: center;">
-                        <img src="../assets/image/logo.png" style="width: 50px; height: 50px">
-                        <a href="#"><p style="font-size: 21px;margin-top: 25px">Admin</p></a>
+                        <img src="../assets/image/logosma.png" style="width: 40px; height: 40px">
+                        <a href="#" style="margin-left: 10px"><p style="font-size: 21px;margin-top: 25px">Admin</p></a>
                     </div>
                     <div class="theme-toggle d-flex gap-2  align-items-center mt-2">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
@@ -293,7 +293,7 @@
                                         <form method="post" action="{{ route('fasilitas.store')}}" enctype="multipart/form-data">
                                             @csrf
                                             <div class="form-group">
-                                                <label for="formFile" class="form-label">Foto Fasilitas</label>
+                                                <label for="formFile" class="form-label">Foto Fasilitas (rasio 4:3)</label>
                                                 <input class="form-control" type="file" id="formFile" name="foto">
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">

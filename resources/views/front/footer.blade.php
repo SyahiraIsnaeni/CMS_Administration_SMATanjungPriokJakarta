@@ -8,7 +8,7 @@
       </div>
       <div class="media-icons">
         <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/smatanjungpriok_jkt"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-youtube"></i></a>
       </div>
     </div>
@@ -32,8 +32,8 @@
       </ul>
       <ul class="box">
         <li class="{{ url('#kontak-kami') }}">Contact Us</li>
-        <li><i class="fas fa-envelope mr-3" style="color: white"></i> smatanjngpriokjkt@gmail.com</li>
-        <li><i class="fas fa-phone mr-3" style="color: white"></i> 0984084093580</li>
+        <li><i class="fas fa-envelope mr-3" style="color: white"></i>Smatanjungpriok2@gmail.com</li>
+        <li><i class="fas fa-phone mr-3" style="color: white"></i> - </li>
       </ul>
     </div>
   </div>

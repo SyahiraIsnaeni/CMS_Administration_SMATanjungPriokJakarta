@@ -16,7 +16,7 @@ class FasilitasController extends Controller
 
     public function index()
     {
-        $fasilitas = Fasilitas::paginate(5);
+        $fasilitas = Fasilitas::orderBy('updated_at', 'desc')->paginate(5);
         return view('back.administrasi.konten.profil.fasilitas.view', compact('fasilitas'));
     }
 

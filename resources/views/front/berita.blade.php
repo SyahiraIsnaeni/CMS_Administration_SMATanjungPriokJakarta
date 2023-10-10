@@ -25,7 +25,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #136a71">
     <div class="container">
       <a class="navbar-brand" style="font-size: 15px; text-align: center; float: center" href="{{ 'beranda'}}">
-        <img src="{{asset('front/logo.png')}}" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>     
+        <img src="{{asset('front/logo.png')}}" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -61,58 +61,50 @@
 
     <!--Detail PPB-->
     <div class="container">
-      <div class="detailppb"></div>
+      <div align="center" class="detailppb"><img src="{{asset('uploads/' . $berita->gambar)}}" class="rounded"/></div>
       <div class="content">
-        <h2 class="judulppb">Step-by-step guide to choosing great font pairs</h2>
-        <p class="penulis">Ditulis oleh ShibaNA, pada 20 Juli 2022</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <h2 class="judulppb" style="font-size: 34px">{{$berita->judul}}</h2>
+        <p class="penulis" style="font-size: 15px">By {{$berita->penulis}}</p>
+        <p class="penulis" style="margin-top: -15px">{{$berita->created_at->format('d M Y')}} | {{$berita->kategori_berita->nama_kategori}}</p>
+        <p align="justify" class="d-flex justify-content-center">
+            {!! $berita->body !!}
         </p>
       </div>
     </div>
 
     <!-- Foto Kegiatan -->
-    <section id="kegiatanlain">
-      <div class="container">
-        <div class="row">
-          <h3 style="padding-left: 40px">What to read next</h3>
+    <section id="artikellainnya">
+        <div class="container mt-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    <h3 style="font-weight: bold">What to Read Next</h3>
+                </div>
+                <div class="row g-3">
+                    @forelse ($nextBerita as $row)
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <img src="{{asset('uploads/'.$row->gambar) }}" class="card-img-top" alt="events" height="250">
+                                <div class="card-body">
+                                    <h5 class="card-title" align="justify" style="font-weight: bold">{{$row->judul}}</h5>
+                                    <p class="card-text" align="justify" style="font-size: 15px">{!! substr($row->body, 0, 100)!!} ...</p>
+                                </div>
+                                <div class="card-body">
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <a class="text-black" href="{{route('detail-berita', $row->slug)}}" style="text-decoration: none;">
+                                            Selengkapnya
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    @empty
+                    @endforelse
+                </div>
+            </div>
         </div>
-        <div class="row d-flex justify-content-center" style="padding-left: 25px">
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <a href="#" class="text-decoration-none">
-              <img src="{{asset('front/kegiatanpramuka.jpg')}}" class="rounded" width="300" height="200" />
-              <p class="tulisan">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-            </a>
-          </div>
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <a href="#" class="text-decoration-none">
-              <img src="{{asset('front/kegiatanpramuka.jpg')}}" class="rounded" width="300" height="200" />
-              <p class="tulisan">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-            </a>
-          </div>
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <a href="#" class="text-decoration-none">
-              <img src="{{asset('front/kegiatanpramuka.jpg')}}" class="rounded" width="300" height="200" />
-              <p class="tulisan">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-            </a>
-          </div>
-        </div>
-      </div>
     </section>
-
     <!-- Footer -->
     @include('front.footer')
-    
+
   </body>
 </html>

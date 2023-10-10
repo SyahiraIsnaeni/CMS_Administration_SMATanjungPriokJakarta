@@ -34,7 +34,7 @@ class BlogController extends Controller
     {
         $this->validate($request, [
             'gambar' => 'required|image|mimes:jpeg,jpg,png',
-            'judul' => 'required|min:5',
+            'judul' => 'required|min:5|max:90',
         ]);
 
         $data = $request->all();

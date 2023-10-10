@@ -22,8 +22,8 @@
             <div class="sidebar-header position-relative">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="logo" style="display: flex; align-items: center;">
-                        <img src="../assets/image/logo.png" style="width: 50px; height: 50px">
-                        <a href="#"><p style="font-size: 21px;margin-top: 25px">Admin</p></a>
+                        <img src="../assets/image/logosma.png" style="width: 40px; height: 40px">
+                        <a href="#" style="margin-left: 10px"><p style="font-size: 21px;margin-top: 25px">Admin</p></a>
                     </div>
                     <div class="theme-toggle d-flex gap-2  align-items-center mt-2">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
@@ -303,11 +303,11 @@
                                                        placeholder="Deskripsi" name="deskripsi" style="height: 200px"></textarea>
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">
-                                                <label for="formFile" class="form-label">Logo Ekstrakurikuler</label>
+                                                <label for="formFile" class="form-label">Logo Ekstrakurikuler (rasio 1:1)</label>
                                                 <input class="form-control" type="file" id="formFile" name="logo">
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">
-                                                <label for="formFile" class="form-label">Foto Kegiatan Ekstrakurikuler</label>
+                                                <label for="formFile" class="form-label">Foto Kegiatan Ekstrakurikuler (rasio 4:3)</label>
                                                 <input class="form-control" name="image[]" type="file" id="formFileMultiple" multiple>
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">

@@ -16,7 +16,7 @@ class GaleriController extends Controller
     }
     public function index()
     {
-        $galeri = Galeri::paginate(10);
+        $galeri = Galeri::orderBy('updated_at', 'desc')->paginate(10);
         return view('back.administrasi.konten.galeri.view', compact('galeri'));
     }
 
@@ -30,6 +30,7 @@ class GaleriController extends Controller
         $this->validate($request, [
             'cover' => 'required|image|mimes:jpeg,jpg,png',
             'image.*' => 'image|mimes:jpeg,jpg,png',
+            'cover' => 'min:3|max:55',
         ]);
 
         $data = $request->all();

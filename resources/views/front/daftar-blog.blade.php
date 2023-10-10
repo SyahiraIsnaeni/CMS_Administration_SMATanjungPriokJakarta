@@ -64,15 +64,18 @@
 <section id="carousel" >
     <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="{{asset('front/smp.png')}}" class="d-block w-100 carousel-image" data-bs-interval="1000">
-            </div>
-            <div class="carousel-item">
-                <img src="{{asset('front/profilsekolah.png')}}"class="d-block w-100 carousel-image" data-bs-interval="1000">
-            </div>
-            <div class="carousel-item">
-                <img src="{{asset('front/sma.jpg')}}" class="d-block w-100 carousel-image" data-bs-interval="1000">
-            </div>
+            @forelse($jumbotronActive as $row)
+                <div class="carousel-item active">
+                    <img src="{{asset('uploads/'. $row->gambar)}}" class="d-block w-100 carousel-image" data-bs-interval="1000">
+                </div>
+            @empty
+            @endforelse
+            @forelse($jumbotron as $row)
+                <div class="carousel-item">
+                    <img src="{{asset('uploads/'. $row->gambar)}}"class="d-block w-100 carousel-image" data-bs-interval="1000">
+                </div>
+            @empty
+            @endforelse
         </div>
         <a class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -95,8 +98,8 @@
                     <img src="{{asset('uploads/'. $row->gambar)}}" class="rounded d-flex" alt="logo" height="280" width="480" style="margin-bottom: 70px" />
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12" style="font-family: Poppins; padding-left: 40px">
-                    <h4 class="tulisan d-flex justify-content-start"><a class="judulppb" href="#">{{$row->judul}}</a></h4>
-                    <a align="justify" class="isippb d-flex justify-content-center"  href="#">
+                    <h4 class="tulisan d-flex justify-content-start"><a class="judulppb" href="{{route('detail-blog', $row->slug)}}">{{$row->judul}}</a></h4>
+                    <a align="justify" class="isippb d-flex justify-content-center"  href="{{route('detail-blog', $row->slug)}}">
                         {!! substr($row->body, 0, 300)!!} ...
                     </a>
                 </div>

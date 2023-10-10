@@ -16,7 +16,7 @@ class PrestasiController extends Controller
 
     public function index()
     {
-        $prestasi = Prestasi::paginate(5);
+        $prestasi = Prestasi::orderBy('updated_at', 'desc')->paginate(5);
         return view('back.administrasi.konten.beranda.prestasi.view', compact('prestasi'));
     }
 
@@ -28,7 +28,7 @@ class PrestasiController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'nama' => 'required|min:3',
+            'nama' => 'required|min:3|max:70',
             'foto' => 'required|image|mimes:jpeg,jpg,png',
         ]);
 

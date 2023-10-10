@@ -27,7 +27,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #136a71">
     <div class="container">
       <a class="navbar-brand" style="font-size: 15px; text-align: center; float: center" href="{{ 'beranda' }}">
-        <img src="{{asset('front/logo.png')}}" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>     
+        <img src="{{asset('front/logo.png')}}" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -65,15 +65,18 @@
 <section id="carousel" >
   <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="{{asset('front/smp.png')}}" class="d-block w-100 carousel-image" data-bs-interval="1000">
-      </div>
-      <div class="carousel-item">
-        <img src="{{asset('front/profilsekolah.png')}}"class="d-block w-100 carousel-image" data-bs-interval="1000">
-      </div>
-      <div class="carousel-item">
-        <img src="{{asset('front/sma.jpg')}}" class="d-block w-100 carousel-image" data-bs-interval="1000">
-      </div>
+        @forelse($jumbotronActive as $row)
+          <div class="carousel-item active">
+            <img src="{{asset('uploads/'. $row->gambar)}}" class="d-block w-100 carousel-image" data-bs-interval="1000">
+          </div>
+        @empty
+        @endforelse
+        @forelse($jumbotron as $row)
+          <div class="carousel-item">
+            <img src="{{asset('uploads/'. $row->gambar)}}"class="d-block w-100 carousel-image" data-bs-interval="1000">
+          </div>
+        @empty
+        @endforelse
     </div>
     <a class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -133,7 +136,7 @@
 <section id="button-postingan" style="background-color: transparent; margin-top: 150px">
   <div class="container">
     <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-3"> 
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
         <div class="card-button rounded" style="background-color: white; box-shadow: 1px 2px 3px 3px rgba(0.3, 0.3, 0.3, 0.3);"
              onmouseover="this.style.backgroundColor='#bce7eb';"
              onmouseout="this.style.backgroundColor= '#ffffff';">
@@ -145,7 +148,7 @@
           </a>
         </div>
       </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-3"> 
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
         <div class="card-button rounded" style="background-color: white; box-shadow: 1px 2px 3px 3px rgba(0.3, 0.3, 0.3, 0.3);"
              onmouseover="this.style.backgroundColor='#bce7eb';"
              onmouseout="this.style.backgroundColor= '#ffffff';">
@@ -157,7 +160,7 @@
           </a>
         </div>
       </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-3"> 
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
         <div class="card-button rounded" style="background-color: white; box-shadow: 1px 2px 3px 3px rgba(0.3, 0.3, 0.3, 0.3);"
              onmouseover="this.style.backgroundColor='#bce7eb';"
              onmouseout="this.style.backgroundColor= '#ffffff';">
@@ -169,7 +172,7 @@
           </a>
         </div>
       </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 mb-3"> 
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
 
         <div class="card-button rounded" style="background-color: white; box-shadow: 1px 2px 3px 3px rgba(0.3, 0.3, 0.3, 0.3);"
              onmouseover="this.style.backgroundColor='#bce7eb';"
@@ -183,7 +186,7 @@
         </div>
       </div>
     </div>
-  
+
 </section>
 
 <!-- Ekstrakurikuler -->
@@ -371,7 +374,7 @@
                             @endif
                         </div>
                         <div class="col">
-                            <a  href="#" style="color: black" >
+                            <a  href="{{route('detail-pengumuman', $row->slug)}}" style="color: black" >
                                 <h6 style="margin-top: 10px;text-align:justify;font-size: 17px " class="card-title text-black" >{{$row['judul']}}</h6>
                             </a>
                         </div>
@@ -435,7 +438,7 @@
                               @endif
                           </div>
                           <div class="col">
-                              <a  href="#" style="color: black" >
+                              <a  href="{{route('detail-berita', $row->slug)}}" style="color: black" >
                                   <h6 style="margin-top: 10px;text-align:justify;font-size: 17px " class="card-title text-black" >{{$row['judul']}}</h6>
                               </a>
                           </div>
@@ -462,7 +465,7 @@
         <div class="main-card col-10 d-flex justify-content-start" id="main-card" style="overflow-x: hidden; height: auto;">
         @forelse ($blog as $row)
           <div class="card-blog me-3">
-          <a href="{{ 'front-blog' }}" class="text-decoration-none">
+          <a href="{{route('detail-blog', $row->slug)}}" class="text-decoration-none">
             <img src="{{asset('uploads/'.$row->gambar) }}"class="rounded" width="350" height="240">
             <div class="card-title rounded text-center"
                  style="padding-left: 5px;padding-bottom: 2px;
@@ -516,10 +519,10 @@
           <div class="col-md-6 mb-4">
             <h3 style="font-weight: bold">Kontak Kami</h3>
             <ul class="list-unstyled">
-              <li style="margin-bottom: 15px; font-size: 20px; margin-top: 30px"><i class="fas fa-map-marker-alt"></i> Jl. Mangga No. 40 14270 Jakarta Utara DKI Jakarta</li>
+              <li style="margin-bottom: 15px; font-size: 20px; margin-top: 30px"><i class="fas fa-map-marker-alt"></i> Jl. Mangga No. 40 14270, Jakarta Utara, DKI Jakarta</li>
               <li style="margin-bottom: 15px; font-size: 20px"><i class="far fa-clock"></i> Senin - Sabtu (07.00 - 15.00)</li>
-              <li style="margin-bottom: 15px; font-size: 20px"><i class="fas fa-phone"></i> 081234567890</li>
-              <li style="margin-bottom: 15px; font-size: 20px"><i class="far fa-envelope"></i> smatanjngpriokjkt@gmail.com</li>
+              <li style="margin-bottom: 15px; font-size: 20px"><i class="fas fa-phone"></i> - </li>
+              <li style="margin-bottom: 15px; font-size: 20px"><i class="far fa-envelope"></i> Smatanjungpriok2@gmail.com</li>
             </ul>
           </div>
           <div class="col-md-6">

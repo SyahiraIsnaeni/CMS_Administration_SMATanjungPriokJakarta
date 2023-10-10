@@ -16,7 +16,7 @@ class KategoriPengumumanController extends Controller
 
     public function index()
     {
-        $kategori_pengumuman = KategoriPengumuman::paginate(5);
+        $kategori_pengumuman = KategoriPengumuman::orderBy('updated_at', 'desc')->paginate(5);
         return view('back.administrasi.konten.kategori.kategori-pengumuman.view', compact('kategori_pengumuman'));
     }
 

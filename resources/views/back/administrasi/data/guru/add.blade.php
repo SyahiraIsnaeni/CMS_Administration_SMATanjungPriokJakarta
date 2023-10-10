@@ -293,7 +293,7 @@
                                         <form method="post" action="{{ route('guru.store')}}" enctype="multipart/form-data">
                                             @csrf
                                             <div class="form-group">
-                                                <label for="squareText">Nama Lengkap Guru</label>
+                                                <label for="squareText">Nama Lengkap Guru (maks 25 karakter)</label>
                                                 <input type="text" id="squareText" class="form-control square"
                                                        placeholder="Nama Guru" name="nama">
                                             </div>
@@ -303,12 +303,12 @@
                                                        placeholder="NIP Guru" name="nip">
                                             </div>
                                             <div class="form-group">
-                                                <label for="squareText">Jabatan Guru</label>
+                                                <label for="squareText">Jabatan Guru (maks 25 karakter)</label>
                                                 <input type="text" id="squareText" class="form-control square"
                                                        placeholder="Jabatan Guru" name="jabatan">
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">
-                                                <label for="formFile" class="form-label">Foto Guru</label>
+                                                <label for="formFile" class="form-label">Foto Guru (ukuran 3:4)</label>
                                                 <input class="form-control" type="file" id="formFile" name="foto">
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">

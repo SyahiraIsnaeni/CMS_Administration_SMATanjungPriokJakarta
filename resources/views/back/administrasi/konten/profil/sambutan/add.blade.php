@@ -300,7 +300,7 @@
                                                 </textarea>
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">
-                                                <label for="formFile" class="form-label">Foto Kepala Sekolah</label>
+                                                <label for="formFile" class="form-label">Foto Kepala Sekolah (rasio 3:4)</label>
                                                 <input class="form-control" type="file" id="formFile" name="foto">
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">

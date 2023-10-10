@@ -293,7 +293,7 @@
                                         <form method="post" action="{{ route('fasilitas.store')}}" enctype="multipart/form-data">
                                             @csrf
                                             <div class="form-group">
-                                                <label for="formFile" class="form-label">Foto Fasilitas</label>
+                                                <label for="formFile" class="form-label">Foto Fasilitas (rasio 4:3)</label>
                                                 <input class="form-control" type="file" id="formFile" name="foto">
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">

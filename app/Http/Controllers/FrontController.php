@@ -27,8 +27,8 @@ class FrontController extends Controller
         $berita = Berita::where('is_active', '1')->limit(4)->orderByDesc('created_at')->get();
         $pengumuman = Pengumuman::where('is_active', '1')->limit(5)->orderByDesc('created_at')->get();
 
-        $ekstrakurikuler = Ekstrakurikuler::orderByDesc('created_at')->get();
-        $prestasi = Prestasi::limit(5)->orderByDesc('created_at')->get();
+        $ekstrakurikuler = Ekstrakurikuler::orderByDesc('updated_at')->get();
+        $prestasi = Prestasi::limit(5)->orderByDesc('updated_at')->get();
         $hariNasional = HariNasional::all();
 
         $beritaPrioritas = Berita::where('is_active', '1')->limit(1)->orderByDesc('created_at')->get();
@@ -50,8 +50,8 @@ class FrontController extends Controller
 
     public function guru_staf()
     {
-        $guru = Guru::orderByDesc('created_at')->get();
-        $staf = Staf::orderByDesc('created_at')->get();
+        $guru = Guru::orderByDesc('updated_at')->get();
+        $staf = Staf::orderByDesc('updated_at')->get();
 
         return view('front.guru-staf', compact('guru','staf'));
     }
@@ -75,7 +75,7 @@ class FrontController extends Controller
 
     public function galeri()
     {
-        $galeri = Galeri::orderByDesc('created_at')->get();
+        $galeri = Galeri::orderByDesc('updated_at')->get();
 
         return view('front.galeri', compact('galeri'));
     }

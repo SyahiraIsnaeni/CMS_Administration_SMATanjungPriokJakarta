@@ -294,7 +294,7 @@
                                         <form method="post" action="{{ route('staf.store')}}" enctype="multipart/form-data">
                                             @csrf
                                             <div class="form-group">
-                                                <label for="squareText">Nama Lengkap Staf</label>
+                                                <label for="squareText">Nama Lengkap Staf (maks 25 karakter)</label>
                                                 <input type="text" id="squareText" class="form-control square"
                                                        placeholder="Nama Staf" name="nama">
                                             </div>
@@ -304,12 +304,12 @@
                                                        placeholder="NIP Staf" name="nip">
                                             </div>
                                             <div class="form-group">
-                                                <label for="squareText">Jabatan Staf</label>
+                                                <label for="squareText">Jabatan Staf (maks 25 karakter)</label>
                                                 <input type="text" id="squareText" class="form-control square"
                                                        placeholder="Jabatan Staf" name="jabatan">
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">
-                                                <label for="formFile" class="form-label">Foto Staf</label>
+                                                <label for="formFile" class="form-label">Foto Staf (ukuran 3:4)</label>
                                                 <input class="form-control" type="file" id="formFile" name="foto">
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">

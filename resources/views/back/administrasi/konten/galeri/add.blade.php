@@ -293,16 +293,16 @@
                                         <form method="post" action="{{ route('galeri.store')}}" enctype="multipart/form-data">
                                             @csrf
                                             <div class="form-group">
-                                                <label for="squareText">Nama Kegiatan</label>
+                                                <label for="squareText">Nama Kegiatan (maks 55 karakter)</label>
                                                 <input type="text" id="squareText" class="form-control square"
                                                        placeholder="Nama Kegiatan" name="judul">
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">
-                                                <label for="formFile" class="form-label">Cover Kegiatan</label>
+                                                <label for="formFile" class="form-label">Cover Kegiatan (rasio 3:2 atau 4:3)</label>
                                                 <input class="form-control" type="file" id="formFile" name="cover">
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">
-                                                <label for="formFile" class="form-label">Foto-Foto Kegiatan</label>
+                                                <label for="formFile" class="form-label">Foto-Foto Kegiatan (rasio 3:2 atau 4:3)</label>
                                                 <input class="form-control" name="image[]" type="file" id="formFileMultiple" multiple>
                                             </div>
 

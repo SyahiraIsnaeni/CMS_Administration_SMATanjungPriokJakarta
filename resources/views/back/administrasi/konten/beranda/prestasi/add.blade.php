@@ -293,7 +293,7 @@
                                         <form method="post" action="{{ route('prestasi.store')}}" enctype="multipart/form-data">
                                             @csrf
                                             <div class="form-group">
-                                                <label for="squareText">Nama Prestasi</label>
+                                                <label for="squareText">Nama Prestasi (maks 70 karakter)</label>
                                                 <input type="text" id="squareText" class="form-control square"
                                                        placeholder="Prestasi" name="nama">
                                             </div>

@@ -28,7 +28,8 @@ class StafController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'nama' => 'required|min:3',
+            'nama' => 'required|min:3|max:25',
+            'jabatan' => 'required|min:3|max:25',
             'foto' => 'mimes:jpeg,jpg,png',
         ]);
 

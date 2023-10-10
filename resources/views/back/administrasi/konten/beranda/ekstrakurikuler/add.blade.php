@@ -303,11 +303,11 @@
                                                        placeholder="Deskripsi" name="deskripsi" style="height: 200px"></textarea>
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">
-                                                <label for="formFile" class="form-label">Logo Ekstrakurikuler</label>
+                                                <label for="formFile" class="form-label">Logo Ekstrakurikuler (rasio 1:1)</label>
                                                 <input class="form-control" type="file" id="formFile" name="logo">
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">
-                                                <label for="formFile" class="form-label">Foto Kegiatan Ekstrakurikuler</label>
+                                                <label for="formFile" class="form-label">Foto Kegiatan Ekstrakurikuler (rasio 4:3)</label>
                                                 <input class="form-control" name="image[]" type="file" id="formFileMultiple" multiple>
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">

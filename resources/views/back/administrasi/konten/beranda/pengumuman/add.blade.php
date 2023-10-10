@@ -326,7 +326,7 @@
                                                 <input class="form-control" type="file" id="formFile" name="gambar">
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">
-                                                <label for="pengumuman" class="form-label">Dokumen</label>
+                                                <label for="pengumuman" class="form-label">Dokumen (opsional)</label>
                                                 <input class="form-control" type="file" id="formFile" name="dokumen">
                                             </div>
                                             <div class="form-group">

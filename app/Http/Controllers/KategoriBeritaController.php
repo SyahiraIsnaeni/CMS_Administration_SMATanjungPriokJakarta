@@ -16,7 +16,7 @@ class KategoriBeritaController extends Controller
 
     public function index()
     {
-        $kategori_berita = KategoriBerita::paginate(5);
+        $kategori_berita = KategoriBerita::orderBy('updated_at', 'desc')->paginate(5);
         return view('back.administrasi.konten.kategori.kategori-berita.view', compact('kategori_berita'));
     }
 

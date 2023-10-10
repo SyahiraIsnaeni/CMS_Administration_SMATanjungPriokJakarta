@@ -16,7 +16,7 @@ class StafController extends Controller
 
     public function index()
     {
-        $staf = Staf::paginate(5);
+        $staf = Staf::orderBy('updated_at', 'desc')->paginate(5);
         return view('back.administrasi.data.staf.view', compact('staf'));
     }
 

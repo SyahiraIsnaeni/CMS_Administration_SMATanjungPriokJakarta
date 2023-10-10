@@ -22,7 +22,7 @@
             <div class="sidebar-header position-relative">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="logo" style="display: flex; align-items: center;">
-                        <img src="assets/image/logosma.png" style="width: 40px; height: 40px">
+                        <img src="../assets/image/logosma.png" style="width: 40px; height: 40px">
                         <a href="#"><p style="font-size: 21px;margin-top: 25px">Admin</p></a>
                     </div>
                     <div class="theme-toggle d-flex gap-2  align-items-center mt-2">
@@ -297,7 +297,7 @@
                                                 <input type="text" name="penulis" class="form-control" id="text" placeholder="Enter Penulis">
                                             </div>
                                             <div class="form-group">
-                                                <label for="blog">Judul</label>
+                                                <label for="blog">Judul (Maksimum 90 karakter)</label>
                                                 <input type="text" name="judul" class="form-control" id="text" placeholder="Enter Judul">
                                             </div>
                                             <div class="form-group">

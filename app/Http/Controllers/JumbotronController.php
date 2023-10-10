@@ -15,7 +15,7 @@ class JumbotronController extends Controller
 
     public function index()
     {
-        $jumbotron = Jumbotron::all();
+        $jumbotron = Jumbotron::orderBy('updated_at', 'desc')->paginate(5);
         return view('back.administrasi.konten.jumbotron.view', compact('jumbotron'));
     }
 
@@ -33,22 +33,18 @@ class JumbotronController extends Controller
         $data = $request->all();
         $jumbotron = Jumbotron::all();
 
-        if($jumbotron->count('id') == 1){
-            Alert::error('Gagal', 'Tidak Dapat Menambahkan Data Lebih Dari Satu');
-            return redirect()->route('jumbotron.index');
+        if(is_null($data['gambar'])){
+
+            Alert::error('Gagal', 'Data Gagal Tersimpan. Periksa kembali data yang dimasukkan');
+            return redirect()->route('jumbotron.create');
         }else{
-            if(is_null($data['gambar'])){
+            $data['gambar'] = $request->file('gambar')->store('jumbotron');
 
-                Alert::error('Gagal', 'Data Gagal Tersimpan. Periksa kembali data yang dimasukkan');
-                return redirect()->route('jumbotron.create');
-            }else{
-                $data['gambar'] = $request->file('gambar')->store('jumbotron');
+            Jumbotron::create($data);
 
-                Jumbotron::create($data);
-
-                Alert::success('Berhasil', 'Data Berhasil Tersimpan');
-            }
+            Alert::success('Berhasil', 'Data Berhasil Tersimpan');
         }
+
         return redirect()->route('jumbotron.index');
     }
 

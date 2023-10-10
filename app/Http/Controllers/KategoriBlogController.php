@@ -16,7 +16,7 @@ class KategoriBlogController extends Controller
 
     public function index()
     {
-        $kategori_blog = KategoriBlog::paginate(5);
+        $kategori_blog = KategoriBlog::orderBy('updated_at', 'desc')->paginate(5);
         return view('back.administrasi.konten.kategori.kategori-blog.view', compact('kategori_blog'));
     }
 

@@ -59,19 +59,3 @@ Route::get('/detail-blog/{id}', [\App\Http\Controllers\FrontController::class, '
 Route::get('/detail-berita/{id}', [\App\Http\Controllers\FrontController::class, 'detailBerita'])->name('detail-berita');
 Route::get('/detail-pengumuman/{id}', [\App\Http\Controllers\FrontController::class, 'detailPengumuman'])->name('detail-pengumuman');
 
-Route::get('/front-berita', function () {
-    return view('front.berita');
-});
-Route::get('/front-blog', function () {
-    return view('front.blog');
-});
-
-Route::get('/front-daftar-blog', function () {
-    return view('front.daftar-blog');
-});
-Route::get('/front-daftar-pengumuman', function () {
-    return view('front.daftar-pengumuman');
-});
-Route::get('/front-pengumuman', function () {
-    return view('front.pengumuman');
-});

@@ -8,6 +8,7 @@ use App\Models\Galeri;
 use App\Models\Guru;
 use App\Models\ImagesEkstrakurikuler;
 use App\Models\ImagesGaleri;
+use App\Models\Jumbotron;
 use App\Models\Staf;
 use App\Models\HariNasional;
 use App\Models\Pengumuman;
@@ -30,30 +31,34 @@ class FrontController extends Controller
         $ekstrakurikuler = Ekstrakurikuler::orderByDesc('updated_at')->get();
         $prestasi = Prestasi::limit(5)->orderByDesc('updated_at')->get();
         $hariNasional = HariNasional::all();
+        $jumbotron = Jumbotron::orderByDesc('updated_at')->offset(1)->limit(PHP_INT_MAX)->get();
+        $jumbotronActive = Jumbotron::orderByDesc('updated_at')->limit(1)->get();
 
         $beritaPrioritas = Berita::where('is_active', '1')->limit(1)->orderByDesc('created_at')->get();
         $pengumumanPrioritas = Pengumuman::where('is_active', '1')->limit(1)->orderByDesc('created_at')->get();
         return view('front.beranda', compact('pengumuman','berita', 'blog',
-            'ekstrakurikuler', 'prestasi', 'hariNasional', 'beritaPrioritas', 'pengumumanPrioritas'));
+            'ekstrakurikuler', 'prestasi', 'hariNasional', 'beritaPrioritas', 'pengumumanPrioritas', 'jumbotron', 'jumbotronActive'));
     }
 
     public function profil()
     {
         $sambutan = Sambutan::all();
         $sejarah = Sejarah::all();
-        $fasilitas = Fasilitas::all();
+        $fasilitas = Fasilitas::orderByDesc('updated_at')->get();
         $struktur = Struktural::all();
+        $jumbotron = Jumbotron::orderByDesc('updated_at')->get();
 
         return view('front.profil', compact('sambutan','sejarah', 'fasilitas',
-            'struktur'));
+            'struktur','jumbotron'));
     }
 
     public function guru_staf()
     {
         $guru = Guru::orderByDesc('updated_at')->get();
         $staf = Staf::orderByDesc('updated_at')->get();
+        $jumbotron = Jumbotron::orderByDesc('updated_at')->get();
 
-        return view('front.guru-staf', compact('guru','staf'));
+        return view('front.guru-staf', compact('guru','staf', 'jumbotron'));
     }
 
     public function prestasi()
@@ -76,8 +81,9 @@ class FrontController extends Controller
     public function galeri()
     {
         $galeri = Galeri::orderByDesc('updated_at')->get();
+        $jumbotron = Jumbotron::orderByDesc('updated_at')->get();
 
-        return view('front.galeri', compact('galeri'));
+        return view('front.galeri', compact('galeri', 'jumbotron'));
     }
 
     public function detailGaleri($id)
@@ -93,22 +99,25 @@ class FrontController extends Controller
     public function berita()
     {
         $berita = Berita::where('is_active', '1')->orderByDesc('created_at')->get();
+        $jumbotron = Jumbotron::orderByDesc('updated_at')->get();
 
-        return view('front.daftar-berita', compact('berita'));
+        return view('front.daftar-berita', compact('berita', 'jumbotron'));
     }
 
     public function blog()
     {
         $blog = Blog::where('is_active', '1')->orderByDesc('created_at')->get();
+        $jumbotron = Jumbotron::orderByDesc('updated_at')->get();
 
-        return view('front.daftar-blog', compact('blog'));
+        return view('front.daftar-blog', compact('blog', 'jumbotron'));
     }
 
     public function pengumuman()
     {
         $pengumuman = Pengumuman::where('is_active', '1')->orderByDesc('created_at')->get();
+        $jumbotron = Jumbotron::orderByDesc('updated_at')->get();
 
-        return view('front.daftar-pengumuman', compact('pengumuman'));
+        return view('front.daftar-pengumuman', compact('pengumuman', 'jumbotron'));
     }
 
     public function detailBlog($slug)

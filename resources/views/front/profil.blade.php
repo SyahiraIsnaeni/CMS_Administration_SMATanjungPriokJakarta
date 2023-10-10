@@ -59,28 +59,31 @@
 
     <!-- Carousel -->
     <section id="carousel" >
-  <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="{{asset('front/smp.png')}}" class="d-block w-100 carousel-image" data-bs-interval="1000">
-      </div>
-      <div class="carousel-item">
-        <img src="{{asset('front/profilsekolah.png')}}"class="d-block w-100 carousel-image" data-bs-interval="1000">
-      </div>
-      <div class="carousel-item">
-        <img src="{{asset('front/sma.jpg')}}" class="d-block w-100 carousel-image" data-bs-interval="1000">
-      </div>
-    </div>
-    <a class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </a>
-    <a class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </a>
-  </div>
-</section>
+        <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                @forelse($jumbotronActive as $row)
+                    <div class="carousel-item active">
+                        <img src="{{asset('uploads/'. $row->gambar)}}" class="d-block w-100 carousel-image" data-bs-interval="1000">
+                    </div>
+                @empty
+                @endforelse
+                @forelse($jumbotron as $row)
+                    <div class="carousel-item">
+                        <img src="{{asset('uploads/'. $row->gambar)}}"class="d-block w-100 carousel-image" data-bs-interval="1000">
+                    </div>
+                @empty
+                @endforelse
+            </div>
+            <a class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </section>
 
     <!-- Sambutan Kepala Sekolah -->
     <section id="sambutan" style="margin-top: 80px">

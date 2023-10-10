@@ -33,7 +33,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-              <a class="nav-link" href="{{ 'beranda' }}">Beranda</a>
+              <a class="nav-link" href="{{ 'front-beranda' }}">Beranda</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ 'front-profil' }}">Profil</a>
@@ -42,7 +42,7 @@
               <a class="nav-link" href="{{ 'front-guru-staf' }}">Guru & Staf</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ 'front-galeri' }}">Galeri</a>
+              <a class="nav-link  active" aria-current="page" href="{{ 'front-galeri' }}">Galeri</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">E-Learning</a>

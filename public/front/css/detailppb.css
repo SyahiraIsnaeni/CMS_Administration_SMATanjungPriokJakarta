@@ -276,10 +276,6 @@ footer {
     left: 0;
 }
 
-.gambar1 {
-    justify-self: end;
-}
-
 footer .line {
     content: "";
     position: absolute;
@@ -410,4 +406,13 @@ footer .bottom-details .bottom_text {
     margin-left: auto;
     display: flex;
     justify-content: space-between;
+}
+
+.gambar1 {
+    justify-self: end;
+}
+
+.tulisan {
+    width: 300px;
+    text-align: justify;
 }

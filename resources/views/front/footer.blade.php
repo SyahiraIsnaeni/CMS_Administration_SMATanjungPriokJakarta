@@ -2,7 +2,7 @@
   <div class="content">
     <div class="top">
       <div class="logo-details">
-        <h4><img src="assets/logo.png" alt="logo" height="50" /> SMA Tanjung Priok Jakarta</h4>
+        <h4><img src="{{asset('front/logo.png')}}"alt="logo" height="50" /> SMA Tanjung Priok Jakarta</h4>
       </div>
       <div class="line">
       </div>

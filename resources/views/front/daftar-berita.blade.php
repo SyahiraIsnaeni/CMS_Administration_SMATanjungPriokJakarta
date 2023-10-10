@@ -95,8 +95,8 @@
                 <img src="{{asset('uploads/'. $row->gambar)}}" class="rounded d-flex" alt="logo" height="280" width="480" style="margin-bottom: 70px" />
               </div>
               <div class="col-lg-6 col-md-12 col-sm-12" style="font-family: Poppins; padding-left: 40px">
-                <h4 class="tulisan d-flex justify-content-start"><a class="judulppb" href="#">{{$row->judul}}</a></h4>
-                <a align="justify" class="isippb d-flex justify-content-center"  href="#">
+                <h4 class="tulisan d-flex justify-content-start"><a class="judulppb" href="{{route('detail-berita', $row->slug)}}">{{$row->judul}}</a></h4>
+                <a align="justify" class="isippb d-flex justify-content-center"  href="{{route('detail-berita', $row->slug)}}">
                     {!! substr($row->body, 0, 300)!!} ...
                 </a>
               </div>
@@ -108,6 +108,6 @@
 
     <!-- Footer -->
     @include('front.footer')
-    
+
   </body>
 </html>

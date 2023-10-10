@@ -133,10 +133,7 @@ table {
 }
 
 .detailppb {
-    height: 650px;
-    background-image: url(image/sekolah2.jpg);
     background-size: cover;
-    background-position: 0 -480px;
     margin-top: 50px;
 }
 

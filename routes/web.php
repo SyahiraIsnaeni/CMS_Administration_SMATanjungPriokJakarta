@@ -55,6 +55,9 @@ Route::get('/detail-ekstrakurikuler/{id}', [\App\Http\Controllers\FrontControlle
 Route::get('/daftar-berita', [\App\Http\Controllers\FrontController::class, 'berita'])->name('berita');
 Route::get('/daftar-blog', [\App\Http\Controllers\FrontController::class, 'blog'])->name('blog');
 Route::get('/daftar-pengumuman', [\App\Http\Controllers\FrontController::class, 'pengumuman'])->name('pengumuman');
+Route::get('/detail-blog/{id}', [\App\Http\Controllers\FrontController::class, 'detailBlog'])->name('detail-blog');
+Route::get('/detail-berita/{id}', [\App\Http\Controllers\FrontController::class, 'detailBerita'])->name('detail-berita');
+Route::get('/detail-pengumuman/{id}', [\App\Http\Controllers\FrontController::class, 'detailPengumuman'])->name('detail-pengumuman');
 
 Route::get('/front-berita', function () {
     return view('front.berita');

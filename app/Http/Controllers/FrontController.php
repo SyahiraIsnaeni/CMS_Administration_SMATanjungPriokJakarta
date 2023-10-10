@@ -111,5 +111,28 @@ class FrontController extends Controller
         return view('front.daftar-pengumuman', compact('pengumuman'));
     }
 
+    public function detailBlog($slug)
+    {
+        $blog = Blog::where('slug', $slug)->first();
+        $nextBlog = Blog::whereNotIn('slug', [$slug])->where('is_active', '1')->limit(3)->orderByDesc('created_at')->get();
+
+        return view('front.blog', compact('blog', 'nextBlog'));
+    }
+
+    public function detailBerita($slug)
+    {
+        $berita = Berita::where('slug', $slug)->first();
+        $nextBerita = Berita::whereNotIn('slug', [$slug])->where('is_active', '1')->limit(3)->orderByDesc('created_at')->get();
+
+        return view('front.berita', compact('berita','nextBerita'));
+    }
+
+    public function detailPengumuman($slug)
+    {
+        $pengumuman = Pengumuman::where('slug', $slug)->first();
+        $nextPengumuman = Pengumuman::whereNotIn('slug', [$slug])->where('is_active', '1')->limit(3)->orderByDesc('created_at')->get();
+
+        return view('front.pengumuman', compact('pengumuman','nextPengumuman'));
+    }
 
 }

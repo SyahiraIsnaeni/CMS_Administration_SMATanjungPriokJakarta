@@ -516,9 +516,9 @@
           <div class="col-md-6 mb-4">
             <h3 style="font-weight: bold">Kontak Kami</h3>
             <ul class="list-unstyled">
-              <li style="margin-bottom: 15px; font-size: 20px; margin-top: 30px"><i class="fas fa-map-marker-alt"></i> Jl. Mangga No. 40 14270 Jakarta Utara DKI Jakarta</li>
+              <li style="margin-bottom: 15px; font-size: 20px; margin-top: 30px"><i class="fas fa-map-marker-alt"></i> Jl. Mangga No. 40 14270, Jakarta Utara, DKI Jakarta</li>
               <li style="margin-bottom: 15px; font-size: 20px"><i class="far fa-clock"></i> Senin - Sabtu (07.00 - 15.00)</li>
-              <li style="margin-bottom: 15px; font-size: 20px"><i class="fas fa-phone"></i> 081234567890</li>
+              <li style="margin-bottom: 15px; font-size: 20px"><i class="fas fa-phone"></i> - </li>
               <li style="margin-bottom: 15px; font-size: 20px"><i class="far fa-envelope"></i> Smatanjungpriok2@gmail.com</li>
             </ul>
           </div>

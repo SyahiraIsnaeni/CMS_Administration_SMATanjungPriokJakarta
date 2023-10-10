@@ -33,7 +33,7 @@
       <ul class="box">
         <li class="{{ url('#kontak-kami') }}">Contact Us</li>
         <li><i class="fas fa-envelope mr-3" style="color: white"></i>Smatanjungpriok2@gmail.com</li>
-        <li><i class="fas fa-phone mr-3" style="color: white"></i> 0984084093580</li>
+        <li><i class="fas fa-phone mr-3" style="color: white"></i> - </li>
       </ul>
     </div>
   </div>

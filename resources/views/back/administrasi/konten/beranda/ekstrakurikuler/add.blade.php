@@ -145,6 +145,14 @@
                     </li>
 
                     <li
+                        class="sidebar-item">
+                        <a href="{{ route('jumbotron.index') }}" class='sidebar-link'>
+                            <i class="bi bi-card-image"></i>
+                            <span>Jumbotron</span>
+                        </a>
+                    </li>
+
+                    <li
                         class="sidebar-item  has-sub">
                         <a href="#" class='sidebar-link'>
                             <i class="bi bi-layers-half"></i>
@@ -297,6 +305,10 @@
                                             <div class="form-group" style="margin-top: 20px">
                                                 <label for="formFile" class="form-label">Logo Ekstrakurikuler</label>
                                                 <input class="form-control" type="file" id="formFile" name="logo">
+                                            </div>
+                                            <div class="form-group" style="margin-top: 20px">
+                                                <label for="formFile" class="form-label">Foto Kegiatan Ekstrakurikuler</label>
+                                                <input class="form-control" name="image[]" type="file" id="formFileMultiple" multiple>
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">
                                                 <button class="btn btn-info btn-sm" type="submit"> Simpan </button>

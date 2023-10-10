@@ -25,7 +25,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #136a71">
     <div class="container">
       <a class="navbar-brand" style="font-size: 15px; text-align: center; float: center" href="{{ 'beranda' }}">
-        <img src="{{asset('front/logo.png')}}" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>     
+        <img src="{{asset('front/logo.png')}}" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -61,63 +61,16 @@
 
     <!-- galeri Prestasi -->
     <section id="eventdet" class="overflow-hidden">
-      <h2 style="text-align: center; margin-top: 30px; margin-bottom: 30px; font-size: 37px">Prestasi</h2>
+      <h2 style="text-align: center; margin-top: 80px; margin-bottom: 70px; font-size: 37px;font-weight: bold">Prestasi SMA Tanjung Priok Jakarta</h2>
       <div class="container">
         <div class="row">
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex flex-column align-items-center">
-            <img src="{{asset('front/juara.png')}}" class="rounded" width="370" height="320" />
-            <p class="judulprestasi">Prestasi 1</p>
-          </div>
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex flex-column align-items-center">
-            <img src="{{asset('front/juara.png')}}" class="rounded" width="370" height="320" />
-            <p class="judulprestasi">Prestasi 2</p>
-          </div>
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex flex-column align-items-center">
-            <img src="{{asset('front/juara.png')}}" class="rounded" width="370" height="320" />
-            <p class="judulprestasi">Prestasi 3</p>
-          </div>
-        </div>
-        <div class="row" style="margin-top: 30px">
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex flex-column align-items-center">
-            <img src="{{asset('front/juara.png')}}" class="rounded" width="370" height="320" />
-            <p class="judulprestasi">Prestasi 4</p>
-          </div>
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex flex-column align-items-center">
-            <img src="{{asset('front/juara.png')}}" class="rounded" width="370" height="320" />
-            <p class="judulprestasi">Prestasi 5</p>
-          </div>
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex flex-column align-items-center">
-            <img src="{{asset('front/juara.png')}}" class="rounded" width="370" height="320" />
-            <p class="judulprestasi">Prestasi 6</p>
-          </div>
-        </div>
-        <div class="row" style="margin-top: 30px">
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex flex-column align-items-center">
-            <img src="{{asset('front/juara.png')}}" class="rounded" width="370" height="320" />
-            <p class="judulprestasi">Prestasi 7</p>
-          </div>
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex flex-column align-items-center">
-            <img src="{{asset('front/juara.png')}}" class="rounded" width="370" height="320" />
-            <p class="judulprestasi">Prestasi 8</p>
-          </div>
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex flex-column align-items-center">
-            <img src="{{asset('front/juara.png')}}" class="rounded" width="370" height="320" />
-            <p class="judulprestasi">Prestasi 9</p>
-          </div>
-        </div>
-        <div class="row" style="margin-top: 30px">
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex flex-column align-items-center">
-            <img src="{{asset('front/juara.png')}}" class="rounded" width="370" height="320" />
-            <p class="judulprestasi">Prestasi 10</p>
-          </div>
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex flex-column align-items-center">
-            <img src="{{asset('front/juara.png')}}" class="rounded" width="370" height="320" />
-            <p class="judulprestasi">Prestasi 11</p>
-          </div>
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex flex-column align-items-center">
-            <img src="{{asset('front/juara.png')}}" class="rounded" width="370" height="320" />
-            <p class="judulprestasi">Prestasi 12</p>
-          </div>
+            @forelse ($prestasi as $row)
+              <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex flex-column align-items-center">
+                <img src="{{asset('uploads/'. $row->foto)}}" class="rounded" width="370" height="270" />
+                <p class="judulprestasi">{{$row->nama}}</p>
+              </div>
+            @empty
+            @endforelse
         </div>
       </div>
     </section>

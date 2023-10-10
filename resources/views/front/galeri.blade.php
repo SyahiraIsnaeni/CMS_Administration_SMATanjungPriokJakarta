@@ -25,7 +25,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #136a71">
     <div class="container">
       <a class="navbar-brand" style="font-size: 15px; text-align: center; float: center" href="{{ 'beranda' }}">
-        <img src="{{asset('front/logo.png')}}" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>     
+        <img src="{{asset('front/logo.png')}}" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -86,145 +86,23 @@
 
     <!-- galeri event -->
     <section id="event" class="overflow-hidden">
-      <h2 style="text-align: center; margin-top: 30px; margin-bottom: 30px; font-size: 37px"><b>Galeri SMA Tanjung Priok</b></h2>
-      <div class="container" style="margin-bottom: 100px">
-      <div class="row" style="margin-bottom: 100px">
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12  d-flex justify-content-center">
-            <a href="geleridetail.html" class="text-decoration-none">
-            <img src="{{asset('front/eventgambar.jpg')}}"
+      <h2 style="text-align: center; margin-top: 80px; margin-bottom: 80px; font-size: 37px"><b>Galeri SMA Tanjung Priok</b></h2>
+      <div class="container" style="margin-bottom: 30px">
+      <div class="row" style="margin-bottom: 50px">
+          @forelse ($galeri as $row)
+          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center mt-5 mb-5">
+            <a href="{{ route('detail-galeri', $row->id) }}" class="text-decoration-none">
+            <img src="{{asset('uploads/'. $row->cover)}}"
  class="rounded" width="400" height="250" />
             <div class="card-title rounded text-center">
-              <a href="geleridetail.html" class="text-decoration-none">
-                <p class="nama">EVENT 1</p>   
+              <a href="{{ route('detail-galeri', $row->id) }}" class="text-decoration-none">
+                <p class="nama">{{$row->judul}}</p>
+              </a>
             </div>
           </a>
           </div>
-
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12  d-flex justify-content-center">
-            <a href="geleridetail.html" class="text-decoration-none">
-            <img src="{{asset('front/eventgambar.jpg')}}"
- class="rounded" width="400" height="250"/>
-            <div class="card-title rounded text-center">
-              <a href="geleridetail.html" class="text-decoration-none">
-                <p class="nama">EVENT 2</p>   
-            </div>
-          </a>
-          </div>
-
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <a href="geleridetail.html" class="text-decoration-none">
-            <img src="{{asset('front/eventgambar.jpg')}}"
- class="rounded" width="400" height="250"/>
-            <div class="card-title rounded text-center">
-              <a href="geleridetail.html" class="text-decoration-none">
-                <p class="nama">EVENT 3</p>   
-            </div>
-          </a>
-          </div>
-        </div>
-        <div class="row" style="margin-bottom: 30px">
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <a href="geleridetail.html" class="text-decoration-none">
-            <img src="{{asset('front/eventgambar.jpg')}}"
- class="rounded" width="400" height="250"/>
-            <div class="card-title rounded text-center">
-              <a href="geleridetail.html" class="text-decoration-none">
-                <p class="nama">EVENT 4</p>   
-            </div>
-          </a>
-          </div>
-
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <a href="geleridetail.html" class="text-decoration-none">
-            <img src="{{asset('front/eventgambar.jpg')}}"
- class="rounded" width="400" height="250"/>
-            <div class="card-title rounded text-center">
-              <a href="geleridetail.html" class="text-decoration-none">
-                <p class="nama">EVENT 5</p>   
-            </div>
-          </a>
-          </div>
-
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <a href="geleridetail.html" class="text-decoration-none">
-            <img src="{{asset('front/eventgambar.jpg')}}"
- class="rounded" width="400" height="250"/>
-            <div class="card-title rounded text-center">
-              <a href="geleridetail.html" class="text-decoration-none">
-                <p class="nama">EVENT 6</p>   
-            </div>
-          </a>
-          </div>
-
-        </div>
-        <div class="row" style="margin-top: 100px">
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <a href="geleridetail.html" class="text-decoration-none">
-            <img src="{{asset('front/eventgambar.jpg')}}"
- class="rounded" width="400" height="250"/>
-            <div class="card-title rounded text-center">
-              <a href="geleridetail.html" class="text-decoration-none">
-                <p class="nama">EVENT 7</p>   
-            </div>
-          </a>
-          </div>
-
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <a href="geleridetail.html" class="text-decoration-none">
-            <img src="{{asset('front/eventgambar.jpg')}}"
- class="rounded" width="400" height="250"/>
-            <div class="card-title rounded text-center">
-              <a href="geleridetail.html" class="text-decoration-none">
-                <p class="nama">EVENT 8</p>   
-            </div>
-          </a>
-          </div>
-
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <a href="geleridetail.html" class="text-decoration-none">
-            <img src="{{asset('front/eventgambar.jpg')}}"
- class="rounded" width="400" height="250"/>
-            <div class="card-title rounded text-center">
-              <a href="geleridetail.html" class="text-decoration-none">
-                <p class="nama">EVENT 9</p>   
-            </div>
-          </a>
-          </div>
-        </div>
-        
-        <div class="row" style="margin-top: 100px">
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <a href="geleridetail.html" class="text-decoration-none">
-            <img src="{{asset('front/eventgambar.jpg')}}"
- class="rounded" width="400" height="250"/>
-            <div class="card-title rounded text-center">
-              <a href="geleridetail.html" class="text-decoration-none">
-                <p class="nama">EVENT 10</p>   
-            </div>
-          </a>
-          </div>
-
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <a href="geleridetail.html" class="text-decoration-none">
-            <img src="{{asset('front/eventgambar.jpg')}}"
- class="rounded" width="400" height="250"/>
-            <div class="card-title rounded text-center">
-              <a href="geleridetail.html" class="text-decoration-none">
-                <p class="nama">EVENT 11</p>   
-            </div>
-          </a>
-          </div>
-
-          <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center">
-            <a href="geleridetail.html" class="text-decoration-none">
-            <img src="{{asset('front/eventgambar.jpg')}}"
- class="rounded" width="400" height="250"/>
-            <div class="card-title rounded text-center">
-              <a href="geleridetail.html" class="text-decoration-none">
-                <p class="nama">EVENT 12</p>   
-            </div>
-          </a>
-          </div>
+          @empty
+          @endforelse
         </div>
       </div>
     </section>

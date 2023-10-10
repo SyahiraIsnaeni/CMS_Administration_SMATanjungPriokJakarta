@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Ekstrakurikuler;
+use App\Models\ImagesEkstrakurikuler;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use RealRashid\SweetAlert\Facades\Alert;
@@ -17,36 +18,61 @@ class EkstrakurikulerController extends Controller
     public function index()
     {
         $ekstrakurikuler = Ekstrakurikuler::paginate(5);
+
+        // Mengambil data gambar terkait untuk setiap Ekstrakurikuler
+        foreach ($ekstrakurikuler as $ekstra) {
+            $ekstra->image = ImagesEkstrakurikuler::where('ekstrakurikuler_id', $ekstra->id)->get();
+        }
+
         return view('back.administrasi.konten.beranda.ekstrakurikuler.view', compact('ekstrakurikuler'));
     }
+
 
     public function create()
     {
         return view('back.administrasi.konten.beranda.ekstrakurikuler.add');
     }
-
     public function store(Request $request)
     {
         $this->validate($request, [
             'nama' => 'required|min:3',
             'deskripsi' => 'required|min:10',
             'logo' => 'required|image|mimes:jpeg,jpg,png',
+            'image.*' => 'image|mimes:jpeg,jpg,png',
         ]);
 
-        $data = $request->all();
-        if(is_null($data['nama']) || is_null($data['deskripsi'] || is_null($data['logo']))){
+        // Mendapatkan jumlah gambar yang diunggah
+        $imageCount = count($request->file('image'));
 
+        if ($imageCount > 3) {
+            Alert::error('Gagal', 'Jumlah gambar yang diunggah tidak boleh lebih dari 3.');
+            return redirect()->route('ekstrakurikuler.create');
+        }
+
+        $data = $request->all();
+
+        if (is_null($data['nama']) || is_null($data['deskripsi']) || is_null($data['logo']) || empty($data['image'])) {
             Alert::error('Gagal', 'Data Gagal Tersimpan. Periksa kembali data yang dimasukkan');
             return redirect()->route('ekstrakurikuler.create');
-        }else{
+        } else {
             $data['logo'] = $request->file('logo')->store('ekstrakurikuler');
-            Ekstrakurikuler::create($data);
+            $ekstrakurikuler = Ekstrakurikuler::create($data);
+
+            foreach ($request->file('image') as $image) {
+                $imagePath = $image->store('images_ekstrakurikuler');
+                ImagesEkstrakurikuler::create([
+                    'ekstrakurikuler_id' => $ekstrakurikuler->id,
+                    'image' => $imagePath,
+                ]);
+            }
 
             Alert::success('Berhasil', 'Data Berhasil Tersimpan');
         }
 
         return redirect()->route('ekstrakurikuler.index');
     }
+
+
 
     public function edit($id)
     {

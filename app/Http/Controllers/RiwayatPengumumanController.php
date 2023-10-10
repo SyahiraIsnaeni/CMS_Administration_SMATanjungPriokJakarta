@@ -16,7 +16,7 @@ class RiwayatPengumumanController extends Controller
     public function index()
     {
         $pengumuman= Pengumuman::orderBy('updated_at', 'desc')->paginate(10);
-        return view('back.administrasi.riwayat.pengumuman.view', compact('pengumuman'));
+        return view('back.administrasi.konten.riwayat.pengumuman.view', compact('pengumuman'));
     }
 
     public function destroy($id)

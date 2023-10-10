@@ -17,12 +17,12 @@ class KategoriPengumumanController extends Controller
     public function index()
     {
         $kategori_pengumuman = KategoriPengumuman::paginate(5);
-        return view('back.administrasi.kategori.kategori-pengumuman.view', compact('kategori_pengumuman'));
+        return view('back.administrasi.konten.kategori.kategori-pengumuman.view', compact('kategori_pengumuman'));
     }
 
     public function create()
     {
-        return view('back.administrasi.kategori.kategori-pengumuman.add');
+        return view('back.administrasi.konten.kategori.kategori-pengumuman.add');
     }
 
     public function store(Request $request)
@@ -44,7 +44,7 @@ class KategoriPengumumanController extends Controller
     {
         $kategori_pengumuman = KategoriPengumuman::find($id);
 
-        return view('back.administrasi.kategori.kategori-pengumuman.edit', compact('kategori_pengumuman'));
+        return view('back.administrasi.konten.kategori.kategori-pengumuman.edit', compact('kategori_pengumuman'));
     }
 
     public function update(Request $request, $id)

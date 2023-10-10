@@ -17,12 +17,12 @@ class KategoriBeritaController extends Controller
     public function index()
     {
         $kategori_berita = KategoriBerita::paginate(5);
-        return view('back.administrasi.kategori.kategori-berita.view', compact('kategori_berita'));
+        return view('back.administrasi.konten.kategori.kategori-berita.view', compact('kategori_berita'));
     }
 
     public function create()
     {
-        return view('back.administrasi.kategori.kategori-berita.add');
+        return view('back.administrasi.konten.kategori.kategori-berita.add');
     }
 
     public function store(Request $request)
@@ -44,7 +44,7 @@ class KategoriBeritaController extends Controller
     {
         $kategori_berita = KategoriBerita::find($id);
 
-        return view('back.administrasi.kategori.kategori-berita.edit', compact('kategori_berita'));
+        return view('back.administrasi.konten.kategori.kategori-berita.edit', compact('kategori_berita'));
     }
 
     public function update(Request $request, $id)

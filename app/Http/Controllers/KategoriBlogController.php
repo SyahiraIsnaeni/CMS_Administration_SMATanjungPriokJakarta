@@ -17,12 +17,12 @@ class KategoriBlogController extends Controller
     public function index()
     {
         $kategori_blog = KategoriBlog::paginate(5);
-        return view('back.administrasi.kategori.kategori-blog.view', compact('kategori_blog'));
+        return view('back.administrasi.konten.kategori.kategori-blog.view', compact('kategori_blog'));
     }
 
     public function create()
     {
-        return view('back.administrasi.kategori.kategori-blog.add');
+        return view('back.administrasi.konten.kategori.kategori-blog.add');
     }
 
     public function store(Request $request)
@@ -44,7 +44,7 @@ class KategoriBlogController extends Controller
     {
         $kategori_blog = KategoriBlog::find($id);
 
-        return view('back.administrasi.kategori.kategori-blog.edit', compact('kategori_blog'));
+        return view('back.administrasi.konten.kategori.kategori-blog.edit', compact('kategori_blog'));
     }
 
     public function update(Request $request, $id)

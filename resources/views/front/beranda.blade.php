@@ -111,14 +111,17 @@
     <div>
       <img class="gambarF2" src="{{asset('front/bintangF.png')}}"/>
     </div>
+      @forelse ($hariNasional as $row)
     <div>
-      <img class="gambarPostingan" src="{{asset('front/batikfix.png')}}" />
+      <img class="gambarPostingan" src="{{asset('uploads/'.$row->gambar) }}" />
       <div id="tulisan">
         <p>
-          Keluarga Besar SMA Tanjung Priok Jakarta Mengucapkan Selamat Hari Batik Nasional
+          {{$row->deskripsi}}
         </p>
       </div>
     </div>
+      @empty
+      @endforelse
     <div ><img class="gambarF3" src="{{asset('front/bintangF.png')}}"/></div>
     <div >
       <img class="gambarF4" src="{{asset('front/bintangF.png')}}"/>
@@ -189,7 +192,7 @@
       <div class="col-1 d-flex justify-content-start" style="margin-top: 95px;margin-left: 60px">
         <button id="arrow-left-ekskul" onclick="prevEkskul()" style="border-radius: 50px;
               background-color: #bce7eb; padding-left: 10px;padding-bottom: 10px;
-                    padding-top: 12px;padding-right: 16px; width: 76px;height: 73px;margin-top: 90px;
+                    padding-top: 12px;padding-right: 16px; width: 76px;height: 73px;margin-top: 70px;
                     margin-left: 10px;"
                 onmouseover="this.style.boxShadow='1px 2px 2px 2px rgba(0, 0, 0, 0.3)';
                       this.style.backgroundColor='#ffffff'"
@@ -201,20 +204,23 @@
            style="overflow-x: hidden;margin-top: 10px">
           @forelse ($ekstrakurikuler as $row)
               <div class="card-ekskul me-3">
-                  <img src="{{asset('uploads/'.$row->logo) }}" class="rounded" width="420" height="390" style="margin-left: 10px">
+                  <img src="{{asset('uploads/'.$row->logo) }}" class="rounded" width="380" height="350" style="margin-left: 20px">
                   <p style="color: black;font-size: 26px;font-weight: bold;margin-bottom: -10px;
-                         text-align: center;margin-top: -15px">
+                         text-align: center;margin-top: -10px;margin-left: 10px">
                       {{$row->nama}}
                   </p>
-                  <p style="color: black;font-size: 20px;text-align: center">
+                  <p style="color: black;font-size: 20px;text-align: center;margin-left: 10px">
                       {{$row->nama}} SMA Tanjung Priok Jakarta
                   </p>
-                  <div style="margin-left: 5px">
-                      <button href="#"style="width: 210px; height: 50px;background-color: white;font-size: 20px;border: 2px solid #000;
-                    border-radius: 8px; display: block;margin: auto;margin-top: 10px">
-                          Selengkapnya
-                      </button>
+                  <div style="margin-left: 15px">
+                      <a href="{{ route('detail-ekstrakurikuler', $row->id) }}" style="width: 210px; height: 45px;
+                      background-color: white; font-size: 18px; border: 2px solid #000; border-radius: 8px; display: block;
+                      margin: auto; margin-top: -5px;color: black;
+                      text-align: center; line-height: 50px; text-decoration: none;">
+                          <p style="margin-top: 2px">Selengkapnya</p>
+                      </a>
                   </div>
+
               </div>
           @empty
           @endforelse
@@ -223,7 +229,7 @@
         <div>
           <button id="arrow-right-ekskul" onclick="nextEkskul()" style="border-radius: 50px;
               background-color: #bce7eb; padding-left: 15px;padding-bottom: 10px;
-                    padding-top: 12px;padding-right: 16px; width: 76px;height: 73px;margin-top: 90px;
+                    padding-top: 12px;padding-right: 16px; width: 76px;height: 73px;margin-top: 70px;
                     margin-left: 2px;"
                   onmouseover="this.style.boxShadow='1px 2px 2px 2px rgba(0, 0, 0, 0.3)';
                       this.style.backgroundColor='#ffffff'"

@@ -40,15 +40,19 @@ Route::group(['middleware' => 'revalidate'], function(){
     Route::resource('guru', \App\Http\Controllers\GuruController::class);
     Route::resource('staf', \App\Http\Controllers\StafController::class);
     Route::resource('galeri', \App\Http\Controllers\GaleriController::class);
+    Route::resource('jumbotron', \App\Http\Controllers\JumbotronController::class);
 });
 
 require __DIR__.'/auth.php';
 
 Route::get('/', [\App\Http\Controllers\FrontController::class, 'index'])->name('beranda');
+Route::get('/profil', [\App\Http\Controllers\FrontController::class, 'profil'])->name('profil');
+Route::get('/guru-staf', [\App\Http\Controllers\FrontController::class, 'guru_staf'])->name('guru-staf');
+Route::get('/prestasi-sekolah', [\App\Http\Controllers\FrontController::class, 'prestasi'])->name('prestasi');
+Route::get('/galeri-sekolah', [\App\Http\Controllers\FrontController::class, 'galeri'])->name('galeri');
+Route::get('/detail-galeri/{id}', [\App\Http\Controllers\FrontController::class, 'detailGaleri'])->name('detail-galeri');
+Route::get('/detail-ekstrakurikuler/{id}', [\App\Http\Controllers\FrontController::class, 'ekstrakurikuler'])->name('detail-ekstrakurikuler');
 
-Route::get('/front-beranda', function () {
-    return view('front.beranda');
-});
 Route::get('/front-berita', function () {
     return view('front.berita');
 });
@@ -67,21 +71,7 @@ Route::get('/front-daftar-pengumuman', function () {
 Route::get('/front-detail-galeri', function () {
     return view('front.detail-galeri');
 });
-Route::get('/front-ekstrakurikuler', function () {
-    return view('front.ekstrakurikuler');
-});
-Route::get('/front-galeri', function () {
-    return view('front.galeri');
-});
-Route::get('/front-guru-staf', function () {
-    return view('front.guru-staf');
-});
+
 Route::get('/front-pengumuman', function () {
     return view('front.pengumuman');
-});
-Route::get('/front-prestasi', function () {
-    return view('front.prestasi');
-});
-Route::get('/front-profil', function () {
-    return view('front.profil');
 });

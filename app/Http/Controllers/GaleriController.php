@@ -56,7 +56,6 @@ class GaleriController extends Controller
         return redirect()->route('galeri.index');
     }
 
-
     public function destroy($id)
     {
         $galeri = Galeri::find($id);

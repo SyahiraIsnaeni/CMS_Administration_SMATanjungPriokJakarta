@@ -52,6 +52,9 @@ Route::get('/prestasi-sekolah', [\App\Http\Controllers\FrontController::class, '
 Route::get('/galeri-sekolah', [\App\Http\Controllers\FrontController::class, 'galeri'])->name('galeri');
 Route::get('/detail-galeri/{id}', [\App\Http\Controllers\FrontController::class, 'detailGaleri'])->name('detail-galeri');
 Route::get('/detail-ekstrakurikuler/{id}', [\App\Http\Controllers\FrontController::class, 'ekstrakurikuler'])->name('detail-ekstrakurikuler');
+Route::get('/daftar-berita', [\App\Http\Controllers\FrontController::class, 'berita'])->name('berita');
+Route::get('/daftar-blog', [\App\Http\Controllers\FrontController::class, 'blog'])->name('blog');
+Route::get('/daftar-pengumuman', [\App\Http\Controllers\FrontController::class, 'pengumuman'])->name('pengumuman');
 
 Route::get('/front-berita', function () {
     return view('front.berita');
@@ -59,19 +62,13 @@ Route::get('/front-berita', function () {
 Route::get('/front-blog', function () {
     return view('front.blog');
 });
-Route::get('/front-daftar-berita', function () {
-    return view('front.daftar-berita');
-});
+
 Route::get('/front-daftar-blog', function () {
     return view('front.daftar-blog');
 });
 Route::get('/front-daftar-pengumuman', function () {
     return view('front.daftar-pengumuman');
 });
-Route::get('/front-detail-galeri', function () {
-    return view('front.detail-galeri');
-});
-
 Route::get('/front-pengumuman', function () {
     return view('front.pengumuman');
 });

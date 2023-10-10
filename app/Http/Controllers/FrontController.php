@@ -90,5 +90,26 @@ class FrontController extends Controller
         return view('front.detail-galeri', compact('galeri'));
     }
 
+    public function berita()
+    {
+        $berita = Berita::where('is_active', '1')->orderByDesc('created_at')->get();
+
+        return view('front.daftar-berita', compact('berita'));
+    }
+
+    public function blog()
+    {
+        $blog = Blog::where('is_active', '1')->orderByDesc('created_at')->get();
+
+        return view('front.daftar-blog', compact('blog'));
+    }
+
+    public function pengumuman()
+    {
+        $pengumuman = Pengumuman::where('is_active', '1')->orderByDesc('created_at')->get();
+
+        return view('front.daftar-pengumuman', compact('pengumuman'));
+    }
+
 
 }

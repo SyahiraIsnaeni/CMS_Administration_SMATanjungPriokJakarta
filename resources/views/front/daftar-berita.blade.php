@@ -25,7 +25,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #136a71">
     <div class="container">
       <a class="navbar-brand" style="font-size: 15px; text-align: center; float: center" href="{{ 'beranda' }}">
-        <img src="{{asset('front/logo.png')}}" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>     
+        <img src="{{asset('front/logo.png')}}" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -89,36 +89,19 @@
     <section id="pengenalan" style="margin-top: 80px">
       <div class="container mt-5">
         <div class="row">
-          <!-- <h2 class="header">Daftar Lalallala</h2> -->
-          <div class="col-lg-5 col-md-12 col-sm-12 d-flex justify-content-center">
-            <img src="{{asset('front/sma.jpg')}}" class="rounded d-flex" alt="logo" height="370" width="600" style="margin-bottom: 100px" />
-          </div>
-          <div class="col-lg-6 offset-lg-1 col-md-12 col-sm-12" style="font-family: Poppins; padding-left: 40px">
-            <h2 class="tulisan d-flex justify-content-start"><a class="judulppb1" style="text-decoration: none" href="#">Design tips for designers that cover everything you need</a></h2>
-            <a align="justify" class="isippb1 d-flex justify-content-center" style="text-decoration: none" href="#">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-            </a>
-          </div>
-
-          <div class="col-lg-5 col-md-12 col-sm-12 d-flex justify-content-center">
-            <img src="{{asset('front/sma.jpg')}}" class="rounded d-flex" alt="logo" height="370" width="600" style="margin-bottom: 100px" />
-          </div>
-          <div class="col-lg-6 offset-lg-1 col-md-12 col-sm-12" style="font-family: Poppins; padding-left: 40px">
-            <h2 class="tulisan d-flex justify-content-start"><a class="judulppb1" style="text-decoration: none" href="#">Design tips for designers that cover everything you need</a></h2>
-            <a align="justify" class="isippb2 d-flex justify-content-center" style="text-decoration: none" href="#">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-            </a>
-          </div>
-
-          <div class="col-lg-5 col-md-12 col-sm-12 d-flex justify-content-center">
-            <img src="{{asset('front/sma.jpg')}}" class="rounded d-flex" alt="logo" height="370" width="600" style="margin-bottom: 100px" />
-          </div>
-          <div class="col-lg-6 offset-lg-1 col-md-12 col-sm-12" style="font-family: Poppins; padding-left: 40px">
-            <h2 class="tulisan d-flex justify-content-start"><a class="judulppb1" style="text-decoration: none" href="#">Design tips for designers that cover everything you need</a></h2>
-            <a align="justify" class="isippb3 d-flex justify-content-center" style="text-decoration: none" href="#">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-            </a>
-          </div>
+          <h1 class="header" style="font-size: 38px;margin-bottom: 60px;margin-left: 75px">Daftar Berita</h1>
+            @forelse ($berita as $row)
+              <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center">
+                <img src="{{asset('uploads/'. $row->gambar)}}" class="rounded d-flex" alt="logo" height="280" width="480" style="margin-bottom: 70px" />
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12" style="font-family: Poppins; padding-left: 40px">
+                <h4 class="tulisan d-flex justify-content-start"><a class="judulppb" href="#">{{$row->judul}}</a></h4>
+                <a align="justify" class="isippb d-flex justify-content-center"  href="#">
+                    {!! substr($row->body, 0, 300)!!} ...
+                </a>
+              </div>
+            @empty
+            @endforelse
         </div>
       </div>
     </section>

@@ -159,6 +159,34 @@ table {
   color: #16949e;
 }
 
+.carousel-image {
+    height: 100vh;
+}
+
+#pengenalan .isippb {
+    font-family: "poppins";
+    text-decoration: none;
+    font-size: 16px;
+    width: 550px;
+    color: black
+}
+
+#pengenalan .judulppb{
+    text-decoration: none;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    font-family: "poppins";
+    font-size: 27px;
+    font-weight: bold;
+    width: 570px;
+    color: black
+}
+
+#pengenalan .tulisan {
+    font-size: 12px;
+    margin-top: -80px;
+}
+
 @media screen and (max-width: 299px) {
   .carousel-image {
     height: 30vh;
@@ -173,25 +201,6 @@ table {
     font-family: "poppins";
   }
 
-  #pengenalan .isippb1 {
-    font-family: "poppins";
-    margin-bottom: 60px;
-  }
-
-  #pengenalan .isippb2 {
-    font-family: "poppins";
-    margin-bottom: 60px;
-  }
-
-  #pengenalan .isippb3 {
-    font-family: "poppins";
-    margin-bottom: 60px;
-  }
-
-  #pengenalan .tulisan {
-    font-size: 12px;
-    margin-top: -80px;
-  }
 }
 
 @media screen and (min-width: 300px) and (max-width: 394px) {
@@ -207,26 +216,6 @@ table {
   #pengenalan h2 {
     font-family: "poppins";
   }
-
-  #pengenalan .isippb1 {
-    font-family: "poppins";
-    margin-bottom: 60px;
-  }
-
-  #pengenalan .isippb2 {
-    font-family: "poppins";
-    margin-bottom: 60px;
-  }
-
-  #pengenalan .isippb3 {
-    font-family: "poppins";
-    margin-bottom: 60px;
-  }
-
-  #pengenalan .tulisan {
-    font-size: 12px;
-    margin-top: -80px;
-  }
 }
 
 @media screen and (min-width: 395px) and (max-width: 420px) {
@@ -241,26 +230,6 @@ table {
 
   #pengenalan h2 {
     font-family: "poppins";
-  }
-
-  #pengenalan .isippb1 {
-    font-family: "poppins";
-    margin-bottom: 60px;
-  }
-
-  #pengenalan .isippb2 {
-    font-family: "poppins";
-    margin-bottom: 60px;
-  }
-
-  #pengenalan .isippb3 {
-    font-family: "poppins";
-    margin-bottom: 60px;
-  }
-
-  #pengenalan .tulisan {
-    font-size: 12px;
-    margin-top: -80px;
   }
 }
 
@@ -278,26 +247,6 @@ table {
   #pengenalan h2 {
     font-family: "poppins";
   }
-
-  #pengenalan .isippb1 {
-    font-family: "poppins";
-    margin-bottom: 60px;
-  }
-
-  #pengenalan .isippb2 {
-    font-family: "poppins";
-    margin-bottom: 60px;
-  }
-
-  #pengenalan .isippb3 {
-    font-family: "poppins";
-    margin-bottom: 60px;
-  }
-
-  #pengenalan .tulisan {
-    font-size: 12px;
-    margin-top: -80px;
-  }
 }
 
 @media screen and (min-width: 421px) and (max-width: 500px) {
@@ -312,26 +261,6 @@ table {
 
   #pengenalan h2 {
     font-family: "poppins";
-  }
-
-  #pengenalan .isippb1 {
-    font-family: "poppins";
-    margin-bottom: 60px;
-  }
-
-  #pengenalan .isippb2 {
-    font-family: "poppins";
-    margin-bottom: 60px;
-  }
-
-  #pengenalan .isippb3 {
-    font-family: "poppins";
-    margin-bottom: 60px;
-  }
-
-  #pengenalan .tulisan {
-    font-size: 12px;
-    margin-top: -80px;
   }
 }
 
@@ -350,25 +279,6 @@ table {
     font-family: "poppins";
   }
 
-  #pengenalan .isippb1 {
-    font-family: "poppins";
-    margin-bottom: 60px;
-  }
-
-  #pengenalan .isippb2 {
-    font-family: "poppins";
-    margin-bottom: 60px;
-  }
-
-  #pengenalan .isippb3 {
-    font-family: "poppins";
-    margin-bottom: 60px;
-  }
-
-  #pengenalan .tulisan {
-    font-size: 12px;
-    margin-top: -80px;
-  }
 }
 
 p {

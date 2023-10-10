@@ -108,9 +108,9 @@
                                 <div class="card-title"><p><b>Draf Pengumuman</b></p></div>
                             </div>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" style="margin-top: -25px">
                             @forelse ($drafPengumuman as $row)
-                                <div class="row fs-5">
+                                <div class="row fs-5" style="margin-bottom: -20px">
                                     <div class="col-2 col-md-2 col-lg-2 ml-3 mt-2 mb-2">
                                         <img src="{{asset('uploads/'.$row->gambar) }}"  class="img-fluid" alt="bg" width="90">
                                     </div>
@@ -138,9 +138,9 @@
                                 <div class="card-title"><p><b>Draf Berita</b></p></div>
                             </div>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" style="margin-top: -25px">
                             @forelse ($drafBerita as $row)
-                                <div class="row fs-5">
+                                <div class="row fs-5" style="margin-bottom: -20px">
                                     <div class="col-2 col-md-2 col-lg-2 ml-3 mt-2 mb-2">
                                         <img src="{{asset('uploads/'.$row->gambar) }}"  class="img-fluid" alt="bg" width="90">
                                     </div>
@@ -169,9 +169,9 @@
                             </div>
 
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" style="margin-top: -25px">
                             @forelse ($drafBlog as $row)
-                                <div class="row fs-5">
+                                <div class="row fs-5" style="margin-bottom: -20px">
                                     <div class="col-2 col-md-2 col-lg-2 ml-3 mt-2 mb-2">
                                         <img src="{{asset('uploads/'.$row->gambar) }}"  class="img-fluid" alt="bg" width="90">
                                     </div>

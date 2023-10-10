@@ -8,7 +8,7 @@
       </div>
       <div class="media-icons">
         <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/smatanjungpriok_jkt"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-youtube"></i></a>
       </div>
     </div>

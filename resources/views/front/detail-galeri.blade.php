@@ -61,12 +61,12 @@
 
     <!-- galeri detail event -->
     <section id="eventdet" class="overflow-hidden">
-      <h2 style="text-align: center; margin-top: 70px; margin-bottom: 30px; font-size: 37px;font-weight: bold">{{$galeri->judul}}</h2>
+      <h2>{{$galeri->judul}}</h2>
       <div class="container mb-5 mt-5" >
         <div class="row" style="margin-top: 50px">
             @foreach($galeri->image as $images)
                 <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center mt-4">
-                    <img src="{{ asset('uploads/' . $images->image) }}" class="rounded" width="400" height="250" />
+                    <img src="{{ asset('uploads/' . $images->image) }}" class="rounded" />
                 </div>
             @endforeach
         </div>

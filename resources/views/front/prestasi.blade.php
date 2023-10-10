@@ -66,7 +66,7 @@
         <div class="row">
             @forelse ($prestasi as $row)
               <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex flex-column align-items-center">
-                <img src="{{asset('uploads/'. $row->foto)}}" class="rounded" width="370" height="270" />
+                <img src="{{asset('uploads/'. $row->foto)}}" class="rounded" />
                 <p class="judulprestasi">{{$row->nama}}</p>
               </div>
             @empty

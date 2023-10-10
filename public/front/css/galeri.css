@@ -365,10 +365,10 @@ footer .bottom-details .bottom_text {
 }
 
 #event h2 {
-  font-family: "poppins"; 
-  text-align: center; 
-  margin-top: 30px; 
-  margin-bottom: 30px; 
+  font-family: "poppins";
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
   font-size: 37px;
 }
 
@@ -383,10 +383,11 @@ footer .bottom-details .bottom_text {
 .judulprestasi {
   font-family: "poppins";
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   color: black;
+  width: 360px;
   text-align: center;
-  font-size: 25px;
+  font-size: 19px;
 }
 
 #prestasidet img {
@@ -396,7 +397,7 @@ footer .bottom-details .bottom_text {
 
 #eventdet img {
   width: 370px;
-  height: 320px;
+  height: 250px;
 }
 
 @media screen and (max-width: 299px) {
@@ -437,23 +438,29 @@ footer .bottom-details .bottom_text {
   }
 
   #eventdet h2 {
-    font-size: 23px;
+    font-size: 18px;
     margin-top: 45px;
+      width: 250px;
+      text-align: center;
+      margin-left: 15px;
+      font-weight: 700;
   }
 
   #eventdet img {
     width: 230px;
     height: 180px;
-    margin-bottom: 30px;
+    margin-bottom: -10px;
   }
 
   #prestasidet img {
     width: 230px;
-    height: 180px;
+    height: 150px;
   }
 
   .judulprestasi {
-    font-size: 20px;
+      margin-top: 10px;
+    font-size: 17px;
+      width: 230px;
   }
 }
 
@@ -496,12 +503,13 @@ footer .bottom-details .bottom_text {
 
   #eventdet h2 {
     font-size: 23px;
+      font-weight: 650;
     margin-top: 45px;
   }
 
   #eventdet img {
-    width: 250px;
-    height: 200px;
+    width: 300px;
+    height: 220px;
     margin-bottom: 30px;
   }
 
@@ -511,7 +519,9 @@ footer .bottom-details .bottom_text {
   }
 
   .judulprestasi {
+      margin-top: -20px;
     font-size: 20px;
+      width: 290px;
   }
 }
 
@@ -550,25 +560,28 @@ footer .bottom-details .bottom_text {
   #event h2 b {
     font-size: 35px;
   }
-  
+
   #eventdet h2 {
     font-size: 30px;
     margin-top: 45px;
+      width: 410px;
   }
 
   #eventdet img {
-    width: 320px;
-    height: 270px;
+    width: 330px;
+    height: 250px;
     margin-bottom: 30px;
   }
 
   #prestasidet img {
-    width: 300px;
+    width: 400px;
     height: 250px;
   }
 
   .judulprestasi {
     font-size: 23px;
+      width: 300px;
+      margin-top: -20px;
   }
 }
 
@@ -612,11 +625,14 @@ footer .bottom-details .bottom_text {
   #eventdet h2 {
     font-size: 30px;
     margin-top: 45px;
+      width: 500px;
+      text-align: center;
+      margin-left: 25px;
   }
 
   #eventdet img {
     width: 400px;
-    height: 350px;
+    height: 300px;
     margin-bottom: 30px;
   }
 
@@ -627,6 +643,8 @@ footer .bottom-details .bottom_text {
 
   .judulprestasi {
     font-size: 23px;
+      margin-top: -20px;
+      width: 400px;
   }
 
 }
@@ -673,8 +691,8 @@ footer .bottom-details .bottom_text {
   }
 
   #eventdet img {
-    width: 350px;
-    height: 300px;
+    width: 370px;
+    height: 280px;
     margin-bottom: 30px;
   }
 
@@ -685,6 +703,8 @@ footer .bottom-details .bottom_text {
 
   .judulprestasi {
     font-size: 23px;
+      margin-top: -20px;
+      width: 370px;
   }
 
 }
@@ -732,8 +752,8 @@ footer .bottom-details .bottom_text {
   }
 
   #eventdet img {
-    width: 210px;
-    height: 160px;
+    width: 230px;
+    height: 170px;
   }
 
   #prestasidet img {
@@ -742,11 +762,12 @@ footer .bottom-details .bottom_text {
   }
 
   .judulprestasi {
-    font-size: 23px;
+    font-size: 18px;
+      width: 230px;
   }
 }
 
-@media screen and (max-width: 1300px) and (min-width: 1201px) {
+@media screen and (max-width: 1400px) and (min-width: 1201px) {
   #event .card-title {
     width: 300px;
     height: 100px;
@@ -784,8 +805,8 @@ footer .bottom-details .bottom_text {
   }
 
   #eventdet img {
-    width: 350px;
-    height: 300px;
+    width: 370px;
+    height: 280px;
   }
 
   #prestasidet img {
@@ -795,6 +816,7 @@ footer .bottom-details .bottom_text {
 
   .judulprestasi {
     font-size: 25px;
+      width: 370px;
   }
 }
 
@@ -836,7 +858,7 @@ footer .bottom-details .bottom_text {
   }
 
   #eventdet img {
-    width: 280px;
+    width: 310px;
     height: 230px;
   }
 
@@ -846,7 +868,8 @@ footer .bottom-details .bottom_text {
   }
 
   .judulprestasi {
-    font-size: 25px;
+    font-size: 20px;
+      width: 310px;
   }
 
 }

@@ -195,15 +195,12 @@
     margin-top: 50px;"><b>Ekstrakurikuler</b></h2>
   <div class="container">
     <div class="row">
-      <div class="col-1 d-flex justify-content-start" style="margin-top: 95px;margin-left: 60px">
-        <button id="arrow-left-ekskul" onclick="prevEkskul()" style="border-radius: 50px;
-              background-color: #bce7eb; padding-left: 10px;padding-bottom: 10px;
-                    padding-top: 12px;padding-right: 16px; width: 76px;height: 73px;margin-top: 70px;
-                    margin-left: 10px;"
+      <div id="arrow-left-parent" class="col-1 d-flex justify-content-start">
+        <button id="arrow-left-ekskul" onclick="prevEkskul()"
                 onmouseover="this.style.boxShadow='1px 2px 2px 2px rgba(0, 0, 0, 0.3)';
                       this.style.backgroundColor='#ffffff'"
                 onmouseout="this.style.backgroundColor= '#bce7eb';this.style.boxShadow='0px 0px 0px 0px rgba(0, 0, 0, 0)'">
-          <img src="{{asset('front/panah-kiri.png')}}" width="50" height="50">
+          <img src="{{asset('front/panah-kiri.png')}}">
         </button>
       </div>
       <div class="main-card col-4 d-flex justify-content-start" id="main-card-ekskul"

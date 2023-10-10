@@ -61,11 +61,11 @@
 
     <!-- galeri Prestasi -->
     <section id="eventdet" class="overflow-hidden">
-      <h2 style="text-align: center; margin-top: 80px; margin-bottom: 70px; font-size: 37px;font-weight: bold">Prestasi SMA Tanjung Priok Jakarta</h2>
+      <h2 style="text-align: center; margin-top: 80px; margin-bottom: 50px; font-size: 37px;font-weight: bold">Prestasi SMA Tanjung Priok Jakarta</h2>
       <div class="container">
         <div class="row">
             @forelse ($prestasi as $row)
-              <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex flex-column align-items-center">
+              <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex flex-column align-items-center mt-5">
                 <img src="{{asset('uploads/'. $row->foto)}}" class="rounded" />
                 <p class="judulprestasi">{{$row->nama}}</p>
               </div>
@@ -77,6 +77,6 @@
 
     <!-- Footer -->
     @include('front.footer')
-    
+
   </body>
 </html>

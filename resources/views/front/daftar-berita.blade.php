@@ -92,7 +92,7 @@
     <section id="pengenalan" style="margin-top: 80px">
       <div class="container mt-5">
         <div class="row">
-          <h1 class="header" style="font-size: 38px;margin-bottom: 60px;margin-left: 75px">Daftar Berita</h1>
+          <h1 class="header" >Daftar Berita</h1>
             @forelse ($berita as $row)
               <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center">
                 <img src="{{asset('uploads/'. $row->gambar)}}" class="rounded d-flex" alt="logo" height="280" width="480" style="margin-bottom: 70px" />

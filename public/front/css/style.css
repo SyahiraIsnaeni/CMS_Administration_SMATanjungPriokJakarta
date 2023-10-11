@@ -409,6 +409,12 @@ footer {
     margin-bottom: 50px;
 }
 
+#blog h2 {
+    font-family: "poppins";
+}
+#blog .row {
+    margin-top: -100px;
+}
 /* ... gaya-gaya lainnya ... */
 
 @media screen and (max-width: 768px) {
@@ -417,6 +423,52 @@ footer {
         flex-wrap: wrap;
         justify-content: space-around;
         /* flex-direction: column; */
+    }
+
+    #berita .row.mb-3 {
+        margin-bottom: 100px; /* Atur tinggi margin sesuai keinginan Anda */
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+
+    /* Mengatur lebar gambar agar responsif */
+    #berita .col-lg-6 {
+        width: 100%;
+    }
+
+    /* Mengatur margin pada elemen judul */
+    #berita .judul1 {
+        margin: 30px 0 10px;
+        text-align: center;
+    }
+
+    /* Mengatur margin pada daftar berita */
+    #berita .list-group {
+        margin-left: 0;
+    }
+
+    /* Mengatur margin pada elemen tanggal */
+    #berita .col-3 {
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    /* Mengatur ukuran font judul berita */
+    #berita .card-title {
+        font-size: 16px;
+    }
+
+    #berita img {
+        width: 300px;
+        height: 250px;
+    }
+
+    #blog h2 {
+        margin-top: 100px;
+    }
+
+    #blog .row {
+        margin-top: 250px;
     }
 
     .top {
@@ -678,7 +730,7 @@ footer .bottom-details .bottom_text {
     text-align: center;
 }
 
-#prestasi #arrow-left-prestasi{
+#prestasi #arrow-left-prestasi {
     border-radius: 50px;
     background-color: white;
     padding-left: 10px;
@@ -688,10 +740,10 @@ footer .bottom-details .bottom_text {
     width: 76px;
     height: 73px;
     margin-top: 90px;
-    margin-left: 10px
+    margin-left: 10px;
 }
 
-#prestasi #arrow-right-prestasi{
+#prestasi #arrow-right-prestasi {
     border-radius: 50px;
     background-color: white;
     padding-left: 15px;
@@ -701,10 +753,10 @@ footer .bottom-details .bottom_text {
     width: 76px;
     height: 73px;
     margin-top: 90px;
-    margin-left: 2px
+    margin-left: 2px;
 }
 
-#prestasi .card-title{
+#prestasi .card-title {
     padding-left: 5px;
     padding-bottom: 2px;
     padding-top: 5px;
@@ -719,29 +771,29 @@ footer .bottom-details .bottom_text {
     position: relative;
 }
 
-#prestasi p{
+#prestasi p {
     color: black;
     font-size: 18px;
-    font-weight: bold
+    font-weight: bold;
 }
 
-#prestasi #gambar_prestasi{
+#prestasi #gambar_prestasi {
     border-radius: 15px;
-    width:525px;
-    height:370px;
+    width: 525px;
+    height: 370px;
 }
 
-#prestasi #image_prestasi{
-    height:500px;
-    width:900px
+#prestasi #image_prestasi {
+    height: 500px;
+    width: 900px;
 }
 
-#prestasi #icon-left{
-    margin-left: 4px
+#prestasi #icon-left {
+    margin-left: 4px;
 }
 
-#prestasi #icon-right{
-    margin-left: 4px
+#prestasi #icon-right {
+    margin-left: 4px;
 }
 
 #blog {
@@ -787,7 +839,7 @@ footer .bottom-details .bottom_text {
     box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-#blog .card-title{
+#blog .card-title {
     padding-left: 5px;
     padding-bottom: 2px;
     padding-top: 5px;
@@ -799,21 +851,21 @@ footer .bottom-details .bottom_text {
     margin-left: 35px;
     border: 1px solid #000;
     margin-top: -50px;
-    position: relative
+    position: relative;
 }
 
-#blog p{
+#blog p {
     color: black;
     font-size: 15px;
     font-weight: bold;
 }
 
-#blog img{
-    width:350px;
-    height:240px
+#blog img {
+    width: 350px;
+    height: 240px;
 }
 
-#blog #selengkapnya{
+#blog #selengkapnya {
     width: 200px;
     height: 60px;
     background-color: white;
@@ -823,7 +875,7 @@ footer .bottom-details .bottom_text {
     display: block;
     margin: auto;
     margin-top: 50px;
-    margin-bottom: 50px
+    margin-bottom: 50px;
 }
 
 /* Media query untuk tampilan layar kecil (contoh: perangkat seluler) */
@@ -853,7 +905,7 @@ footer .bottom-details .bottom_text {
 }
 
 @media screen and (max-width: 299px) {
-    #blog #selengkapnya{
+    #blog #selengkapnya {
         width: 153px;
         height: 45px;
         font-size: 16px;
@@ -863,7 +915,7 @@ footer .bottom-details .bottom_text {
         margin: auto;
         background-color: white;
         margin-top: 50px;
-        margin-bottom: 50px
+        margin-bottom: 50px;
     }
 
     #blog #arrow-left {
@@ -898,7 +950,7 @@ footer .bottom-details .bottom_text {
         box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.3);
     }
 
-    #blog .card-title{
+    #blog .card-title {
         padding-left: 5px;
         padding-bottom: 2px;
         padding-top: 5px;
@@ -910,22 +962,22 @@ footer .bottom-details .bottom_text {
         margin-left: 12px;
         border: 1px solid #000;
         margin-top: -40px;
-        position: relative
+        position: relative;
     }
 
-    #blog p{
+    #blog p {
         color: black;
         font-size: 10px;
         font-weight: bold;
     }
 
-    #blog img{
+    #blog img {
         margin-top: 20px;
-        width:210px;
-        height:150px
+        width: 210px;
+        height: 150px;
     }
 
-    #prestasi #arrow-left-prestasi{
+    #prestasi #arrow-left-prestasi {
         border-radius: 50px;
         background-color: white;
         padding-left: 10px;
@@ -935,10 +987,10 @@ footer .bottom-details .bottom_text {
         width: 46px;
         height: 43px;
         margin-top: 300px;
-        margin-left: -205px
+        margin-left: -205px;
     }
 
-    #prestasi #arrow-right-prestasi{
+    #prestasi #arrow-right-prestasi {
         border-radius: 50px;
         background-color: white;
         padding-left: 15px;
@@ -952,7 +1004,7 @@ footer .bottom-details .bottom_text {
         position: absolute;
     }
 
-    #prestasi .card-title{
+    #prestasi .card-title {
         padding-left: 5px;
         padding-bottom: 5px;
         padding-top: 5px;
@@ -967,35 +1019,34 @@ footer .bottom-details .bottom_text {
         position: absolute;
     }
 
-    #prestasi p{
+    #prestasi p {
         color: black;
         font-size: 10px;
-        font-weight: bold
+        font-weight: bold;
     }
 
-    #prestasi #gambar_prestasi{
+    #prestasi #gambar_prestasi {
         border-radius: 15px;
-        width:200px;
-        height:150px;
+        width: 200px;
+        height: 150px;
         margin-top: -155px;
         margin-left: 30px;
         position: absolute;
     }
 
-    #prestasi #image_prestasi{
-        height:300px;
+    #prestasi #image_prestasi {
+        height: 300px;
         margin-left: 45px;
-        width:500px
+        width: 500px;
     }
 
-    #prestasi #icon-left{
-        margin-left: 1px
+    #prestasi #icon-left {
+        margin-left: 1px;
     }
 
-    #prestasi #icon-right{
-        margin-left: -3px
+    #prestasi #icon-right {
+        margin-left: -3px;
     }
-
 
     .navbar-nav {
         flex-direction: column; /* Mengatur item navigasi agar berbaris vertikal */
@@ -1368,8 +1419,7 @@ footer .bottom-details .bottom_text {
 }
 
 @media screen and (min-width: 300px) and (max-width: 394px) {
-
-    #blog #selengkapnya{
+    #blog #selengkapnya {
         width: 153px;
         height: 45px;
         font-size: 16px;
@@ -1379,7 +1429,7 @@ footer .bottom-details .bottom_text {
         margin: auto;
         background-color: white;
         margin-top: 50px;
-        margin-bottom: 50px
+        margin-bottom: 50px;
     }
 
     #blog #arrow-left {
@@ -1414,7 +1464,7 @@ footer .bottom-details .bottom_text {
         box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.3);
     }
 
-    #blog .card-title{
+    #blog .card-title {
         padding-left: 5px;
         padding-bottom: 2px;
         padding-top: 5px;
@@ -1426,24 +1476,23 @@ footer .bottom-details .bottom_text {
         margin-left: 50px;
         border: 1px solid #000;
         margin-top: -40px;
-        position: relative
+        position: relative;
     }
 
-    #blog p{
+    #blog p {
         color: black;
         font-size: 11px;
         font-weight: bold;
     }
 
-    #blog img{
+    #blog img {
         margin-top: 20px;
-        width:250px;
-        height:170px;
+        width: 250px;
+        height: 170px;
         margin-left: 20px;
     }
 
-
-    #prestasi #arrow-left-prestasi{
+    #prestasi #arrow-left-prestasi {
         border-radius: 50px;
         background-color: white;
         padding-left: 10px;
@@ -1453,10 +1502,10 @@ footer .bottom-details .bottom_text {
         width: 46px;
         height: 43px;
         margin-top: 300px;
-        margin-left: -230px
+        margin-left: -230px;
     }
 
-    #prestasi #arrow-right-prestasi{
+    #prestasi #arrow-right-prestasi {
         border-radius: 50px;
         background-color: white;
         padding-left: 15px;
@@ -1470,7 +1519,7 @@ footer .bottom-details .bottom_text {
         position: absolute;
     }
 
-    #prestasi .card-title{
+    #prestasi .card-title {
         padding-left: 5px;
         padding-bottom: 5px;
         padding-top: 5px;
@@ -1485,33 +1534,33 @@ footer .bottom-details .bottom_text {
         position: absolute;
     }
 
-    #prestasi p{
+    #prestasi p {
         color: black;
         font-size: 12px;
-        font-weight: bold
+        font-weight: bold;
     }
 
-    #prestasi #gambar_prestasi{
+    #prestasi #gambar_prestasi {
         border-radius: 15px;
-        width:260px;
-        height:200px;
+        width: 260px;
+        height: 200px;
         margin-top: -185px;
         margin-left: 55px;
         position: absolute;
     }
 
-    #prestasi #image_prestasi{
-        height:320px;
+    #prestasi #image_prestasi {
+        height: 320px;
         margin-left: 70px;
-        width:520px
+        width: 520px;
     }
 
-    #prestasi #icon-left{
-        margin-left: 1px
+    #prestasi #icon-left {
+        margin-left: 1px;
     }
 
-    #prestasi #icon-right{
-        margin-left: -3px
+    #prestasi #icon-right {
+        margin-left: -3px;
     }
 
     .media-icons {
@@ -1882,8 +1931,7 @@ footer .bottom-details .bottom_text {
 }
 
 @media screen and (min-width: 395px) and (max-width: 420px) {
-
-    #blog #selengkapnya{
+    #blog #selengkapnya {
         width: 153px;
         height: 45px;
         font-size: 16px;
@@ -1893,7 +1941,7 @@ footer .bottom-details .bottom_text {
         margin: auto;
         background-color: white;
         margin-top: 50px;
-        margin-bottom: 50px
+        margin-bottom: 50px;
     }
 
     #blog #arrow-left {
@@ -1928,7 +1976,7 @@ footer .bottom-details .bottom_text {
         box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.3);
     }
 
-    #blog .card-title{
+    #blog .card-title {
         padding-left: 5px;
         padding-bottom: 2px;
         padding-top: 5px;
@@ -1940,19 +1988,19 @@ footer .bottom-details .bottom_text {
         margin-left: 50px;
         border: 1px solid #000;
         margin-top: -50px;
-        position: relative
+        position: relative;
     }
 
-    #blog p{
+    #blog p {
         color: black;
         font-size: 11px;
         font-weight: bold;
     }
 
-    #blog img{
+    #blog img {
         margin-top: 15px;
-        width:280px;
-        height:190px;
+        width: 280px;
+        height: 190px;
         margin-left: 20px;
     }
 
@@ -2006,8 +2054,7 @@ footer .bottom-details .bottom_text {
         margin-top: 270px;
     }
 
-
-    #prestasi #arrow-left-prestasi{
+    #prestasi #arrow-left-prestasi {
         border-radius: 50px;
         background-color: white;
         padding-left: 10px;
@@ -2017,10 +2064,10 @@ footer .bottom-details .bottom_text {
         width: 46px;
         height: 43px;
         margin-top: 400px;
-        margin-left: -240px
+        margin-left: -240px;
     }
 
-    #prestasi #arrow-right-prestasi{
+    #prestasi #arrow-right-prestasi {
         border-radius: 50px;
         background-color: white;
         padding-left: 15px;
@@ -2034,7 +2081,7 @@ footer .bottom-details .bottom_text {
         position: absolute;
     }
 
-    #prestasi .card-title{
+    #prestasi .card-title {
         padding-left: 5px;
         padding-bottom: 5px;
         padding-top: 5px;
@@ -2049,33 +2096,33 @@ footer .bottom-details .bottom_text {
         position: absolute;
     }
 
-    #prestasi p{
+    #prestasi p {
         color: black;
         font-size: 13px;
-        font-weight: bold
+        font-weight: bold;
     }
 
-    #prestasi #gambar_prestasi{
+    #prestasi #gambar_prestasi {
         border-radius: 15px;
-        width:300px;
-        height:230px;
+        width: 300px;
+        height: 230px;
         margin-top: -200px;
         margin-left: 55px;
         position: absolute;
     }
 
-    #prestasi #image_prestasi{
-        height:370px;
+    #prestasi #image_prestasi {
+        height: 370px;
         margin-left: 55px;
-        width:590px
+        width: 590px;
     }
 
-    #prestasi #icon-left{
-        margin-left: 1px
+    #prestasi #icon-left {
+        margin-left: 1px;
     }
 
-    #prestasi #icon-right{
-        margin-left: -3px
+    #prestasi #icon-right {
+        margin-left: -3px;
     }
 
     .navbar-nav {
@@ -2385,8 +2432,7 @@ footer .bottom-details .bottom_text {
 }
 
 @media screen and (min-width: 501px) and (max-width: 700px) {
-
-    #blog #selengkapnya{
+    #blog #selengkapnya {
         width: 153px;
         height: 45px;
         font-size: 16px;
@@ -2396,7 +2442,7 @@ footer .bottom-details .bottom_text {
         margin: auto;
         background-color: white;
         margin-top: 30px;
-        margin-bottom: 50px
+        margin-bottom: 50px;
     }
 
     #blog #arrow-left {
@@ -2431,7 +2477,7 @@ footer .bottom-details .bottom_text {
         box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.3);
     }
 
-    #blog .card-title{
+    #blog .card-title {
         padding-left: 5px;
         padding-bottom: 2px;
         padding-top: 5px;
@@ -2443,23 +2489,23 @@ footer .bottom-details .bottom_text {
         margin-left: 50px;
         border: 1px solid #000;
         margin-top: -50px;
-        position: relative
+        position: relative;
     }
 
-    #blog p{
+    #blog p {
         color: black;
         font-size: 12px;
         font-weight: bold;
     }
 
-    #blog img{
+    #blog img {
         margin-top: 15px;
-        width:320px;
-        height:210px;
+        width: 320px;
+        height: 210px;
         margin-left: 20px;
     }
 
-    #prestasi #arrow-left-prestasi{
+    #prestasi #arrow-left-prestasi {
         border-radius: 50px;
         background-color: white;
         padding-left: 10px;
@@ -2469,10 +2515,10 @@ footer .bottom-details .bottom_text {
         width: 46px;
         height: 43px;
         margin-top: 400px;
-        margin-left: -255px
+        margin-left: -255px;
     }
 
-    #prestasi #arrow-right-prestasi{
+    #prestasi #arrow-right-prestasi {
         border-radius: 50px;
         background-color: white;
         padding-left: 15px;
@@ -2486,7 +2532,7 @@ footer .bottom-details .bottom_text {
         position: absolute;
     }
 
-    #prestasi .card-title{
+    #prestasi .card-title {
         padding-left: 5px;
         padding-bottom: 5px;
         padding-top: 5px;
@@ -2501,33 +2547,33 @@ footer .bottom-details .bottom_text {
         position: absolute;
     }
 
-    #prestasi p{
+    #prestasi p {
         color: black;
         font-size: 15px;
-        font-weight: bold
+        font-weight: bold;
     }
 
-    #prestasi #gambar_prestasi{
+    #prestasi #gambar_prestasi {
         border-radius: 15px;
-        width:350px;
-        height:260px;
+        width: 350px;
+        height: 260px;
         margin-top: -220px;
         margin-left: 95px;
         position: absolute;
     }
 
-    #prestasi #image_prestasi{
-        height:370px;
+    #prestasi #image_prestasi {
+        height: 370px;
         margin-left: 130px;
-        width:590px
+        width: 590px;
     }
 
-    #prestasi #icon-left{
-        margin-left: 1px
+    #prestasi #icon-left {
+        margin-left: 1px;
     }
 
-    #prestasi #icon-right{
-        margin-left: -3px
+    #prestasi #icon-right {
+        margin-left: -3px;
     }
 
     .navbar-nav {
@@ -2885,7 +2931,7 @@ footer .bottom-details .bottom_text {
 }
 
 @media screen and (min-width: 421px) and (max-width: 500px) {
-    #blog #selengkapnya{
+    #blog #selengkapnya {
         width: 153px;
         height: 45px;
         font-size: 16px;
@@ -2895,7 +2941,7 @@ footer .bottom-details .bottom_text {
         margin: auto;
         background-color: white;
         margin-top: 30px;
-        margin-bottom: 50px
+        margin-bottom: 50px;
     }
 
     #blog #arrow-left {
@@ -2930,7 +2976,7 @@ footer .bottom-details .bottom_text {
         box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.3);
     }
 
-    #blog .card-title{
+    #blog .card-title {
         padding-left: 5px;
         padding-bottom: 2px;
         padding-top: 5px;
@@ -2942,23 +2988,23 @@ footer .bottom-details .bottom_text {
         margin-left: 40px;
         border: 1px solid #000;
         margin-top: -50px;
-        position: relative
+        position: relative;
     }
 
-    #blog p{
+    #blog p {
         color: black;
         font-size: 12px;
         font-weight: bold;
     }
 
-    #blog img{
+    #blog img {
         margin-top: 12px;
-        width:320px;
-        height:210px;
+        width: 320px;
+        height: 210px;
         margin-left: 20px;
     }
 
-    #prestasi #arrow-left-prestasi{
+    #prestasi #arrow-left-prestasi {
         border-radius: 50px;
         background-color: white;
         padding-left: 10px;
@@ -2968,10 +3014,10 @@ footer .bottom-details .bottom_text {
         width: 46px;
         height: 43px;
         margin-top: 400px;
-        margin-left: -255px
+        margin-left: -255px;
     }
 
-    #prestasi #arrow-right-prestasi{
+    #prestasi #arrow-right-prestasi {
         border-radius: 50px;
         background-color: white;
         padding-left: 15px;
@@ -2985,7 +3031,7 @@ footer .bottom-details .bottom_text {
         position: absolute;
     }
 
-    #prestasi .card-title{
+    #prestasi .card-title {
         padding-left: 5px;
         padding-bottom: 5px;
         padding-top: 5px;
@@ -3000,50 +3046,50 @@ footer .bottom-details .bottom_text {
         position: absolute;
     }
 
-    #prestasi p{
+    #prestasi p {
         color: black;
         font-size: 14px;
-        font-weight: bold
+        font-weight: bold;
     }
 
-    #prestasi #gambar_prestasi{
+    #prestasi #gambar_prestasi {
         border-radius: 15px;
-        width:320px;
-        height:250px;
+        width: 320px;
+        height: 250px;
         margin-top: -200px;
         margin-left: 55px;
         position: absolute;
     }
 
-    #prestasi #image_prestasi{
-        height:370px;
+    #prestasi #image_prestasi {
+        height: 370px;
         margin-left: 80px;
-        width:590px
+        width: 590px;
     }
 
-    #prestasi #icon-left{
-        margin-left: 1px
+    #prestasi #icon-left {
+        margin-left: 1px;
     }
 
-    #prestasi #icon-right{
-        margin-left: -3px
+    #prestasi #icon-right {
+        margin-left: -3px;
     }
 
-    #ekstrakurikuler{
+    #ekstrakurikuler {
         height: 1000px;
-        padding: 20px
+        padding: 20px;
     }
 
-    #ekstrakurikuler h2{
-        font-size:36px;
+    #ekstrakurikuler h2 {
+        font-size: 36px;
     }
 
-    #ekstrakurikuler #arrow-left-parent{
+    #ekstrakurikuler #arrow-left-parent {
         margin-top: 95px;
-        margin-left: 60px
+        margin-left: 60px;
     }
 
-    #ekstrakurikuler #arrow-left-ekskul{
+    #ekstrakurikuler #arrow-left-ekskul {
         border-radius: 50px;
         background-color: #bce7eb;
         padding-left: 10px;
@@ -3056,14 +3102,14 @@ footer .bottom-details .bottom_text {
         margin-left: -60px;
     }
 
-    #ekstrakurikuler #arrow-left-ekskul img{
+    #ekstrakurikuler #arrow-left-ekskul img {
         height: 35px;
         width: 35px;
         margin-top: -12px;
         margin-left: -8px;
     }
 
-    #ekstrakurikuler #arrow-right-ekskul{
+    #ekstrakurikuler #arrow-right-ekskul {
         border-radius: 50px;
         background-color: #bce7eb;
         padding-left: 15px;
@@ -3076,19 +3122,19 @@ footer .bottom-details .bottom_text {
         margin-left: 118px;
     }
 
-    #ekstrakurikuler #arrow-right-ekskul img{
+    #ekstrakurikuler #arrow-right-ekskul img {
         height: 35px;
         width: 35px;
         margin-top: -12px;
         margin-left: -8px;
     }
 
-    #ekstrakurikuler #card-ekskul{
+    #ekstrakurikuler #card-ekskul {
         margin-left: 30px;
         margin-top: 300px;
     }
 
-    #ekstrakurikuler #judul-ekskul{
+    #ekstrakurikuler #judul-ekskul {
         color: black;
         font-size: 22px;
         font-weight: bold;
@@ -3096,10 +3142,10 @@ footer .bottom-details .bottom_text {
         margin-bottom: -5px;
         position: absolute;
         margin-top: 280px;
-        text-align: center
+        text-align: center;
     }
 
-    #ekstrakurikuler #ekskul-sekolah{
+    #ekstrakurikuler #ekskul-sekolah {
         color: black;
         font-size: 16px;
         margin-left: 5px;
@@ -3109,15 +3155,15 @@ footer .bottom-details .bottom_text {
         width: 150px;
     }
 
-    #ekstrakurikuler .main-card #gambar_ekskul{
+    #ekstrakurikuler .main-card #gambar_ekskul {
         margin-left: -30px;
         width: 220px;
         height: 220px;
         margin-top: 50px;
-        position:absolute;
+        position: absolute;
     }
 
-    #ekstrakurikuler #selengkapnya-ekskul{
+    #ekstrakurikuler #selengkapnya-ekskul {
         width: 160px;
         height: 45px;
         background-color: white;
@@ -3128,14 +3174,14 @@ footer .bottom-details .bottom_text {
         margin: auto;
         margin-left: -5px;
         margin-top: 385px;
-        position:absolute;
+        position: absolute;
     }
 
-    #ekstrakurikuler #image-ekskul{
+    #ekstrakurikuler #image-ekskul {
         margin-left: 50px;
         margin-top: -500px;
-        height:340px;
-        width:280px
+        height: 340px;
+        width: 280px;
     }
 
     .navbar-nav {
@@ -3383,8 +3429,7 @@ footer .bottom-details .bottom_text {
 }
 
 @media screen and (max-width: 1000px) and (min-width: 701px) {
-
-    #blog .card-title{
+    #blog .card-title {
         padding-left: 5px;
         padding-bottom: 2px;
         padding-top: 5px;
@@ -3396,19 +3441,19 @@ footer .bottom-details .bottom_text {
         margin-left: 55px;
         border: 1px solid #000;
         margin-top: -50px;
-        position: relative
+        position: relative;
     }
 
-    #blog p{
+    #blog p {
         color: black;
         font-size: 12px;
         font-weight: bold;
     }
 
-    #blog img{
+    #blog img {
         margin-top: 12px;
-        width:320px;
-        height:210px;
+        width: 320px;
+        height: 210px;
         margin-left: 30px;
     }
 
@@ -3428,7 +3473,7 @@ footer .bottom-details .bottom_text {
         position: absolute;
     }
 
-    #prestasi #arrow-left-prestasi{
+    #prestasi #arrow-left-prestasi {
         border-radius: 50px;
         background-color: white;
         padding-left: 10px;
@@ -3438,10 +3483,10 @@ footer .bottom-details .bottom_text {
         width: 46px;
         height: 43px;
         margin-top: 470px;
-        margin-left: -275px
+        margin-left: -275px;
     }
 
-    #prestasi #arrow-right-prestasi{
+    #prestasi #arrow-right-prestasi {
         border-radius: 50px;
         background-color: white;
         padding-left: 15px;
@@ -3455,7 +3500,7 @@ footer .bottom-details .bottom_text {
         position: absolute;
     }
 
-    #prestasi .card-title{
+    #prestasi .card-title {
         padding-left: 5px;
         padding-bottom: 5px;
         padding-top: 5px;
@@ -3464,39 +3509,39 @@ footer .bottom-details .bottom_text {
         height: 120px;
         background-color: white;
         border-radius: 3px;
-        margin-left:-210px;
+        margin-left: -210px;
         border: 1px solid #000;
         margin-top: 620px;
         position: absolute;
     }
 
-    #prestasi p{
+    #prestasi p {
         color: black;
         font-size: 17px;
-        font-weight: bold
+        font-weight: bold;
     }
 
-    #prestasi #gambar_prestasi{
+    #prestasi #gambar_prestasi {
         border-radius: 15px;
-        width:400px;
-        height:300px;
+        width: 400px;
+        height: 300px;
         margin-top: 380px;
         margin-left: -240px;
         position: absolute;
     }
 
-    #prestasi #image_prestasi{
-        height:430px;
+    #prestasi #image_prestasi {
+        height: 430px;
         margin-left: 180px;
-        width:680px
+        width: 680px;
     }
 
-    #prestasi #icon-left{
-        margin-left: 1px
+    #prestasi #icon-left {
+        margin-left: 1px;
     }
 
-    #prestasi #icon-right{
-        margin-left: -3px
+    #prestasi #icon-right {
+        margin-left: -3px;
     }
 
     .navbar-nav {
@@ -3524,6 +3569,44 @@ footer .bottom-details .bottom_text {
     }
     button:hover {
         background-color: #bce7eb;
+    }
+
+    #berita .row.mb-3 {
+        margin-bottom: 100px; /* Atur tinggi margin sesuai keinginan Anda */
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+
+    /* Mengatur lebar gambar agar responsif */
+    #berita .col-lg-6 {
+        width: 100%;
+    }
+
+    /* Mengatur margin pada elemen judul */
+    #berita .judul1 {
+        margin: 30px 0 10px;
+        text-align: center;
+    }
+
+    /* Mengatur margin pada daftar berita */
+    #berita .list-group {
+        margin-left: 0;
+    }
+
+    /* Mengatur margin pada elemen tanggal */
+    #berita .col-3 {
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    /* Mengatur ukuran font judul berita */
+    #berita .card-title {
+        font-size: 16px;
+    }
+
+    #berita img {
+        width: 300px;
+        height: 250px;
     }
 
     #blog {
@@ -4268,8 +4351,7 @@ footer .bottom-details .bottom_text {
 }
 
 @media screen and (max-width: 1200px) and (min-width: 1001px) {
-
-    #prestasi #arrow-left-prestasi{
+    #prestasi #arrow-left-prestasi {
         border-radius: 50px;
         background-color: white;
         padding-left: 10px;
@@ -4279,10 +4361,10 @@ footer .bottom-details .bottom_text {
         width: 76px;
         height: 73px;
         margin-top: 90px;
-        margin-left: -10px
+        margin-left: -10px;
     }
 
-    #prestasi #arrow-right-prestasi{
+    #prestasi #arrow-right-prestasi {
         border-radius: 50px;
         background-color: white;
         padding-left: 15px;
@@ -4296,7 +4378,7 @@ footer .bottom-details .bottom_text {
         position: absolute;
     }
 
-    #prestasi .card-title{
+    #prestasi .card-title {
         padding-left: 5px;
         padding-bottom: 2px;
         padding-top: 5px;
@@ -4311,31 +4393,31 @@ footer .bottom-details .bottom_text {
         position: absolute;
     }
 
-    #prestasi p{
+    #prestasi p {
         color: black;
         font-size: 18px;
-        font-weight: bold
+        font-weight: bold;
     }
 
-    #prestasi #gambar_prestasi{
+    #prestasi #gambar_prestasi {
         border-radius: 15px;
-        width:400px;
-        height:300px;
+        width: 400px;
+        height: 300px;
         position: absolute;
     }
 
-    #prestasi #image_prestasi{
-        height:400px;
-        width:700px;
+    #prestasi #image_prestasi {
+        height: 400px;
+        width: 700px;
         margin-top: 40px;
     }
 
-    #prestasi #icon-left{
-        margin-left: 4px
+    #prestasi #icon-left {
+        margin-left: 4px;
     }
 
-    #prestasi #icon-right{
-        margin-left: 4px
+    #prestasi #icon-right {
+        margin-left: 4px;
     }
 
     .navbar-nav {
@@ -4709,8 +4791,7 @@ footer .bottom-details .bottom_text {
     }
 }
 
-
-@media screen and (min-width: 300px) and (max-width: 355px){
+@media screen and (min-width: 300px) and (max-width: 355px) {
 }
 
 @media screen and (min-width: 356px) and (max-width: 394px) {

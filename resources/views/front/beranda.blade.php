@@ -442,10 +442,10 @@
 </section>
 
 <!-- Blog Pendidik -->
-<section id="blog" class="overflow-hidden" style="margin-top: 100px; height: 600px">
-    <h2><b>Blog Pendidik</b></h2>
+<section id="blog">
     <div class="container">
         <div class="row">
+        <h2>Blog Pendidik</h2>
             <div class="col-1 d-flex justify-content-start">
                 <button id="arrow-left" onclick="prev()" onmouseover="this.style.backgroundColor='#136A71';
             this.style.color= '#ffffff'" onmouseout="this.style.backgroundColor= '#ffffff';this.style.color= 'black'">

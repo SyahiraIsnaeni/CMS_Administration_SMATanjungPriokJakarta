@@ -297,7 +297,7 @@
                                                 <input type="text" name="penulis" class="form-control" id="text" placeholder="Enter Penulis">
                                             </div>
                                             <div class="form-group">
-                                                <label for="blog">Judul (Maksimum 90 karakter)</label>
+                                                <label for="blog">Judul (Maksimum 75 karakter)</label>
                                                 <input type="text" name="judul" class="form-control" id="text" placeholder="Enter Judul">
                                             </div>
                                             <div class="form-group">

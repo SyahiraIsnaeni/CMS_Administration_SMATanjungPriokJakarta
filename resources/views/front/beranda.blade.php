@@ -186,78 +186,70 @@
         </div>
       </div>
     </div>
-
+  </div>
 </section>
 
 <!-- Ekstrakurikuler -->
-<section id="ekstrakurikuler" style="background: #BCE7EB;margin-top: 100px;height: 800px;padding: 20px">
-  <h2 class="mt-5" style="text-align: center;margin-bottom: 30px;font-size: 37px;
-    margin-top: 50px;"><b>Ekstrakurikuler</b></h2>
-  <div class="container">
-    <div class="row">
-      <div id="arrow-left-parent" class="col-1 d-flex justify-content-start">
-        <button id="arrow-left-ekskul" onclick="prevEkskul()"
-                onmouseover="this.style.boxShadow='1px 2px 2px 2px rgba(0, 0, 0, 0.3)';
+<section id="ekstrakurikuler">
+    <h2 class="mt-5"><b>Ekstrakurikuler</b></h2>
+    <div class="container">
+        <div class="row">
+            <div id="arrow-left-parent" class="col-1 d-flex justify-content-start">
+                <button
+                    id="arrow-left-ekskul"
+                    onclick="prevEkskul()"
+                    onmouseover="this.style.boxShadow='1px 2px 2px 2px rgba(0, 0, 0, 0.3)';
                       this.style.backgroundColor='#ffffff'"
-                onmouseout="this.style.backgroundColor= '#bce7eb';this.style.boxShadow='0px 0px 0px 0px rgba(0, 0, 0, 0)'">
-          <img src="{{asset('front/panah-kiri.png')}}">
-        </button>
-      </div>
-      <div class="main-card col-4 d-flex justify-content-start" id="main-card-ekskul"
-           style="overflow-x: hidden;margin-top: 10px">
-          @forelse ($ekstrakurikuler as $row)
-              <div class="card-ekskul me-3">
-                  <img src="{{asset('uploads/'.$row->logo) }}" class="rounded" width="380" height="350" style="margin-left: 20px">
-                  <p style="color: black;font-size: 26px;font-weight: bold;margin-bottom: -10px;
-                         text-align: center;margin-top: -10px;margin-left: 10px">
-                      {{$row->nama}}
-                  </p>
-                  <p style="color: black;font-size: 20px;text-align: center;margin-left: 10px">
-                      {{$row->nama}} SMA Tanjung Priok Jakarta
-                  </p>
-                  <div style="margin-left: 15px">
-                      <a href="{{ route('detail-ekstrakurikuler', $row->id) }}" style="width: 210px; height: 45px;
-                      background-color: white; font-size: 18px; border: 2px solid #000; border-radius: 8px; display: block;
-                      margin: auto; margin-top: -5px;color: black;
-                      text-align: center; line-height: 50px; text-decoration: none;">
-                          <p style="margin-top: 2px">Selengkapnya</p>
-                      </a>
-                  </div>
-
-              </div>
-          @empty
-          @endforelse
-      </div>
-      <div class="col-1 d-flex justify-content-start" style="margin-top: 92px; margin-left:8px">
-        <div>
-          <button id="arrow-right-ekskul" onclick="nextEkskul()" style="border-radius: 50px;
-              background-color: #bce7eb; padding-left: 15px;padding-bottom: 10px;
-                    padding-top: 12px;padding-right: 16px; width: 76px;height: 73px;margin-top: 70px;
-                    margin-left: 2px;"
-                  onmouseover="this.style.boxShadow='1px 2px 2px 2px rgba(0, 0, 0, 0.3)';
+                    onmouseout="this.style.backgroundColor= '#bce7eb';this.style.boxShadow='0px 0px 0px 0px rgba(0, 0, 0, 0)'"
+                >
+                    <img src="{{asset('front/panah-kiri.png')}}" width="50" height="50" />
+                </button>
+            </div>
+            <div class="main-card col-4 d-flex justify-content-start" id="main-card-ekskul" style="overflow-x: hidden; margin-top: 40px">
+                @forelse ($ekstrakurikuler as $row)
+                <div id="card-ekskul" class="card-ekskul me-3">
+                    <a href="detail_ekstrakurikuler.html" class="text-decoration-none">
+                        <img id="gambar_ekskul" src="{{asset('uploads/'.$row->logo) }}" class="rounded" width="420" height="370" />
+                        <p id="judul-ekskul">{{$row->nama}}</p>
+                        <p id="ekskul-sekolah">{{$row->nama}} SMA Tanjung Priok Jakarta</p>
+                        <div>
+                            <button id="selengkapnya-ekskul" href="{{ route('detail-ekstrakurikuler', $row->id) }}">Selengkapnya</button>
+                        </div>
+                    </a>
+                </div>
+                @empty
+                @endforelse
+            </div>
+            <div class="col-1 d-flex justify-content-start" style="margin-top: 95px">
+                <div>
+                    <button
+                        id="arrow-right-ekskul"
+                        onclick="nextEkskul()"
+                        onmouseover="this.style.boxShadow='1px 2px 2px 2px rgba(0, 0, 0, 0.3)';
                       this.style.backgroundColor='#ffffff'"
-                  onmouseout="this.style.backgroundColor= '#bce7eb';this.style.boxShadow='0px 0px 0px 0px rgba(0, 0, 0, 0)'">
-            <img src="{{asset('front/panah-kanan.png')}}"width="50" height="50">
-          </button>
+                        onmouseout="this.style.backgroundColor= '#bce7eb';this.style.boxShadow='0px 0px 0px 0px rgba(0, 0, 0, 0)'"
+                    >
+                        <img src="{{asset('front/panah-kanan.png')}}" width="50" height="50" />
+                    </button>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-start">
+                <img id="image-ekskul" src="{{asset('front/ekstrakurikuler.png')}}" alt="logo" />
+            </div>
         </div>
-      </div>
-      <div class="col d-flex justify-content-start" style="margin-left: 60px;margin-top: 10px">
-        <img src="{{asset('front/ekstrakurikuler.png')}}" alt="logo" height="500" width="450" />
-      </div>
     </div>
-  </div>
-  <script>
-    var sliderMainEkskul = document.getElementById("main-card-ekskul");
-    var itemEkskul = sliderMainEkskul.getElementsByClassName("card-ekskul");
+    <script>
+        var sliderMainEkskul = document.getElementById("main-card-ekskul");
+        var itemEkskul = sliderMainEkskul.getElementsByClassName("card-ekskul");
 
-    function nextEkskul(){
-      sliderMainEkskul.append(itemEkskul[0]);
-    }
+        function nextEkskul() {
+            sliderMainEkskul.append(itemEkskul[0]);
+        }
 
-    function prevEkskul(){
-      sliderMainEkskul.prepend(itemEkskul[itemEkskul.length - 1]);
-    }
-  </script>
+        function prevEkskul() {
+            sliderMainEkskul.prepend(itemEkskul[itemEkskul.length - 1]);
+        }
+    </script>
 </section>
 
 <!-- Prestasi -->
@@ -450,63 +442,58 @@
 </section>
 
 <!-- Blog Pendidik -->
-<section id="blog" class="overflow-hidden" style="margin-top: -20px">
-  <h2 style="text-align: center;margin-bottom: 40px;font-size: 37px"><b>Blog Pendidik</b></h2>
-  <div class="container">
-    <div class="row">
-      <div class="col-1 d-flex justify-content-start">
-        <button id="arrow-left" onclick="prev()" onmouseover="this.style.backgroundColor='#136A71';this.style.color= '#ffffff'" onmouseout="this.style.backgroundColor= '#ffffff';this.style.color= 'black'" style="background-color: rgb(255, 255, 255); color: black;">
-          <i class="panah fa-solid fa-chevron-left fa-lg-2xl fa-md-xxl fa-sm-xl"></i>
-        </button>
-      </div>
-        <div class="main-card col-10 d-flex justify-content-start" id="main-card" style="overflow-x: hidden; height: auto;">
-        @forelse ($blog as $row)
-          <div class="card-blog me-3">
-          <a href="{{route('detail-blog', $row->slug)}}" class="text-decoration-none">
-            <img src="{{asset('uploads/'.$row->gambar) }}"class="rounded" width="350" height="240">
-            <div class="card-title rounded text-center"
-                 style="padding-left: 5px;padding-bottom: 2px;
-                  padding-top: 5px;padding-right: 5px; width: 280px; height: 97px;
-                  background-color: white;border-radius: 3px;
-                  margin-left: 35px;border: 1px solid #000;margin-top: -50px;position: relative">
-              <p style="color: black;font-size: 15px;font-weight: bold;">
-                  {{$row['judul']}}
-              </p>
+<section id="blog" class="overflow-hidden" style="margin-top: 100px; height: 600px">
+    <h2><b>Blog Pendidik</b></h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-1 d-flex justify-content-start">
+                <button id="arrow-left" onclick="prev()" onmouseover="this.style.backgroundColor='#136A71';
+            this.style.color= '#ffffff'" onmouseout="this.style.backgroundColor= '#ffffff';this.style.color= 'black'">
+                    <i class="panah fa-solid fa-chevron-left fa-lg-2xl fa-md-xxl fa-sm-xl"></i>
+                </button>
             </div>
-          </a>
-          </div>
-          @empty
-          @endforelse
-      </div>
-      <div class="col-1 d-flex justify-content-start">
-        <div>
-          <button id="arrow-right" onclick="next()"
-                  onmouseover="this.style.backgroundColor='#136A71';this.style.color= '#ffffff'"
-                  onmouseout="this.style.backgroundColor= '#ffffff';this.style.color= 'black'">
-            <i class="fa-solid fa-chevron-right fa-lg-2xl"></i>
-          </button>
+            <div class="main-card col-10 d-flex justify-content-start" id="main-card" style="overflow-x: hidden;">
+                @forelse ($blog as $row)
+                <div class="card-blog me-3">
+                    <a href="{{route('detail-blog', $row->slug)}}" class="text-decoration-none">
+                        <img src="{{asset('uploads/'.$row->gambar) }}" class="rounded" >
+                        <div class="card-title rounded text-center">
+                            <p>
+                                {{$row['judul']}}
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                @empty
+                @endforelse
         </div>
-      </div>
+            <div class="col-1 d-flex justify-content-start">
+                <div>
+                    <button id="arrow-right" onclick="next()"
+                            onmouseover="this.style.backgroundColor='#136A71';this.style.color= '#ffffff'"
+                            onmouseout="this.style.backgroundColor= '#ffffff';this.style.color= 'black'">
+                        <i class="fa-solid fa-chevron-right fa-lg-2xl"></i>
+                    </button>
+                </div>
+            </div>
     </div>
-  </div>
-  <script>
-    var sliderMain = document.getElementById("main-card");
-    var item = sliderMain.getElementsByClassName("card-blog");
+    <script>
+        var sliderMain = document.getElementById("main-card");
+        var item = sliderMain.getElementsByClassName("card-blog");
 
-    function next(){
-      sliderMain.append(item[0]);
-    }
+        function next(){
+            sliderMain.append(item[0]);
+        }
 
-    function prev(){
-      sliderMain.prepend(item[item.length - 1]);
-    }
-  </script>
-  <div id="selengkapnya" >
-    <button href="#" style="width: 250px; height: 60px;background-color: white;font-size: 23px;border: 2px solid #000;
-          border-radius: 8px; display: block;margin: auto;margin-top: 50px;margin-bottom: 50px">
-      Selengkapnya
-    </button>
-  </div>
+        function prev(){
+            sliderMain.prepend(item[item.length - 1]);
+        }
+    </script>
+    <div id="selengkapnya" >
+        <button href="#" >
+            Selengkapnya
+        </button>
+    </div>
 </section>
 
 <!-- Kontak Kami -->

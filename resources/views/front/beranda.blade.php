@@ -258,7 +258,7 @@
     <h2 style="text-align: center;margin-bottom: 30px;font-size: 37px"><b>Prestasi</b></h2>
     <div class="row">
       <div class="col-4 d-flex justify-content-start" style="margin-left: -150px;margin-top: 10px">
-        <img src="{{asset('front/prestasi.png')}}" alt="logo" height="500" width="900" />
+        <img id="image_prestasi" src="{{asset('front/prestasi.png')}}" alt="logo" height="500" width="900" />
       </div>
       <div class="col-1 d-flex justify-content-start" style="margin-top: 120px;margin-left: 250px">
         <button id="arrow-left-prestasi" onclick="prevPrestasi()" style="border-radius: 50px;
@@ -268,7 +268,7 @@
                     this.style.backgroundColor='#136A71';this.style.color= '#ffffff'"
                 onmouseout="this.style.boxShadow='0px 0px 0px 0px rgba(0, 0, 0, 0)';
                 this.style.backgroundColor= '#ffffff';this.style.color= 'black'">
-          <i class="fa-solid fa-chevron-left fa-2xl" style="margin-left: 4px;"></i>
+          <i id="icon-left" class="fa-solid fa-chevron-left fa-2xl" style="margin-left: 4px;"></i>
         </button>
       </div>
       <div class="main-card col-5 d-flex justify-content-start" id="main-card-prestasi"
@@ -276,7 +276,7 @@
           @forelse ($prestasi as $row)
             <div class="card-prestasi me-3">
               <a href="#" class="text-decoration-none">
-                <img src="{{asset('uploads/'.$row->foto) }}" style="border-radius: 15px" width="525" height="370">
+                <img id="gambar_prestasi" src="{{asset('uploads/'.$row->foto) }}" style="border-radius: 15px" width="525" height="370">
                 <div class="card-title d-flex justify-content-center rounded text-center"
                      style="padding-left: 5px;padding-bottom: 2px;
                       padding-top: 5px;padding-right: 7px; width: 480px; height: 97px;
@@ -301,7 +301,7 @@
                   this.style.backgroundColor='#136A71';this.style.color= '#ffffff'"
                   onmouseout="this.style.backgroundColor= '#ffffff';this.style.color= 'black';
                   this.style.boxShadow='0px 0px 0px 0px rgba(0, 0, 0, 0)';">
-            <i class="fa-solid fa-chevron-right fa-2xl"></i>
+            <i id="icon-right"  class="fa-solid fa-chevron-right fa-2xl"></i>
           </button>
           <script>
 

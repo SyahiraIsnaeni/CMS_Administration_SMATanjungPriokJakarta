@@ -1111,7 +1111,7 @@ footer .bottom-details .bottom_text {
         margin-left: -85px;
         margin-top: 300px;
         text-align: center;
-        position: absolute;
+        position: relative;
         width: 150px;
     }
 
@@ -1120,7 +1120,7 @@ footer .bottom-details .bottom_text {
         width: 180px;
         height: 180px;
         margin-top: 50px;
-        position: absolute;
+        position: relative;
     }
 
     #ekstrakurikuler #selengkapnya-ekskul {
@@ -1134,7 +1134,7 @@ footer .bottom-details .bottom_text {
         margin: auto;
         margin-left: -88px;
         margin-top: 370px;
-        position: absolute;
+        position: relative;
     }
 
     #ekstrakurikuler #image-ekskul {

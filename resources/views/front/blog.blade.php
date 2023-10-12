@@ -76,12 +76,12 @@
     <div class="container mt-5 mb-5">
         <div class="container">
             <div class="row">
-                <h3 style="font-weight: bold">What to Read Next</h3>
+                <h3 class="tulsel" style="font-weight: bold">What to Read Next</h3>
             </div>
             <div class="row g-3">
                 @forelse ($nextBlog as $row)
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card">
+                        <div class="foto card">
                             <img src="{{asset('uploads/'.$row->gambar) }}" class="card-img-top" alt="events" height="250">
                             <div class="card-body">
                                 <h5 class="card-title" align="justify" style="font-weight: bold">{{$row->judul}}</h5>

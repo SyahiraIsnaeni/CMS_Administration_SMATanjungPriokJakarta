@@ -66,7 +66,7 @@
         <h2 class="judulppb" style="font-size: 34px">{{$berita->judul}}</h2>
         <p class="penulis" style="font-size: 15px">By {{$berita->penulis}}</p>
         <p class="penulis" style="margin-top: -15px">{{$berita->created_at->format('d M Y')}} | {{$berita->kategori_berita->nama_kategori}}</p>
-        <p align="justify" class="d-flex justify-content-center">
+        <p align="justify" class="isikonten d-flex justify-content-center">
             {!! $berita->body !!}
         </p>
       </div>
@@ -77,12 +77,12 @@
         <div class="container mt-5 mb-5">
             <div class="container">
                 <div class="row">
-                    <h3 style="font-weight: bold">What to Read Next</h3>
+                    <h3 class="tulsel" style="font-weight: bold">What to Read Next</h3>
                 </div>
                 <div class="row g-3">
                     @forelse ($nextBerita as $row)
                         <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card">
+                            <div class="foto card">
                                 <img src="{{asset('uploads/'.$row->gambar) }}" class="card-img-top" alt="events" height="250">
                                 <div class="card-body">
                                     <h5 class="card-title" align="justify" style="font-weight: bold">{{$row->judul}}</h5>

@@ -96,7 +96,7 @@
           <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex justify-content-center mt-5 mb-5">
             <a href="{{ route('detail-galeri', $row->id) }}" class="text-decoration-none">
             <img src="{{asset('uploads/'. $row->cover)}}"
- class="rounded" width="350" height="350" />
+ class="rounded" />
             <div class="card-title rounded text-center">
               <a href="{{ route('detail-galeri', $row->id) }}" class="text-decoration-none">
                 <p class="nama">{{$row->judul}}</p>

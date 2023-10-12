@@ -108,7 +108,6 @@ class FrontController extends Controller
         $jumbotron = Jumbotron::orderByDesc('updated_at')->offset(1)->limit(PHP_INT_MAX)->get();
         $jumbotronActive = Jumbotron::orderByDesc('updated_at')->limit(1)->get();
 
-
         return view('front.daftar-berita', compact('berita', 'jumbotron', 'jumbotronActive'));
     }
 

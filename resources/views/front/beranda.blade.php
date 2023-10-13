@@ -137,11 +137,12 @@
   <div class="container">
     <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-        <div class="card-button rounded" style="background-color: white; box-shadow: 1px 2px 3px 3px rgba(0.3, 0.3, 0.3, 0.3);"
+        <div class="card-button rounded" style="background-color: white;
+        box-shadow: 1px 2px 3px 3px rgba(0.3, 0.3, 0.3, 0.3);"
              onmouseover="this.style.backgroundColor='#bce7eb';"
              onmouseout="this.style.backgroundColor= '#ffffff';">
           <a href="{{ 'prestasi-sekolah' }}" class="text-decoration-none">
-            <img src="{{asset('front/piala.png')}}"width="240px" height="160px" style="text-align: center">
+            <img src="{{asset('front/piala.png')}}"width="240px" height="160px" style="text-align: center;margin-left: 5px">
             <p style="color: black; font-size: 22px; font-weight: bold; margin-top: -10px; text-align: center;">
               Prestasi
             </p>

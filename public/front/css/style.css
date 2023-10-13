@@ -3776,13 +3776,13 @@ li a {
     }
 }
 
-@media screen and (max-width: 1199px) and (min-width: 1010px){
+@media screen and (max-width: 1199px) and (min-width: 1011px){
     #ekstrakurikuler{
         height: 700px
     }
 
     #ekstrakurikuler #image-ekskul{
-        height:360px;
+        height:1px;
         width:310px
     }
 
@@ -3863,7 +3863,7 @@ li a {
     }
 }
 
-@media screen and (max-width: 1009px) and (min-width: 992px){
+@media screen and (max-width: 1010px) and (min-width: 992px){
 
     #ekstrakurikuler{
         height: 1100px

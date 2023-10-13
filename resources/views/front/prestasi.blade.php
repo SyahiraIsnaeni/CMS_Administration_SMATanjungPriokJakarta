@@ -9,6 +9,7 @@
     <!-- add icon link -->
     <link rel="icon" href="assets/logo.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="{{asset('front/css/galeri.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset('front/css/style.css')}}" />
     <link rel="icon" href="{{asset('front/logo.png')}}" />
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -61,13 +62,14 @@
 
     <!-- galeri Prestasi -->
     <section id="eventdet" class="overflow-hidden">
-      <h2 style="text-align: center; margin-top: 80px; margin-bottom: 50px; font-size: 37px;font-weight: bold">Prestasi SMA Tanjung Priok Jakarta</h2>
+      <h2>Prestasi SMA Tanjung Priok Jakarta</h2>
       <div class="container">
         <div class="row">
             @forelse ($prestasi as $row)
               <div class="foto col-4-lg-3 col-md-4 col-sm-12 d-flex flex-column align-items-center mt-5">
-                <img src="{{asset('uploads/'. $row->foto)}}" class="rounded" />
-                <p class="judulprestasi">{{$row->nama}}</p>
+                  <img src="{{asset('uploads/'. $row->foto)}}" class="rounded" />
+                  <h3><b>{{$row->nama}}</b></h3>
+                  <p>{{$row->nama_prestasi}}</p>
               </div>
             @empty
             @endforelse

@@ -377,20 +377,20 @@ footer .bottom-details .bottom_text {
 }
 
 #eventdet h2 {
-    font-family: "poppins";
-    font-size: 37px;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    font-size: 37px;
+    font-weight: bold
 }
 
-.judulprestasi {
+#eventdet p {
     font-family: "poppins";
-    text-decoration: none;
-    font-weight: 500;
-    color: black;
+    font-size: 18px;
     text-align: center;
-    font-size: 25px;
+    margin-top: -45px;
+    margin-bottom: 30px;
+    width: 350px;
 }
 
 #prestasidet img {
@@ -406,6 +406,15 @@ footer .bottom-details .bottom_text {
 #event img {
     width: 370px;
     height: 252px;
+}
+
+#eventdet h3{
+    font-family: "poppins";
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    font-weight: 400
 }
 
 @media screen and (max-width: 299px) {
@@ -450,24 +459,42 @@ footer .bottom-details .bottom_text {
         font-size: 22px;
     }
 
-    #eventdet h2 {
-        font-size: 23px;
-        margin-top: 45px;
-    }
-
-    #eventdet img {
-        width: 230px;
-        height: 180px;
-        margin-bottom: 30px;
-    }
-
     #prestasidet img {
         width: 230px;
         height: 180px;
     }
 
-    .judulprestasi {
-        font-size: 20px;
+    #eventdet h2 {
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 50px;
+        font-size: 33px;
+        font-weight: bold
+    }
+
+    #eventdet h3{
+        font-family: "poppins";
+        text-align: center;
+        margin-top: -15px;
+        margin-bottom: 50px;
+        font-size: 18px;
+        font-weight: 400
+    }
+
+    #eventdet p {
+        font-family: "poppins";
+        font-size: 13px;
+        text-align: center;
+        margin-top: -45px;
+        margin-bottom: 30px;
+        width: 240px;
+    }
+
+    #eventdet img {
+        width: 240px;
+        height: 160px;
+        margin-bottom: 30px;
+        margin-top: -50px;
     }
 }
 
@@ -508,25 +535,44 @@ footer .bottom-details .bottom_text {
         font-size: 25px;
     }
 
-    #eventdet h2 {
-        font-size: 23px;
-        margin-top: 45px;
-    }
-
-    #eventdet img {
-        width: 250px;
-        height: 162px;
-        margin-bottom: 30px;
-    }
-
     #prestasidet img {
         width: 250px;
         height: 200px;
     }
 
-    .judulprestasi {
-        font-size: 20px;
+    #eventdet h2 {
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 50px;
+        font-size: 33px;
+        font-weight: bold
     }
+
+    #eventdet h3{
+        font-family: "poppins";
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: 50px;
+        font-size: 19px;
+        font-weight: 400
+    }
+
+    #eventdet p {
+        font-family: "poppins";
+        font-size: 14px;
+        text-align: center;
+        margin-top: -45px;
+        margin-bottom: 30px;
+        width: 260px;
+    }
+
+    #eventdet img {
+        width: 280px;
+        height: 200px;
+        margin-bottom: 30px;
+        margin-top: -40px;
+    }
+
 }
 
 @media screen and (min-width: 395px) and (max-width: 420px) {
@@ -565,28 +611,46 @@ footer .bottom-details .bottom_text {
         font-size: 35px;
     }
 
-    #eventdet h2 {
-        font-size: 30px;
-        margin-top: 45px;
-    }
-
-    #eventdet img {
-        width: 250px;
-        height: 162px;
-        margin-bottom: 30px;
-    }
-
     #prestasidet img {
         width: 300px;
         height: 250px;
     }
 
-    .judulprestasi {
-        font-size: 23px;
+    #eventdet h2 {
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 50px;
+        font-size: 34px;
+        font-weight: bold
+    }
+
+    #eventdet h3{
+        font-family: "poppins";
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: 50px;
+        font-size: 20px;
+        font-weight: 400
+    }
+
+    #eventdet p {
+        font-family: "poppins";
+        font-size: 16px;
+        text-align: center;
+        margin-top: -45px;
+        margin-bottom: 30px;
+        width: 280px;
+    }
+
+    #eventdet img {
+        width: 320px;
+        height: 230px;
+        margin-bottom: 30px;
+        margin-top: -40px;
     }
 }
 
-@media screen and (min-width: 501px) and (max-width: 700px) {
+@media screen and (min-width: 501px) and (max-width: 770px) {
     .carousel-image {
         height: 50vh;
         margin-bottom: 10px;
@@ -623,24 +687,42 @@ footer .bottom-details .bottom_text {
         font-size: 37px;
     }
 
-    #eventdet h2 {
-        font-size: 30px;
-        margin-top: 45px;
-    }
-
-    #eventdet img {
-        width: 400px;
-        height: 350px;
-        margin-bottom: 30px;
-    }
-
     #prestasidet img {
         width: 350px;
         height: 300px;
     }
 
-    .judulprestasi {
+    #eventdet h2 {
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 50px;
+        font-size: 35px;
+        font-weight: bold
+    }
+
+    #eventdet h3{
+        font-family: "poppins";
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: 50px;
         font-size: 23px;
+        font-weight: 400
+    }
+
+    #eventdet p {
+        font-family: "poppins";
+        font-size: 18px;
+        text-align: center;
+        margin-top: -45px;
+        margin-bottom: 30px;
+        width: 330px;
+    }
+
+    #eventdet img {
+        width: 400px;
+        height: 270px;
+        margin-bottom: 30px;
+        margin-top: -20px;
     }
 }
 
@@ -680,28 +762,46 @@ footer .bottom-details .bottom_text {
         font-size: 35px;
     }
 
-    #eventdet h2 {
-        font-size: 30px;
-        margin-top: 45px;
-    }
-
-    #eventdet img {
-        width: 350px;
-        height: 300px;
-        margin-bottom: 30px;
-    }
-
     #prestasidet img {
         width: 300px;
         height: 250px;
     }
 
-    .judulprestasi {
+    #eventdet h2 {
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 50px;
+        font-size: 35px;
+        font-weight: bold
+    }
+
+    #eventdet h3{
+        font-family: "poppins";
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: 50px;
         font-size: 23px;
+        font-weight: 400
+    }
+
+    #eventdet p {
+        font-family: "poppins";
+        font-size: 18px;
+        text-align: center;
+        margin-top: -45px;
+        margin-bottom: 30px;
+        width: 330px;
+    }
+
+    #eventdet img {
+        width: 400px;
+        height: 270px;
+        margin-bottom: 30px;
+        margin-top: -20px;
     }
 }
 
-@media screen and (max-width: 1000px) and (min-width: 701px) {
+@media screen and (max-width: 1000px) and (min-width: 771px) {
     .carousel-image {
         height: 50vh;
         margin-bottom: 30px;
@@ -738,23 +838,42 @@ footer .bottom-details .bottom_text {
         font-size: 40px;
     }
 
-    #eventdet h2 {
-        font-size: 35px;
-        margin-top: 45px;
-    }
-
-    #eventdet img {
-        width: 210px;
-        height: 150px;
-    }
-
     #prestasidet img {
         width: 200px;
         height: 150px;
     }
 
-    .judulprestasi {
-        font-size: 23px;
+    #eventdet h2 {
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 50px;
+        font-size: 37px;
+        font-weight: bold
+    }
+
+    #eventdet h3{
+        font-family: "poppins";
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: 50px;
+        font-size: 18px;
+        font-weight: 400
+    }
+
+    #eventdet p {
+        font-family: "poppins";
+        font-size: 14px;
+        text-align: center;
+        margin-top: -45px;
+        margin-bottom: 30px;
+        width: 220px;
+    }
+
+    #eventdet img {
+        width: 230px;
+        height: 170px;
+        margin-bottom: 30px;
+        margin-top: -40px;
     }
 }
 
@@ -790,23 +909,42 @@ footer .bottom-details .bottom_text {
         font-size: 40px;
     }
 
-    #eventdet h2 {
-        font-size: 45px;
-        margin-top: 50px;
-    }
-
-    #eventdet img {
-        width: 350px;
-        height: 300px;
-    }
-
     #prestasidet img {
         width: 320px;
         height: 270px;
     }
 
-    .judulprestasi {
-        font-size: 25px;
+    #eventdet h2 {
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 50px;
+        font-size: 37px;
+        font-weight: bold
+    }
+
+    #eventdet h3{
+        font-family: "poppins";
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: 50px;
+        font-size: 23px;
+        font-weight: 400
+    }
+
+    #eventdet p {
+        font-family: "poppins";
+        font-size: 17px;
+        text-align: center;
+        margin-top: -45px;
+        margin-bottom: 30px;
+        width: 330px;
+    }
+
+    #eventdet img {
+        width: 370px;
+        height: 270px;
+        margin-bottom: 30px;
+        margin-top: -40px;
     }
 }
 
@@ -838,26 +976,41 @@ footer .bottom-details .bottom_text {
         height: 300px;
     }
 
-    #event h2 b {
-        font-size: 40px;
-    }
-
-    #eventdet h2 {
-        font-size: 45px;
-        margin-top: 70px;
-    }
-
-    #eventdet img {
-        width: 280px;
-        height: 230px;
-    }
-
     #prestasidet img {
         width: 250px;
         height: 200px;
     }
 
-    .judulprestasi {
-        font-size: 25px;
+    #eventdet h2 {
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 50px;
+        font-size: 37px;
+        font-weight: bold
+    }
+
+    #eventdet h3{
+        font-family: "poppins";
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: 50px;
+        font-size: 19px;
+        font-weight: 400
+    }
+
+    #eventdet p {
+        font-family: "poppins";
+        font-size: 15px;
+        text-align: center;
+        margin-top: -45px;
+        margin-bottom: 30px;
+        width: 280px;
+    }
+
+    #eventdet img {
+        width: 300px;
+        height: 210px;
+        margin-bottom: 30px;
+        margin-top: -40px;
     }
 }

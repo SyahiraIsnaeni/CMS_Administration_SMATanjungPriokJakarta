@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tambah Data Postingan Hari Nasional</title>
 
-    <link rel="shortcut icon" href="../assets/image/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/image/logosma.png" type="image/x-icon">
 
     <link rel="stylesheet" href="../assets/compiled/css/app.css">
     <link rel="stylesheet" href="../assets/compiled/css/app-dark.css">
@@ -296,12 +296,12 @@
                                                        placeholder="Hari Nasional" name="nama_hari">
                                             </div>
                                             <div class="form-group" style="margin-top: 10px">
-                                                <label for="squareText">Deskripsi Postingan</label>
+                                                <label for="squareText">Deskripsi Postingan (maks 90 karakter)</label>
                                                 <input type="text" id="squareText" class="form-control square"
                                                        placeholder="Deskripsi" name="deskripsi">
                                             </div>
                                             <div class="form-group" style="margin-top: 10px">
-                                                <label for="formFile" class="form-label">Gambar Postingan</label>
+                                                <label for="formFile" class="form-label">Gambar Postingan (rasio 1:1)</label>
                                                 <input class="form-control" type="file" id="formFile" name="gambar">
                                             </div>
                                             <div class="form-group" style="margin-top: 10px">

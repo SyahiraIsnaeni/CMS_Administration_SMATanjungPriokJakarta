@@ -35,7 +35,7 @@ class EkstrakurikulerController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'nama' => 'required|min:3',
+            'nama' => 'required|min:3|max:15',
             'deskripsi' => 'required|min:10',
             'logo' => 'required|image|mimes:jpeg,jpg,png',
             'image.*' => 'image|mimes:jpeg,jpg,png',

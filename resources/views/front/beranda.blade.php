@@ -190,50 +190,120 @@
 </section>
 
 <!-- Ekstrakurikuler -->
-<section id="ekstrakurikuler">
-    <h2 class="mt-5"><b>Ekstrakurikuler</b></h2>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
+    <title>SMA Tanjung Priok Jakarta</title>
+    <!-- add icon link -->
+    <link rel="icon" href="assets/logo1.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="ekskul.css" />
+    <link rel="icon" href="2.jpeg" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"
+    />
+</head>
+
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+<!-- Ekstrakurikuler -->
+<section id="ekstrakurikuler" >
     <div class="container">
         <div class="row">
-            <div id="arrow-left-parent" class="col-1 d-flex justify-content-start">
-                <button
-                    id="arrow-left-ekskul"
-                    onclick="prevEkskul()"
-                    onmouseover="this.style.boxShadow='1px 2px 2px 2px rgba(0, 0, 0, 0.3)';
+            <h2 ><b>Ekstrakurikuler</b></h2>
+            <div class="col-1 d-flex justify-content-start" style="margin-top: 95px;margin-left: 50px">
+                <button id="arrow-left-ekskul" onclick="prevEkskul()"
+                        onmouseover="this.style.boxShadow='1px 2px 2px 2px rgba(0, 0, 0, 0.3)';
                       this.style.backgroundColor='#ffffff'"
-                    onmouseout="this.style.backgroundColor= '#bce7eb';this.style.boxShadow='0px 0px 0px 0px rgba(0, 0, 0, 0)'"
-                >
-                    <img src="{{asset('front/panah-kiri.png')}}" width="50" height="50" />
+                        onmouseout="this.style.backgroundColor= '#bce7eb';this.style.boxShadow='0px 0px 0px 0px rgba(0, 0, 0, 0)'">
+                    <img id="gambar_kiri" src="{{asset('front/panah-kiri.png')}}">
                 </button>
             </div>
-            <div class="main-card col-4 d-flex justify-content-start" id="main-card-ekskul" style="overflow-x: hidden; margin-top: 40px">
-                @forelse ($ekstrakurikuler as $row)
-                <div id="card-ekskul" class="card-ekskul me-3">
-                    <a href="detail_ekstrakurikuler.html" class="text-decoration-none">
-                        <img id="gambar_ekskul" src="{{asset('uploads/'.$row->logo) }}" class="rounded" width="420" height="370" />
-                        <p id="judul-ekskul">{{$row->nama}}</p>
-                        <p id="ekskul-sekolah">{{$row->nama}} SMA Tanjung Priok Jakarta</p>
+            <div class="main-card col-lg-4 col-md-8 col-sm-10 d-flex justify-content-start" id="main-card-ekskul"
+                 style="overflow-x: hidden;margin-top: 40px">
+                <div class="card-ekskul me-3">
+                    <a href="#" class="text-decoration-none">
+                        <img src="{{asset('front/bultang.png')}}" class="gambar_ekskul rounded">
+                        <p class="judul">
+                            Bulu Tangkis
+                        </p>
+                        <p class="ekskul_sekolah">
+                            Bulu Tangkis SMA Tanjung Priok
+                        </p>
                         <div>
-                            <button id="selengkapnya-ekskul" href="{{ route('detail-ekstrakurikuler', $row->id) }}">Selengkapnya</button>
+                            <button class="button_selengkapnya" href="#">
+                                Selengkapnya
+                            </button>
                         </div>
                     </a>
                 </div>
-                @empty
-                @endforelse
+                <div class="card-ekskul me-3">
+                    <a href="#" class="text-decoration-none">
+                        <img src="{{asset('front/basket.png')}}" class="gambar_ekskul rounded">
+                        <p class="judul" >
+                            Basket
+                        </p>
+                        <p class="ekskul_sekolah" >
+                            Basket SMA Tanjung Priok
+                        </p>
+                        <div>
+                            <button  class="button_selengkapnya" href="#">
+                                Selengkapnya
+                            </button>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-ekskul me-3">
+                    <a href="#" class="text-decoration-none">
+                        <img src="{{asset('front/Paskibra.png')}}" class="gambar_ekskul rounded">
+                        <p class="judul">
+                            Paskibra
+                        </p>
+                        <p  class="ekskul_sekolah">
+                            Paskibra SMA Tanjung Priok
+                        </p>
+                        <div>
+                            <button  class="button_selengkapnya" href="#">
+                                Selengkapnya
+                            </button>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-ekskul me-3">
+                    <a href="#" class="text-decoration-none">
+                        <img src="{{asset('front/Logoekskul.png')}}" class="gambar_ekskul rounded">
+                        <p class="judul" >
+                            Pramuka
+                        </p>
+                        <p class="ekskul_sekolah" >
+                            Pramuka SMA Tanjung Priok
+                        </p>
+                        <div>
+                            <button  class="button_selengkapnya" href="#">
+                                Selengkapnya
+                            </button>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="col-1 d-flex justify-content-start" style="margin-top: 95px">
                 <div>
-                    <button
-                        id="arrow-right-ekskul"
-                        onclick="nextEkskul()"
-                        onmouseover="this.style.boxShadow='1px 2px 2px 2px rgba(0, 0, 0, 0.3)';
+                    <button id="arrow-right-ekskul" onclick="nextEkskul()"
+                            onmouseover="this.style.boxShadow='1px 2px 2px 2px rgba(0, 0, 0, 0.3)';
                       this.style.backgroundColor='#ffffff'"
-                        onmouseout="this.style.backgroundColor= '#bce7eb';this.style.boxShadow='0px 0px 0px 0px rgba(0, 0, 0, 0)'"
-                    >
-                        <img src="{{asset('front/panah-kanan.png')}}" width="50" height="50" />
+                            onmouseout="this.style.backgroundColor= '#bce7eb';this.style.boxShadow='0px 0px 0px 0px rgba(0, 0, 0, 0)'">
+                        <img id="gambar_kanan" src="{{asset('front/panah-kanan.png')}}">
                     </button>
                 </div>
             </div>
-            <div class="col d-flex justify-content-start">
+            <div class="col d-flex justify-content-start" style="margin-left: 60px;margin-top: 40px">
                 <img id="image-ekskul" src="{{asset('front/ekstrakurikuler.png')}}" alt="logo" />
             </div>
         </div>
@@ -242,87 +312,113 @@
         var sliderMainEkskul = document.getElementById("main-card-ekskul");
         var itemEkskul = sliderMainEkskul.getElementsByClassName("card-ekskul");
 
-        function nextEkskul() {
+        function nextEkskul(){
             sliderMainEkskul.append(itemEkskul[0]);
         }
 
-        function prevEkskul() {
+        function prevEkskul(){
             sliderMainEkskul.prepend(itemEkskul[itemEkskul.length - 1]);
         }
     </script>
 </section>
 
 <!-- Prestasi -->
-<!-- <section id="prestasi" style="margin-top: 100px">
-  <div class="container">
-    <h2 style="text-align: center;margin-bottom: 30px;font-size: 37px"><b>Prestasi</b></h2>
-    <div class="row">
-      <div class="col-4 d-flex justify-content-start" style="margin-left: -150px;margin-top: 10px">
-        <img id="image_prestasi" src="{{asset('front/prestasi.png')}}" alt="logo" height="500" width="900" />
-      </div>
-      <div class="col-1 d-flex justify-content-start" style="margin-top: 120px;margin-left: 250px">
-        <button id="arrow-left-prestasi" onclick="prevPrestasi()" style="border-radius: 50px;
-              background-color: white; padding-left: 10px;padding-bottom: 10px;
-                    padding-top: 12px;padding-right: 16px; width: 76px;height: 73px;margin-top: 90px;
-                    margin-left: 10px;" onmouseover="this.style.boxShadow='1px 2px 2px 2px rgba(0, 0, 0, 0.3)';
-                    this.style.backgroundColor='#136A71';this.style.color= '#ffffff'"
-                onmouseout="this.style.boxShadow='0px 0px 0px 0px rgba(0, 0, 0, 0)';
-                this.style.backgroundColor= '#ffffff';this.style.color= 'black'">
-          <i id="icon-left" class="fa-solid fa-chevron-left fa-2xl" style="margin-left: 4px;"></i>
-        </button>
-      </div>
-      <div class="main-card col-5 d-flex justify-content-start" id="main-card-prestasi"
-           style="overflow-x: hidden;margin-top: 60px">
-          @forelse ($prestasi as $row)
-            <div class="card-prestasi me-3">
-              <a href="#" class="text-decoration-none">
-                <img id="gambar_prestasi" src="{{asset('uploads/'.$row->foto) }}" style="border-radius: 15px" width="525" height="370">
-                <div class="card-title d-flex justify-content-center rounded text-center"
-                     style="padding-left: 5px;padding-bottom: 2px;
-                      padding-top: 5px;padding-right: 7px; width: 480px; height: 97px;
-                      background-color: white;border-radius: 3px;
-                      margin-left: 23px;border: 1px solid #000;margin-top: -50px;position: relative">
-                  <p style="color: black;font-size: 21px;font-weight: bold;margin-top: 3px">
-                      {{$row->nama}}
-                  </p>
-                </div>
-              </a>
+<section id="prestasi">
+    <div class="container">
+        <div class="row">
+            <h2><b>Prestasi</b></h2>
+            <div class="col-4">
+                <img id="image-prestasi" src="{{asset('front/prestasi.png')}}" alt="logo-prestasi" />
             </div>
-          @empty
-          @endforelse
-      </div>
-      <div class="col-1 d-flex justify-content-start" style="margin-top: 120px;margin-left: -5px">
-        <div>
-          <button id="arrow-right-prestasi" onclick="nextPrestasi()" style="border-radius: 50px;
-              background-color: white; padding-left: 15px;padding-bottom: 10px;
-                    padding-top: 12px;padding-right: 16px; width: 76px;height: 73px;margin-top: 90px;
-                    margin-left: 2px;"
-                  onmouseover="this.style.boxShadow='1px 2px 2px 2px rgba(0, 0, 0, 0.3)';
-                  this.style.backgroundColor='#136A71';this.style.color= '#ffffff'"
-                  onmouseout="this.style.backgroundColor= '#ffffff';this.style.color= 'black';
-                  this.style.boxShadow='0px 0px 0px 0px rgba(0, 0, 0, 0)';">
-            <i id="icon-right"  class="fa-solid fa-chevron-right fa-2xl"></i>
-          </button>
-          <script>
+            <div class="col-1 d-flex justify-content-start" style="margin-top: 120px; margin-left: 250px">
+                <button
+                    id="arrow-left-prestasi"
+                    onclick="prevPrestasi()"
+                    onmouseover="this.style.boxShadow='1px 2px 2px 2px rgba(0, 0, 0, 0.3)';
+                    this.style.backgroundColor='#000000';this.style.color= '#ffffff'"
+                    onmouseout="this.style.boxShadow='0px 0px 0px 0px rgba(0, 0, 0, 0)';
+                this.style.backgroundColor= '#ffffff';this.style.color= 'black'"
+                >
+                    <i id="icon-left" class="fa-solid fa-chevron-left fa-2xl"></i>
+                </button>
+            </div>
+            <div class="main-card col-lg-4 col-md-8 col-sm-10 d-flex justify-content-start" id="main-card-prestasi"
+                 style="overflow-x: hidden;margin-top: 40px">
+                <div class="card-prestasi me-3">
+                    <a href="#" class="text-decoration-none">
+                        <img src="{{asset('front/prestasi2.jpg')}}" class="gambar_prestasi rounded">
 
-          </script>
+                        <div class="card">
+                            <p class="nama_siswa">
+                                Syahira Isnaeni Dewi
+                            </p>
+                            <p class="nama_prestasi">Juara 3 O2SN Bulutangkis Tingkat Jakarta Utara Internasional Indonesia</p>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="card-prestasi me-3">
+                    <a href="#" class="text-decoration-none">
+                        <img src="assets/{{asset('front/prestasi3.png')}}" class="gambar_prestasi rounded">
+                        <div class="card">
+                            <p class="nama_siswa">
+                                Syahira Isnaeni Dewi
+                            </p>
+                            <p class="nama_prestasi">Juara 3 O2SN Bulutangkis Tingkat Jakarta Utara</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-prestasi me-3">
+                    <a href="#" class="text-decoration-none">
+                        <img src="{{asset('front/prestasi2.jpg')}}" class="gambar_prestasi rounded">
+                        <div class="card">
+                            <p class="nama_siswa">
+                                Syahira Isnaeni Dewi
+                            </p>
+                            <p class="nama_prestasi">Juara 3 O2SN Bulutangkis Tingkat Jakarta Utara</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-prestasi me-3">
+                    <a href="#" class="text-decoration-none">
+                        <img src="{{asset('front/prestasi3.png')}}" class="gambar_prestasi rounded">
+                        <div class="card">
+                            <p class="nama_siswa">
+                                Syahira Isnaeni Dewi
+                            </p>
+                            <p class="nama_prestasi">Juara 3 O2SN Bulutangkis Tingkat Jakarta Utara</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-start" style="margin-top: 120px; margin-left: 250px">
+                <button
+                    id="arrow-right-prestasi"
+                    onclick="nextPrestasi()"
+                    onmouseover="this.style.boxShadow='1px 2px 2px 2px rgba(0, 0, 0, 0.3)';
+                  this.style.backgroundColor='#000000';this.style.color= '#ffffff'"
+                    onmouseout="this.style.backgroundColor= '#ffffff';this.style.color= 'black';
+                  this.style.boxShadow='0px 0px 0px 0px rgba(0, 0, 0, 0)';"
+                >
+                    <i id="icon-right" class="fa-solid fa-chevron-right fa-2xl"></i>
+                </button>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <script>
-    var sliderMainPrestasi = document.getElementById("main-card-prestasi");
-    var itemPrestasi = sliderMainPrestasi.getElementsByClassName("card-prestasi");
 
-    function nextPrestasi(){
-      sliderMainPrestasi.append(itemPrestasi[0]);
-    }
+    <script>
+        var sliderMainPrestasi = document.getElementById("main-card-prestasi");
+        var itemPrestasi = sliderMainPrestasi.getElementsByClassName("card-prestasi");
 
-    function prevPrestasi(){
-      sliderMainPrestasi.prepend(itemPrestasi[itemPrestasi.length - 1]);
-    }
-  </script>
-</section> -->
+        function nextPrestasi(){
+            sliderMainPrestasi.append(itemPrestasi[0]);
+        }
+
+        function prevPrestasi(){
+            sliderMainPrestasi.prepend(itemPrestasi[itemPrestasi.length - 1]);
+        }
+    </script>
+</section>
 
 <!--Berita dan Pengumuman-->
 <section id="pengumuman">
@@ -494,10 +590,11 @@
             Selengkapnya
         </button>
     </div>
+    </div>
 </section>
 
 <!-- Kontak Kami -->
-<section id="kontak-kami" style="margin-top: 50px; margin-bottom: 100px" >
+<section id="kontak-kami" style="margin-top: 100px; margin-bottom: 100px" >
       <div class="container">
         <div class="row">
           <div class="col-md-6 mb-4">

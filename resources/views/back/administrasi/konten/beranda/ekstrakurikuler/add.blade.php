@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tambah Data Ekstrakurikuler</title>
 
-    <link rel="shortcut icon" href="../assets/image/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/image/logosma.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/extensions/quill/quill.snow.css">
     <link rel="stylesheet" href="../assets/extensions/quill/quill.bubble.css">
 
@@ -293,7 +293,7 @@
                                         <form method="post" action="{{ route('ekstrakurikuler.store')}}" enctype="multipart/form-data">
                                             @csrf
                                             <div class="form-group">
-                                                <label for="squareText">Nama Ekstrakurikuler</label>
+                                                <label for="squareText">Nama Ekstrakurikuler (maks 15 karakter)</label>
                                                 <input type="text" id="squareText" class="form-control square"
                                                        placeholder="Ekstrakurikuler" name="nama">
                                             </div>

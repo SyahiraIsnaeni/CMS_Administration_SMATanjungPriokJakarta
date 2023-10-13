@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../assets/extensions/quill/quill.snow.css">
     <link rel="stylesheet" href="../assets/extensions/quill/quill.bubble.css">
 
-    <link rel="shortcut icon" href="../../assets/image/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../assets/image/logosma.png" type="image/x-icon">
 
     <link rel="stylesheet" href="../../assets/compiled/css/app.css">
     <link rel="stylesheet" href="../../assets/compiled/css/app-dark.css">
@@ -22,7 +22,7 @@
             <div class="sidebar-header position-relative">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="logo" style="display: flex; align-items: center;">
-                        <img src="../assets/image/logosma.png" style="width: 40px; height: 40px">
+                        <img src="../../assets/image/logosma.png" style="width: 40px; height: 40px">
                         <a href="#" style="margin-left: 10px"><p style="font-size: 21px;margin-top: 25px">Admin</p></a>
                     </div>
                     <div class="theme-toggle d-flex gap-2  align-items-center mt-2">

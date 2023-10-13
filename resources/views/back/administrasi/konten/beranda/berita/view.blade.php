@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Berita</title>
 
-    <link rel="shortcut icon" href="./assets/image/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/image/logosma.png" type="image/x-icon">
 
     <link rel="stylesheet" href="./assets/compiled/css/app.css">
     <link rel="stylesheet" href="./assets/compiled/css/app-dark.css">

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tambah Data Prestasi</title>
 
-    <link rel="shortcut icon" href="../assets/image/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/image/logosma.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/extensions/quill/quill.snow.css">
     <link rel="stylesheet" href="../assets/extensions/quill/quill.bubble.css">
 
@@ -293,12 +293,17 @@
                                         <form method="post" action="{{ route('prestasi.store')}}" enctype="multipart/form-data">
                                             @csrf
                                             <div class="form-group">
+                                                <label for="squareText">Nama Siswa (maks 25 karakter)</label>
+                                                <input type="text" id="squareText" class="form-control square"
+                                                       placeholder="Nama" name="nama">
+                                            </div>
+                                            <div class="form-group">
                                                 <label for="squareText">Nama Prestasi (maks 70 karakter)</label>
                                                 <input type="text" id="squareText" class="form-control square"
-                                                       placeholder="Prestasi" name="nama">
+                                                       placeholder="Prestasi" name="nama_prestasi">
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">
-                                                <label for="formFile" class="form-label">Foto Prestasi</label>
+                                                <label for="formFile" class="form-label">Foto Prestasi (rasio 4:3)</label>
                                                 <input class="form-control" type="file" id="formFile" name="foto">
                                             </div>
                                             <div class="form-group" style="margin-top: 20px">

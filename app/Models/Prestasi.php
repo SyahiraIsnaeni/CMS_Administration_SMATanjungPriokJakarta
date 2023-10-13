@@ -12,7 +12,7 @@ class Prestasi extends Model
     protected $table = 'prestasi';
 
     protected $fillable = [
-        'nama', 'foto'
+        'nama', 'nama_prestasi', 'foto'
     ];
 
     protected $hidden = [];

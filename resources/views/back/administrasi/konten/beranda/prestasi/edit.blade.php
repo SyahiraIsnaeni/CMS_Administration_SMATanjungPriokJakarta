@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../assets/extensions/quill/quill.snow.css">
     <link rel="stylesheet" href="../assets/extensions/quill/quill.bubble.css">
 
-    <link rel="shortcut icon" href="../../assets/image/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../assets/image/logosma.png" type="image/x-icon">
 
     <link rel="stylesheet" href="../../assets/compiled/css/app.css">
     <link rel="stylesheet" href="../../assets/compiled/css/app-dark.css">
@@ -22,7 +22,7 @@
             <div class="sidebar-header position-relative">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="logo" style="display: flex; align-items: center;">
-                        <img src="../assets/image/logosma.png" style="width: 40px; height: 40px">
+                        <img src="../../assets/image/logosma.png" style="width: 40px; height: 40px">
                         <a href="#" style="margin-left: 10px"><p style="font-size: 21px;margin-top: 25px">Admin</p></a>
                     </div>
                     <div class="theme-toggle d-flex gap-2  align-items-center mt-2">
@@ -301,9 +301,14 @@
                                             @csrf
                                             @method('PUT')
                                             <div class="form-group">
-                                                <label for="squareText">Nama Prestasi</label>
+                                                <label for="squareText">Nama Siswa (maks 25 karakter)</label>
                                                 <input type="text" id="squareText" class="form-control square"
-                                                       placeholder="Prestasi" name="nama" value="{{$prestasi->nama}}">
+                                                       placeholder="Nama" name="nama" value="{{$prestasi->nama}}">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="squareText">Nama Prestasi (maks 70 karakter)</label>
+                                                <input type="text" id="squareText" class="form-control square"
+                                                       placeholder="Prestasi" name="nama_prestasi" value="{{$prestasi->nama_prestasi}}">
                                             </div>
                                             <div class="form-group">
                                                 <label for="formFile" class="form-label">Foto Prestasi</label>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tambah Data Pengumuman</title>
 
-    <link rel="shortcut icon" href="../assets/image/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/image/logosma.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/extensions/quill/quill.snow.css">
     <link rel="stylesheet" href="../assets/extensions/quill/quill.bubble.css">
 

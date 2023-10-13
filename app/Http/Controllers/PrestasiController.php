@@ -28,12 +28,13 @@ class PrestasiController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'nama' => 'required|min:3|max:70',
+            'nama' => 'required|min:3|max:25',
+            'nama_prestasi' => 'required|min:3|max:70',
             'foto' => 'required|image|mimes:jpeg,jpg,png',
         ]);
 
         $data = $request->all();
-        if(is_null($data['nama']) || is_null($data['foto'])){
+        if(is_null($data['nama']) || is_null($data['nama_prestasi']) || is_null($data['foto'])){
 
             Alert::error('Gagal', 'Data Gagal Tersimpan. Periksa kembali data yang dimasukkan');
             return redirect()->route('prestasi.create');
@@ -61,6 +62,7 @@ class PrestasiController extends Controller
         if(empty($request->file('foto'))) {
             $prestasi->update([
                 'nama' => $request->nama,
+                'nama_prestasi' => $request->nama_prestasi,
             ]);
 
             Alert::success('Diubah', 'Data Berhasil Terubah');
@@ -69,6 +71,7 @@ class PrestasiController extends Controller
             Storage::delete($prestasi->foto);
             $prestasi->update([
                 'nama' => $request->nama,
+                'nama_prestasi' => $request->nama_prestasi,
                 'foto' => $request->file('foto')->store('prestasi'),
             ]);
 

@@ -29,7 +29,7 @@ class HariNasionalController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'nama_hari' => 'required|min:3',
+            'nama_hari' => 'required|min:3|max:90',
             'gambar' => 'required|image|mimes:jpeg,jpg,png',
         ]);
 

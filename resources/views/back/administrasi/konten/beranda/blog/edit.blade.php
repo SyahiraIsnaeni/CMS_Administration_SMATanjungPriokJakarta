@@ -297,7 +297,7 @@
                                                 <input type="text" name="penulis" class="form-control" id="text" value="{{$blog->penulis}}">
                                             </div>
                                             <div class="form-group">
-                                                <label for="blog">Judul</label>
+                                                <label for="blog">Judul (Maksimum 75 karakter)</label>
                                                 <input type="text" name="judul" class="form-control" id="text" value="{{$blog->judul}}">
                                             </div>
                                             <div class="form-group">

@@ -38,13 +38,13 @@
               <a class="nav-link active" aria-current="page" href="{{ 'front-beranda' }}">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ 'front-profil' }}">Profil</a>
+              <a class="nav-link" href="{{ 'profil' }}">Profil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ 'front-guru-staf' }}">Guru & Staf</a>
+              <a class="nav-link" href="{{ 'guru-staf' }}">Guru & Staf</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ 'front-galeri' }}">Galeri</a>
+              <a class="nav-link" href="{{ 'galeri-sekolah' }}">Galeri</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">E-Learning</a>
@@ -53,13 +53,13 @@
               <a class="nav-link" href="{{ url('#kontak-kami') }}">Kontak</a>
             </li>
           <li class="nav-item">
-            <a class="cta" href="{{ 'login' }}" style="color: #136a71"><button style="border-radius: 6px; color: #136a71">Login</button></a>
+            <a class="cta" href="#" style="color: #136a71"><button style="border-radius: 6px; color: #136a71">Login</button></a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  </section>
+</section>
 
 <!-- Carousel -->
 <section id="carousel" >
@@ -140,7 +140,7 @@
         <div class="card-button rounded" style="background-color: white; box-shadow: 1px 2px 3px 3px rgba(0.3, 0.3, 0.3, 0.3);"
              onmouseover="this.style.backgroundColor='#bce7eb';"
              onmouseout="this.style.backgroundColor= '#ffffff';">
-          <a href="prestasi.html" class="text-decoration-none">
+          <a href="{{ 'prestasi-sekolah' }}" class="text-decoration-none">
             <img src="{{asset('front/piala.png')}}"width="240px" height="160px" style="text-align: center">
             <p style="color: black; font-size: 22px; font-weight: bold; margin-top: -10px; text-align: center;">
               Prestasi
@@ -152,7 +152,7 @@
         <div class="card-button rounded" style="background-color: white; box-shadow: 1px 2px 3px 3px rgba(0.3, 0.3, 0.3, 0.3);"
              onmouseover="this.style.backgroundColor='#bce7eb';"
              onmouseout="this.style.backgroundColor= '#ffffff';">
-          <a href="daftarppb.html" class="text-decoration-none">
+          <a href="{{ 'daftar-pengumuman' }}" class="text-decoration-none">
             <img src="{{asset('front/pengumuman.png')}}" width="240px" height="160px" style="margin-left: 10px">
             <p style="color: black; font-size: 22px; font-weight: bold; margin-top: -10px; text-align: center;">
               Pengumuman
@@ -164,7 +164,7 @@
         <div class="card-button rounded" style="background-color: white; box-shadow: 1px 2px 3px 3px rgba(0.3, 0.3, 0.3, 0.3);"
              onmouseover="this.style.backgroundColor='#bce7eb';"
              onmouseout="this.style.backgroundColor= '#ffffff';">
-          <a href="daftarppb.html" class="text-decoration-none">
+          <a href="{{ 'daftar-berita' }}" class="text-decoration-none">
             <img src="{{asset('front/news.png')}}" width="310px" height="160px" style="margin-left: 5px">
             <p style="color: black; font-size: 22px; font-weight: bold; margin-top: -10px; text-align: center;">
               Berita
@@ -177,7 +177,7 @@
         <div class="card-button rounded" style="background-color: white; box-shadow: 1px 2px 3px 3px rgba(0.3, 0.3, 0.3, 0.3);"
              onmouseover="this.style.backgroundColor='#bce7eb';"
              onmouseout="this.style.backgroundColor= '#ffffff';">
-          <a href="daftarppb.html" class="text-decoration-none">
+          <a href="{{ 'daftar-blog' }}" class="text-decoration-none">
             <img src="{{asset('front/blog.png')}}" width="250px" height="160px" style="margin-left: -15px">
             <p style="color: black; font-size: 22px; font-weight: bold; margin-top: -10px; text-align: center;">
               Blog Pendidik
@@ -188,30 +188,6 @@
     </div>
   </div>
 </section>
-
-<!-- Ekstrakurikuler -->
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
-    <title>SMA Tanjung Priok Jakarta</title>
-    <!-- add icon link -->
-    <link rel="icon" href="assets/logo1.png" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="ekskul.css" />
-    <link rel="icon" href="2.jpeg" />
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" crossorigin="anonymous" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
-    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"
-    />
-</head>
-
-<body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 
 <!-- Ekstrakurikuler -->
 <section id="ekstrakurikuler" >
@@ -228,70 +204,26 @@
             </div>
             <div class="main-card col-lg-4 col-md-8 col-sm-10 d-flex justify-content-start" id="main-card-ekskul"
                  style="overflow-x: hidden;margin-top: 40px">
+                @forelse ($ekstrakurikuler as $row)
                 <div class="card-ekskul me-3">
                     <a href="#" class="text-decoration-none">
-                        <img src="{{asset('front/bultang.png')}}" class="gambar_ekskul rounded">
+                        <img src="{{asset('uploads/'.$row->logo) }}" class="gambar_ekskul rounded">
                         <p class="judul">
-                            Bulu Tangkis
+                            {{$row->nama}}
                         </p>
                         <p class="ekskul_sekolah">
-                            Bulu Tangkis SMA Tanjung Priok
+                            {{$row->nama}} SMA Tanjung Priok
                         </p>
                         <div>
-                            <button class="button_selengkapnya" href="#">
-                                Selengkapnya
+                            <button class="button_selengkapnya">
+                                <a style="text-decoration: none; color: black;justify-content: center;
+                                font-size: 18px" href="{{route('detail-ekstrakurikuler', $row->id)}}">Selengkapnya</a>
                             </button>
                         </div>
                     </a>
                 </div>
-                <div class="card-ekskul me-3">
-                    <a href="#" class="text-decoration-none">
-                        <img src="{{asset('front/basket.png')}}" class="gambar_ekskul rounded">
-                        <p class="judul" >
-                            Basket
-                        </p>
-                        <p class="ekskul_sekolah" >
-                            Basket SMA Tanjung Priok
-                        </p>
-                        <div>
-                            <button  class="button_selengkapnya" href="#">
-                                Selengkapnya
-                            </button>
-                        </div>
-                    </a>
-                </div>
-                <div class="card-ekskul me-3">
-                    <a href="#" class="text-decoration-none">
-                        <img src="{{asset('front/Paskibra.png')}}" class="gambar_ekskul rounded">
-                        <p class="judul">
-                            Paskibra
-                        </p>
-                        <p  class="ekskul_sekolah">
-                            Paskibra SMA Tanjung Priok
-                        </p>
-                        <div>
-                            <button  class="button_selengkapnya" href="#">
-                                Selengkapnya
-                            </button>
-                        </div>
-                    </a>
-                </div>
-                <div class="card-ekskul me-3">
-                    <a href="#" class="text-decoration-none">
-                        <img src="{{asset('front/Logoekskul.png')}}" class="gambar_ekskul rounded">
-                        <p class="judul" >
-                            Pramuka
-                        </p>
-                        <p class="ekskul_sekolah" >
-                            Pramuka SMA Tanjung Priok
-                        </p>
-                        <div>
-                            <button  class="button_selengkapnya" href="#">
-                                Selengkapnya
-                            </button>
-                        </div>
-                    </a>
-                </div>
+                @empty
+                @endforelse
             </div>
             <div class="col-1 d-flex justify-content-start" style="margin-top: 95px">
                 <div>
@@ -344,52 +276,22 @@
             </div>
             <div class="main-card col-lg-4 col-md-8 col-sm-10 d-flex justify-content-start" id="main-card-prestasi"
                  style="overflow-x: hidden;margin-top: 40px">
+                @forelse ($prestasi as $row)
                 <div class="card-prestasi me-3">
-                    <a href="#" class="text-decoration-none">
-                        <img src="{{asset('front/prestasi2.jpg')}}" class="gambar_prestasi rounded">
+                    <a href="{{ 'prestasi-sekolah' }}" class="text-decoration-none">
+                        <img src="{{asset('uploads/'.$row->foto) }}" class="gambar_prestasi rounded">
 
                         <div class="card">
                             <p class="nama_siswa">
-                                Syahira Isnaeni Dewi
+                                {{$row->nama}}
                             </p>
-                            <p class="nama_prestasi">Juara 3 O2SN Bulutangkis Tingkat Jakarta Utara Internasional Indonesia</p>
+                            <p class="nama_prestasi">{{$row->nama_prestasi}}</p>
                         </div>
 
                     </a>
                 </div>
-                <div class="card-prestasi me-3">
-                    <a href="#" class="text-decoration-none">
-                        <img src="assets/{{asset('front/prestasi3.png')}}" class="gambar_prestasi rounded">
-                        <div class="card">
-                            <p class="nama_siswa">
-                                Syahira Isnaeni Dewi
-                            </p>
-                            <p class="nama_prestasi">Juara 3 O2SN Bulutangkis Tingkat Jakarta Utara</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card-prestasi me-3">
-                    <a href="#" class="text-decoration-none">
-                        <img src="{{asset('front/prestasi2.jpg')}}" class="gambar_prestasi rounded">
-                        <div class="card">
-                            <p class="nama_siswa">
-                                Syahira Isnaeni Dewi
-                            </p>
-                            <p class="nama_prestasi">Juara 3 O2SN Bulutangkis Tingkat Jakarta Utara</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card-prestasi me-3">
-                    <a href="#" class="text-decoration-none">
-                        <img src="{{asset('front/prestasi3.png')}}" class="gambar_prestasi rounded">
-                        <div class="card">
-                            <p class="nama_siswa">
-                                Syahira Isnaeni Dewi
-                            </p>
-                            <p class="nama_prestasi">Juara 3 O2SN Bulutangkis Tingkat Jakarta Utara</p>
-                        </div>
-                    </a>
-                </div>
+                @empty
+                @endforelse
             </div>
             <div class="col d-flex justify-content-start" style="margin-top: 120px; margin-left: 250px">
                 <button
@@ -585,9 +487,10 @@
             sliderMain.prepend(item[item.length - 1]);
         }
     </script>
-    <div id="selengkapnya" >
-        <button href="#" >
-            Selengkapnya
+    <div>
+        <button id="selengkapnya">
+            <a style="text-decoration: none; color: black;justify-content: center;
+            font-size: 18px" href="{{ 'daftar-blog' }}">Selengkapnya</a>
         </button>
     </div>
     </div>

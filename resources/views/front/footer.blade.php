@@ -15,20 +15,21 @@
     <div class="link-boxes">
       <ul class="box">
         <li class="link_name">Content</li>
-        <li><a href="{{ 'front-berita' }}">Berita Sekolah</a></li>
-        <li><a href="{{ 'front-pengumuman' }}" >Pengumuman</a></li>
-        <li><a href="{{ 'front-blog' }}">Blog Pendidik</a></li>
+        <li><a href="{{ 'daftar-berita' }}">Berita Sekolah</a></li>
+        <li><a href="{{ 'daftar-pengumuman' }}" >Pengumuman</a></li>
+        <li><a href="{{ 'daftar-blog' }}">Blog Pendidik</a></li>
       </ul>
       <ul class="box">
         <li class="link_name">Information</li>
-        <li><a href="{{ 'front-profi;' }}">Profil Sekolah</a></li>
-        <li><a href="{{ 'front-guru-staf' }}">Guru dan Staf</a></li>
-        <li><a href="{{ 'front-galeri' }}">Galeri Sekolah</a></li>
+        <li><a href="{{ 'profil' }}">Profil Sekolah</a></li>
+        <li><a href="{{ 'guru-staf' }}">Guru dan Staf</a></li>
+        <li><a href="{{ 'galeri-sekolah' }}">Galeri Sekolah</a></li>
       </ul>
       <ul class="box">
         <li class="link_name">Quick Link</li>
-        <li><a href="{{ 'beranda' }}">Home</a></li>
-        <li><a href="{{ url('#kontak-kami') }}">Sitemap</a></li>
+        <li><a href="{{ '/' }}">Home</a></li>
+        <li><a href="https://www.google.com/maps/place/Senior+High+School+of+Tanjung+Priok,+Jl.+Mangga+No.40,+RT.9%2FRW.9,+Lagoa,+Koja,+North+Jakarta+City,+Jakarta+14270/@-6.114744,106.911085,16z/data=!4m6!3m5!1s0x2e6a201f9790436b:0xe7648e8e720cd1e!8m2!3d-6.1147443!4d106.9110848!16s%2Fg%2F11bc7v8tp9?hl=en&gl=ID" target="_blank">Sitemap</a>
+</li>
       </ul>
       <ul class="box">
         <li class="{{ url('#kontak-kami') }}">Contact Us</li>

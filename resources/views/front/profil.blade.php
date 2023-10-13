@@ -22,7 +22,7 @@
      <section id="navigationbar">
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #136a71">
     <div class="container">
-      <a class="navbar-brand" style="font-size: 15px; text-align: center; float: center" href="{{ 'beranda'}}">
+      <a class="navbar-brand" style="font-size: 15px; text-align: center; float: center" href="{{ 'beranda' }}">
         <img src="{{asset('front/logo.png')}}" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,16 +31,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-              <a class="nav-link"  href="{{ 'beranda'}}">Beranda</a>
+              <a class="nav-link " href="{{ '/' }}">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ 'front-profil' }}">Profil</a>
+              <a class="nav-link active" aria-current="page" href="{{ 'profil' }}">Profil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ 'front-guru-staf' }}">Guru & Staf</a>
+              <a class="nav-link" href="{{ 'guru-staf' }}">Guru & Staf</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ 'front-galeri' }}">Galeri</a>
+              <a class="nav-link" href="{{ 'galeri-sekolah' }}">Galeri</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">E-Learning</a>
@@ -55,7 +55,7 @@
       </div>
     </div>
   </nav>
-  </section>
+</section>
 
     <!-- Carousel -->
     <section id="carousel" >

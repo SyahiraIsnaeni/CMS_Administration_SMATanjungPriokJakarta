@@ -8,6 +8,7 @@
     <!-- add icon link -->
     <link rel="icon" href="assets/logo.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="{{asset('front/css/ekstrakurikuler.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset('front/css/style.css')}}" />
     <link rel="icon" href="2.jpeg" />
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />

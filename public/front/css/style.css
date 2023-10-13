@@ -3248,7 +3248,6 @@ footer .bottom-details .bottom_text {
 }
 
 @media screen and (max-width: 1200px) and (min-width: 1001px) {
-
     .navbar-nav {
         flex-direction: column; /* Mengatur item navigasi agar berbaris vertikal */
         text-align: center; /* Mengatur teks agar berada di tengah */
@@ -3626,25 +3625,25 @@ li a {
     color: black;
 }
 
-#ekstrakurikuler{
-    background: #BCE7EB;
-    height: 800px
+#ekstrakurikuler {
+    background: #bce7eb;
+    height: 800px;
 }
 
-#ekstrakurikuler #image-ekskul{
-    height:500px;
-    width:450px
+#ekstrakurikuler #image-ekskul {
+    height: 500px;
+    width: 450px;
 }
 
-#ekstrakurikuler h2{
+#ekstrakurikuler h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 38px;;
-    margin-top: 50px
+    font-size: 38px;
+    margin-top: 50px;
 }
 
 /*ekstrakurikuler*/
-#ekstrakurikuler #arrow-left-ekskul{
+#ekstrakurikuler #arrow-left-ekskul {
     border-radius: 50px;
     border: none;
     background-color: #bce7eb;
@@ -3658,7 +3657,7 @@ li a {
     margin-left: 10px;
 }
 
-#ekstrakurikuler #arrow-right-ekskul{
+#ekstrakurikuler #arrow-right-ekskul {
     border-radius: 50px;
     background-color: #bce7eb;
     padding-left: 15px;
@@ -3672,37 +3671,37 @@ li a {
     border: none;
 }
 
-#ekstrakurikuler .judul{
+#ekstrakurikuler .judul {
     color: black;
     font-size: 26px;
     font-weight: bold;
     margin-bottom: -10px;
-    text-align: center
+    text-align: center;
 }
 
-#ekstrakurikuler .ekskul_sekolah{
+#ekstrakurikuler .ekskul_sekolah {
     color: black;
     font-size: 20px;
     text-align: center;
     text-decoration: none;
 }
 
-#ekstrakurikuler #gambar_kiri{
-    width:50px;
-    height:50px
+#ekstrakurikuler #gambar_kiri {
+    width: 50px;
+    height: 50px;
 }
 
-#ekstrakurikuler #gambar_kanan{
-    width:50px;
-    height:50px
+#ekstrakurikuler #gambar_kanan {
+    width: 50px;
+    height: 50px;
 }
 
-#ekstrakurikuler .gambar_ekskul{
-    width:420px;
-    height:420px
+#ekstrakurikuler .gambar_ekskul {
+    width: 420px;
+    height: 420px;
 }
 
-#ekstrakurikuler .button_selengkapnya{
+#ekstrakurikuler .button_selengkapnya {
     width: 210px;
     height: 50px;
     background-color: white;
@@ -3711,22 +3710,22 @@ li a {
     border-radius: 8px;
     display: block;
     margin: auto;
-    margin-top: 10px
+    margin-top: 10px;
 }
 
 /*ekstrakurikuler*/
-@media screen and (max-width: 1400px) and  (min-width: 1200px){
-    #ekstrakurikuler{
-        background: #BCE7EB;
-        height: 750px
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+    #ekstrakurikuler {
+        background: #bce7eb;
+        height: 750px;
     }
 
-    #ekstrakurikuler #image-ekskul{
-        height:400px;
-        width:350px
+    #ekstrakurikuler #image-ekskul {
+        height: 400px;
+        width: 350px;
     }
 
-    #ekstrakurikuler #arrow-left-ekskul{
+    #ekstrakurikuler #arrow-left-ekskul {
         border-radius: 50px;
         border: none;
         background-color: #bce7eb;
@@ -3740,7 +3739,7 @@ li a {
         margin-left: 10px;
     }
 
-    #ekstrakurikuler #arrow-right-ekskul{
+    #ekstrakurikuler #arrow-right-ekskul {
         border-radius: 50px;
         background-color: #bce7eb;
         padding-left: 15px;
@@ -3754,46 +3753,48 @@ li a {
         border: none;
     }
 
-    #ekstrakurikuler .ekskul-sekolah{
+    #ekstrakurikuler .ekskul-sekolah {
         color: black;
         font-size: 20px;
-        text-align: center
+        text-align: center;
     }
 
-    #ekstrakurikuler #gambar_kiri{
-        width:50px;
-        height:50px
+    #ekstrakurikuler #gambar_kiri {
+        width: 50px;
+        height: 50px;
     }
 
-    #ekstrakurikuler #gambar_kanan{
-        width:50px;
-        height:50px
+    #ekstrakurikuler #gambar_kanan {
+        width: 50px;
+        height: 50px;
     }
 
-    #ekstrakurikuler .gambar_ekskul{
-        width:360px;
-        height:360px
+    #ekstrakurikuler .gambar_ekskul {
+        width: 360px;
+        height: 360px;
     }
 }
 
-@media screen and (max-width: 1199px) and (min-width: 1011px){
-    #ekstrakurikuler{
-        height: 700px
+@media screen and (max-width: 1199px) and (min-width: 1011px) {
+    #ekstrakurikuler {
+        height: 700px;
     }
 
-    #ekstrakurikuler #image-ekskul{
-        height:1px;
-        width:310px
+    #ekstrakurikuler #image-ekskul {
+        height: 370px;
+        width: 320px;
+        margin-top: -5px;
+        margin-left: -20px;
     }
 
-    #ekstrakurikuler h2{
+    #ekstrakurikuler h2 {
         text-align: center;
         margin-bottom: 20px;
-        font-size: 38px;;
-        margin-top: 50px
+        font-size: 38px;
+        margin-top: 50px;
     }
 
-    #ekstrakurikuler #arrow-left-ekskul{
+    #ekstrakurikuler #arrow-left-ekskul {
         border-radius: 50px;
         border: none;
         background-color: #bce7eb;
@@ -3807,7 +3808,7 @@ li a {
         margin-left: -2px;
     }
 
-    #ekstrakurikuler #arrow-right-ekskul{
+    #ekstrakurikuler #arrow-right-ekskul {
         border-radius: 50px;
         background-color: #bce7eb;
         padding-left: 15px;
@@ -3821,36 +3822,36 @@ li a {
         border: none;
     }
 
-    #ekstrakurikuler .judul{
+    #ekstrakurikuler .judul {
         color: black;
         font-size: 26px;
         font-weight: bold;
         margin-bottom: -10px;
-        text-align: center
+        text-align: center;
     }
 
-    #ekstrakurikuler .ekskul-sekolah{
+    #ekstrakurikuler .ekskul-sekolah {
         color: black;
         font-size: 20px;
-        text-align: center
+        text-align: center;
     }
 
-    #ekstrakurikuler #gambar_kiri{
-        width:50px;
-        height:50px
+    #ekstrakurikuler #gambar_kiri {
+        width: 50px;
+        height: 50px;
     }
 
-    #ekstrakurikuler #gambar_kanan{
-        width:50px;
-        height:50px
+    #ekstrakurikuler #gambar_kanan {
+        width: 50px;
+        height: 50px;
     }
 
-    #ekstrakurikuler .gambar_ekskul{
-        width:295px;
-        height:295px
+    #ekstrakurikuler .gambar_ekskul {
+        width: 295px;
+        height: 295px;
     }
 
-    #ekstrakurikuler .button_selengkapnya{
+    #ekstrakurikuler .button_selengkapnya {
         width: 210px;
         height: 50px;
         background-color: white;
@@ -3859,31 +3860,30 @@ li a {
         border-radius: 8px;
         display: block;
         margin: auto;
-        margin-top: 10px
+        margin-top: 10px;
     }
 }
 
-@media screen and (max-width: 1010px) and (min-width: 992px){
-
-    #ekstrakurikuler{
-        height: 1100px
+@media screen and (max-width: 1010px) and (min-width: 992px) {
+    #ekstrakurikuler {
+        height: 1100px;
     }
 
-    #ekstrakurikuler #image-ekskul{
-        height:370px;
-        width:320px;
+    #ekstrakurikuler #image-ekskul {
+        height: 370px;
+        width: 320px;
         margin-top: -900px;
         margin-left: 240px;
     }
 
-    #ekstrakurikuler h2{
+    #ekstrakurikuler h2 {
         text-align: center;
         margin-bottom: 20px;
-        font-size: 38px;;
-        margin-top: 50px
+        font-size: 38px;
+        margin-top: 50px;
     }
 
-    #ekstrakurikuler #arrow-left-ekskul{
+    #ekstrakurikuler #arrow-left-ekskul {
         border-radius: 50px;
         border: none;
         background-color: #bce7eb;
@@ -3897,7 +3897,7 @@ li a {
         margin-left: 135px;
     }
 
-    #ekstrakurikuler #arrow-right-ekskul{
+    #ekstrakurikuler #arrow-right-ekskul {
         border-radius: 50px;
         background-color: #bce7eb;
         padding-left: 15px;
@@ -3911,7 +3911,7 @@ li a {
         border: none;
     }
 
-    #ekstrakurikuler .judul{
+    #ekstrakurikuler .judul {
         color: black;
         font-size: 26px;
         font-weight: bold;
@@ -3920,30 +3920,30 @@ li a {
         margin-left: 50px;
     }
 
-    #ekstrakurikuler .ekskul_sekolah{
+    #ekstrakurikuler .ekskul_sekolah {
         color: black;
         font-size: 20px;
         text-align: center;
         margin-left: 50px;
     }
 
-    #ekstrakurikuler #gambar_kiri{
-        width:50px;
-        height:50px
+    #ekstrakurikuler #gambar_kiri {
+        width: 50px;
+        height: 50px;
     }
 
-    #ekstrakurikuler #gambar_kanan{
-        width:50px;
-        height:50px
+    #ekstrakurikuler #gambar_kanan {
+        width: 50px;
+        height: 50px;
     }
 
-    #ekstrakurikuler .gambar_ekskul{
-        width:320px;
-        height:320px;
+    #ekstrakurikuler .gambar_ekskul {
+        width: 320px;
+        height: 320px;
         margin-left: 50px;
     }
 
-    #ekstrakurikuler .button_selengkapnya{
+    #ekstrakurikuler .button_selengkapnya {
         width: 210px;
         height: 50px;
         background-color: white;
@@ -3956,39 +3956,37 @@ li a {
         margin-left: 105px;
     }
 
-    #ekstrakurikuler .card-ekskul{
+    #ekstrakurikuler .card-ekskul {
         margin-left: 90px;
         margin-top: 370px;
     }
 
-    #ekstrakurikuler .main-card{
+    #ekstrakurikuler .main-card {
         width: 480px;
         margin-left: 50px;
     }
-
 }
 
-@media screen and (max-width: 991px) and (min-width: 768px){
-
-    #ekstrakurikuler{
-        height: 1100px
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    #ekstrakurikuler {
+        height: 1100px;
     }
 
-    #ekstrakurikuler #image-ekskul{
-        height:370px;
-        width:320px;
+    #ekstrakurikuler #image-ekskul {
+        height: 370px;
+        width: 320px;
         margin-top: -900px;
         margin-left: 120px;
     }
 
-    #ekstrakurikuler h2{
+    #ekstrakurikuler h2 {
         text-align: center;
         margin-bottom: 20px;
-        font-size: 38px;;
-        margin-top: 50px
+        font-size: 38px;
+        margin-top: 50px;
     }
 
-    #ekstrakurikuler #arrow-left-ekskul{
+    #ekstrakurikuler #arrow-left-ekskul {
         border-radius: 50px;
         border: none;
         background-color: #bce7eb;
@@ -4002,7 +4000,7 @@ li a {
         margin-left: 10px;
     }
 
-    #ekstrakurikuler #arrow-right-ekskul{
+    #ekstrakurikuler #arrow-right-ekskul {
         border-radius: 50px;
         background-color: #bce7eb;
         padding-left: 15px;
@@ -4016,7 +4014,7 @@ li a {
         border: none;
     }
 
-    #ekstrakurikuler .judul{
+    #ekstrakurikuler .judul {
         color: black;
         font-size: 26px;
         font-weight: bold;
@@ -4025,30 +4023,30 @@ li a {
         margin-left: 50px;
     }
 
-    #ekstrakurikuler .ekskul_sekolah{
+    #ekstrakurikuler .ekskul_sekolah {
         color: black;
         font-size: 20px;
         text-align: center;
         margin-left: 50px;
     }
 
-    #ekstrakurikuler #gambar_kiri{
-        width:50px;
-        height:50px
+    #ekstrakurikuler #gambar_kiri {
+        width: 50px;
+        height: 50px;
     }
 
-    #ekstrakurikuler #gambar_kanan{
-        width:50px;
-        height:50px
+    #ekstrakurikuler #gambar_kanan {
+        width: 50px;
+        height: 50px;
     }
 
-    #ekstrakurikuler .gambar_ekskul{
-        width:320px;
-        height:320px;
+    #ekstrakurikuler .gambar_ekskul {
+        width: 320px;
+        height: 320px;
         margin-left: 50px;
     }
 
-    #ekstrakurikuler .button_selengkapnya{
+    #ekstrakurikuler .button_selengkapnya {
         width: 210px;
         height: 50px;
         background-color: white;
@@ -4061,34 +4059,32 @@ li a {
         margin-left: 105px;
     }
 
-    #ekstrakurikuler .card-ekskul{
+    #ekstrakurikuler .card-ekskul {
         margin-left: 20px;
         margin-top: 370px;
     }
-
 }
 
-@media screen and (min-width: 601px) and (max-width:767px){
-
-    #ekstrakurikuler{
-        height: 1100px
+@media screen and (min-width: 601px) and (max-width: 767px) {
+    #ekstrakurikuler {
+        height: 1100px;
     }
 
-    #ekstrakurikuler #image-ekskul{
-        height:370px;
-        width:320px;
+    #ekstrakurikuler #image-ekskul {
+        height: 370px;
+        width: 320px;
         margin-top: -890px;
         margin-left: 40px;
     }
 
-    #ekstrakurikuler h2{
+    #ekstrakurikuler h2 {
         text-align: center;
         margin-bottom: 20px;
-        font-size: 38px;;
-        margin-top: 50px
+        font-size: 38px;
+        margin-top: 50px;
     }
 
-    #ekstrakurikuler #arrow-left-ekskul{
+    #ekstrakurikuler #arrow-left-ekskul {
         border-radius: 50px;
         border: none;
         background-color: #bce7eb;
@@ -4102,7 +4098,7 @@ li a {
         margin-left: -60px;
     }
 
-    #ekstrakurikuler #arrow-right-ekskul{
+    #ekstrakurikuler #arrow-right-ekskul {
         border-radius: 50px;
         background-color: #bce7eb;
         padding-left: 15px;
@@ -4116,7 +4112,7 @@ li a {
         border: none;
     }
 
-    #ekstrakurikuler .judul{
+    #ekstrakurikuler .judul {
         color: black;
         font-size: 26px;
         font-weight: bold;
@@ -4125,30 +4121,30 @@ li a {
         margin-left: 50px;
     }
 
-    #ekstrakurikuler .ekskul_sekolah{
+    #ekstrakurikuler .ekskul_sekolah {
         color: black;
         font-size: 20px;
         text-align: center;
         margin-left: 50px;
     }
 
-    #ekstrakurikuler #gambar_kiri{
-        width:50px;
-        height:50px
+    #ekstrakurikuler #gambar_kiri {
+        width: 50px;
+        height: 50px;
     }
 
-    #ekstrakurikuler #gambar_kanan{
-        width:50px;
-        height:50px
+    #ekstrakurikuler #gambar_kanan {
+        width: 50px;
+        height: 50px;
     }
 
-    #ekstrakurikuler .gambar_ekskul{
-        width:320px;
-        height:320px;
+    #ekstrakurikuler .gambar_ekskul {
+        width: 320px;
+        height: 320px;
         margin-left: 50px;
     }
 
-    #ekstrakurikuler .button_selengkapnya{
+    #ekstrakurikuler .button_selengkapnya {
         width: 210px;
         height: 50px;
         background-color: white;
@@ -4161,39 +4157,37 @@ li a {
         margin-left: 105px;
     }
 
-    #ekstrakurikuler .card-ekskul{
+    #ekstrakurikuler .card-ekskul {
         margin-left: 20px;
         margin-top: 370px;
-
     }
 
-    #ekstrakurikuler .main-card{
+    #ekstrakurikuler .main-card {
         margin-left: -60px;
         width: 420px;
     }
-
 }
 
-@media screen and (min-width: 500px) and (max-width: 600px){
-    #ekstrakurikuler{
-        height: 1100px
+@media screen and (min-width: 500px) and (max-width: 600px) {
+    #ekstrakurikuler {
+        height: 1100px;
     }
 
-    #ekstrakurikuler #image-ekskul{
-        height:350px;
-        width:300px;
+    #ekstrakurikuler #image-ekskul {
+        height: 350px;
+        width: 300px;
         margin-top: -880px;
         margin-left: 40px;
     }
 
-    #ekstrakurikuler h2{
+    #ekstrakurikuler h2 {
         text-align: center;
         margin-bottom: 20px;
-        font-size: 38px;;
-        margin-top: 50px
+        font-size: 38px;
+        margin-top: 50px;
     }
 
-    #ekstrakurikuler #arrow-left-ekskul{
+    #ekstrakurikuler #arrow-left-ekskul {
         border-radius: 50px;
         border: none;
         background-color: #bce7eb;
@@ -4207,7 +4201,7 @@ li a {
         margin-left: -40px;
     }
 
-    #ekstrakurikuler #arrow-right-ekskul{
+    #ekstrakurikuler #arrow-right-ekskul {
         border-radius: 50px;
         background-color: #bce7eb;
         padding-left: 15px;
@@ -4221,7 +4215,7 @@ li a {
         border: none;
     }
 
-    #ekstrakurikuler .judul{
+    #ekstrakurikuler .judul {
         color: black;
         font-size: 26px;
         font-weight: bold;
@@ -4230,30 +4224,30 @@ li a {
         margin-left: 50px;
     }
 
-    #ekstrakurikuler .ekskul_sekolah{
+    #ekstrakurikuler .ekskul_sekolah {
         color: black;
         font-size: 20px;
         text-align: center;
         margin-left: 50px;
     }
 
-    #ekstrakurikuler #gambar_kiri{
-        width:50px;
-        height:50px
+    #ekstrakurikuler #gambar_kiri {
+        width: 50px;
+        height: 50px;
     }
 
-    #ekstrakurikuler #gambar_kanan{
-        width:50px;
-        height:50px
+    #ekstrakurikuler #gambar_kanan {
+        width: 50px;
+        height: 50px;
     }
 
-    #ekstrakurikuler .gambar_ekskul{
-        width:320px;
-        height:320px;
+    #ekstrakurikuler .gambar_ekskul {
+        width: 320px;
+        height: 320px;
         margin-left: 50px;
     }
 
-    #ekstrakurikuler .button_selengkapnya{
+    #ekstrakurikuler .button_selengkapnya {
         width: 210px;
         height: 50px;
         background-color: white;
@@ -4266,36 +4260,36 @@ li a {
         margin-left: 105px;
     }
 
-    #ekstrakurikuler .card-ekskul{
+    #ekstrakurikuler .card-ekskul {
         margin-left: -50px;
         margin-top: 350px;
     }
 
-    #ekstrakurikuler .main-card{
+    #ekstrakurikuler .main-card {
         width: 340px;
     }
 }
 
-@media screen and (min-width: 350px) and (max-width: 499px){
-    #ekstrakurikuler{
-        height: 1100px
+@media screen and (min-width: 350px) and (max-width: 499px) {
+    #ekstrakurikuler {
+        height: 1100px;
     }
 
-    #ekstrakurikuler #image-ekskul{
-        height:280px;
-        width:230px;
+    #ekstrakurikuler #image-ekskul {
+        height: 280px;
+        width: 230px;
         margin-top: -800px;
         margin-left: -30px;
     }
 
-    #ekstrakurikuler h2{
+    #ekstrakurikuler h2 {
         text-align: center;
         margin-bottom: 20px;
-        font-size: 38px;;
-        margin-top: 50px
+        font-size: 38px;
+        margin-top: 50px;
     }
 
-    #ekstrakurikuler #arrow-left-ekskul{
+    #ekstrakurikuler #arrow-left-ekskul {
         border-radius: 50px;
         border: none;
         background-color: #bce7eb;
@@ -4309,7 +4303,7 @@ li a {
         margin-left: -70px;
     }
 
-    #ekstrakurikuler #arrow-right-ekskul{
+    #ekstrakurikuler #arrow-right-ekskul {
         border-radius: 50px;
         background-color: #bce7eb;
         padding-left: 15px;
@@ -4323,7 +4317,7 @@ li a {
         border: none;
     }
 
-    #ekstrakurikuler .judul{
+    #ekstrakurikuler .judul {
         color: black;
         font-size: 24px;
         font-weight: bold;
@@ -4332,7 +4326,7 @@ li a {
         margin-left: 35px;
     }
 
-    #ekstrakurikuler .ekskul_sekolah{
+    #ekstrakurikuler .ekskul_sekolah {
         color: black;
         font-size: 15px;
         text-align: center;
@@ -4340,27 +4334,27 @@ li a {
         width: 320px;
     }
 
-    #ekstrakurikuler #gambar_kiri{
-        width:40px;
-        height:40px;
+    #ekstrakurikuler #gambar_kiri {
+        width: 40px;
+        height: 40px;
         margin-top: -8px;
         margin-left: -8px;
     }
 
-    #ekstrakurikuler #gambar_kanan{
-        width:40px;
-        height:40px;
+    #ekstrakurikuler #gambar_kanan {
+        width: 40px;
+        height: 40px;
         margin-top: -8px;
         margin-left: -8px;
     }
 
-    #ekstrakurikuler .gambar_ekskul{
-        width:230px;
-        height:230px;
+    #ekstrakurikuler .gambar_ekskul {
+        width: 230px;
+        height: 230px;
         margin-left: 60px;
     }
 
-    #ekstrakurikuler .button_selengkapnya{
+    #ekstrakurikuler .button_selengkapnya {
         width: 210px;
         height: 50px;
         background-color: white;
@@ -4373,37 +4367,37 @@ li a {
         margin-left: 85px;
     }
 
-    #ekstrakurikuler .card-ekskul{
+    #ekstrakurikuler .card-ekskul {
         margin-left: -70px;
         margin-top: 400px;
     }
 
-    #ekstrakurikuler .main-card{
+    #ekstrakurikuler .main-card {
         width: 250px;
         margin-left: -30px;
     }
 }
 
-@media screen and (max-width: 349px){
-    #ekstrakurikuler{
-        height: 900px
+@media screen and (max-width: 349px) {
+    #ekstrakurikuler {
+        height: 900px;
     }
 
-    #ekstrakurikuler #image-ekskul{
-        height:280px;
-        width:230px;
+    #ekstrakurikuler #image-ekskul {
+        height: 280px;
+        width: 230px;
         margin-top: -680px;
         margin-left: -50px;
     }
 
-    #ekstrakurikuler h2{
+    #ekstrakurikuler h2 {
         text-align: center;
         margin-bottom: 20px;
-        font-size: 33px;;
-        margin-top: 60px
+        font-size: 33px;
+        margin-top: 60px;
     }
 
-    #ekstrakurikuler #arrow-left-ekskul{
+    #ekstrakurikuler #arrow-left-ekskul {
         border-radius: 50px;
         border: none;
         background-color: #bce7eb;
@@ -4417,7 +4411,7 @@ li a {
         margin-left: -55px;
     }
 
-    #ekstrakurikuler #arrow-right-ekskul{
+    #ekstrakurikuler #arrow-right-ekskul {
         border-radius: 50px;
         background-color: #bce7eb;
         padding-left: 15px;
@@ -4431,7 +4425,7 @@ li a {
         border: none;
     }
 
-    #ekstrakurikuler .judul{
+    #ekstrakurikuler .judul {
         color: black;
         font-size: 18px;
         font-weight: bold;
@@ -4440,7 +4434,7 @@ li a {
         margin-left: -10px;
     }
 
-    #ekstrakurikuler .ekskul_sekolah{
+    #ekstrakurikuler .ekskul_sekolah {
         color: black;
         font-size: 11px;
         text-align: center;
@@ -4448,27 +4442,27 @@ li a {
         width: 320px;
     }
 
-    #ekstrakurikuler #gambar_kiri{
-        width:30px;
-        height:30px;
+    #ekstrakurikuler #gambar_kiri {
+        width: 30px;
+        height: 30px;
         margin-top: -15px;
         margin-left: -8px;
     }
 
-    #ekstrakurikuler #gambar_kanan{
-        width:30px;
-        height:30px;
+    #ekstrakurikuler #gambar_kanan {
+        width: 30px;
+        height: 30px;
         margin-top: -15px;
         margin-left: -10px;
     }
 
-    #ekstrakurikuler .gambar_ekskul{
-        width:180px;
-        height:180px;
+    #ekstrakurikuler .gambar_ekskul {
+        width: 180px;
+        height: 180px;
         margin-left: 60px;
     }
 
-    #ekstrakurikuler .button_selengkapnya{
+    #ekstrakurikuler .button_selengkapnya {
         width: 150px;
         height: 40px;
         background-color: white;
@@ -4481,38 +4475,37 @@ li a {
         margin-left: 75px;
     }
 
-    #ekstrakurikuler .card-ekskul{
+    #ekstrakurikuler .card-ekskul {
         margin-left: -70px;
         margin-top: 320px;
     }
 
-    #ekstrakurikuler .main-card{
+    #ekstrakurikuler .main-card {
         width: 200px;
         margin-left: -25px;
     }
 }
 
-
 /*prestasi*/
-#prestasi{
-    height: 800px
+#prestasi {
+    height: 800px;
 }
 
-#prestasi #image-prestasi{
-    height:550px;
-    width:950px;
+#prestasi #image-prestasi {
+    height: 550px;
+    width: 950px;
     margin-left: -150px;
     justify-content: left;
 }
 
-#prestasi h2{
+#prestasi h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 38px;;
-    margin-top: 100px
+    font-size: 38px;
+    margin-top: 100px;
 }
 
-#prestasi #arrow-left-prestasi{
+#prestasi #arrow-left-prestasi {
     border-radius: 50px;
     border: none;
     background-color: #ffffff;
@@ -4526,7 +4519,7 @@ li a {
     margin-left: -90px;
 }
 
-#prestasi #arrow-right-prestasi{
+#prestasi #arrow-right-prestasi {
     border-radius: 50px;
     background-color: #ffffff;
     padding-left: 15px;
@@ -4540,7 +4533,7 @@ li a {
     border: none;
 }
 
-#prestasi .nama_siswa{
+#prestasi .nama_siswa {
     font-size: 24px;
     font-weight: bold;
     margin-top: 200px;
@@ -4548,7 +4541,7 @@ li a {
     color: white;
 }
 
-#prestasi .nama_prestasi{
+#prestasi .nama_prestasi {
     color: white;
     font-size: 20px;
     text-align: center;
@@ -4556,25 +4549,30 @@ li a {
     text-decoration: none;
 }
 
-#prestasi .gambar_prestasi{
-    width:480px;
-    height:350px;
+#prestasi .gambar_prestasi {
+    width: 480px;
+    height: 350px;
     margin-top: 70px;
 }
 
-#prestasi .main-card{
+#prestasi .main-card {
     margin-left: -95px;
     width: 500px;
 }
 
-#prestasi .card{
+#prestasi .card {
     border: none;
     padding: 3px;
     z-index: 1;
     margin-top: -350px;
-    background-color: #136A71;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, .01) 0%, rgba(0, 0, 0, .40) 25%, rgba(0, 0, 0, .70) 50%,
-    rgba(0, 0, 0, .98) 100%);
+    background-color: #136a71;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.01) 0%,
+        rgba(0, 0, 0, 0.4) 25%,
+        rgba(0, 0, 0, 0.7) 50%,
+        rgba(0, 0, 0, 0.98) 100%
+    );
     transition: all 0.2s;
     bottom: 0;
     left: 0;
@@ -4590,15 +4588,15 @@ li a {
     visibility: visible;
 }
 
-@media screen and (max-width: 1400px) and  (min-width: 1200px){
-    #prestasi h2{
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+    #prestasi h2 {
         text-align: center;
         margin-bottom: 20px;
-        font-size: 38px;;
-        margin-top: 100px
+        font-size: 38px;
+        margin-top: 100px;
     }
 
-    #prestasi #arrow-right-prestasi{
+    #prestasi #arrow-right-prestasi {
         border-radius: 50px;
         background-color: #ffffff;
         padding-left: 15px;
@@ -4612,7 +4610,7 @@ li a {
         border: none;
     }
 
-    #prestasi .nama_siswa{
+    #prestasi .nama_siswa {
         font-size: 23px;
         font-weight: bold;
         margin-top: 200px;
@@ -4620,7 +4618,7 @@ li a {
         color: white;
     }
 
-    #prestasi .nama_prestasi{
+    #prestasi .nama_prestasi {
         color: white;
         font-size: 19px;
         text-align: center;
@@ -4628,25 +4626,30 @@ li a {
         text-decoration: none;
     }
 
-    #prestasi .gambar_prestasi{
-        width:430px;
-        height:320px;
+    #prestasi .gambar_prestasi {
+        width: 430px;
+        height: 320px;
         margin-top: 70px;
     }
 
-    #prestasi .main-card{
+    #prestasi .main-card {
         margin-left: -95px;
         width: 450px;
     }
 
-    #prestasi .card{
+    #prestasi .card {
         border: none;
         padding: 3px;
         z-index: 1;
-        margin-top: -335px;
-        background-color: #136A71;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, .01) 0%, rgba(0, 0, 0, .40) 25%, rgba(0, 0, 0, .70) 50%,
-        rgba(0, 0, 0, .98) 100%);
+        margin-top: -300px;
+        background-color: #136a71;
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.01) 0%,
+            rgba(0, 0, 0, 0.4) 25%,
+            rgba(0, 0, 0, 0.7) 50%,
+            rgba(0, 0, 0, 0.98) 100%
+        );
         transition: all 0.2s;
         bottom: 0;
         left: 0;
@@ -4657,26 +4660,26 @@ li a {
     }
 }
 
-@media screen and (max-width: 1199px) and (min-width: 995px){
-    #prestasi{
-        height: 1000px
+@media screen and (max-width: 1199px) and (min-width: 995px) {
+    #prestasi {
+        height: 1000px;
     }
 
-    #prestasi #image-prestasi{
-        height:450px;
-        width:850px;
+    #prestasi #image-prestasi {
+        height: 450px;
+        width: 850px;
         margin-left: -230px;
         justify-content: left;
     }
 
-    #prestasi h2{
+    #prestasi h2 {
         text-align: center;
         margin-bottom: 20px;
-        font-size: 38px;;
-        margin-top: 100px
+        font-size: 38px;
+        margin-top: 100px;
     }
 
-    #prestasi #arrow-left-prestasi{
+    #prestasi #arrow-left-prestasi {
         border-radius: 50px;
         border: none;
         background-color: #ffffff;
@@ -4690,7 +4693,7 @@ li a {
         margin-left: -170px;
     }
 
-    #prestasi #arrow-right-prestasi{
+    #prestasi #arrow-right-prestasi {
         border-radius: 50px;
         background-color: #ffffff;
         padding-left: 15px;
@@ -4704,7 +4707,7 @@ li a {
         border: none;
     }
 
-    #prestasi .nama_siswa{
+    #prestasi .nama_siswa {
         font-size: 22px;
         font-weight: bold;
         margin-top: 200px;
@@ -4712,7 +4715,7 @@ li a {
         color: white;
     }
 
-    #prestasi .nama_prestasi{
+    #prestasi .nama_prestasi {
         color: white;
         font-size: 18px;
         text-align: center;
@@ -4720,25 +4723,30 @@ li a {
         text-decoration: none;
     }
 
-    #prestasi .gambar_prestasi{
-        width:410px;
-        height:320px;
+    #prestasi .gambar_prestasi {
+        width: 410px;
+        height: 320px;
         margin-top: 30px;
     }
 
-    #prestasi .main-card{
+    #prestasi .main-card {
         margin-left: -160px;
         width: 430px;
     }
 
-    #prestasi .card{
+    #prestasi .card {
         border: none;
         padding: 3px;
         z-index: 1;
         margin-top: -330px;
-        background-color: #136A71;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, .01) 0%, rgba(0, 0, 0, .40) 25%, rgba(0, 0, 0, .70) 50%,
-        rgba(0, 0, 0, .98) 100%);
+        background-color: #136a71;
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.01) 0%,
+            rgba(0, 0, 0, 0.4) 25%,
+            rgba(0, 0, 0, 0.7) 50%,
+            rgba(0, 0, 0, 0.98) 100%
+        );
         transition: all 0.2s;
         bottom: 0;
         left: 0;
@@ -4755,27 +4763,26 @@ li a {
     }
 }
 
-@media screen and (max-width: 994px) and (min-width: 951px){
-
-    #prestasi{
-        height: 1000px
+@media screen and (max-width: 994px) and (min-width: 951px) {
+    #prestasi {
+        height: 1000px;
     }
 
-    #prestasi #image-prestasi{
-        height:450px;
-        width:850px;
+    #prestasi #image-prestasi {
+        height: 450px;
+        width: 850px;
         margin-left: -75px;
         justify-content: left;
     }
 
-    #prestasi h2{
+    #prestasi h2 {
         text-align: center;
         margin-bottom: 20px;
-        font-size: 38px;;
-        margin-top: 100px
+        font-size: 38px;
+        margin-top: 100px;
     }
 
-    #prestasi #arrow-left-prestasi{
+    #prestasi #arrow-left-prestasi {
         border-radius: 50px;
         border: none;
         background-color: #ffffff;
@@ -4790,7 +4797,7 @@ li a {
         position: absolute;
     }
 
-    #prestasi #arrow-right-prestasi{
+    #prestasi #arrow-right-prestasi {
         border-radius: 50px;
         background-color: #ffffff;
         padding-left: 15px;
@@ -4804,7 +4811,7 @@ li a {
         border: none;
     }
 
-    #prestasi .nama_siswa{
+    #prestasi .nama_siswa {
         font-size: 21px;
         font-weight: bold;
         margin-top: 175px;
@@ -4813,7 +4820,7 @@ li a {
         color: white;
     }
 
-    #prestasi .nama_prestasi{
+    #prestasi .nama_prestasi {
         color: white;
         font-size: 17px;
         text-align: center;
@@ -4821,30 +4828,34 @@ li a {
         text-decoration: none;
     }
 
-    #prestasi .gambar_prestasi{
-        width:440px;
-        height:300px;
+    #prestasi .gambar_prestasi {
+        width: 440px;
+        height: 300px;
         margin-top: 30px;
     }
 
-    #prestasi .main-card{
+    #prestasi .main-card {
         margin-left: 140px;
         width: 455px;
     }
 
-    #prestasi .card-prestasi{
+    #prestasi .card-prestasi {
         height: 400px;
     }
 
-
-    #prestasi .card{
+    #prestasi .card {
         border: none;
         padding: 3px;
         z-index: 1;
         margin-top: -290px;
-        background-color: #136A71;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, .01) 0%, rgba(0, 0, 0, .40) 25%, rgba(0, 0, 0, .70) 50%,
-        rgba(0, 0, 0, .98) 100%);
+        background-color: #136a71;
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.01) 0%,
+            rgba(0, 0, 0, 0.4) 25%,
+            rgba(0, 0, 0, 0.7) 50%,
+            rgba(0, 0, 0, 0.98) 100%
+        );
         transition: all 0.2s;
         bottom: 0;
         left: 0;
@@ -4859,30 +4870,28 @@ li a {
         transform: translateY(0);
         visibility: visible;
     }
-
 }
 
-@media screen and (max-width: 950px) and (min-width: 861px){
-
-    #prestasi{
-        height: 1000px
+@media screen and (max-width: 950px) and (min-width: 861px) {
+    #prestasi {
+        height: 1000px;
     }
 
-    #prestasi #image-prestasi{
-        height:450px;
-        width:850px;
+    #prestasi #image-prestasi {
+        height: 450px;
+        width: 850px;
         margin-left: -75px;
         justify-content: left;
     }
 
-    #prestasi h2{
+    #prestasi h2 {
         text-align: center;
         margin-bottom: 20px;
-        font-size: 38px;;
-        margin-top: 100px
+        font-size: 38px;
+        margin-top: 100px;
     }
 
-    #prestasi #arrow-left-prestasi{
+    #prestasi #arrow-left-prestasi {
         border-radius: 50px;
         border: none;
         background-color: #ffffff;
@@ -4897,7 +4906,7 @@ li a {
         position: absolute;
     }
 
-    #prestasi #arrow-right-prestasi{
+    #prestasi #arrow-right-prestasi {
         border-radius: 50px;
         background-color: #ffffff;
         padding-left: 15px;
@@ -4911,7 +4920,7 @@ li a {
         border: none;
     }
 
-    #prestasi .nama_siswa{
+    #prestasi .nama_siswa {
         font-size: 21px;
         font-weight: bold;
         margin-top: 175px;
@@ -4920,7 +4929,7 @@ li a {
         color: white;
     }
 
-    #prestasi .nama_prestasi{
+    #prestasi .nama_prestasi {
         color: white;
         font-size: 17px;
         text-align: center;
@@ -4928,30 +4937,34 @@ li a {
         text-decoration: none;
     }
 
-    #prestasi .gambar_prestasi{
-        width:440px;
-        height:300px;
+    #prestasi .gambar_prestasi {
+        width: 440px;
+        height: 300px;
         margin-top: 30px;
     }
 
-    #prestasi .main-card{
+    #prestasi .main-card {
         margin-left: 140px;
         width: 455px;
     }
 
-    #prestasi .card-prestasi{
+    #prestasi .card-prestasi {
         height: 400px;
     }
 
-
-    #prestasi .card{
+    #prestasi .card {
         border: none;
         padding: 3px;
         z-index: 1;
         margin-top: -290px;
-        background-color: #136A71;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, .01) 0%, rgba(0, 0, 0, .40) 25%, rgba(0, 0, 0, .70) 50%,
-        rgba(0, 0, 0, .98) 100%);
+        background-color: #136a71;
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.01) 0%,
+            rgba(0, 0, 0, 0.4) 25%,
+            rgba(0, 0, 0, 0.7) 50%,
+            rgba(0, 0, 0, 0.98) 100%
+        );
         transition: all 0.2s;
         bottom: 0;
         left: 0;
@@ -4966,30 +4979,28 @@ li a {
         transform: translateY(0);
         visibility: visible;
     }
-
 }
 
-@media screen and (max-width: 860px) and (min-width: 769px){
-
-    #prestasi{
-        height: 1000px
+@media screen and (max-width: 860px) and (min-width: 769px) {
+    #prestasi {
+        height: 1000px;
     }
 
-    #prestasi #image-prestasi{
-        height:450px;
-        width:850px;
+    #prestasi #image-prestasi {
+        height: 450px;
+        width: 850px;
         margin-left: -75px;
         justify-content: left;
     }
 
-    #prestasi h2{
+    #prestasi h2 {
         text-align: center;
         margin-bottom: 20px;
-        font-size: 38px;;
-        margin-top: 100px
+        font-size: 38px;
+        margin-top: 100px;
     }
 
-    #prestasi #arrow-left-prestasi{
+    #prestasi #arrow-left-prestasi {
         border-radius: 50px;
         border: none;
         background-color: #ffffff;
@@ -5004,7 +5015,7 @@ li a {
         position: absolute;
     }
 
-    #prestasi #arrow-right-prestasi{
+    #prestasi #arrow-right-prestasi {
         border-radius: 50px;
         background-color: #ffffff;
         padding-left: 15px;
@@ -5018,7 +5029,7 @@ li a {
         border: none;
     }
 
-    #prestasi .nama_siswa{
+    #prestasi .nama_siswa {
         font-size: 21px;
         font-weight: bold;
         margin-top: 175px;
@@ -5027,7 +5038,7 @@ li a {
         color: white;
     }
 
-    #prestasi .nama_prestasi{
+    #prestasi .nama_prestasi {
         color: white;
         font-size: 17px;
         text-align: center;
@@ -5035,30 +5046,34 @@ li a {
         text-decoration: none;
     }
 
-    #prestasi .gambar_prestasi{
-        width:440px;
-        height:300px;
+    #prestasi .gambar_prestasi {
+        width: 440px;
+        height: 300px;
         margin-top: 30px;
     }
 
-    #prestasi .main-card{
+    #prestasi .main-card {
         margin-left: 130px;
         width: 455px;
     }
 
-    #prestasi .card-prestasi{
+    #prestasi .card-prestasi {
         height: 400px;
     }
 
-
-    #prestasi .card{
+    #prestasi .card {
         border: none;
         padding: 3px;
         z-index: 1;
         margin-top: -290px;
-        background-color: #136A71;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, .01) 0%, rgba(0, 0, 0, .40) 25%, rgba(0, 0, 0, .70) 50%,
-        rgba(0, 0, 0, .98) 100%);
+        background-color: #136a71;
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.01) 0%,
+            rgba(0, 0, 0, 0.4) 25%,
+            rgba(0, 0, 0, 0.7) 50%,
+            rgba(0, 0, 0, 0.98) 100%
+        );
         transition: all 0.2s;
         bottom: 0;
         left: 0;
@@ -5073,29 +5088,28 @@ li a {
         transform: translateY(0);
         visibility: visible;
     }
-
 }
 
-@media screen and (min-width: 680px) and (max-width: 768px){
-    #prestasi{
-        height: 1000px
+@media screen and (min-width: 680px) and (max-width: 768px) {
+    #prestasi {
+        height: 1000px;
     }
 
-    #prestasi #image-prestasi{
-        height:450px;
-        width:850px;
+    #prestasi #image-prestasi {
+        height: 450px;
+        width: 850px;
         margin-left: -150px;
         justify-content: left;
     }
 
-    #prestasi h2{
+    #prestasi h2 {
         text-align: center;
         margin-bottom: 20px;
-        font-size: 38px;;
-        margin-top: 100px
+        font-size: 38px;
+        margin-top: 100px;
     }
 
-    #prestasi #arrow-left-prestasi{
+    #prestasi #arrow-left-prestasi {
         border-radius: 50px;
         border: none;
         background-color: #ffffff;
@@ -5110,7 +5124,7 @@ li a {
         position: absolute;
     }
 
-    #prestasi #arrow-right-prestasi{
+    #prestasi #arrow-right-prestasi {
         border-radius: 50px;
         background-color: #ffffff;
         padding-left: 15px;
@@ -5124,7 +5138,7 @@ li a {
         border: none;
     }
 
-    #prestasi .nama_siswa{
+    #prestasi .nama_siswa {
         font-size: 21px;
         font-weight: bold;
         margin-top: 175px;
@@ -5133,7 +5147,7 @@ li a {
         color: white;
     }
 
-    #prestasi .nama_prestasi{
+    #prestasi .nama_prestasi {
         color: white;
         font-size: 17px;
         text-align: center;
@@ -5141,30 +5155,34 @@ li a {
         text-decoration: none;
     }
 
-    #prestasi .gambar_prestasi{
-        width:440px;
-        height:300px;
+    #prestasi .gambar_prestasi {
+        width: 440px;
+        height: 300px;
         margin-top: 30px;
     }
 
-    #prestasi .main-card{
+    #prestasi .main-card {
         margin-left: 55px;
         width: 455px;
     }
 
-    #prestasi .card-prestasi{
+    #prestasi .card-prestasi {
         height: 400px;
     }
 
-
-    #prestasi .card{
+    #prestasi .card {
         border: none;
         padding: 3px;
         z-index: 1;
         margin-top: -290px;
-        background-color: #136A71;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, .01) 0%, rgba(0, 0, 0, .40) 25%, rgba(0, 0, 0, .70) 50%,
-        rgba(0, 0, 0, .98) 100%);
+        background-color: #136a71;
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.01) 0%,
+            rgba(0, 0, 0, 0.4) 25%,
+            rgba(0, 0, 0, 0.7) 50%,
+            rgba(0, 0, 0, 0.98) 100%
+        );
         transition: all 0.2s;
         bottom: 0;
         left: 0;
@@ -5179,29 +5197,28 @@ li a {
         transform: translateY(0);
         visibility: visible;
     }
-
 }
 
-@media screen and (min-width: 600px) and (max-width: 679px){
-    #prestasi{
-        height: 1000px
+@media screen and (min-width: 600px) and (max-width: 679px) {
+    #prestasi {
+        height: 1000px;
     }
 
-    #prestasi #image-prestasi{
-        height:450px;
-        width:850px;
+    #prestasi #image-prestasi {
+        height: 450px;
+        width: 850px;
         margin-left: -150px;
         justify-content: left;
     }
 
-    #prestasi h2{
+    #prestasi h2 {
         text-align: center;
         margin-bottom: 20px;
-        font-size: 38px;;
-        margin-top: 100px
+        font-size: 38px;
+        margin-top: 100px;
     }
 
-    #prestasi #arrow-left-prestasi{
+    #prestasi #arrow-left-prestasi {
         border-radius: 50px;
         border: none;
         background-color: #ffffff;
@@ -5216,7 +5233,7 @@ li a {
         position: absolute;
     }
 
-    #prestasi #arrow-right-prestasi{
+    #prestasi #arrow-right-prestasi {
         border-radius: 50px;
         background-color: #ffffff;
         padding-left: 15px;
@@ -5230,7 +5247,7 @@ li a {
         border: none;
     }
 
-    #prestasi .nama_siswa{
+    #prestasi .nama_siswa {
         font-size: 20px;
         font-weight: bold;
         margin-top: 165px;
@@ -5239,7 +5256,7 @@ li a {
         color: white;
     }
 
-    #prestasi .nama_prestasi{
+    #prestasi .nama_prestasi {
         color: white;
         font-size: 16px;
         text-align: center;
@@ -5247,30 +5264,34 @@ li a {
         text-decoration: none;
     }
 
-    #prestasi .gambar_prestasi{
-        width:400px;
-        height:260px;
+    #prestasi .gambar_prestasi {
+        width: 400px;
+        height: 260px;
         margin-top: 30px;
     }
 
-    #prestasi .main-card{
+    #prestasi .main-card {
         margin-left: 55px;
         width: 420px;
     }
 
-    #prestasi .card-prestasi{
+    #prestasi .card-prestasi {
         height: 400px;
     }
 
-
-    #prestasi .card{
+    #prestasi .card {
         border: none;
         padding: 3px;
         z-index: 1;
         margin-top: -265px;
-        background-color: #136A71;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, .01) 0%, rgba(0, 0, 0, .40) 25%, rgba(0, 0, 0, .70) 50%,
-        rgba(0, 0, 0, .98) 100%);
+        background-color: #136a71;
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.01) 0%,
+            rgba(0, 0, 0, 0.4) 25%,
+            rgba(0, 0, 0, 0.7) 50%,
+            rgba(0, 0, 0, 0.98) 100%
+        );
         transition: all 0.2s;
         bottom: 0;
         left: 0;
@@ -5285,29 +5306,28 @@ li a {
         transform: translateY(0);
         visibility: visible;
     }
-
 }
 
-@media screen and (min-width: 490px) and (max-width: 599px){
-    #prestasi{
-        height: 900px
+@media screen and (min-width: 490px) and (max-width: 599px) {
+    #prestasi {
+        height: 900px;
     }
 
-    #prestasi #image-prestasi{
-        height:450px;
-        width:850px;
+    #prestasi #image-prestasi {
+        height: 450px;
+        width: 850px;
         margin-left: -160px;
         justify-content: left;
     }
 
-    #prestasi h2{
+    #prestasi h2 {
         text-align: center;
         margin-bottom: 20px;
-        font-size: 38px;;
-        margin-top: 100px
+        font-size: 38px;
+        margin-top: 100px;
     }
 
-    #prestasi #arrow-left-prestasi{
+    #prestasi #arrow-left-prestasi {
         border-radius: 50px;
         border: none;
         background-color: #ffffff;
@@ -5322,7 +5342,7 @@ li a {
         position: absolute;
     }
 
-    #prestasi #arrow-right-prestasi{
+    #prestasi #arrow-right-prestasi {
         border-radius: 50px;
         background-color: #ffffff;
         padding-left: 15px;
@@ -5336,7 +5356,7 @@ li a {
         border: none;
     }
 
-    #prestasi .nama_siswa{
+    #prestasi .nama_siswa {
         font-size: 19px;
         font-weight: bold;
         margin-top: 125px;
@@ -5345,7 +5365,7 @@ li a {
         color: white;
     }
 
-    #prestasi .nama_prestasi{
+    #prestasi .nama_prestasi {
         color: white;
         font-size: 15px;
         text-align: center;
@@ -5353,30 +5373,34 @@ li a {
         text-decoration: none;
     }
 
-    #prestasi .gambar_prestasi{
-        width:340px;
-        height:230px;
+    #prestasi .gambar_prestasi {
+        width: 340px;
+        height: 230px;
         margin-top: 30px;
     }
 
-    #prestasi .main-card{
+    #prestasi .main-card {
         margin-left: 80px;
         width: 360px;
     }
 
-    #prestasi .card-prestasi{
+    #prestasi .card-prestasi {
         height: 400px;
     }
 
-
-    #prestasi .card{
+    #prestasi .card {
         border: none;
         padding: 3px;
         z-index: 1;
         margin-top: -225px;
-        background-color: #136A71;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, .01) 0%, rgba(0, 0, 0, .40) 25%, rgba(0, 0, 0, .70) 50%,
-        rgba(0, 0, 0, .98) 100%);
+        background-color: #136a71;
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.01) 0%,
+            rgba(0, 0, 0, 0.4) 25%,
+            rgba(0, 0, 0, 0.7) 50%,
+            rgba(0, 0, 0, 0.98) 100%
+        );
         transition: all 0.2s;
         bottom: 0;
         left: 0;
@@ -5393,26 +5417,26 @@ li a {
     }
 }
 
-@media screen and (min-width: 440px) and (max-width: 489px){
-    #prestasi{
-        height: 900px
+@media screen and (min-width: 440px) and (max-width: 489px) {
+    #prestasi {
+        height: 900px;
     }
 
-    #prestasi #image-prestasi{
-        height:430px;
-        width:750px;
+    #prestasi #image-prestasi {
+        height: 430px;
+        width: 750px;
         margin-left: -150px;
         justify-content: left;
     }
 
-    #prestasi h2{
+    #prestasi h2 {
         text-align: center;
         margin-bottom: 20px;
-        font-size: 38px;;
-        margin-top: 100px
+        font-size: 38px;
+        margin-top: 100px;
     }
 
-    #prestasi #arrow-left-prestasi{
+    #prestasi #arrow-left-prestasi {
         border-radius: 50px;
         border: none;
         background-color: #ffffff;
@@ -5427,7 +5451,7 @@ li a {
         position: absolute;
     }
 
-    #prestasi #arrow-right-prestasi{
+    #prestasi #arrow-right-prestasi {
         border-radius: 50px;
         background-color: #ffffff;
         padding-left: 15px;
@@ -5441,7 +5465,7 @@ li a {
         border: none;
     }
 
-    #prestasi .nama_siswa{
+    #prestasi .nama_siswa {
         font-size: 19px;
         font-weight: bold;
         margin-top: 125px;
@@ -5450,7 +5474,7 @@ li a {
         color: white;
     }
 
-    #prestasi .nama_prestasi{
+    #prestasi .nama_prestasi {
         color: white;
         font-size: 15px;
         text-align: center;
@@ -5458,30 +5482,34 @@ li a {
         text-decoration: none;
     }
 
-    #prestasi .gambar_prestasi{
-        width:340px;
-        height:230px;
+    #prestasi .gambar_prestasi {
+        width: 340px;
+        height: 230px;
         margin-top: 30px;
     }
 
-    #prestasi .main-card{
+    #prestasi .main-card {
         margin-left: 50px;
         width: 360px;
     }
 
-    #prestasi .card-prestasi{
+    #prestasi .card-prestasi {
         height: 400px;
     }
 
-
-    #prestasi .card{
+    #prestasi .card {
         border: none;
         padding: 3px;
         z-index: 1;
         margin-top: -225px;
-        background-color: #136A71;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, .01) 0%, rgba(0, 0, 0, .40) 25%, rgba(0, 0, 0, .70) 50%,
-        rgba(0, 0, 0, .98) 100%);
+        background-color: #136a71;
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.01) 0%,
+            rgba(0, 0, 0, 0.4) 25%,
+            rgba(0, 0, 0, 0.7) 50%,
+            rgba(0, 0, 0, 0.98) 100%
+        );
         transition: all 0.2s;
         bottom: 0;
         left: 0;
@@ -5498,28 +5526,28 @@ li a {
     }
 }
 
-@media screen and (min-width: 400px) and (max-width: 439px){
-    #prestasi{
-        height: 900px
+@media screen and (min-width: 400px) and (max-width: 439px) {
+    #prestasi {
+        height: 900px;
     }
 
-    #prestasi #image-prestasi{
-        height:410px;
-        width:700px;
+    #prestasi #image-prestasi {
+        height: 410px;
+        width: 700px;
         margin-left: -140px;
         justify-content: left;
         margin-top: 30px;
         margin-bottom: -100px;
     }
 
-    #prestasi h2{
+    #prestasi h2 {
         text-align: center;
         margin-bottom: 20px;
-        font-size: 38px;;
-        margin-top: 100px
+        font-size: 38px;
+        margin-top: 100px;
     }
 
-    #prestasi #arrow-left-prestasi{
+    #prestasi #arrow-left-prestasi {
         border-radius: 50px;
         border: none;
         background-color: #ffffff;
@@ -5534,7 +5562,7 @@ li a {
         position: absolute;
     }
 
-    #prestasi #arrow-right-prestasi{
+    #prestasi #arrow-right-prestasi {
         border-radius: 50px;
         background-color: #ffffff;
         padding-left: 15px;
@@ -5548,7 +5576,7 @@ li a {
         border: none;
     }
 
-    #prestasi .nama_siswa{
+    #prestasi .nama_siswa {
         font-size: 18px;
         font-weight: bold;
         margin-top: 125px;
@@ -5557,7 +5585,7 @@ li a {
         color: white;
     }
 
-    #prestasi .nama_prestasi{
+    #prestasi .nama_prestasi {
         color: white;
         font-size: 14px;
         text-align: center;
@@ -5565,30 +5593,34 @@ li a {
         text-decoration: none;
     }
 
-    #prestasi .gambar_prestasi{
-        width:320px;
-        height:220px;
+    #prestasi .gambar_prestasi {
+        width: 320px;
+        height: 220px;
         margin-top: 30px;
     }
 
-    #prestasi .main-card{
+    #prestasi .main-card {
         margin-left: 35px;
         width: 340px;
     }
 
-    #prestasi .card-prestasi{
+    #prestasi .card-prestasi {
         height: 400px;
     }
 
-
-    #prestasi .card{
+    #prestasi .card {
         border: none;
         padding: 3px;
         z-index: 1;
         margin-top: -225px;
-        background-color: #136A71;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, .01) 0%, rgba(0, 0, 0, .40) 25%, rgba(0, 0, 0, .70) 50%,
-        rgba(0, 0, 0, .98) 100%);
+        background-color: #136a71;
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.01) 0%,
+            rgba(0, 0, 0, 0.4) 25%,
+            rgba(0, 0, 0, 0.7) 50%,
+            rgba(0, 0, 0, 0.98) 100%
+        );
         transition: all 0.2s;
         bottom: 0;
         left: 0;
@@ -5605,28 +5637,28 @@ li a {
     }
 }
 
-@media screen and (min-width: 300px) and (max-width: 399px){
-    #prestasi{
-        height: 900px
+@media screen and (min-width: 300px) and (max-width: 399px) {
+    #prestasi {
+        height: 900px;
     }
 
-    #prestasi #image-prestasi{
-        height:310px;
-        width:600px;
+    #prestasi #image-prestasi {
+        height: 310px;
+        width: 600px;
         margin-left: -120px;
         justify-content: left;
         margin-top: 30px;
         margin-bottom: -100px;
     }
 
-    #prestasi h2{
+    #prestasi h2 {
         text-align: center;
         margin-bottom: 20px;
-        font-size: 38px;;
-        margin-top: 100px
+        font-size: 38px;
+        margin-top: 100px;
     }
 
-    #prestasi #arrow-left-prestasi{
+    #prestasi #arrow-left-prestasi {
         border-radius: 50px;
         border: none;
         background-color: #ffffff;
@@ -5641,7 +5673,7 @@ li a {
         position: absolute;
     }
 
-    #prestasi #arrow-right-prestasi{
+    #prestasi #arrow-right-prestasi {
         border-radius: 50px;
         background-color: #ffffff;
         padding-left: 15px;
@@ -5655,7 +5687,7 @@ li a {
         border: none;
     }
 
-    #prestasi .nama_siswa{
+    #prestasi .nama_siswa {
         font-size: 16px;
         font-weight: bold;
         margin-top: 115px;
@@ -5664,7 +5696,7 @@ li a {
         color: white;
     }
 
-    #prestasi .nama_prestasi{
+    #prestasi .nama_prestasi {
         color: white;
         font-size: 12px;
         text-align: center;
@@ -5672,30 +5704,34 @@ li a {
         text-decoration: none;
     }
 
-    #prestasi .gambar_prestasi{
-        width:275px;
-        height:200px;
+    #prestasi .gambar_prestasi {
+        width: 275px;
+        height: 200px;
         margin-top: 30px;
     }
 
-    #prestasi .main-card{
+    #prestasi .main-card {
         margin-left: 45px;
         width: 295px;
     }
 
-    #prestasi .card-prestasi{
+    #prestasi .card-prestasi {
         height: 400px;
     }
 
-
-    #prestasi .card{
+    #prestasi .card {
         border: none;
         padding: 3px;
         z-index: 1;
         margin-top: -205px;
-        background-color: #136A71;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, .01) 0%, rgba(0, 0, 0, .40) 25%, rgba(0, 0, 0, .70) 50%,
-        rgba(0, 0, 0, .98) 100%);
+        background-color: #136a71;
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.01) 0%,
+            rgba(0, 0, 0, 0.4) 25%,
+            rgba(0, 0, 0, 0.7) 50%,
+            rgba(0, 0, 0, 0.98) 100%
+        );
         transition: all 0.2s;
         bottom: 0;
         left: 0;
@@ -5712,28 +5748,28 @@ li a {
     }
 }
 
-@media screen and (max-width: 299px){
-    #prestasi{
-        height: 900px
+@media screen and (max-width: 299px) {
+    #prestasi {
+        height: 900px;
     }
 
-    #prestasi #image-prestasi{
-        height:230px;
-        width:500px;
+    #prestasi #image-prestasi {
+        height: 230px;
+        width: 500px;
         margin-left: -110px;
         justify-content: left;
         margin-top: 30px;
         margin-bottom: -100px;
     }
 
-    #prestasi h2{
+    #prestasi h2 {
         text-align: center;
         margin-bottom: 20px;
-        font-size: 38px;;
-        margin-top: 100px
+        font-size: 38px;
+        margin-top: 100px;
     }
 
-    #prestasi #arrow-left-prestasi{
+    #prestasi #arrow-left-prestasi {
         border-radius: 50px;
         border: none;
         background-color: #ffffff;
@@ -5748,7 +5784,7 @@ li a {
         position: absolute;
     }
 
-    #prestasi #arrow-right-prestasi{
+    #prestasi #arrow-right-prestasi {
         border-radius: 50px;
         background-color: #ffffff;
         padding-left: 15px;
@@ -5762,7 +5798,7 @@ li a {
         border: none;
     }
 
-    #prestasi .nama_siswa{
+    #prestasi .nama_siswa {
         font-size: 15px;
         font-weight: bold;
         margin-top: 95px;
@@ -5771,7 +5807,7 @@ li a {
         color: white;
     }
 
-    #prestasi .nama_prestasi{
+    #prestasi .nama_prestasi {
         color: white;
         font-size: 10px;
         text-align: center;
@@ -5779,30 +5815,34 @@ li a {
         text-decoration: none;
     }
 
-    #prestasi .gambar_prestasi{
-        width:220px;
-        height:180px;
+    #prestasi .gambar_prestasi {
+        width: 220px;
+        height: 180px;
         margin-top: 30px;
     }
 
-    #prestasi .main-card{
+    #prestasi .main-card {
         margin-left: 20px;
         width: 230px;
     }
 
-    #prestasi .card-prestasi{
+    #prestasi .card-prestasi {
         height: 400px;
     }
 
-
-    #prestasi .card{
+    #prestasi .card {
         border: none;
         padding: 3px;
         z-index: 1;
         margin-top: -170px;
-        background-color: #136A71;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, .01) 0%, rgba(0, 0, 0, .40) 25%, rgba(0, 0, 0, .70) 50%,
-        rgba(0, 0, 0, .98) 100%);
+        background-color: #136a71;
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.01) 0%,
+            rgba(0, 0, 0, 0.4) 25%,
+            rgba(0, 0, 0, 0.7) 50%,
+            rgba(0, 0, 0, 0.98) 100%
+        );
         transition: all 0.2s;
         bottom: 0;
         left: 0;

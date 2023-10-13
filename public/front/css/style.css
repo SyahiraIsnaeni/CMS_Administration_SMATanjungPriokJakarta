@@ -344,6 +344,12 @@ p {
     width: 450px;
 }
 
+.background-1 {
+    background-color: rgb(188, 231, 235);
+    height: 600px;
+    margin-top: 15px;
+}
+
 li,
 a,
 button {
@@ -409,6 +415,10 @@ footer {
     margin-bottom: 50px;
 }
 
+#pengumuman img {
+    margin-top: 130px;
+}
+
 #blog h2 {
     font-family: "poppins";
 }
@@ -463,12 +473,65 @@ footer {
         height: 250px;
     }
 
+    #pengumuman .row.mb-3 {
+        margin-bottom: 100px; /* Atur tinggi margin sesuai keinginan Anda */
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+
+    /* Mengatur lebar gambar agar responsif */
+
+    /* Mengatur margin pada elemen judul */
+    #pengumuman .judul1 {
+        margin: 30px 0 10px;
+        text-align: center;
+    }
+
+    /* Mengatur margin pada daftar pengumuman */
+    #pengumuman .list-group {
+        margin-left: 0;
+    }
+
+    /* Mengatur margin pada elemen tanggal */
+    #pengumuman .col-3 {
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    #pengumuman .col-lg-6 {
+        width: 100%;
+        order: -1; /* Mengubah urutan elemen menjadi sebelum col-lg-5 */
+        text-align: center; /* Pusatkan gambar pada perangkat mobile */
+    }
+    #pengumuman .col {
+        margin-top: 10px;
+    }
+
+    /* Mengatur ukuran font judul pengumuman */
+    #pengumuman .card-title {
+        font-size: 16px;
+    }
+
+    #pengumuman img {
+        width: 300px;
+        height: 250px;
+    }
+    #pengumuman .background-1 {
+        background-color: rgb(188, 231, 235);
+        height: 850px;
+        margin-top: 15px;
+    }
+
+    #pengumuman .rounded {
+        margin-top: 35px; /* Atur gambar menjadi pusat pada perangkat mobile */
+    }
+
     #blog h2 {
         margin-top: 100px;
     }
 
     #blog .row {
-        margin-top: 250px;
+        margin-top: 209px;
     }
 
     .top {
@@ -3428,7 +3491,69 @@ footer .bottom-details .bottom_text {
     }
 }
 
+@media (min-width: 768px) {
+    #blog .row {
+        margin-top: -100px;
+    }
+}
+
 @media screen and (max-width: 1000px) and (min-width: 701px) {
+    #pengumuman .row.mb-3 {
+        margin-bottom: 100px; /* Atur tinggi margin sesuai keinginan Anda */
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+
+    /* Mengatur lebar gambar agar responsif */
+
+    /* Mengatur margin pada elemen judul */
+    #pengumuman .judul1 {
+        margin: 30px 0 10px;
+        text-align: center;
+    }
+
+    /* Mengatur margin pada daftar pengumuman */
+    #pengumuman .list-group {
+        margin-left: 0;
+    }
+
+    /* Mengatur margin pada elemen tanggal */
+    #pengumuman .col-3 {
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    #pengumuman .col-lg-6 {
+        width: 100%;
+        order: -1; /* Mengubah urutan elemen menjadi sebelum col-lg-5 */
+        text-align: center; /* Pusatkan gambar pada perangkat mobile */
+    }
+    #pengumuman .col {
+        margin-top: 10px;
+    }
+
+    /* Mengatur ukuran font judul pengumuman */
+    #pengumuman .card-title {
+        font-size: 16px;
+    }
+
+    #pengumuman img {
+        width: 300px;
+        height: 250px;
+    }
+    #pengumuman .background-1 {
+        background-color: rgb(188, 231, 235);
+        height: 850px;
+        margin-top: 15px;
+    }
+
+    #pengumuman .rounded {
+        margin-top: 35px; /* Atur gambar menjadi pusat pada perangkat mobile */
+    }
+
+    #blog .row {
+        margin-top: 200px;
+    }
     #blog .card-title {
         padding-left: 5px;
         padding-bottom: 2px;
@@ -3605,6 +3730,44 @@ footer .bottom-details .bottom_text {
     }
 
     #berita img {
+        width: 300px;
+        height: 250px;
+    }
+
+    #pengumuman .row.mb-3 {
+        margin-bottom: 100px; /* Atur tinggi margin sesuai keinginan Anda */
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+
+    /* Mengatur lebar gambar agar responsif */
+    #pengumuman .col-lg-6 {
+        width: 100%;
+    }
+
+    /* Mengatur margin pada elemen judul */
+    #pengumuman .judul1 {
+        margin: 30px 0 10px;
+        text-align: center;
+    }
+
+    /* Mengatur margin pada daftar pengumuman */
+    #pengumuman .list-group {
+        margin-left: 0;
+    }
+
+    /* Mengatur margin pada elemen tanggal */
+    #pengumuman .col-3 {
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    /* Mengatur ukuran font judul pengumuman */
+    #pengumuman .card-title {
+        font-size: 16px;
+    }
+
+    #pengumuman img {
         width: 300px;
         height: 250px;
     }
@@ -4797,10 +4960,6 @@ footer .bottom-details .bottom_text {
 @media screen and (min-width: 356px) and (max-width: 394px) {
 }
 /*Berita dan Pengumuman */
-.background-1 {
-    background-color: rgb(188, 231, 235);
-    height: 600px;
-}
 
 .background-2 {
     background-color: white;

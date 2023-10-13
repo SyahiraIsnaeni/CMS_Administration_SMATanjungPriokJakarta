@@ -32,7 +32,9 @@
       </ul>
       <ul class="box">
         <li class="{{ url('#kontak-kami') }}">Contact Us</li>
-        <li><i class="fas fa-envelope mr-3" style="color: white"></i>Smatanjungpriok2@gmail.com</li>
+        <li>
+              <i class="fas fa-envelope mr-3" style="color: white"></i><a href="mailto:Smatanjungpriok2@gmail.com"> <span style="color: white">SMA Tanjung Priok</span></a>
+            </li>
         <li><i class="fas fa-phone mr-3" style="color: white"></i> - </li>
       </ul>
     </div>

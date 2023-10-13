@@ -53,7 +53,7 @@
               <a class="nav-link" href="{{ url('#kontak-kami') }}">Kontak</a>
             </li>
           <li class="nav-item">
-            <a class="cta" href="#" style="color: #136a71"><button style="border-radius: 6px; color: #136a71">Login</button></a>
+            <a class="cta" href="{{ 'login' }}" style="color: #136a71"><button style="border-radius: 6px; color: #136a71">Login</button></a>
           </li>
         </ul>
       </div>
@@ -253,7 +253,7 @@
 </section>
 
 <!-- Prestasi -->
-<section id="prestasi" style="margin-top: 100px">
+<!-- <section id="prestasi" style="margin-top: 100px">
   <div class="container">
     <h2 style="text-align: center;margin-bottom: 30px;font-size: 37px"><b>Prestasi</b></h2>
     <div class="row">
@@ -322,7 +322,7 @@
       sliderMainPrestasi.prepend(itemPrestasi[itemPrestasi.length - 1]);
     }
   </script>
-</section>
+</section> -->
 
 <!--Berita dan Pengumuman-->
 <section id="pengumuman">
@@ -374,7 +374,7 @@
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center">
             @forelse ($pengumumanPrioritas as $row)
-          <img src="{{asset('uploads/'.$row->gambar) }}" style="margin-top: 130px" class="rounded d-flex" alt="logo" height="370" width="600" />
+          <img src="{{asset('uploads/'.$row->gambar) }}" class="rounded d-flex" alt="logo" height="370" width="600" />
             @empty
             @endforelse
         </div>

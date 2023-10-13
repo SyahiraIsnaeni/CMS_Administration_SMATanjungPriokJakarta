@@ -1,7 +1,7 @@
 <x-guest-layout>
     <section>
         <div style="margin-left: 32%">
-            <img class="d-flex justify-content-center" src="assets/image/logo.png" style="width: 150px; height: 150px">
+            <img class="d-flex justify-content-center" src="assets/image/logosma.png" style="width: 150px; height: 150px">
         </div>
         <h1 style="text-align: center;font-weight: bold;font-size: 20px;">SMA Tanjung Priok Jakarta</h1>
         <p style="text-align: center;font-size: 15px;margin-bottom: 20px">Login Admin</p>

@@ -62,7 +62,7 @@
 
     <!--Detail PPB-->
     <div class="container">
-      <div align="center" class="detailppb"><img src="{{asset('uploads/' . $berita->gambar)}}" class="rounded"/></div>
+      <div align="center" class="detailppb"><img src="{{asset('uploads/' . $berita->gambar)}}" class="rounded" style="max-width: 100%; height: auto; width: 900px;"/></div>
       <div class="content">
         <h2 class="judulppb" style="font-size: 34px">{{$berita->judul}}</h2>
         <p class="penulis" style="font-size: 15px">By {{$berita->penulis}}</p>

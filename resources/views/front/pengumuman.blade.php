@@ -61,25 +61,29 @@
 </section>
 
 <!--Detail PPB-->
-<div class="container">
-    <div align="center" class="detailppb"><img src="{{asset('uploads/' . $pengumuman->gambar)}}" class="rounded"/></div>
-    <div class="content">
-        <h2 class="judulppb" style="font-size: 34px">{{$pengumuman->judul}}</h2>
-        <p class="penulis" style="font-size: 15px">By {{$pengumuman->penulis}}</p>
-        <p class="penulis" style="margin-top: -15px">{{$pengumuman->created_at->format('d M Y')}} | {{$pengumuman->kategori_pengumuman->nama_kategori}}</p>
-        <p align="justify" class="d-flex justify-content-center">
-            {!! $pengumuman->body !!}
-        </p>
-        @if ($pengumuman->dokumen != null)
-            <p class="d-flex" style="margin-bottom: -1px">
-                Download Dokumen:
+<section id="detailPengumuman">
+    <div class="container">
+        <div align="center" class="detailppb">
+            <img id="gambar" src="{{asset('uploads/' . $pengumuman->gambar)}}" class="rounded" style="max-width: 100%; height: auto; width: 900px;"/>
+        </div>
+        <div class="content">
+            <h2 class="judulppb" style="font-size: 34px">{{$pengumuman->judul}}</h2>
+            <p class="penulis" style="font-size: 15px">By {{$pengumuman->penulis}}</p>
+            <p class="penulis" style="margin-top: -15px">{{$pengumuman->created_at->format('d M Y')}} | {{$pengumuman->kategori_pengumuman->nama_kategori}}</p>
+            <p align="justify" class="d-flex justify-content-center">
+                {!! $pengumuman->body !!}
             </p>
-            <a href="{{asset('uploads/'.$pengumuman->dokumen) }}">{{asset('uploads/'.$pengumuman->dokumen) }}</a>
-        @else
+            @if ($pengumuman->dokumen != null)
+                <p class="d-flex" style="margin-bottom: -1px">
+                    Download Dokumen:
+                </p>
+                <a href="{{asset('uploads/'.$pengumuman->dokumen) }}">{{asset('uploads/'.$pengumuman->dokumen) }}</a>
+            @else
 
-        @endif
+            @endif
+        </div>
     </div>
-</div>
+</section>
 
 <!-- Foto Kegiatan -->
 <section id="artikellainnya">

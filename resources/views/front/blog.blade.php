@@ -10,7 +10,7 @@
     <link rel="icon" href="assets/logo.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="{{asset('front/css/detailppb.css')}}"  />
     <link rel="stylesheet" type="text/css" href="{{asset('front/css/style.css')}}" />
-    
+
     <link rel="icon" href="{{asset('front/logo.png')}}" />
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -63,7 +63,7 @@
 
 <!--Detail PPB-->
 <div class="container">
-    <div align="center" class="detailppb"><img src="{{asset('uploads/' . $blog->gambar)}}" class="rounded"/></div>
+    <div align="center" class="detailppb"><img src="{{asset('uploads/' . $blog->gambar)}}" class="rounded" style="max-width: 100%; height: auto; width: 900px;"/></div>
     <div class="content">
         <h2 class="judulppb" style="font-size: 34px">{{$blog->judul}}</h2>
         <p class="penulis" style="font-size: 15px">By {{$blog->penulis}}</p>

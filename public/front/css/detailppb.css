@@ -81,12 +81,12 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -100,101 +100,103 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+    display: block;
 }
 body {
-  line-height: 1;
+    line-height: 1;
 }
 ol,
 ul {
-  list-style: none;
+    list-style: none;
 }
 blockquote,
 q {
-  quotes: none;
+    quotes: none;
 }
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
-  content: none;
+    content: "";
+    content: none;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /*STYLE*/
 
 .container {
-  width: 850px;
-  margin: auto;
+    width: 850px;
+    margin: auto;
 }
 
 .detailppb {
-  height: 650px;
-  background-size: cover;
-  background-position: 0 -480px;
-  margin-top: 50px;
+    height: 650px;
+    background-size: cover;
+    background-position: 0 -480px;
+    margin-top: 50px;
+    margin-bottom: -100px;
 }
 
 .content {
-  padding: 25px;
+    padding: 25px;
 }
 
 .judulppb {
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .content .penulis {
-  font-size: 14px;
-  color: grey;
-  margin-top: -4px;
+    font-size: 14px;
+    color: grey;
+    margin-top: -4px;
 }
 
 .foto {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .tulisan {
-  color: black;
-  font-size: 15px;
-  width: 300px;
-  text-align: justify;
+    color: black;
+    font-size: 15px;
+    width: 300px;
+    text-align: justify;
 }
 
 .row h3 {
-  margin-bottom: 20px;
-  font-weight: bold;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .foto a {
-  transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 
 a:hover p {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .foto img {
-  width: 300px;
-  height: 200px;
+    width: 300px;
+    height: 200px;
+    margin-left: 50px;
 }
 
 .isikonten {
-  text-align: justify;
+    text-align: justify;
 }
 
 p {
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
-  font-size: large;
-  /* margin-right: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: large;
+    /* margin-right: 40px;
     text-align: justify; */
-  line-height: 2;
+    line-height: 2;
 }
 
 /* a {
@@ -214,359 +216,380 @@ p {
 .gambarF2,
 .gambarF3,
 .gambarF4 {
-  /* width: 20px;
+    /* width: 20px;
     height: 10px; */
-  transform: translateX((0px));
-  animation: float 6s ease-out infinite;
+    transform: translateX((0px));
+    animation: float 6s ease-out infinite;
 }
 
 @keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 li,
 a,
 button {
-  font-family: "poppins";
-  font-weight: 500;
-  font-size: 16px;
+    font-family: "poppins";
+    font-weight: 500;
+    font-size: 16px;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
 }
 
 .logo {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .navbar-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .navbar-nav li {
-  display: inline-block;
-  padding: 0px 20px;
+    display: inline-block;
+    padding: 0px 20px;
 }
 .navbar-nav li a {
-  transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 .navbar-nav li a:hover {
-  color: #ffff;
+    color: #ffff;
 }
 button {
-  padding: 9px 25px;
-  border: #0000ff;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+    padding: 9px 25px;
+    border: #0000ff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 button:hover {
-  background-color: #bce7eb;
+    background-color: #bce7eb;
 }
 
 footer {
-  background: #136a71;
-  width: 100%;
-  bottom: 0;
-  left: 0;
+    background: #136a71;
+    width: 100%;
+    bottom: 0;
+    left: 0;
 }
 
 footer .line {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  left: 0;
-  margin-top: 90px;
-  background: black;
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    margin-top: 90px;
+    background: black;
 }
 
 footer .content {
-  max-width: 1250px;
-  margin: auto;
-  padding: 30px 40px 40px 40px;
+    max-width: 1250px;
+    margin: auto;
+    padding: 30px 40px 40px 40px;
 }
 
 footer .content .top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .content .top .logo-details {
-  color: #fff;
-  font-size: 30px;
+    color: #fff;
+    font-size: 30px;
 }
 
 .content .top .media-icons {
-  display: flex;
+    display: flex;
 }
 
 .content .top .media-icons a {
-  height: 40px;
-  width: 40px;
-  background: red;
-  margin: 0 8px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 40px;
-  color: white;
-  font-size: 17px;
-  text-decoration: none;
-  transition: all 0.4s ease;
+    height: 40px;
+    width: 40px;
+    background: red;
+    margin: 0 8px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.4s ease;
 }
 
 .top .media-icons a:nth-child(1) {
-  background: black;
+    background: black;
 }
 
 .top .media-icons a:nth-child(1):hover {
-  color: #426782;
-  background: white;
+    color: #426782;
+    background: white;
 }
 
 .top .media-icons a:nth-child(2) {
-  background: black;
+    background: black;
 }
 
 .top .media-icons a:nth-child(2):hover {
-  color: #426782;
-  background: white;
+    color: #426782;
+    background: white;
 }
 
 .top .media-icons a:nth-child(3) {
-  background: black;
+    background: black;
 }
 
 .top .media-icons a:nth-child(3):hover {
-  color: #426782;
-  background: white;
+    color: #426782;
+    background: white;
 }
 
 footer .content .link-boxes {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 footer .content .link-boxes .box {
-  width: calc(100% / 3 - 30px);
-  color: white;
+    width: calc(100% / 3 - 30px);
+    color: white;
 }
 
 .content .link-boxes .box .link_name {
-  color: white;
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  position: relative;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    position: relative;
 }
 
 .content .link-boxes .box .link_name::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  height: 2px;
-  width: 35px;
-  background: white;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 35px;
+    background: white;
 }
 
 .content .link-boxes .box li {
-  margin: 6px 0;
-  color: white;
-  font-size: 18px;
-  list-style: none;
+    margin: 6px 0;
+    color: white;
+    font-size: 18px;
+    list-style: none;
 }
 
 .content .link-boxes .box a {
-  text-decoration: none;
-  color: white;
-  font-size: 17px;
-  transition: all 0.4s ease;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    transition: all 0.4s ease;
 }
 
 .content .link-boxes .box a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 footer .bottom-details {
-  width: 100%;
-  background: black;
+    width: 100%;
+    background: black;
 }
 
 footer .bottom-details .bottom_text {
-  color: white;
-  margin-left: auto;
-  display: flex;
-  justify-content: space-between;
+    color: white;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .gambar1 {
-  justify-self: end;
+    justify-self: end;
 }
 
-#detailPengumuman #gambar{
+#detailPengumuman #gambar {
     width: 800px;
     height: 400px;
 }
 
 @media screen and (max-width: 299px) {
-  .detailppb {
-    height: 300px;
-    margin-top: 25px;
-  }
+    .detailppb {
+        height: 300px;
+        margin-top: 25px;
+        margin-bottom: -185px;
+    }
 
-  .foto img {
-    width: 250px;
-    height: 150px;
-    margin-left: -25px;
-  }
+    .foto img {
+        width: 200px;
+        height: 100px;
+        margin-left: 15px;
+    }
 
-  .tulisan {
-    width: 245px;
-    margin-left: -21px;
-  }
+    .tulisan {
+        width: 245px;
+        margin-left: -21px;
+    }
 }
 
 @media screen and (min-width: 300px) and (max-width: 394px) {
-  .detailppb {
-    height: 350px;
-    margin-top: 25px;
-  }
+    .detailppb {
+        height: 350px;
+        margin-top: 25px;
+        margin-bottom: -150px;
+    }
 
-  .foto img {
-    width: 270px;
-    height: 170px;
-    margin-left: -25px;
-  }
+    .foto img {
+        width: 270px;
+        height: 170px;
+        margin-left: 20px;
+    }
 
-  .tulisan {
-    width: 265px;
-    margin-left: -21px;
-  }
+    .tulisan {
+        width: 265px;
+        margin-left: -21px;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 394px) {
+    .detailppb {
+        height: 350px;
+        margin-top: 25px;
+        margin-bottom: -150px;
+    }
+
+    .foto img {
+        width: 270px;
+        height: 170px;
+        margin-left: 30px;
+    }
+
+    .tulisan {
+        width: 265px;
+        margin-left: -21px;
+    }
 }
 
 @media screen and (min-width: 395px) and (max-width: 420px) {
-  .detailppb {
-    height: 400px;
-    margin-top: 25px;
-  }
+    .detailppb {
+        height: 400px;
+        margin-top: 25px;
+        margin-bottom: -185px;
+    }
 
-  .foto img {
-    width: 350px;
-    height: 250px;
-    margin-left: -25px;
-  }
+    .foto img {
+        width: 320px;
+        height: 220px;
+        margin-left: 20px;
+    }
 
-  .tulisan {
-    width: 345px;
-    margin-left: -21px;
-    font-size: 18px;
-  }
+    .tulisan {
+        width: 345px;
+        margin-left: -21px;
+        font-size: 18px;
+    }
 
-  .tulsel {
-    font-size: 30px;
-  }
+    .tulsel {
+        font-size: 30px;
+    }
 }
 
 @media screen and (min-width: 501px) and (max-width: 700px) {
-  .detailppb {
-    height: 550px;
-    margin-top: 25px;
-  }
+    .detailppb {
+        height: 550px;
+        margin-top: 25px;
+        margin-bottom: -280px;
+    }
 
-  .foto img {
-    width: 410px;
-    height: 310px;
-    margin-left: -25px;
-  }
+    .foto img {
+        width: 410px;
+        height: 310px;
+        margin-left: 25px;
+    }
 
-  .tulisan {
-    width: 405px;
-    margin-left: -21px;
-    font-size: 18px;
-  }
+    .tulisan {
+        width: 405px;
+        margin-left: -21px;
+        font-size: 18px;
+    }
 
-  .tulsel {
-    font-size: 30px;
-  }
+    .tulsel {
+        font-size: 30px;
+    }
 }
 
 @media screen and (min-width: 421px) and (max-width: 500px) {
-  .detailppb {
-    height: 550px;
-    margin-top: 25px;
-  }
+    .detailppb {
+        height: 550px;
+        margin-top: 25px;
+    }
 
-  .foto img {
-    width: 380px;
-    height: 280px;
-    margin-left: -25px;
-  }
+    .foto img {
+        width: 380px;
+        height: 280px;
+        margin-left: 25px;
+    }
 
-  .tulisan {
-    width: 375px;
-    margin-left: -21px;
-    font-size: 16px;
-  }
+    .tulisan {
+        width: 375px;
+        margin-left: -21px;
+        font-size: 16px;
+    }
 
-  .tulsel {
-    font-size: 30px;
-  }
-
+    .tulsel {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 1000px) and (min-width: 701px) {
-  .detailppb {
-    height: 700px;
-    margin-top: 25px;
-  }
+    .detailppb {
+        height: 700px;
+        margin-top: 25px;
+        margin-bottom: -280px;
+    }
 
-  .foto img {
-    width: 220px;
-    height: 120px;
-    margin-left: -35px;
-    padding-right: 5px;
-  }
+    .foto img {
+        width: 220px;
+        height: 120px;
+        margin-left: 50px;
+        padding-right: 5px;
+    }
 
-  .tulisan {
-    width: 215px;
-    margin-left: -31px;
-    font-size: 15px;
-    padding-right: 5px;
-  }
+    .tulisan {
+        width: 215px;
+        margin-left: -31px;
+        font-size: 15px;
+        padding-right: 5px;
+    }
 
-  .tulsel {
-    font-size: 28px;
-  }
+    .tulsel {
+        font-size: 28px;
+    }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 1001px) {
+    .foto img {
+        width: 300px;
+        height: 200px;
+    }
 
-  .foto img {
-    width: 300px;
-    height: 200px;
-  }
-
-  .tulisan {
-    width: 295px;
-  }
-
+    .tulisan {
+        width: 295px;
+    }
 }

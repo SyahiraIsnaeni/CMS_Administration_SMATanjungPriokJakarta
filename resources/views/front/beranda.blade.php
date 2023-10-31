@@ -373,6 +373,7 @@
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center">
             @forelse ($pengumumanPrioritas as $row)
+            <!-- <img id="image-prestasi" src="{{asset('uploads/'.$row->gambar)}}" alt="logo-prestasi" /> -->
           <img src="{{asset('uploads/'.$row->gambar) }}" class="rounded d-flex" alt="logo" height="370" width="600" />
             @empty
             @endforelse

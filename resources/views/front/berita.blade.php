@@ -61,10 +61,13 @@
 </section>
 
     <!--Detail PPB-->
+    <section id= "detailberita">
     <div class="container">
-      <div align="center" class="detailppb"><img src="{{asset('uploads/' . $berita->gambar)}}" class="rounded" style="max-width: 100%; height: auto; width: 900px;"/></div>
+      <div align="center" class="detailppb">
+        <img src="{{asset('uploads/' . $berita->gambar)}}" />
+       </div>
       <div class="content">
-        <h2 class="judulppb" style="font-size: 34px">{{$berita->judul}}</h2>
+        <h2 class="judulppb">{{$berita->judul}}</h2>
         <p class="penulis" style="font-size: 15px">By {{$berita->penulis}}</p>
         <p class="penulis" style="margin-top: -15px">{{$berita->created_at->format('d M Y')}} | {{$berita->kategori_berita->nama_kategori}}</p>
         <p align="justify" class="isikonten d-flex justify-content-center">
@@ -72,6 +75,11 @@
         </p>
       </div>
     </div>
+    </section>
+
+    
+
+
 
     <!-- Foto Kegiatan -->
     <section id="artikellainnya">

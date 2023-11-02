@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
-    <title>SMA Tanjung Priok Jakarta</title>
+    <title>SMA Tanjung Priok Jakarta | Prestasi Sekolah</title>
     <!-- add icon link -->
     <link rel="icon" href="assets/logo.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="{{asset('front/css/galeri.css')}}" />
@@ -25,7 +25,7 @@
     <section id="navigationbar">
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #136a71">
     <div class="container">
-      <a class="navbar-brand" style="font-size: 15px; text-align: center; float: center" href="{{ 'beranda' }}">
+      <a class="navbar-brand" style="font-size: 15px; text-align: center; float: center" href="{{ '/' }}">
         <img src="{{asset('front/logo.png')}}" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

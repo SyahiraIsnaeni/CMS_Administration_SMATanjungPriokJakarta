@@ -128,7 +128,7 @@
       <div class="container mt-5">
         <div class="row">
           <div class="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center">
-            <img src="{{asset('front/visi.jpg')}}"class="rounded d-flex" alt="logo" height="400" width="400" />
+            <img src="{{asset('front/visi.jpg')}}" class="rounded d-flex" alt="logo" height="400" width="400" />
           </div>
           <div class="col-lg-4 col-md-12 col-sm-12" style="font-family: Poppins; padding-left: 40px">
             <h2 class="d-flex justify-content-start"><b>Visi</b></h2>
@@ -136,12 +136,12 @@
           </div>
           <div class="col-lg-4 col-md-12 col-sm-12" style="font-family: Poppins; padding-left: 40px">
             <h2 class="d-flex justify-content-start"><b>Misi</b></h2>
-            <ol>
-              <li style="text-align: justify">Melaksanakan pembelajaran dan bimbingan secara efektif, sehingga setiap siswa berkembang secara optimal, sesuai dengan potensi yang dimiliki</li>
-              <li style="text-align: justify">Menumbuhkan semangat keunggulan secara intensif kepada seluruh warga sekolah</li>
-              <li style="text-align: justify">Mendorong dan membantu untuk mengenali potensi dirinya, sehingga dapat dikembangkan secara optimal</li>
-              <li style="text-align: justify">Menumbuhkan penghayatan terhadap ajaran agama yang dianut dan juga budaya bangsa sehingga menjadi sumber kearifan dalam bertindak</li>
-              <li style="text-align: justify">Menerapkan manajemen partisipatif dengan melibatkan seluruh warga sekolah dan penentu kebijakan sekolah</li>
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-start" style="text-align: justify;border: none">Melaksanakan pembelajaran dan bimbingan secara efektif, sehingga setiap siswa berkembang secara optimal, sesuai dengan potensi yang dimiliki</li>
+              <li class="list-group-item d-flex justify-content-between align-items-start" style="text-align: justify;border: none">Menumbuhkan semangat keunggulan secara intensif kepada seluruh warga sekolah</li>
+              <li class="list-group-item d-flex justify-content-between align-items-start" style="text-align: justify;border: none">Mendorong dan membantu untuk mengenali potensi dirinya, sehingga dapat dikembangkan secara optimal</li>
+              <li class="list-group-item d-flex justify-content-between align-items-start" style="text-align: justify;border: none">Menumbuhkan penghayatan terhadap ajaran agama yang dianut dan juga budaya bangsa sehingga menjadi sumber kearifan dalam bertindak</li>
+              <li class="list-group-item d-flex justify-content-between align-items-start" style="text-align: justify;border: none">Menerapkan manajemen partisipatif dengan melibatkan seluruh warga sekolah dan penentu kebijakan sekolah</li>
             </ol>
           </div>
         </div>

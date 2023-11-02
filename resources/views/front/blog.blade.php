@@ -38,13 +38,13 @@
               <a class="nav-link" href="{{ '/' }}">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ 'profil' }}">Profil</a>
+              <a class="nav-link" href="{{ '../profil' }}">Profil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ 'guru-staf' }}">Guru & Staf</a>
+              <a class="nav-link" href="{{ '../guru-staf' }}">Guru & Staf</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ 'galeri-sekolah' }}">Galeri</a>
+              <a class="nav-link" href="{{ '../galeri-sekolah' }}">Galeri</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">E-Learning</a>

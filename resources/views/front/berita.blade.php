@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
-    <title>SMA Tanjung Priok Jakarta | Berita Sekolah</title>
+    <title>SMA Tanjung Priok Jakarta</title>
     <!-- add icon link -->
     <link rel="icon" href="assets/logo.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="{{asset('front/css/detailppb.css')}}"  />
@@ -25,7 +25,7 @@
     <section id="navigationbar">
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #136a71">
     <div class="container">
-      <a class="navbar-brand" style="font-size: 15px; text-align: center; float: center" href="{{ '/' }}">
+      <a class="navbar-brand" style="font-size: 15px; text-align: center; float: center" href="{{ 'beranda' }}">
         <img src="{{asset('front/logo.png')}}" alt="logo" height="50" style="float: left" /><strong> SMA TANJUNG PRIOK<br />JAKARTA UTARA</strong>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,13 +37,13 @@
               <a class="nav-link" href="{{ '/' }}">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ 'profil' }}">Profil</a>
+              <a class="nav-link" href="{{ '../profil' }}">Profil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ 'guru-staf' }}">Guru & Staf</a>
+              <a class="nav-link" href="{{ '../guru-staf' }}">Guru & Staf</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ 'galeri-sekolah' }}">Galeri</a>
+              <a class="nav-link" href="{{ '../galeri-sekolah' }}">Galeri</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">E-Learning</a>
@@ -77,7 +77,7 @@
     </div>
     </section>
 
-
+    
 
 
 

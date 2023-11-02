@@ -37,13 +37,13 @@
               <a class="nav-link " href="{{ '/' }}">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ 'profil' }}">Profil</a>
+              <a class="nav-link" href="{{ '../profil' }}">Profil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="{{ 'guru-staf' }}">Guru & Staf</a>
+              <a class="nav-link " href="{{ '../guru-staf' }}">Guru & Staf</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ 'galeri-sekolah' }}">Galeri</a>
+              <a class="nav-link" href="{{ '../galeri-sekolah' }}">Galeri</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">E-Learning</a>
@@ -64,7 +64,7 @@
 <section id="detailPengumuman">
     <div class="container">
         <div align="center" class="detailppb">
-            <img id="gambar" src="{{asset('uploads/' . $pengumuman->gambar)}}" class="rounded" style="max-width: 100%; height: auto; width: 900px;"/>
+            <img  src="{{asset('uploads/' . $pengumuman->gambar)}}" />
         </div>
         <div class="content">
             <h2 class="judulppb" style="font-size: 34px">{{$pengumuman->judul}}</h2>
